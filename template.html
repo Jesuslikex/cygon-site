@@ -160,6 +160,11 @@ h2{font:700 22px/1.1 var(--f-display);letter-spacing:.04em;text-transform:upperc
 .note{font-size:12px;color:var(--dim);margin:0}
 
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tod{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:12px}
+.tod-card{display:block;width:100%;height:auto;aspect-ratio:16/9;border:1px solid var(--line);border-radius:6px;background:var(--ink)}
+.tod textarea{width:100%;min-height:210px;resize:vertical;box-sizing:border-box;font:13px/1.5 var(--f-mono);color:var(--fg);background:var(--ink);border:1px solid var(--line-2);border-radius:4px;padding:12px}
+.tod .actions{display:flex;flex-wrap:wrap;gap:8px}
+@media (max-width:720px){.tod{grid-template-columns:1fr}}
 .vlist{list-style:none;margin:0;padding:0;display:grid}
 .vlist li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;padding:11px 0;border-bottom:1px solid var(--line)}
 .vlist li:last-child{border-bottom:0}
@@ -287,7 +292,7 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
       <span><b class="wordmark">$CY<span>GON</span></b><small>Global Threat Monitor</small></span>
     </a>
     <nav aria-label="Sections">
-      <a href="#globe">Globe</a><a href="#feed">Feed</a><a href="#vulns">Exploits</a><a href="#timeline">Timeline</a><a href="#outages">Outages</a><a href="#token">Token</a>
+      <a href="#globe">Globe</a><a href="#today">Today</a><a href="#feed">Feed</a><a href="#vulns">Exploits</a><a href="#timeline">Timeline</a><a href="#outages">Outages</a><a href="#token">Token</a>
     </nav>
     <span class="live" id="live" title="Data refreshes every 3 hours"><i aria-hidden="true"></i><span id="liveTxt">LIVE</span></span>
   </div>
@@ -341,6 +346,23 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
       <div class="stat"><span class="label">Exploited · 30d</span><span class="v" id="sKev">0</span><span class="s">Added to CISA's exploited list</span></div>
     </div>
   </div>
+
+  <section class="wrap" id="today" hidden>
+    <div class="sec-head"><h2>Threat of the day</h2><p id="todSub"></p></div>
+    <div class="tod">
+      <img class="tod-card" id="todImg" width="1200" height="675" alt="" loading="lazy" decoding="async">
+      <div class="panel">
+        <div class="panel-h"><span class="label" id="todLbl">Post text</span><span class="rate" id="todLen"></span></div>
+        <textarea id="todText" readonly aria-labelledby="todLbl"></textarea>
+        <div class="actions">
+          <button class="btn primary" id="todCopy" type="button">Copy text</button>
+          <a class="btn" id="todDl" download>Download card</a>
+          <a class="btn" id="todX" target="_blank" rel="noopener">Post on X<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+        <p class="note">Built every morning at 07:05 UTC from the feeds on this page: CISA's exploited list, new CVEs, flagged IPs and service outages.</p>
+      </div>
+    </div>
+  </section>
 
   <section class="wrap" id="feed">
     <div class="sec-head"><h2>Live attack feed</h2><p id="feedSub"></p></div>
@@ -753,6 +775,23 @@ function bars(el, rows, cls){
   const max = Math.max(...rows.map(r=>r[1]));
   el.innerHTML = rows.map(([n,c,k,cc])=>`<div class="brow ${k||cls||''}"${cc ? ` data-cc="${esc(cc)}" role="button" tabindex="0" aria-label="Inspect ${esc(n)}"` : ''}><span class="n">${esc(n)}</span><span class="c">${fmt(c)}</span><span class="track" aria-hidden="true"><i style="width:${(c/max*100).toFixed(1)}%"></i></span></div>`).join('');
 }
+safe('today', ()=>{
+  const T = D.tod; if (!T || !T.text) return;
+  const sec = $('today'); sec.hidden = false;
+  const day = new Date(T.date + 'T12:00:00Z');
+  $('todSub').textContent = day.toLocaleDateString(undefined, {weekday:'long', day:'numeric', month:'long', timeZone:'UTC'}) + ' · refreshed daily';
+  $('todImg').src = T.img; $('todImg').alt = T.text.split('\n').filter(Boolean).slice(1).join(' ');
+  $('todDl').href = T.img; $('todDl').setAttribute('download', 'cygon-threat-' + T.date + '.png');
+  $('todText').value = T.text; $('todLen').textContent = (T.xLength || T.text.length) + '/280';
+  $('todX').href = 'https://x.com/intent/post?text=' + encodeURIComponent(T.text);
+  const btn = $('todCopy');
+  btn.addEventListener('click', async ()=>{
+    try { await navigator.clipboard.writeText(T.text); }
+    catch(e){ const t = $('todText'); t.focus(); t.select(); document.execCommand && document.execCommand('copy'); }
+    btn.textContent = 'Copied'; setTimeout(()=>{ btn.textContent = 'Copy text'; }, 1800);
+  });
+});
+
 safe('topC', ()=>{
   bars($('topC'), (D.topCountries||[]).slice(0,8).map(([cc,n],i)=>[(D_countries[cc]?D_countries[cc][2]:cc), n, i<3?'hot':'', D_countries[cc] ? cc : '']));
   const go = e=>{ const r = e.target.closest('[data-cc]'); if (!r) return; if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') return; e.preventDefault(); selectCountry(r.dataset.cc, 'list'); };

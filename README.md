@@ -16,6 +16,8 @@ Alerts: on a state change the same workflow runs `scripts/alert.py`, which posts
 - Telegram: `TELEGRAM_BOT_TOKEN` (from @BotFather) and `TELEGRAM_CHAT_ID` (your channel, e.g. `@cygon_alerts`, with the bot added as admin). Test with Actions → Status history → Run workflow → tick "Send a test message".
 - X: `X_API_KEY`, `X_API_SECRET`, `X_ACCESS_TOKEN`, `X_ACCESS_SECRET` from a developer.x.com app with Read and Write permission.
 
+Threat of the day: `.github/workflows/threat-of-day.yml` runs every morning at 07:05 UTC (and on demand from the Actions tab). It builds fresh data, then `scripts/threat_of_day.py` picks one headline (newest CISA exploited entry if added in the last 3 days, else the top CVSS 9+ CVE from the last 24 hours, else the country with the most flagged IPs; never the same headline two days running) and renders a 1200x675 card plus X post text of 275 weighted characters or fewer. Both are committed to the `threat-of-day` branch (`YYYY-MM-DD/card.png`, `post.txt`, and `latest.*`), and the site's "Threat of the day" section shows them with Copy text, Download card and Post on X buttons. Nothing is posted automatically. Fonts in `scripts/fonts` are Chakra Petch and JetBrains Mono (SIL OFL).
+
 The page sets a Content-Security-Policy and referrer policy in meta tags (GitHub Pages can't send headers); `build.py` fills in the inline script hashes.
 
 three.js (r128, MIT) and the globe texture are self-hosted from `static/`. The globe loads after the data panels, pauses when off screen, and lowers its quality on weak devices.

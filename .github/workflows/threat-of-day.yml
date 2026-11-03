@@ -1,0 +1,63 @@
+name: Threat of the day
+
+# Every morning: build fresh data, render a branded card + ready-to-post X text with
+# scripts/threat_of_day.py, commit them to the threat-of-day branch (one folder per day,
+# plus latest.*), then redeploy so the "Threat of the day" section on cygon.xyz updates.
+# Nothing is posted to X or Telegram; julian copies the text and card from the site.
+
+on:
+  schedule:
+    - cron: "5 7 * * *" # 07:05 UTC = 07:05 in Gran Canaria (winter), 08:05 in summer
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: threat-of-day
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pillow==11.3.0
+      - name: Check out threat-of-day branch
+        run: |
+          if git ls-remote --exit-code --heads origin threat-of-day >/dev/null; then
+            git fetch --depth 1 origin threat-of-day
+            git worktree add tod origin/threat-of-day
+          else
+            git worktree add --detach tod
+            git -C tod checkout --orphan threat-of-day
+            git -C tod rm -rf --quiet .
+            printf '# Threat of the day\n\nWritten every morning by .github/workflows/threat-of-day.yml on main. Each YYYY-MM-DD folder holds card.png (1200x675) and post.txt (ready for X). latest.* is today.\n' > tod/README.md
+          fi
+      - name: Read status history
+        run: |
+          if git fetch -q --depth 1 origin status-history; then
+            git show FETCH_HEAD:status.json > "$RUNNER_TEMP/status.json" && echo "HISTORY_URL=file://$RUNNER_TEMP/status.json" >> "$GITHUB_ENV"
+          fi
+      - name: Pull fresh feeds
+        run: python scripts/build.py
+      - name: Render card and post
+        run: |
+          python scripts/threat_of_day.py site/data.json tod | tee "$RUNNER_TEMP/post.txt"
+          { echo '### Threat of the day'; echo; echo '![card](https://raw.githubusercontent.com/${{ github.repository }}/threat-of-day/latest.png)'; echo; echo '```'; cat tod/latest.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit
+        run: |
+          cd tod
+          git add -A
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git -c user.name="cygon-bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -q -m "threat of the day $(date -u +%F)"
+          git push -q origin HEAD:threat-of-day
+      - name: Redeploy site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main -R "$GITHUB_REPOSITORY"

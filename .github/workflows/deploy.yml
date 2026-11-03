@@ -36,6 +36,12 @@ jobs:
           if git fetch -q --depth 1 origin status-history; then
             git show FETCH_HEAD:status.json > "$RUNNER_TEMP/status.json" && echo "HISTORY_URL=file://$RUNNER_TEMP/status.json" >> "$GITHUB_ENV"
           fi
+      - name: Read threat of the day
+        run: |
+          if git fetch -q --depth 1 origin threat-of-day; then
+            mkdir -p "$RUNNER_TEMP/tod"
+            git show FETCH_HEAD:latest.json > "$RUNNER_TEMP/tod/latest.json" && git show FETCH_HEAD:latest.png > "$RUNNER_TEMP/tod/latest.png" && echo "TOD_DIR=$RUNNER_TEMP/tod" >> "$GITHUB_ENV"
+          fi
       - name: Pull feeds and render
         run: python scripts/build.py
       - uses: actions/configure-pages@v5

@@ -40,7 +40,8 @@ jobs:
       - name: External links
         run: |
           curl -sS -m 30 https://cygon.xyz/ -o page.html
-          grep -o 'href="https://[^"]*"' page.html | sed 's/href="//;s/"$//' | sort -u > links.txt
+          grep -o '<a [^>]*href="https://[^"]*"' page.html | grep -o 'https://[^"]*' | grep -v '\${' | sort -u > links.txt
+          grep -oE "'([a-z-]+\\.)+(com|us|io)'\\]" page.html | tr -d "']" | sed 's|^|https://|' | sort -u >> links.txt
           grep -o 'https://www.cve.org/CVERecord?id=' page.html >/dev/null && echo https://www.cve.org/CVERecord?id=CVE-2021-44228 >> links.txt
           bad=0
           while read -r u; do

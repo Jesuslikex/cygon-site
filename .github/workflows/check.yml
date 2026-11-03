@@ -26,7 +26,7 @@ jobs:
             grep -q 'not affiliated with BI.ZONE' page.html && echo "  footer ok" || { echo "  footer MISSING"; fail=1; }
             grep -q 'rel="canonical"' page.html && echo "  canonical ok" || { echo "  canonical MISSING"; fail=1; }
           done
-          for p in three.min.js earth.jpg og.jpg logo-mark.png favicon.ico robots.txt sitemap.xml health.json; do
+          for p in three.min.js earth.jpg og.jpg logo-mark.png logo-poster.jpg logo-anim.webm logo-anim.mp4 favicon.ico robots.txt sitemap.xml health.json; do
             c=$(curl -sS -o /dev/null -m 30 -w '%{http_code}' "https://cygon.xyz/$p" || echo ERR)
             echo "asset /$p -> $c"; [ "$c" = 200 ] || fail=1
           done

@@ -2,8 +2,10 @@
 """Pull public threat feeds and render site/index.html from template.html.
 
 Feeds: IPsum (stamparm), CISA KEV, CVEProject cvelistV5 deltaLog, DB-IP country lite
-(via sapics/ip-location-db). If a feed fails, the last good value from
-site/data.json (or scripts/seed-data.json) is kept, so the site never breaks.
+(via sapics/ip-location-db). If a feed fails, the last good value is kept (from the live
+site's data.json, then site/data.json, then scripts/seed-data.json), so the site never breaks.
+Each feed's last good refresh time is stored in D["fresh"]; the page shows a delayed notice
+when it gets old, and scripts/health.py fails the workflow so GitHub raises an alert.
 """
 import bisect, collections, datetime as dt, ipaddress, json, os, random, sys, urllib.request
 
@@ -25,7 +27,17 @@ def get(url, timeout=60):
         return r.read()
 
 
+LIVE_DATA = os.environ.get("LIVE_DATA_URL", "https://cygon.xyz/data.json")
+
+
 def load_prev():
+    try:
+        d = json.loads(get(LIVE_DATA, 30))
+        if isinstance(d, dict) and d.get("snapshot"):
+            print("prev data from", LIVE_DATA, d["snapshot"])
+            return d
+    except Exception as ex:
+        print("live data.json unavailable:", ex, file=sys.stderr)
     for p in (os.path.join(OUT, "data.json"), os.path.join(ROOT, "scripts", "seed-data.json")):
         if os.path.exists(p):
             return json.load(open(p))
@@ -195,14 +207,20 @@ def status_part(D):
 def main():
     D = load_prev()
     centroids = json.load(open(os.path.join(ROOT, "scripts", "countries.json")))
-    ok = 0
+    fresh = D.setdefault("fresh", {})
+    prev_snap = D.get("snapshot")
+    ok, failed = 0, []
     for name, fn in (("ipsum", lambda: ipsum_part(D, centroids)), ("kev", lambda: kev_part(D)), ("cve", lambda: cve_part(D)), ("status", lambda: status_part(D))):
         try:
             fn()
             ok += 1
+            fresh[name] = NOW.strftime("%Y-%m-%dT%H:%MZ")
             print("ok", name)
         except Exception as ex:
+            failed.append(name)
+            fresh.setdefault(name, prev_snap or "")
             print("FAILED", name, ex, file=sys.stderr)
+            print(f"::warning title=Feed failed::{name}: {ex}")
     D["snapshot"] = NOW.strftime("%Y-%m-%dT%H:%MZ")
     os.makedirs(OUT, exist_ok=True)
     tpl = open(os.path.join(ROOT, "template.html")).read()
@@ -215,6 +233,14 @@ def main():
     st = os.path.join(ROOT, "static")
     if os.path.isdir(st):
         shutil.copytree(st, OUT, dirs_exist_ok=True)
+    health = {"snapshot": D["snapshot"], "fresh": fresh, "failed": failed}
+    json.dump(health, open(os.path.join(OUT, "health.json"), "w"), indent=1)
+    summ = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summ:
+        with open(summ, "a") as f:
+            f.write(f"### Feed refresh {D['snapshot']}\n\n| feed | last good |\n|---|---|\n")
+            for k, v in fresh.items():
+                f.write(f"| {k} | {v}{' (failed this run)' if k in failed else ''} |\n")
     print(f"built: {ok}/4 feeds, {D.get('totalIps')} ips, {len(D.get('feed', []))} feed rows")
     if ok == 0:
         sys.exit(1)

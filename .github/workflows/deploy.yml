@@ -19,9 +19,12 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      health: ${{ steps.health.outputs.message }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -35,3 +38,40 @@ jobs:
           path: site
       - id: deployment
         uses: actions/deploy-pages@v4
+      # Runs after deploy so stale data never blocks publishing. Fails the run when
+      # any feed has had no good refresh for 12 hours.
+      - name: Feed health
+        id: health
+        run: python scripts/health.py
+
+  # Opens one issue when the refresh breaks and closes it when it recovers.
+  # GitHub emails the repo owner on new issues and on failed scheduled runs.
+  alert:
+    needs: deploy
+    if: always() && needs.deploy.result != 'cancelled'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RESULT: ${{ needs.deploy.result }}
+          HEALTH: ${{ needs.deploy.outputs.health }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          title="Site data refresh is failing"
+          num=$(gh issue list --state open --limit 100 --json number,title --jq ".[] | select(.title == \"$title\") | .number" | head -1)
+          if [ "$RESULT" = "success" ]; then
+            if [ -n "$num" ]; then gh issue close "$num" --comment "Recovered in $RUN_URL. ${HEALTH}"; fi
+          elif [ -z "$num" ]; then
+            gh issue create --title "$title" --body "The scheduled build of cygon.xyz failed or is serving stale data.
+
+          Result: \`$RESULT\`
+          Health: ${HEALTH:-not reached, see the run log}
+          Run: $RUN_URL
+
+          The site stays up with its last good data and shows a \"Delayed\" notice to visitors. This issue closes itself when a run succeeds."
+          else
+            echo "Issue #$num already open"
+          fi

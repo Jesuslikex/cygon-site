@@ -22,16 +22,30 @@ jobs:
             code=$(curl -sS -L -m 30 -o page.html -w '%{http_code} %{url_effective}' "$u" || echo "ERR")
             echo "== $u -> $code size=$(wc -c < page.html 2>/dev/null || echo 0)"
             [ -s page.html ] || continue
-            grep -o '"snapshot":"[^"]*"' page.html | head -1
-            for id in feed vulns timeline outages st og tl; do grep -q "id=\"$id\"" page.html && echo "  has #$id" || { echo "  MISSING #$id"; fail=1; }; done
+            for id in feed vulns timeline outages st og tl staleBar; do grep -q "id=\"$id\"" page.html && echo "  has #$id" || { echo "  MISSING #$id"; fail=1; }; done
             grep -q 'not affiliated with BI.ZONE' page.html && echo "  footer ok" || { echo "  footer MISSING"; fail=1; }
-            grep -q 'three.min.js' page.html && echo "  globe lib ok" || echo "  globe lib MISSING"
-            python3 - <<'PY'
-          import json,re
-          s=open('page.html').read()
-          m=re.search(r'const D = (\{.*?\});\n',s)
-          d=json.loads(m.group(1))
-          print('  ips',d['totalIps'],'feed',len(d['feed']),'kev',d['kevTotal'],'cves24h',d['cvesNew24h'],'status',len(d.get('status',[])))
-          PY
+            grep -q 'rel="canonical"' page.html && echo "  canonical ok" || { echo "  canonical MISSING"; fail=1; }
           done
+          for p in three.min.js earth.jpg og.jpg logo-mark.png favicon.ico robots.txt sitemap.xml health.json; do
+            c=$(curl -sS -o /dev/null -m 30 -w '%{http_code}' "https://cygon.xyz/$p" || echo ERR)
+            echo "asset /$p -> $c"; [ "$c" = 200 ] || fail=1
+          done
+          c=$(curl -sS -o /dev/null -m 30 -w '%{http_code}' https://cygon.xyz/does-not-exist || echo ERR); echo "404 page -> $c"
+          curl -sS -m 30 https://cygon.xyz/data.json | python3 -c "
+          import json,sys
+          d=json.load(sys.stdin)
+          print('  snapshot',d['snapshot'],'ips',d['totalIps'],'feed',len(d['feed']),'kev',d['kevTotal'],'cves24h',d['cvesNew24h'],'status',len(d.get('status',[])))
+          print('  fresh',d.get('fresh'))"
           exit $fail
+      - name: External links
+        run: |
+          curl -sS -m 30 https://cygon.xyz/ -o page.html
+          grep -o 'href="https://[^"]*"' page.html | sed 's/href="//;s/"$//' | sort -u > links.txt
+          grep -o 'https://www.cve.org/CVERecord?id=' page.html >/dev/null && echo https://www.cve.org/CVERecord?id=CVE-2021-44228 >> links.txt
+          bad=0
+          while read -r u; do
+            c=$(curl -sS -L -o /dev/null -m 20 -A 'Mozilla/5.0 cygon-link-check' -w '%{http_code}' "$u" || echo ERR)
+            echo "$c $u"
+            case "$c" in 2*|3*|403|429) ;; *) bad=1; echo "::warning title=Broken link::$u -> $c";; esac
+          done < links.txt
+          echo "link check done (warnings only, bad=$bad)"

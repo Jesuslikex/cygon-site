@@ -1,0 +1,3093 @@
+{
+ "changes": [],
+ "hosts": {
+  "discordstatus.com": {
+   "coverage_from": "2026-02-27T21:52:42Z",
+   "description": "All Systems Operational",
+   "incident": "",
+   "incidents": {
+    "0gz6pdq1c141": {
+     "end": "2026-07-27T18:05:48Z",
+     "impact": "major",
+     "link": "https://stspg.io/m3f8f3hwc75m",
+     "name": "session starts, DM message delivery down",
+     "start": "2026-07-27T17:48:46Z",
+     "status": "resolved"
+    },
+    "1z5kbv8r5pkv": {
+     "end": "2026-09-16T16:43:18Z",
+     "impact": "major",
+     "link": "https://stspg.io/9qdnzmhbn0pk",
+     "name": "Google Pay Outage",
+     "start": "2026-09-16T16:15:33Z",
+     "status": "resolved"
+    },
+    "5sp34swnxkh0": {
+     "end": "2026-09-11T17:46:19Z",
+     "impact": "minor",
+     "link": "https://stspg.io/mpwbwtx3wm5q",
+     "name": "Media Proxy Latency High",
+     "start": "2026-09-11T16:24:46Z",
+     "status": "resolved"
+    },
+    "610vfhw9wjcj": {
+     "end": "2026-09-17T20:39:23Z",
+     "impact": "major",
+     "link": "https://stspg.io/pf0pn82rjd7q",
+     "name": "Issue / Delay in establishing call connection",
+     "start": "2026-09-17T18:18:09Z",
+     "status": "resolved"
+    },
+    "73wgk29dznv4": {
+     "end": "2026-08-04T20:17:15Z",
+     "impact": "critical",
+     "link": "https://stspg.io/wlryy8d8r7wf",
+     "name": "Messaging failures",
+     "start": "2026-08-04T18:49:50Z",
+     "status": "resolved"
+    },
+    "bg4s23tyzw6l": {
+     "end": "2026-10-31T21:43:44Z",
+     "impact": "major",
+     "link": "https://stspg.io/pl4x16p74j68",
+     "name": "Issues establishing voice call",
+     "start": "2026-10-31T15:26:29Z",
+     "status": "resolved"
+    },
+    "btdsd2y407t5": {
+     "end": "2026-09-15T15:16:18Z",
+     "impact": "none",
+     "link": "https://stspg.io/d5h0d8347s4l",
+     "name": "Session Unavailability",
+     "start": "2026-09-15T14:26:02Z",
+     "status": "resolved"
+    },
+    "c9vn3xqlhzyl": {
+     "end": "2026-09-16T22:35:09Z",
+     "impact": "major",
+     "link": "https://stspg.io/7qgn414rhr5z",
+     "name": "Issue establishing voice call",
+     "start": "2026-09-16T21:32:50Z",
+     "status": "resolved"
+    },
+    "chpjjdyk63yt": {
+     "end": "2026-09-16T19:28:01Z",
+     "impact": "none",
+     "link": "https://stspg.io/b8prjyxdvwf7",
+     "name": "API Errors",
+     "start": "2026-09-16T19:03:28Z",
+     "status": "resolved"
+    },
+    "d82z44sn4fpx": {
+     "end": "2026-09-11T06:42:28Z",
+     "impact": "major",
+     "link": "https://stspg.io/6kw0tkg5sg53",
+     "name": "Issue with establishing voice calls",
+     "start": "2026-09-11T04:21:35Z",
+     "status": "resolved"
+    },
+    "fyf18nfvtqm7": {
+     "end": "2026-10-30T16:18:51Z",
+     "impact": "major",
+     "link": "https://stspg.io/fhmcvq6rd04x",
+     "name": "Issues establishing voice calls",
+     "start": "2026-10-30T15:23:30Z",
+     "status": "resolved"
+    },
+    "g196lnx3h2cz": {
+     "end": "2026-07-22T23:57:46Z",
+     "impact": "major",
+     "link": "https://stspg.io/b029r8spc5j3",
+     "name": "unable to establish voice connection",
+     "start": "2026-07-22T23:32:44Z",
+     "status": "resolved"
+    },
+    "h3xfmqrqhqw3": {
+     "end": "2026-09-02T23:42:44Z",
+     "impact": "major",
+     "link": "https://stspg.io/ys9tgzwhjxtk",
+     "name": "Voice endpoint selection issues",
+     "start": "2026-09-02T23:26:42Z",
+     "status": "resolved"
+    },
+    "lf84xp6q5qjc": {
+     "end": "2026-09-03T15:37:47Z",
+     "impact": "major",
+     "link": "https://stspg.io/c16w1zbh6v2x",
+     "name": "Some servers unavailable",
+     "start": "2026-09-03T14:35:27Z",
+     "status": "resolved"
+    },
+    "nt3d1xvkb9q8": {
+     "end": "2026-09-03T22:27:33Z",
+     "impact": "none",
+     "link": "https://stspg.io/3628f7vbg5p8",
+     "name": "Some Servers Unavailable",
+     "start": "2026-09-03T21:31:27Z",
+     "status": "resolved"
+    },
+    "pcg3nsfq6l2y": {
+     "end": "2026-08-07T23:02:18Z",
+     "impact": "critical",
+     "link": "https://stspg.io/9y6394dfz8kw",
+     "name": "Issues sending messages for bots and users",
+     "start": "2026-08-07T22:21:42Z",
+     "status": "resolved"
+    },
+    "t00495fymyd6": {
+     "end": "2026-09-24T03:32:10Z",
+     "impact": "major",
+     "link": "https://stspg.io/4pqvfhkn61px",
+     "name": "Age group status mismatch across devices",
+     "start": "2026-09-24T02:08:27Z",
+     "status": "resolved"
+    },
+    "ty5bs3l7xgcf": {
+     "end": "2026-09-02T18:26:50Z",
+     "impact": "major",
+     "link": "https://stspg.io/1msh0252j36w",
+     "name": "Server Unavailability",
+     "start": "2026-09-02T16:12:20Z",
+     "status": "resolved"
+    },
+    "vwmnnymc48b9": {
+     "end": "2026-07-17T03:48:44Z",
+     "impact": "major",
+     "link": "https://stspg.io/dn6zshm4sygl",
+     "name": "API Errors",
+     "start": "2026-07-17T00:49:10Z",
+     "status": "resolved"
+    },
+    "xpz8zbrdkgs2": {
+     "end": "2026-09-01T00:49:17Z",
+     "impact": "major",
+     "link": "https://stspg.io/11m73f3r9hhd",
+     "name": "Some servers and other services (voice calls, activities) not available for some users",
+     "start": "2026-08-31T22:54:05Z",
+     "status": "resolved"
+    },
+    "xtbm1jcfkbcs": {
+     "end": "2026-08-14T06:24:04Z",
+     "impact": "major",
+     "link": "https://stspg.io/kg7n5686hk7n",
+     "name": "Issue with establishing a call",
+     "start": "2026-08-14T06:09:38Z",
+     "status": "resolved"
+    },
+    "yb8bzhp6nd87": {
+     "end": "2026-10-01T20:52:47Z",
+     "impact": "minor",
+     "link": "https://stspg.io/d34fn55r326n",
+     "name": "Elevated API error rate",
+     "start": "2026-10-01T19:48:10Z",
+     "status": "resolved"
+    },
+    "yj1xklr7ynwg": {
+     "end": "2026-07-10T19:33:31Z",
+     "impact": "major",
+     "link": "https://stspg.io/0j2xlzm53hb2",
+     "name": "Issues with billing operations",
+     "start": "2026-07-10T16:49:33Z",
+     "status": "resolved"
+    }
+   },
+   "indicator": "none",
+   "name": "Discord",
+   "since": "2026-11-03T16:16:57Z"
+  },
+  "status.atlassian.com": {
+   "coverage_from": "2000-01-01T00:00:00Z",
+   "description": "All Systems Operational",
+   "incident": "",
+   "incidents": {},
+   "indicator": "none",
+   "name": "Atlassian",
+   "since": "2026-11-03T16:16:57Z"
+  },
+  "status.coinbase.com": {
+   "coverage_from": "2026-09-17T06:50:14Z",
+   "description": "Service Under Maintenance",
+   "incident": "Delayed Sends and Receives - Sonic Network",
+   "incidents": {
+    "0sldycvpmwz6": {
+     "end": "2026-10-12T16:04:49Z",
+     "impact": "none",
+     "link": "https://stspg.io/d6qpnhvyhkfn",
+     "name": "Delayed Transactions - ALEO",
+     "start": "2026-10-12T06:03:03Z",
+     "status": "resolved"
+    },
+    "0zfln0bkpc8f": {
+     "end": "2026-10-31T15:19:46Z",
+     "impact": "minor",
+     "link": "https://stspg.io/7t0qpk0kqgwz",
+     "name": "Delayed Sends and Receives - Solana",
+     "start": "2026-10-31T14:38:37Z",
+     "status": "resolved"
+    },
+    "0zkp7jyg3dqf": {
+     "end": "2026-10-17T06:48:22Z",
+     "impact": "none",
+     "link": "https://stspg.io/kbvp5q5prggq",
+     "name": "Celestia - Delayed Sends and Receives",
+     "start": "2026-10-12T22:24:34Z",
+     "status": "resolved"
+    },
+    "27ptqxypnlf4": {
+     "end": "2026-10-14T22:22:45Z",
+     "impact": "major",
+     "link": "https://stspg.io/jtgknnx97tqy",
+     "name": "Site Performance - Coinbase Website",
+     "start": "2026-10-14T22:20:02Z",
+     "status": "resolved"
+    },
+    "37j7kxfz2y99": {
+     "end": "2026-10-11T00:10:41Z",
+     "impact": "none",
+     "link": "https://stspg.io/d8pph8pvx98c",
+     "name": "Delayed Sends - APT",
+     "start": "2026-10-10T23:24:52Z",
+     "status": "resolved"
+    },
+    "41ywx5zyyzpt": {
+     "end": "2026-10-29T14:56:52Z",
+     "impact": "none",
+     "link": "https://stspg.io/dg4ggh0fw8f1",
+     "name": "Delayed Sends - TON Network",
+     "start": "2026-10-16T05:29:37Z",
+     "status": "resolved"
+    },
+    "4ztg89fsdw4s": {
+     "end": "2026-11-03T02:27:15Z",
+     "impact": "minor",
+     "link": "https://stspg.io/2ml7jpwyg7sq",
+     "name": "Delayed Transactions - BTC",
+     "start": "2026-11-03T01:20:21Z",
+     "status": "resolved"
+    },
+    "57f25r926d2v": {
+     "end": "2026-09-21T17:47:05Z",
+     "impact": "none",
+     "link": "https://stspg.io/t3y3zpzj8z45",
+     "name": "TAO - Delayed Sends & Receives",
+     "start": "2026-09-21T17:14:07Z",
+     "status": "resolved"
+    },
+    "5sbh465r6vg7": {
+     "end": "2026-09-19T00:41:12Z",
+     "impact": "none",
+     "link": "https://stspg.io/2ch4jhm167jn",
+     "name": "Delayed Sends and Receives - Aleo Network",
+     "start": "2026-09-18T23:41:08Z",
+     "status": "resolved"
+    },
+    "82hyfnl2mgl1": {
+     "end": "2026-09-23T20:40:38Z",
+     "impact": "none",
+     "link": "https://stspg.io/cc7zr5ghp971",
+     "name": "Delayed Sends/Receives - Avalanche (AVAX)",
+     "start": "2026-09-23T02:01:08Z",
+     "status": "resolved"
+    },
+    "8kq321sj9nmf": {
+     "end": "2026-09-22T00:31:19Z",
+     "impact": "minor",
+     "link": "https://stspg.io/q9vsx2x4b0ny",
+     "name": "Site Performance - Coinbase Web/Mobile",
+     "start": "2026-09-21T23:21:05Z",
+     "status": "resolved"
+    },
+    "8zxv6r3bq07y": {
+     "end": "2026-10-31T06:44:42Z",
+     "impact": "minor",
+     "link": "https://stspg.io/h34x6332srdj",
+     "name": "Delayed Sends & Receives - Zcash Network",
+     "start": "2026-10-31T03:12:35Z",
+     "status": "resolved"
+    },
+    "cdv950j6v7vg": {
+     "end": "2026-10-09T15:34:56Z",
+     "impact": "minor",
+     "link": "https://stspg.io/hqhq8g73h644",
+     "name": "Delayed Sends - XRP",
+     "start": "2026-10-09T14:49:40Z",
+     "status": "resolved"
+    },
+    "cy0pxx4l461q": {
+     "end": "2026-10-22T22:05:56Z",
+     "impact": "none",
+     "link": "https://stspg.io/th6m84k1n8kg",
+     "name": "Mina - Delayed Sends & Receives",
+     "start": "2026-10-22T16:18:43Z",
+     "status": "resolved"
+    },
+    "d5jlny31tgk1": {
+     "end": "2026-09-24T19:26:49Z",
+     "impact": "none",
+     "link": "https://stspg.io/14043tsltlhc",
+     "name": "WMTX-USD to Limit Only",
+     "start": "2026-09-21T18:19:57Z",
+     "status": "resolved"
+    },
+    "dfkgxkwg6v77": {
+     "end": "2026-09-25T17:34:33Z",
+     "impact": "none",
+     "link": "https://stspg.io/rztgrfptrzzj",
+     "name": "Delayed Sends/Receives - VeChain (VET)",
+     "start": "2026-09-25T07:11:09Z",
+     "status": "resolved"
+    },
+    "dv0206bqq8qt": {
+     "end": "2026-11-01T01:52:04Z",
+     "impact": "none",
+     "link": "https://stspg.io/5srbmj14ks56",
+     "name": "Delayed Sends & Receives - DATA",
+     "start": "2026-11-01T01:21:35Z",
+     "status": "resolved"
+    },
+    "fhqztv3wv438": {
+     "end": "2026-10-08T07:09:50Z",
+     "impact": "none",
+     "link": "https://stspg.io/pygsysshsqxw",
+     "name": "Degraded Performance - DEX Solana Transactions",
+     "start": "2026-10-08T07:00:33Z",
+     "status": "resolved"
+    },
+    "gfx8zxsl1050": {
+     "end": "2026-10-05T16:46:12Z",
+     "impact": "none",
+     "link": "https://stspg.io/84j54hscrfpx",
+     "name": "Delayed Sends & Receives - ALEO",
+     "start": "2026-10-02T01:44:45Z",
+     "status": "resolved"
+    },
+    "gtbbshmr3k4r": {
+     "end": "2026-11-02T17:52:28Z",
+     "impact": "none",
+     "link": "https://stspg.io/rvxhkk8p5ql2",
+     "name": "Degraded Performance - DEX, Borrow and Lend",
+     "start": "2026-11-02T08:14:06Z",
+     "status": "resolved"
+    },
+    "gw8cscnx8q9m": {
+     "end": "2026-10-22T18:11:21Z",
+     "impact": "minor",
+     "link": "https://stspg.io/f5lwywvm1ktb",
+     "name": "Card Payment Unavailable (US) - Try Another",
+     "start": "2026-10-22T15:02:44Z",
+     "status": "resolved"
+    },
+    "h3hy5pvqp26c": {
+     "end": "2026-10-15T16:33:37Z",
+     "impact": "none",
+     "link": "https://stspg.io/l50srpzg6mfb",
+     "name": "NEAR - Delayed Sends/Receives",
+     "start": "2026-10-15T06:45:54Z",
+     "status": "resolved"
+    },
+    "j1136zv051kg": {
+     "end": "2026-10-29T17:52:59Z",
+     "impact": "none",
+     "link": "https://stspg.io/47c53r4vfr9s",
+     "name": "GYEN conversion to USDC",
+     "start": "2026-10-20T15:14:15Z",
+     "status": "resolved"
+    },
+    "j4tjnbxsw12l": {
+     "end": "2026-10-28T02:28:42Z",
+     "impact": "minor",
+     "link": "https://stspg.io/0y1n64h41030",
+     "name": "Delayed Withdrawals - Interac e-Transfer",
+     "start": "2026-10-25T07:23:25Z",
+     "status": "resolved"
+    },
+    "jt1rxcy33c5l": {
+     "end": "2026-09-24T22:10:20Z",
+     "impact": "none",
+     "link": "https://stspg.io/p9mqsjws1bnb",
+     "name": "Delayed Sends - SUIWAL",
+     "start": "2026-09-23T03:10:48Z",
+     "status": "resolved"
+    },
+    "k5x6wlf8ws8b": {
+     "end": "2026-10-11T00:19:58Z",
+     "impact": "minor",
+     "link": "https://stspg.io/q5x4nwrz83rz",
+     "name": "Delayed Sends and Receives - EGLD (MultiversX)",
+     "start": "2026-09-19T08:49:33Z",
+     "status": "resolved"
+    },
+    "kjp5db2vnt2p": {
+     "end": "2026-10-17T06:47:01Z",
+     "impact": "none",
+     "link": "https://stspg.io/p2c988fdvdp6",
+     "name": "Osmosis (OSMO) - Delayed Sends and Receives",
+     "start": "2026-10-12T18:18:12Z",
+     "status": "resolved"
+    },
+    "kp9xnsrkg30b": {
+     "end": "2026-09-17T10:46:29Z",
+     "impact": "minor",
+     "link": "https://stspg.io/0wfdm22t9vkv",
+     "name": "Degraded Performance - Prediction Markets",
+     "start": "2026-09-17T09:35:27Z",
+     "status": "resolved"
+    },
+    "l18mdnjd0fs9": {
+     "end": "2026-09-24T17:18:53Z",
+     "impact": "none",
+     "link": "https://stspg.io/31gfncwwq1dc",
+     "name": "Paused Sends/Receives - COSMOS",
+     "start": "2026-09-22T12:35:21Z",
+     "status": "resolved"
+    },
+    "m1jgvww0zjr6": {
+     "end": "2026-10-09T17:58:14Z",
+     "impact": "minor",
+     "link": "https://stspg.io/yn154tpy9kdh",
+     "name": "Interac - Deposits and Withdrawals Degraded",
+     "start": "2026-10-09T16:58:08Z",
+     "status": "resolved"
+    },
+    "m31h0hry5slb": {
+     "end": "2026-10-22T05:45:04Z",
+     "impact": "minor",
+     "link": "https://stspg.io/nfst55qfvqng",
+     "name": "Degraded Performance - Derivatives Portfolio Transfers",
+     "start": "2026-10-22T04:52:48Z",
+     "status": "resolved"
+    },
+    "mh155vzgn2wc": {
+     "end": "2026-10-16T20:26:33Z",
+     "impact": "none",
+     "link": "https://stspg.io/8jhctcvjjwfp",
+     "name": "Delayed Sends and Receives - Kusama (KSM) Network",
+     "start": "2026-10-16T18:25:16Z",
+     "status": "resolved"
+    },
+    "mh5hq2r1ccls": {
+     "end": "2026-10-15T00:38:31Z",
+     "impact": "none",
+     "link": "https://stspg.io/m2s1jrd6z8kg",
+     "name": "Delayed Fiat Deposits \u2014 India",
+     "start": "2026-10-14T23:16:43Z",
+     "status": "resolved"
+    },
+    "mmn2tcp85th4": {
+     "end": "2026-09-24T19:08:00Z",
+     "impact": "none",
+     "link": "https://stspg.io/xg0t96q566gr",
+     "name": "Delayed Sends/Receives - EOS",
+     "start": "2026-09-24T08:21:44Z",
+     "status": "resolved"
+    },
+    "p2b1prp7xcbx": {
+     "end": "2026-09-22T01:55:55Z",
+     "impact": "none",
+     "link": "https://stspg.io/tz8vyhwcp029",
+     "name": "Delayed Sends/Receives - Solana",
+     "start": "2026-09-22T01:28:22Z",
+     "status": "resolved"
+    },
+    "p5vynslkgbjd": {
+     "end": "2026-09-22T22:21:21Z",
+     "impact": "none",
+     "link": "https://stspg.io/7ftyzk6zz60z",
+     "name": "Delayed Sends/Receives - Avalanche (AVAX)",
+     "start": "2026-09-22T21:49:26Z",
+     "status": "resolved"
+    },
+    "pzclk21qln2c": {
+     "end": "2026-10-16T19:02:59Z",
+     "impact": "none",
+     "link": "https://stspg.io/rxlh265131jq",
+     "name": "Delayed Sends and Receives - Flare Network",
+     "start": "2026-10-16T18:04:36Z",
+     "status": "resolved"
+    },
+    "sgsgw21dz2jb": {
+     "end": null,
+     "impact": "none",
+     "link": "https://stspg.io/zbj4gm72tmc3",
+     "name": "Delayed Sends and Receives - Sonic Network",
+     "start": "2026-11-03T14:21:54Z",
+     "status": "investigating"
+    },
+    "sndsdk705dhd": {
+     "end": "2026-09-17T07:04:03Z",
+     "impact": "minor",
+     "link": "https://stspg.io/ssxrbhx33gr0",
+     "name": "Degraded Performance - DEX, Borrow and Lend",
+     "start": "2026-09-17T06:50:14Z",
+     "status": "resolved"
+    },
+    "sps4gk7wpgt3": {
+     "end": "2026-10-21T14:19:04Z",
+     "impact": "minor",
+     "link": "https://stspg.io/kgtx13tkq7v2",
+     "name": "Delayed Sends and Receives - Solana",
+     "start": "2026-10-21T14:09:26Z",
+     "status": "resolved"
+    },
+    "sw5f0snq6p83": {
+     "end": "2026-10-22T01:19:01Z",
+     "impact": "none",
+     "link": "https://stspg.io/fb3hwx7y5spm",
+     "name": "Delayed Sends/Receives - TON Network",
+     "start": "2026-10-22T00:18:28Z",
+     "status": "resolved"
+    },
+    "sx636qyd11b9": {
+     "end": "2026-10-26T23:24:30Z",
+     "impact": "none",
+     "link": "https://stspg.io/67bbrch8c8jx",
+     "name": "Delayed Sends/Receives - TON Network",
+     "start": "2026-10-23T01:35:54Z",
+     "status": "resolved"
+    },
+    "szm8b0v8x89y": {
+     "end": "2026-10-08T00:28:50Z",
+     "impact": "none",
+     "link": "https://stspg.io/959yb3yh1yd1",
+     "name": "Delayed Sends/Receives - Injective Network",
+     "start": "2026-10-07T15:53:19Z",
+     "status": "resolved"
+    },
+    "ty983bvb4xh4": {
+     "end": "2026-10-15T03:02:16Z",
+     "impact": "none",
+     "link": "https://stspg.io/m0gycfjv2jk1",
+     "name": "Delayed Sends/Receives - Kusama Network",
+     "start": "2026-10-15T01:57:48Z",
+     "status": "resolved"
+    },
+    "vvcvx7fq295v": {
+     "end": "2026-10-26T15:50:47Z",
+     "impact": "none",
+     "link": "https://stspg.io/v7lrmj7nsnc5",
+     "name": "Site Performance - Converts",
+     "start": "2026-10-26T14:46:26Z",
+     "status": "resolved"
+    },
+    "wrw9dc78yfcn": {
+     "end": "2026-10-08T03:26:38Z",
+     "impact": "minor",
+     "link": "https://stspg.io/sf71xlrxf6rn",
+     "name": "Delayed Receives - BCH, BTC, DASH, LTC, ZEC",
+     "start": "2026-10-08T03:18:08Z",
+     "status": "resolved"
+    },
+    "xkxjrqfw5vcn": {
+     "end": "2026-10-03T00:09:55Z",
+     "impact": "none",
+     "link": "https://stspg.io/vrkjqbb6mtnr",
+     "name": "Delayed Sends & Receives - INJ",
+     "start": "2026-10-02T23:40:34Z",
+     "status": "resolved"
+    },
+    "xv69b0bl1ppn": {
+     "end": "2026-09-22T20:33:43Z",
+     "impact": "minor",
+     "link": "https://stspg.io/39wh3wwq55bh",
+     "name": "Delayed Sends/Receives - Avalanche (AVAX)",
+     "start": "2026-09-22T15:36:50Z",
+     "status": "resolved"
+    },
+    "yzvxyrzfssq5": {
+     "end": "2026-09-29T22:14:29Z",
+     "impact": "none",
+     "link": "https://stspg.io/9pqm85tr0xdt",
+     "name": "Delayed Sends/Receives - SUI",
+     "start": "2026-09-29T18:01:57Z",
+     "status": "resolved"
+    },
+    "zpppj205c457": {
+     "end": "2026-10-07T02:12:38Z",
+     "impact": "minor",
+     "link": "https://stspg.io/jtv5vf2zc9qf",
+     "name": "Delayed Sends - Avalanche C-Chain Network",
+     "start": "2026-10-07T02:02:52Z",
+     "status": "resolved"
+    }
+   },
+   "indicator": "maintenance",
+   "name": "Coinbase",
+   "since": "2026-11-03T16:16:57Z"
+  },
+  "status.digitalocean.com": {
+   "coverage_from": "2026-04-28T13:45:20Z",
+   "description": "All Systems Operational",
+   "incident": "",
+   "incidents": {
+    "1t16vfgq3zpx": {
+     "end": "2026-09-09T12:25:52Z",
+     "impact": "minor",
+     "link": "https://stspg.io/g4s2358yl9tt",
+     "name": "Power Degradation impacting GPU Performance in ATL1",
+     "start": "2026-09-09T10:47:40Z",
+     "status": "resolved"
+    },
+    "2kxtxyvzzzk0": {
+     "end": "2026-07-11T01:27:56Z",
+     "impact": "minor",
+     "link": "https://stspg.io/p8xctv4k5yjv",
+     "name": "Kubernetes Deployments in NYC1",
+     "start": "2026-07-09T20:31:52Z",
+     "status": "resolved"
+    },
+    "2wql4f4sb13r": {
+     "end": "2026-08-09T01:01:02Z",
+     "impact": "minor",
+     "link": "https://stspg.io/grfh9nf5bp3f",
+     "name": "Account Registration, Droplets, and Related Services",
+     "start": "2026-08-08T18:57:49Z",
+     "status": "resolved"
+    },
+    "3nt69xj3wkk9": {
+     "end": "2026-08-03T17:59:42Z",
+     "impact": "minor",
+     "link": "https://stspg.io/045lx5xqfdns",
+     "name": "Cloud Control Panel Access",
+     "start": "2026-08-03T13:58:04Z",
+     "status": "resolved"
+    },
+    "4qwm6pzlx1z3": {
+     "end": "2026-08-25T19:04:33Z",
+     "impact": "critical",
+     "link": "https://stspg.io/8l5c24cxh3hr",
+     "name": "Cloud Control Panel and API",
+     "start": "2026-08-24T17:14:43Z",
+     "status": "postmortem"
+    },
+    "5fxykytg48dx": {
+     "end": "2026-10-05T12:13:16Z",
+     "impact": "minor",
+     "link": "https://stspg.io/1n5v2k9sxq46",
+     "name": "VPC Networking Availability",
+     "start": "2026-10-05T10:38:07Z",
+     "status": "resolved"
+    },
+    "6z6dt3t1bhb9": {
+     "end": "2026-10-03T14:51:13Z",
+     "impact": "none",
+     "link": "https://stspg.io/kj9rd8tnd1wt",
+     "name": "A Network Disruption in BLR1 Region Impacted Multiple Products (Resolved)",
+     "start": "2026-10-03T14:51:13Z",
+     "status": "resolved"
+    },
+    "84v7d9gkkzzf": {
+     "end": "2026-07-19T15:32:39Z",
+     "impact": "minor",
+     "link": "https://stspg.io/wv68wmnz55ln",
+     "name": "Block Storage Volume NYC1, NYC3, SGP1, SYD1 and BLR1",
+     "start": "2026-07-19T09:51:19Z",
+     "status": "resolved"
+    },
+    "8sjb7kmqnvk9": {
+     "end": "2026-07-15T21:46:35Z",
+     "impact": "minor",
+     "link": "https://stspg.io/rzs04wclgpfq",
+     "name": "Serverless Inference - Gemma4 Latency Issues Causing Timeouts & Slow Responses",
+     "start": "2026-07-13T19:04:10Z",
+     "status": "resolved"
+    },
+    "cg3q7h89dbnq": {
+     "end": "2026-08-06T21:05:05Z",
+     "impact": "minor",
+     "link": "https://stspg.io/7pm9l1jwpkr6",
+     "name": "Functions on App Platform",
+     "start": "2026-08-06T19:01:27Z",
+     "status": "resolved"
+    },
+    "ckmpdk5z9xj9": {
+     "end": "2026-10-28T01:55:12Z",
+     "impact": "major",
+     "link": "https://stspg.io/b16t5y07v5l4",
+     "name": "Kubernetes Cluster Management Operations",
+     "start": "2026-10-27T22:14:46Z",
+     "status": "resolved"
+    },
+    "fcfplv03vbwt": {
+     "end": "2026-07-28T15:24:28Z",
+     "impact": "major",
+     "link": "https://stspg.io/54mh0lzk9733",
+     "name": "Agent Platform Requests Returning HTTP 500 Errors",
+     "start": "2026-07-27T18:31:40Z",
+     "status": "resolved"
+    },
+    "grb2v0td1nq5": {
+     "end": "2026-09-16T21:09:31Z",
+     "impact": "minor",
+     "link": "https://stspg.io/n6hr8jd64qjl",
+     "name": "Support Portal Service Disruption",
+     "start": "2026-09-16T09:48:19Z",
+     "status": "resolved"
+    },
+    "j6cjljphvgq7": {
+     "end": "2026-07-22T19:42:17Z",
+     "impact": "minor",
+     "link": "https://stspg.io/2fdnm4tns3f1",
+     "name": "Gradient AI Serverless Inference Requests Timing Out for qwen3.5-397b-a17b",
+     "start": "2026-07-22T16:50:42Z",
+     "status": "resolved"
+    },
+    "l20hw5cfhksw": {
+     "end": "2026-08-04T21:42:43Z",
+     "impact": "minor",
+     "link": "https://stspg.io/qb6zv0kdjy50",
+     "name": "Spaces Cold Storage Billing",
+     "start": "2026-08-04T16:13:35Z",
+     "status": "resolved"
+    },
+    "nfhvp4yhyrfl": {
+     "end": "2026-07-16T17:24:35Z",
+     "impact": "minor",
+     "link": "https://stspg.io/x0s0pghvdcgv",
+     "name": "Reserved IP routing in TOR1",
+     "start": "2026-07-16T13:39:47Z",
+     "status": "resolved"
+    },
+    "qd8v4wddyqjr": {
+     "end": "2026-08-19T19:34:54Z",
+     "impact": "critical",
+     "link": "https://stspg.io/gdzqj0v18x0r",
+     "name": "Major Service Interruption in MKC1",
+     "start": "2026-08-19T11:10:06Z",
+     "status": "resolved"
+    },
+    "qfg5hmfhxw5d": {
+     "end": "2026-10-11T23:29:01Z",
+     "impact": "minor",
+     "link": "https://stspg.io/61n77v08qp0j",
+     "name": "DNS Resolution for Managed Kubernetes",
+     "start": "2026-10-11T22:01:39Z",
+     "status": "resolved"
+    },
+    "qzbsmdsw9lq8": {
+     "end": "2026-07-19T09:52:00Z",
+     "impact": "minor",
+     "link": "https://stspg.io/8yc90q76srsl",
+     "name": "Networking in BLR1",
+     "start": "2026-07-19T06:57:41Z",
+     "status": "resolved"
+    },
+    "r96y45y5sx59": {
+     "end": "2026-08-23T14:33:31Z",
+     "impact": "minor",
+     "link": "https://stspg.io/8ld5fpw01tg4",
+     "name": "Managed Databases Creation",
+     "start": "2026-08-23T05:11:37Z",
+     "status": "resolved"
+    },
+    "rdfp2h4syxz8": {
+     "end": "2026-07-30T06:15:55Z",
+     "impact": "minor",
+     "link": "https://stspg.io/ynhlvpy6ctcm",
+     "name": "Response Degradation Impacting Kimi-K3",
+     "start": "2026-07-29T17:56:51Z",
+     "status": "resolved"
+    },
+    "rl0fl1jtxw7l": {
+     "end": "2026-10-13T17:09:47Z",
+     "impact": "none",
+     "link": "https://stspg.io/txrkbrvfl4bz",
+     "name": "App Platform Deployments",
+     "start": "2026-10-13T17:09:47Z",
+     "status": "resolved"
+    },
+    "s0dyq97c5v72": {
+     "end": "2026-08-21T14:52:40Z",
+     "impact": "minor",
+     "link": "https://stspg.io/2b4phnbmtm49",
+     "name": "Container Registry and Spaces Accessibility",
+     "start": "2026-08-21T12:59:42Z",
+     "status": "resolved"
+    },
+    "vjm8qnbt45tb": {
+     "end": "2026-08-06T16:33:14Z",
+     "impact": "none",
+     "link": "https://stspg.io/zscj6w048lfx",
+     "name": "Multiple Services Availability",
+     "start": "2026-08-06T16:33:14Z",
+     "status": "resolved"
+    },
+    "w53965shllfq": {
+     "end": "2026-07-24T12:42:25Z",
+     "impact": "minor",
+     "link": "https://stspg.io/y9g7qgc9qs6m",
+     "name": "Network Connectivity from India to NYC",
+     "start": "2026-07-24T10:36:52Z",
+     "status": "resolved"
+    },
+    "y3kn2w2qf5s4": {
+     "end": "2026-08-13T14:59:44Z",
+     "impact": "none",
+     "link": "https://stspg.io/yldnj7859gcp",
+     "name": "Volume Attach/Detach events in FRA1",
+     "start": "2026-08-13T14:59:44Z",
+     "status": "resolved"
+    },
+    "ym1lj8ww7cpz": {
+     "end": "2026-07-23T12:37:00Z",
+     "impact": "minor",
+     "link": "https://stspg.io/9pxmkrlffl58",
+     "name": "Llama-4-Maverick Model Availability",
+     "start": "2026-07-23T11:16:59Z",
+     "status": "resolved"
+    }
+   },
+   "indicator": "none",
+   "name": "DigitalOcean",
+   "since": "2026-11-03T16:16:57Z"
+  },
+  "status.dropbox.com": {
+   "coverage_from": "2024-04-29T03:30:08Z",
+   "description": "All Systems Operational",
+   "incident": "",
+   "incidents": {
+    "9pw2xsg6vsr6": {
+     "end": "2026-09-04T05:02:56Z",
+     "impact": "minor",
+     "link": "https://stspg.io/rshdbf10lkv8",
+     "name": "Customer support via telephone may be unavailable for some users",
+     "start": "2026-09-03T22:13:35Z",
+     "status": "resolved"
+    },
+    "pczflzc6zgnh": {
+     "end": "2026-07-23T15:36:52Z",
+     "impact": "minor",
+     "link": "https://stspg.io/6fzprqb0cvpf",
+     "name": "Dropbox is not working as expected for some users",
+     "start": "2026-07-23T15:12:08Z",
+     "status": "resolved"
+    },
+    "q9v98cvgfbms": {
+     "end": "2026-08-21T15:12:53Z",
+     "impact": "minor",
+     "link": "https://stspg.io/dtb0fmvhtq1b",
+     "name": "Dropbox is not working as expected for some users",
+     "start": "2026-08-21T13:18:11Z",
+     "status": "resolved"
+    },
+    "t5y9w8skf214": {
+     "end": "2026-08-26T11:01:25Z",
+     "impact": "minor",
+     "link": "https://stspg.io/m932x061cpmc",
+     "name": "Some Dropbox Protect features are not working correctly",
+     "start": "2026-08-25T23:14:32Z",
+     "status": "resolved"
+    },
+    "vv8tcb8dzh16": {
+     "end": "2026-09-09T22:35:21Z",
+     "impact": "major",
+     "link": "https://stspg.io/6d2mcpdwfmb3",
+     "name": "Some customers are unable to access certain website routes and features.",
+     "start": "2026-09-09T21:36:10Z",
+     "status": "resolved"
+    }
+   },
+   "indicator": "none",
+   "name": "Dropbox",
+   "since": "2026-11-03T16:16:57Z"
+  },
+  "status.kraken.com": {
+   "coverage_from": "2026-09-04T21:43:59Z",
+   "description": "Partially Degraded Service",
+   "incident": "Memecore (M) Deposits Disabled",
+   "incidents": {
+    "074rbtn08wzw": {
+     "end": "2026-10-07T22:25:47Z",
+     "impact": "minor",
+     "link": "https://stspg.io/qkr4w76jtq70",
+     "name": "Funding delays for select blockchain networks",
+     "start": "2026-09-04T21:43:59Z",
+     "status": "resolved"
+    },
+    "0stxzzxlfk7v": {
+     "end": "2026-10-12T11:13:00Z",
+     "impact": "minor",
+     "link": "https://stspg.io/bcc3vg2ppxj3",
+     "name": "Funding Delays",
+     "start": "2026-10-12T10:10:35Z",
+     "status": "resolved"
+    },
+    "17msc5qh8nz7": {
+     "end": "2026-10-06T21:43:27Z",
+     "impact": "minor",
+     "link": "https://stspg.io/m9w52dt0qxy7",
+     "name": "AUD NPP Deposits and Withdrawals failing.",
+     "start": "2026-10-06T13:27:32Z",
+     "status": "resolved"
+    },
+    "1mwk0t5k5ktr": {
+     "end": "2026-10-28T04:14:00Z",
+     "impact": "minor",
+     "link": "https://stspg.io/71m96c5q3xmk",
+     "name": "USD Coin (ARC) [USDC - ARC] Funding Delays",
+     "start": "2026-10-28T02:34:07Z",
+     "status": "resolved"
+    },
+    "1sxv7rm9b6k7": {
+     "end": "2026-10-06T10:52:13Z",
+     "impact": "minor",
+     "link": "https://stspg.io/lcwq9h5dl0kh",
+     "name": "Cross-Exchange Transfer Delays",
+     "start": "2026-10-02T08:59:56Z",
+     "status": "resolved"
+    },
+    "1x3htqnlht90": {
+     "end": "2026-10-07T08:18:53Z",
+     "impact": "minor",
+     "link": "https://stspg.io/czn0l533yzb9",
+     "name": "Juno (JUNO) Funding Delays",
+     "start": "2026-10-07T07:28:14Z",
+     "status": "resolved"
+    },
+    "228c28mxv816": {
+     "end": "2026-10-29T00:53:54Z",
+     "impact": "minor",
+     "link": "https://stspg.io/q6h1mqn04xb6",
+     "name": "FIX API connectivity issues",
+     "start": "2026-10-28T22:54:52Z",
+     "status": "resolved"
+    },
+    "2h160gkfz5g9": {
+     "end": "2026-10-06T14:49:52Z",
+     "impact": "minor",
+     "link": "https://stspg.io/ckrg1ljfxltl",
+     "name": "XDC Network (XDC) Funding Delays",
+     "start": "2026-10-06T09:31:04Z",
+     "status": "resolved"
+    },
+    "4m0rscfswypx": {
+     "end": "2026-11-02T14:56:45Z",
+     "impact": "minor",
+     "link": "https://stspg.io/xf73qsnz80w9",
+     "name": "SUI (SUI) Funding Delays",
+     "start": "2026-10-26T09:39:34Z",
+     "status": "resolved"
+    },
+    "5150xhmyywwg": {
+     "end": "2026-10-07T04:29:46Z",
+     "impact": "minor",
+     "link": "https://stspg.io/bqzpnllkn9n9",
+     "name": "Onyxcoin (XCN) - Ethereum Funding Delays",
+     "start": "2026-10-06T21:38:58Z",
+     "status": "resolved"
+    },
+    "57x0r16qb3xy": {
+     "end": "2026-10-09T12:52:35Z",
+     "impact": "minor",
+     "link": "https://stspg.io/xzbpx4qdhsnp",
+     "name": "BRL PIX deposits degraded performance",
+     "start": "2026-10-09T12:50:08Z",
+     "status": "resolved"
+    },
+    "5bgdtwytzjrm": {
+     "end": "2026-10-07T05:06:45Z",
+     "impact": "minor",
+     "link": "https://stspg.io/qyqjwcjdsyt0",
+     "name": "Monero (XMR) Funding Delays",
+     "start": "2026-10-06T19:40:54Z",
+     "status": "resolved"
+    },
+    "5nc7975bbpcb": {
+     "end": "2026-09-28T09:31:39Z",
+     "impact": "minor",
+     "link": "https://stspg.io/ch13kw504k27",
+     "name": "Delays with Ethereum (ERC-20) deposits",
+     "start": "2026-09-26T14:11:43Z",
+     "status": "resolved"
+    },
+    "5q2vkrhlpg7v": {
+     "end": "2026-10-06T15:55:04Z",
+     "impact": "minor",
+     "link": "https://stspg.io/zq7t820vblq7",
+     "name": "ETH and ERC20 tokens delayed withdrawals",
+     "start": "2026-10-06T14:46:47Z",
+     "status": "resolved"
+    },
+    "5q7crrhvm677": {
+     "end": "2026-09-30T10:21:10Z",
+     "impact": "minor",
+     "link": "https://stspg.io/8vsm6wbcgvm4",
+     "name": "Hedera (HBAR) Funding Delays",
+     "start": "2026-09-29T22:25:45Z",
+     "status": "resolved"
+    },
+    "7zcy2j4hhxqz": {
+     "end": "2026-10-27T10:11:18Z",
+     "impact": "minor",
+     "link": "https://stspg.io/j50yvjychny4",
+     "name": "Polkadot (DOT) Funding Delays",
+     "start": "2026-10-26T09:55:01Z",
+     "status": "resolved"
+    },
+    "85fpq5kysq7j": {
+     "end": "2026-10-04T10:58:44Z",
+     "impact": "minor",
+     "link": "https://stspg.io/sf04w81q3rnv",
+     "name": "Aleo (ALEO) Funding Delays",
+     "start": "2026-10-02T10:31:04Z",
+     "status": "resolved"
+    },
+    "9fryrj2dy1nk": {
+     "end": "2026-10-16T15:31:59Z",
+     "impact": "minor",
+     "link": "https://stspg.io/y48qrtxb30t2",
+     "name": "Blank favorites page for Pro App and Pro Web users who used Prop trading",
+     "start": "2026-10-15T13:32:37Z",
+     "status": "resolved"
+    },
+    "9vxsl8ct8w80": {
+     "end": "2026-10-23T17:14:59Z",
+     "impact": "minor",
+     "link": "https://stspg.io/dzvjd8b2n36w",
+     "name": "SUI (SUI) Funding Delays",
+     "start": "2026-10-23T07:02:55Z",
+     "status": "resolved"
+    },
+    "9wqs32vcb6bb": {
+     "end": "2026-10-07T16:47:57Z",
+     "impact": "major",
+     "link": "https://stspg.io/x31gcfq44zpf",
+     "name": "Kraken.com degraded performance",
+     "start": "2026-10-07T16:25:50Z",
+     "status": "resolved"
+    },
+    "b1hx199lcnq8": {
+     "end": "2026-10-29T09:11:44Z",
+     "impact": "minor",
+     "link": "https://stspg.io/x3wslstp0x2r",
+     "name": "Solana (SOL) Funding Delays",
+     "start": "2026-10-29T08:47:57Z",
+     "status": "resolved"
+    },
+    "by3j8r6q39ld": {
+     "end": "2026-11-02T15:05:35Z",
+     "impact": "minor",
+     "link": "https://stspg.io/fm0n8q11k450",
+     "name": "Initia (INIT) Deposits and Withdrawals Temporarily Paused",
+     "start": "2026-10-23T16:15:07Z",
+     "status": "resolved"
+    },
+    "cczg3gmlv5yl": {
+     "end": "2026-10-10T17:21:49Z",
+     "impact": "minor",
+     "link": "https://stspg.io/r81s1mpvvck1",
+     "name": "Sonic (S) Funding Delays",
+     "start": "2026-10-06T13:09:02Z",
+     "status": "resolved"
+    },
+    "cspb72vgwzqj": {
+     "end": "2026-10-01T14:26:19Z",
+     "impact": "minor",
+     "link": "https://stspg.io/1b5lkgmhq13q",
+     "name": "Futures Market Data Delays",
+     "start": "2026-10-01T13:19:15Z",
+     "status": "resolved"
+    },
+    "d176rjbxrs4w": {
+     "end": "2026-10-26T07:53:00Z",
+     "impact": "minor",
+     "link": "https://stspg.io/2qr30fwhm6f2",
+     "name": "Tezos (XTZ) Funding Delays",
+     "start": "2026-10-22T17:04:43Z",
+     "status": "resolved"
+    },
+    "dmkh3hsd5wz1": {
+     "end": "2026-10-15T12:03:43Z",
+     "impact": "minor",
+     "link": "https://stspg.io/71m5khp6bm49",
+     "name": "USDT withdrawal delays on Ethereum",
+     "start": "2026-10-15T06:25:50Z",
+     "status": "resolved"
+    },
+    "drgdcf17cb9j": {
+     "end": "2026-10-31T04:43:11Z",
+     "impact": "minor",
+     "link": "https://stspg.io/1993vx4rnk41",
+     "name": "Flow (FLOW) Funding Delays",
+     "start": "2026-10-29T22:20:21Z",
+     "status": "resolved"
+    },
+    "dxrwk2zpgp1w": {
+     "end": "2026-10-23T18:54:10Z",
+     "impact": "minor",
+     "link": "https://stspg.io/75bgmdtdqs34",
+     "name": "Solana (SOL) Network Funding Delays",
+     "start": "2026-10-23T15:00:44Z",
+     "status": "resolved"
+    },
+    "jqnpfb546hy0": {
+     "end": "2026-10-01T15:05:48Z",
+     "impact": "minor",
+     "link": "https://stspg.io/0rm8gpxffxw0",
+     "name": "MultiversX (EGLD) Funding and Trading Paused",
+     "start": "2026-09-16T13:58:11Z",
+     "status": "resolved"
+    },
+    "ld19hs76nxnz": {
+     "end": "2026-10-28T15:55:33Z",
+     "impact": "minor",
+     "link": "https://stspg.io/kvhlgzz8216w",
+     "name": "Plasma (XPL) Funding Delays",
+     "start": "2026-10-27T15:34:55Z",
+     "status": "resolved"
+    },
+    "lk3d8t3b26nb": {
+     "end": "2026-10-15T11:09:22Z",
+     "impact": "minor",
+     "link": "https://stspg.io/gnd335x539f4",
+     "name": "Futures charts may display outdated data",
+     "start": "2026-10-13T19:47:38Z",
+     "status": "resolved"
+    },
+    "lz7487sxw2lx": {
+     "end": "2026-10-13T13:41:13Z",
+     "impact": "minor",
+     "link": "https://stspg.io/tx6tft6bjvqf",
+     "name": "MultiversX (EGLD) Funding paused",
+     "start": "2026-10-13T10:25:11Z",
+     "status": "resolved"
+    },
+    "mq8vvs5hdnbr": {
+     "end": "2026-10-08T20:53:34Z",
+     "impact": "minor",
+     "link": "https://stspg.io/vt5ps20vv4ym",
+     "name": "EUR and GBP deposits and withdrawals may be delayed",
+     "start": "2026-10-08T19:36:53Z",
+     "status": "resolved"
+    },
+    "nd0pnws6w75t": {
+     "end": "2026-10-10T12:49:56Z",
+     "impact": "minor",
+     "link": "https://stspg.io/63pg6nqrtcy5",
+     "name": "Decred (DCR) deposits temporarily unavailable",
+     "start": "2026-10-09T15:18:54Z",
+     "status": "resolved"
+    },
+    "pq7m18tp02jx": {
+     "end": "2026-10-30T03:41:45Z",
+     "impact": "none",
+     "link": "https://stspg.io/0m57t0zjt7sl",
+     "name": "Delayed Earn rewards payouts",
+     "start": "2026-10-30T03:09:39Z",
+     "status": "resolved"
+    },
+    "pthz2yr4d6tx": {
+     "end": "2026-10-02T11:42:16Z",
+     "impact": "minor",
+     "link": "https://stspg.io/tjsynyzw5rt5",
+     "name": "Sui (SUI) Funding Delays",
+     "start": "2026-10-02T10:35:17Z",
+     "status": "resolved"
+    },
+    "py0r8hp953gm": {
+     "end": "2026-10-06T09:41:50Z",
+     "impact": "minor",
+     "link": "https://stspg.io/45zwfj4xnvgd",
+     "name": "Cosmos and Neutron blockchain Funding Halted",
+     "start": "2026-09-22T14:11:47Z",
+     "status": "resolved"
+    },
+    "qfvkdjdtq9c4": {
+     "end": "2026-10-10T16:16:52Z",
+     "impact": "minor",
+     "link": "https://stspg.io/vn579bzjyvpr",
+     "name": "Incorrect Margin information and Spot balances displayed in APP and Web.",
+     "start": "2026-10-09T10:07:28Z",
+     "status": "resolved"
+    },
+    "qrl60y02xpb3": {
+     "end": "2026-10-29T17:01:26Z",
+     "impact": "minor",
+     "link": "https://stspg.io/jk7sglwcm1nr",
+     "name": "Argentine Peso (ARS), Colombian Peso (COP), & Mexican Peso (MXN) Funding Delays",
+     "start": "2026-10-29T16:21:05Z",
+     "status": "resolved"
+    },
+    "qtpjmnnsrbfp": {
+     "end": "2026-10-19T18:34:18Z",
+     "impact": "minor",
+     "link": "https://stspg.io/b31gv4wzzwgb",
+     "name": "Conflux (CFX) Deposit Delays",
+     "start": "2026-10-16T08:12:19Z",
+     "status": "resolved"
+    },
+    "r2s4zf1wsdxf": {
+     "end": "2026-10-15T10:28:55Z",
+     "impact": "minor",
+     "link": "https://stspg.io/gqw9qrbwy6gy",
+     "name": "Polygon (POL), TRON (TRX) and Optimism (OP) Funding Delays",
+     "start": "2026-10-15T09:39:50Z",
+     "status": "resolved"
+    },
+    "rgz6cwvh3l59": {
+     "end": "2026-10-13T22:33:50Z",
+     "impact": "minor",
+     "link": "https://stspg.io/hdwvrpqvnzc6",
+     "name": "Krak Card & Instant Buy Transactions Declined",
+     "start": "2026-10-13T15:58:29Z",
+     "status": "resolved"
+    },
+    "rmg5hs95fhbj": {
+     "end": "2026-10-13T16:26:08Z",
+     "impact": "minor",
+     "link": "https://stspg.io/x5k996zmzg8s",
+     "name": "Cross-Exchange Transfer Delays",
+     "start": "2026-10-13T15:55:55Z",
+     "status": "resolved"
+    },
+    "sgj36qwjgm13": {
+     "end": "2026-10-26T15:45:12Z",
+     "impact": "minor",
+     "link": "https://stspg.io/4mthpr6xlwjh",
+     "name": "Bitcoin (BTC) funding delays",
+     "start": "2026-10-26T15:06:56Z",
+     "status": "resolved"
+    },
+    "sp42kzckjzsy": {
+     "end": "2026-10-24T17:36:02Z",
+     "impact": "minor",
+     "link": "https://stspg.io/cfnxk3hfdcdy",
+     "name": "Australian Dollar (AUD) - Domestic Funding Delays",
+     "start": "2026-10-24T14:56:27Z",
+     "status": "resolved"
+    },
+    "t0051spcf05s": {
+     "end": "2026-10-13T13:11:19Z",
+     "impact": "minor",
+     "link": "https://stspg.io/rjf1d1kkks9q",
+     "name": "Futures Trading Engine degraded performance",
+     "start": "2026-10-13T13:08:12Z",
+     "status": "resolved"
+    },
+    "xwrjp842w6nx": {
+     "end": "2026-09-28T11:58:34Z",
+     "impact": "minor",
+     "link": "https://stspg.io/m558rhmbtqn0",
+     "name": "Krak Card degraded performance.",
+     "start": "2026-09-22T15:30:21Z",
+     "status": "resolved"
+    },
+    "yn2b73h2v6p8": {
+     "end": "2026-10-07T12:18:57Z",
+     "impact": "minor",
+     "link": "https://stspg.io/tzf008xc93xb",
+     "name": "Krak Card API outage (EEA/UK)",
+     "start": "2026-10-07T04:22:58Z",
+     "status": "resolved"
+    },
+    "zk4jndfr6sr3": {
+     "end": "2026-09-30T14:37:48Z",
+     "impact": "minor",
+     "link": "https://stspg.io/fwzcx908rcgv",
+     "name": "FIX API order placement issues for recently listed markets",
+     "start": "2026-09-30T14:28:22Z",
+     "status": "resolved"
+    },
+    "zkqc9db292h5": {
+     "end": "2026-10-30T03:42:38Z",
+     "impact": "minor",
+     "link": "https://stspg.io/93pf0f9z61yq",
+     "name": "Spot Exchange Connectivity Issues - Web, Mobile & API (Rest & Websockets)",
+     "start": "2026-10-30T02:42:59Z",
+     "status": "resolved"
+    }
+   },
+   "indicator": "minor",
+   "name": "Kraken",
+   "since": "2026-11-03T16:16:57Z"
+  },
+  "status.openai.com": {
+   "coverage_from": "2000-01-01T00:00:00Z",
+   "description": "All Systems Operational",
+   "incident": "",
+   "incidents": {
+    "01M4GV1M2A3K38T73JCVCD9G0R": {
+     "end": "2026-10-12T16:02:47Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M4GV1M2A3K38T73JCVCD9G0R",
+     "name": "Delayed Costs data in the Compliance API",
+     "start": "2026-10-09T17:23:18Z",
+     "status": "resolved"
+    },
+    "01M4H7FKXDA425TDNP2CRGEYA3": {
+     "end": "2026-10-10T00:26:44Z",
+     "impact": "major",
+     "link": "https://status.openai.com/incidents/01M4H7FKXDA425TDNP2CRGEYA3",
+     "name": "Some ChatGPT content may be unavailable on Android",
+     "start": "2026-10-09T21:00:39Z",
+     "status": "resolved"
+    },
+    "01M4HA7BCCXVHTR5DCYMSBQF2H": {
+     "end": "2026-10-09T23:26:59Z",
+     "impact": "major",
+     "link": "https://status.openai.com/incidents/01M4HA7BCCXVHTR5DCYMSBQF2H",
+     "name": "Workspace admins may be unable to manage plugins",
+     "start": "2026-10-09T21:48:34Z",
+     "status": "resolved"
+    },
+    "01M4T4ZCM54D3ZPTQXRSWFG0XS": {
+     "end": "2026-10-13T16:36:42Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M4T4ZCM54D3ZPTQXRSWFG0XS",
+     "name": "Degraded performance in GPT-6.1 Sol Codex and Work mode",
+     "start": "2026-10-13T08:10:00Z",
+     "status": "resolved"
+    },
+    "01M4WKPE1EY48ZB4RZJ80YH7ES": {
+     "end": "2026-10-14T09:53:11Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M4WKPE1EY48ZB4RZJ80YH7ES",
+     "name": "Degraded performance in Codex and ChatGPT Work",
+     "start": "2026-10-14T07:05:44Z",
+     "status": "resolved"
+    },
+    "01M4WYPP5QA0CJ3JV76KH285K8": {
+     "end": "2026-10-14T10:58:07Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M4WYPP5QA0CJ3JV76KH285K8",
+     "name": "Limited availability on gpt-image-2.5-flare and gpt-image-2.5-sunburst",
+     "start": "2026-10-14T10:18:07Z",
+     "status": "resolved"
+    },
+    "01M4XNQX7C6RCBNGX9H711WFSG": {
+     "end": "2026-10-16T10:44:58Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M4XNQX7C6RCBNGX9H711WFSG",
+     "name": "Delayed Costs data in the Compliance API",
+     "start": "2026-10-14T17:00:44Z",
+     "status": "resolved"
+    },
+    "01M506BA4XRSWH7THR53HQGN3Z": {
+     "end": "2026-10-15T18:56:00Z",
+     "impact": "major",
+     "link": "https://status.openai.com/incidents/01M506BA4XRSWH7THR53HQGN3Z",
+     "name": "Widespread feature degradation",
+     "start": "2026-10-15T16:29:26Z",
+     "status": "resolved"
+    },
+    "01M5A5S1ATN3QB2WCHQ3VDZC81": {
+     "end": "2026-10-19T14:14:03Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M5A5S1ATN3QB2WCHQ3VDZC81",
+     "name": "File Download errors",
+     "start": "2026-10-19T13:31:52Z",
+     "status": "resolved"
+    },
+    "01M5E4G39TD1BW1QWHZG6RFA5H": {
+     "end": "2026-10-21T03:28:00Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M5E4G39TD1BW1QWHZG6RFA5H",
+     "name": "Degraded performance in ChatGPT, Codex, and APIs",
+     "start": "2026-10-21T02:26:28Z",
+     "status": "resolved"
+    },
+    "01M5FD63HHDRPQPM5YMQWJ5HTN": {
+     "end": "2026-10-21T19:34:58Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M5FD63HHDRPQPM5YMQWJ5HTN",
+     "name": "Elevated FedRAMP API error rates for Astra and Sol",
+     "start": "2026-10-21T14:17:32Z",
+     "status": "resolved"
+    },
+    "01M5FHKHPQJMSHCE2B2WDPZW2N": {
+     "end": "2026-10-21T16:44:09Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M5FHKHPQJMSHCE2B2WDPZW2N",
+     "name": "Elevated error rates for gpt-5.6-luna API requests",
+     "start": "2026-10-21T15:34:47Z",
+     "status": "resolved"
+    },
+    "01M5G9QQ9V4CYDWFRYF9BWZ5GG": {
+     "end": "2026-10-20T17:35:00Z",
+     "impact": "major",
+     "link": "https://status.openai.com/incidents/01M5G9QQ9V4CYDWFRYF9BWZ5GG",
+     "name": "Authentication errors for some users",
+     "start": "2026-10-21T22:36:29Z",
+     "status": "resolved"
+    },
+    "01M5GPE9C4E19HE461P8JAMYXD": {
+     "end": "2026-10-22T08:50:43Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M5GPE9C4E19HE461P8JAMYXD",
+     "name": "Elevated ChatGPT conversation and Responses API errors",
+     "start": "2026-10-22T02:18:32Z",
+     "status": "resolved"
+    },
+    "01M5JF8DR3EGQJNTXPZ24AKX2G": {
+     "end": "2026-10-22T20:55:48Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M5JF8DR3EGQJNTXPZ24AKX2G",
+     "name": "Degraded Performance of Dots on Enterprise",
+     "start": "2026-10-22T18:51:28Z",
+     "status": "resolved"
+    },
+    "01M5JHVJVC8WAXB4WRYFMKG6HP": {
+     "end": "2026-10-23T00:07:55Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M5JHVJVC8WAXB4WRYFMKG6HP",
+     "name": "New Ad Accounts failing to provision admins",
+     "start": "2026-10-22T19:36:53Z",
+     "status": "resolved"
+    },
+    "01M5KDJ4079XQTZDSRX40NMN6H": {
+     "end": "2026-10-23T05:58:06Z",
+     "impact": "none",
+     "link": "https://status.openai.com/incidents/01M5KDJ4079XQTZDSRX40NMN6H",
+     "name": "Delays in customer support responses",
+     "start": "2026-10-23T03:41:03Z",
+     "status": "resolved"
+    },
+    "01M5NAR5GZC5M7D0S7AQ6CGEEN": {
+     "end": "2026-10-23T22:02:57Z",
+     "impact": "none",
+     "link": "https://status.openai.com/incidents/01M5NAR5GZC5M7D0S7AQ6CGEEN",
+     "name": "Help Center Chat Support Degraded",
+     "start": "2026-10-23T21:30:25Z",
+     "status": "resolved"
+    },
+    "01M5NFF94XCJ6CGTD4S78A9BEB": {
+     "end": "2026-10-23T23:43:22Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M5NFF94XCJ6CGTD4S78A9BEB",
+     "name": "Degraded experience with ChatGPT app connections using CIMD",
+     "start": "2026-10-23T22:52:56Z",
+     "status": "resolved"
+    },
+    "01M5WPZTT0385GMEV1353ZC4AM": {
+     "end": "2026-10-26T18:30:18Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M5WPZTT0385GMEV1353ZC4AM",
+     "name": "Elevated error rates for Ads POST requests",
+     "start": "2026-10-26T18:19:00Z",
+     "status": "resolved"
+    },
+    "01M5Y60NQGGN514EB3943V94EN": {
+     "end": "2026-10-27T08:30:00Z",
+     "impact": "none",
+     "link": "https://status.openai.com/incidents/01M5Y60NQGGN514EB3943V94EN",
+     "name": "Elevated error rates for most hosted Code Reviews and Security Reviews on private GitHub repositories",
+     "start": "2026-10-27T08:00:50Z",
+     "status": "resolved"
+    },
+    "01M5YY4A3TQETEQ53DVSK8SW10": {
+     "end": "2026-10-27T16:20:06Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M5YY4A3TQETEQ53DVSK8SW10",
+     "name": "6.1 Sol Degraded Model Performance",
+     "start": "2026-10-27T15:02:15Z",
+     "status": "resolved"
+    },
+    "01M66KSDH67V5BQ73PE8AD2W8S": {
+     "end": "2026-10-30T18:36:55Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M66KSDH67V5BQ73PE8AD2W8S",
+     "name": "Elevated errors for GPT Image 2 API image edits",
+     "start": "2026-10-30T14:35:28Z",
+     "status": "resolved"
+    },
+    "01M6754SR14HCQ3E9FX426E2N7": {
+     "end": "2026-10-30T21:14:12Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M6754SR14HCQ3E9FX426E2N7",
+     "name": "Elevated errors with search in Dots, ChatGPT Work, and certain ChatGPT thinking experiences",
+     "start": "2026-10-30T19:38:47Z",
+     "status": "resolved"
+    },
+    "01M6FDZ89W4PKDS19K496J307G": {
+     "end": "2026-11-03T05:39:36Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M6FDZ89W4PKDS19K496J307G",
+     "name": "File upload errors in ChatGPT",
+     "start": "2026-11-03T00:46:58Z",
+     "status": "resolved"
+    }
+   },
+   "indicator": "none",
+   "name": "OpenAI",
+   "since": "2026-11-03T16:16:57Z"
+  },
+  "status.solana.com": {
+   "coverage_from": "2000-01-01T00:00:00Z",
+   "description": "All Systems Operational",
+   "incident": "",
+   "incidents": {},
+   "indicator": "none",
+   "name": "Solana",
+   "since": "2026-11-03T16:16:57Z"
+  },
+  "status.zoom.us": {
+   "coverage_from": "2026-09-03T05:39:07Z",
+   "description": "All Systems Operational",
+   "incident": "",
+   "incidents": {
+    "0hgqwjz0lzwf": {
+     "end": "2026-09-10T17:06:28Z",
+     "impact": "none",
+     "link": "https://stspg.io/pnp88p830fqj",
+     "name": "Service degradation affecting subset of live online meeting translation in Canada region.",
+     "start": "2026-09-10T16:57:37Z",
+     "status": "resolved"
+    },
+    "0w2z4s8wp36n": {
+     "end": "2026-09-24T01:47:25Z",
+     "impact": "minor",
+     "link": "https://stspg.io/yl9ts716fxkg",
+     "name": "Service Degradation Affecting Live Transcription Services.",
+     "start": "2026-09-23T23:43:00Z",
+     "status": "resolved"
+    },
+    "16ybxfmc0k5c": {
+     "end": "2026-09-10T18:38:51Z",
+     "impact": "none",
+     "link": "https://stspg.io/j6b9zqzcrk5m",
+     "name": "Service degradation affecting Zoom Meeting summary, and Phone call summary in the US region.",
+     "start": "2026-09-10T18:22:50Z",
+     "status": "resolved"
+    },
+    "1f92zl019hrl": {
+     "end": "2026-10-14T09:44:25Z",
+     "impact": "none",
+     "link": "https://stspg.io/7j0d2jvn7hx6",
+     "name": "Service Degradation Affected Sandbox Creation in ZoomMate",
+     "start": "2026-10-14T09:39:17Z",
+     "status": "resolved"
+    },
+    "27cv8n1w352d": {
+     "end": "2026-10-21T16:25:01Z",
+     "impact": "minor",
+     "link": "https://stspg.io/qq5lbtd49j77",
+     "name": "Service Degradation Affecting Zoom Learning Webpage",
+     "start": "2026-10-21T14:43:51Z",
+     "status": "resolved"
+    },
+    "2v93lly7z5t6": {
+     "end": "2026-10-07T03:42:30Z",
+     "impact": "none",
+     "link": "https://stspg.io/cy3fcgjhf9g1",
+     "name": "Service Degradation Affected Inbound and Outbound Calls for Zoom Contact Center",
+     "start": "2026-10-07T03:30:23Z",
+     "status": "resolved"
+    },
+    "2zvhxwkw7j63": {
+     "end": "2026-09-03T14:00:48Z",
+     "impact": "none",
+     "link": "https://stspg.io/yhcywgp2hss5",
+     "name": "Service Degradation Affecting Zoom Phone and Contact Center Audio in US Region",
+     "start": "2026-09-03T13:42:21Z",
+     "status": "resolved"
+    },
+    "5bxhmvy9byj5": {
+     "end": "2026-10-12T11:20:51Z",
+     "impact": "none",
+     "link": "https://stspg.io/qpwjwckn00wm",
+     "name": "Service degradation affecting Zoom AI Companion in US region",
+     "start": "2026-10-12T11:09:38Z",
+     "status": "resolved"
+    },
+    "5xcd1035bxmw": {
+     "end": "2026-09-30T01:20:41Z",
+     "impact": "maintenance",
+     "link": "https://stspg.io/9pzhzmf13rs4",
+     "name": "Service Degradation Affecting Zoom Phone in the EU01 cluster.",
+     "start": "2026-09-30T01:07:06Z",
+     "status": "resolved"
+    },
+    "61pdlhyvzb1j": {
+     "end": "2026-10-05T22:21:57Z",
+     "impact": "minor",
+     "link": "https://stspg.io/1f5pxbhqkzjp",
+     "name": "Service Degradation Affecting ZoomMate",
+     "start": "2026-10-05T21:57:07Z",
+     "status": "resolved"
+    },
+    "651n9kct43df": {
+     "end": "2026-10-13T16:22:43Z",
+     "impact": "none",
+     "link": "https://stspg.io/5xfllbgtmb1y",
+     "name": "Service degradation affecting Zoom Meeting API in US region",
+     "start": "2026-10-13T09:32:46Z",
+     "status": "resolved"
+    },
+    "6kggw3z5ht7k": {
+     "end": "2026-10-17T06:56:58Z",
+     "impact": "minor",
+     "link": "https://stspg.io/7yj0741j4bx9",
+     "name": "Service Degradation Affecting Zoom Chat Compose and SMS Summarisation with AI Companion",
+     "start": "2026-10-17T06:10:45Z",
+     "status": "resolved"
+    },
+    "7141vhn0mb9s": {
+     "end": "2026-09-24T13:42:38Z",
+     "impact": "minor",
+     "link": "https://stspg.io/q2m1jkbvr4dg",
+     "name": "Service Degradation Affecting Zoom Phone and Zoom Contact Center Inbound calls in India",
+     "start": "2026-09-24T11:19:15Z",
+     "status": "resolved"
+    },
+    "7j0c0s1k4cpv": {
+     "end": "2026-10-14T19:58:30Z",
+     "impact": "minor",
+     "link": "https://stspg.io/rcc26f8fnwgf",
+     "name": "Service Degradation Affecting Zoom Clips",
+     "start": "2026-10-14T00:20:29Z",
+     "status": "resolved"
+    },
+    "8htxnr17zkfz": {
+     "end": "2026-10-07T03:58:27Z",
+     "impact": "minor",
+     "link": "https://stspg.io/9prfd6p22by0",
+     "name": "Service Degradation Affecting Zoom Calendar",
+     "start": "2026-10-07T02:41:42Z",
+     "status": "resolved"
+    },
+    "8jrvd62hmxl2": {
+     "end": "2026-09-28T23:35:55Z",
+     "impact": "minor",
+     "link": "https://stspg.io/5qlzwcr61g78",
+     "name": "Service Degradation Affecting Zoom Canvas, My Notes, Sheets, In App Purchases, Billing Hub, and Clips.",
+     "start": "2026-09-28T22:15:44Z",
+     "status": "resolved"
+    },
+    "97hk3qsyf1hv": {
+     "end": "2026-10-19T00:31:03Z",
+     "impact": "none",
+     "link": "https://stspg.io/n75bxh1c6xdx",
+     "name": "Service Degradation Affecting ZP SMS Australia Mobile Numbers",
+     "start": "2026-10-19T00:14:34Z",
+     "status": "resolved"
+    },
+    "9xdk3ntx37pr": {
+     "end": "2026-10-07T04:47:08Z",
+     "impact": "minor",
+     "link": "https://stspg.io/7v4g7cgtddvk",
+     "name": "Service Degradation Affecting Zoom Slides Generation in US Region",
+     "start": "2026-10-07T02:08:18Z",
+     "status": "resolved"
+    },
+    "b9qd1hcw1zqk": {
+     "end": "2026-09-22T17:57:12Z",
+     "impact": "minor",
+     "link": "https://stspg.io/j90jkyg5gqz3",
+     "name": "Service Degradation Affecting Apple Login for Zoom Sign-in.",
+     "start": "2026-09-21T18:17:47Z",
+     "status": "resolved"
+    },
+    "bk0hqxnhy3w8": {
+     "end": "2026-10-20T01:18:16Z",
+     "impact": "minor",
+     "link": "https://stspg.io/b071sw22zjsd",
+     "name": "Service Degradation Affecting Meeting Summaries Via Email.",
+     "start": "2026-10-19T23:27:43Z",
+     "status": "resolved"
+    },
+    "blhq9k8p1tl1": {
+     "end": "2026-10-10T09:10:07Z",
+     "impact": "none",
+     "link": "https://stspg.io/0zzy0ctgl74w",
+     "name": "Service Degradation Affecting File Uploads and Downloads in Zoom Chat",
+     "start": "2026-10-10T08:54:23Z",
+     "status": "resolved"
+    },
+    "bx7sj77rnyd5": {
+     "end": "2026-09-21T16:33:11Z",
+     "impact": "minor",
+     "link": "https://stspg.io/zm28f1d8v6dt",
+     "name": "Service Degradation Affecting Zoom Virtual Agent and Zoom Contact Center in US region",
+     "start": "2026-09-21T15:45:49Z",
+     "status": "resolved"
+    },
+    "c9jxqdxh9g8q": {
+     "end": "2026-09-06T05:20:33Z",
+     "impact": "minor",
+     "link": "https://stspg.io/k8ngxmz4qbvn",
+     "name": "Service Degradation Affecting Zoom AI Companion in US Region",
+     "start": "2026-09-06T03:57:44Z",
+     "status": "resolved"
+    },
+    "chd978s7g6p9": {
+     "end": "2026-10-29T07:06:53Z",
+     "impact": "minor",
+     "link": "https://stspg.io/3wdnhf87gqwg",
+     "name": "Service Degradation Affecting the Evaluations Acknowledge Button in Zoom Quality Management in the US Region",
+     "start": "2026-10-28T14:31:21Z",
+     "status": "resolved"
+    },
+    "dl0gnrg0pz68": {
+     "end": "2026-10-23T17:35:00Z",
+     "impact": "minor",
+     "link": "https://stspg.io/813b5nbpsxdf",
+     "name": "Service Degradation Affecting Zoom Meetings Services in the US.",
+     "start": "2026-10-22T19:16:27Z",
+     "status": "resolved"
+    },
+    "dtzdcfnh2j6w": {
+     "end": "2026-10-14T17:19:14Z",
+     "impact": "none",
+     "link": "https://stspg.io/lj5xrctb9xrx",
+     "name": "Service degradation affected Zoom AI Companion in US region",
+     "start": "2026-10-14T17:03:18Z",
+     "status": "resolved"
+    },
+    "fypk8gvjj87k": {
+     "end": "2026-09-03T05:49:05Z",
+     "impact": "none",
+     "link": "https://stspg.io/ypw19k1pxscg",
+     "name": "Service degradation with In-Meeting summary for Indonesian language in the Singapore region",
+     "start": "2026-09-03T05:39:07Z",
+     "status": "resolved"
+    },
+    "g4m0gcb6hq9f": {
+     "end": "2026-09-15T18:36:33Z",
+     "impact": "none",
+     "link": "https://stspg.io/ltwzdzwtjqcg",
+     "name": "Service Degradation Affecting Zoom Whiteboard",
+     "start": "2026-09-15T18:22:00Z",
+     "status": "resolved"
+    },
+    "gbc9rjs7l531": {
+     "end": "2026-09-18T23:03:24Z",
+     "impact": "none",
+     "link": "https://stspg.io/p29c3gcmdptt",
+     "name": "Service Degradation Affecting ZoomMate",
+     "start": "2026-09-18T22:45:28Z",
+     "status": "resolved"
+    },
+    "gv1zrhmzdw9m": {
+     "end": "2026-10-23T16:48:11Z",
+     "impact": "minor",
+     "link": "https://stspg.io/vr1zl6mmnhhw",
+     "name": "Service Degradation Affecting Multiple Zoom Services",
+     "start": "2026-10-23T16:01:56Z",
+     "status": "resolved"
+    },
+    "jbl3clyk91xs": {
+     "end": "2026-10-19T23:31:10Z",
+     "impact": "minor",
+     "link": "https://stspg.io/n49f0v00l95f",
+     "name": "Service Degradation Affecting Zoom Website in UK region",
+     "start": "2026-10-19T13:32:56Z",
+     "status": "resolved"
+    },
+    "jywjp357rlp8": {
+     "end": "2026-09-03T22:19:07Z",
+     "impact": "none",
+     "link": "https://stspg.io/9rnhnkdk1njf",
+     "name": "Service Degradation Affecting Zoom SMS delays in North America.",
+     "start": "2026-09-03T22:11:31Z",
+     "status": "resolved"
+    },
+    "jyxf96kz3q42": {
+     "end": "2026-10-05T00:41:25Z",
+     "impact": "minor",
+     "link": "https://stspg.io/1mzjn9tgd3dc",
+     "name": "Service Degradation Affecting Zoom Rooms Management and Workspaces Management in SA01.",
+     "start": "2026-10-04T23:19:07Z",
+     "status": "resolved"
+    },
+    "jzmg28568r94": {
+     "end": "2026-10-01T17:53:34Z",
+     "impact": "none",
+     "link": "https://stspg.io/qscfnkz1qqfm",
+     "name": "Service Degradation Affected Incoming and Outgoing Calls of Zoom Contact Center, Virtual Agents, Mail, Calendar, Meetings, Cloud Meeting Recordings, Webinars and Events",
+     "start": "2026-10-01T16:08:55Z",
+     "status": "resolved"
+    },
+    "k078znmg55zj": {
+     "end": "2026-09-10T00:12:53Z",
+     "impact": "none",
+     "link": "https://stspg.io/601q96h5gv6m",
+     "name": "Service Degradation Affecting Zoom Services",
+     "start": "2026-09-09T01:09:45Z",
+     "status": "resolved"
+    },
+    "k4l03tnw5wwr": {
+     "end": "2026-09-04T05:35:57Z",
+     "impact": "none",
+     "link": "https://stspg.io/9bd10dj5yyrb",
+     "name": "Service Degradation Affecting Zoom Phone Audio in Japan",
+     "start": "2026-09-04T05:23:13Z",
+     "status": "resolved"
+    },
+    "m97ll3p8294p": {
+     "end": "2026-10-01T16:21:53Z",
+     "impact": "minor",
+     "link": "https://stspg.io/sn8rq0f3vgdq",
+     "name": "Service Degradation Affecting Zoom for Google Workspace Add-On",
+     "start": "2026-10-01T11:52:48Z",
+     "status": "resolved"
+    },
+    "mccmbk9ldg23": {
+     "end": "2026-09-11T04:08:08Z",
+     "impact": "none",
+     "link": "https://stspg.io/78m0y9r8fdmb",
+     "name": "Service Degradation Affecting Zoom Phone, Zoom Contact Center and Zoom Meetings in Europe",
+     "start": "2026-09-10T15:53:26Z",
+     "status": "resolved"
+    },
+    "pxxs3nsvn2rx": {
+     "end": "2026-10-10T04:41:24Z",
+     "impact": "minor",
+     "link": "https://stspg.io/4cpggx38p4g2",
+     "name": "Service Degradation Affecting Customer Using Polycom Devices Going Offline",
+     "start": "2026-09-25T17:45:29Z",
+     "status": "resolved"
+    },
+    "q8n9qzvl5p5x": {
+     "end": "2026-10-03T18:43:55Z",
+     "impact": "minor",
+     "link": "https://stspg.io/rp1z0hg3q78r",
+     "name": "Service degradation affecting Developer Documentation Website",
+     "start": "2026-10-03T16:49:15Z",
+     "status": "resolved"
+    },
+    "q9j1vyvhkymw": {
+     "end": "2026-10-09T14:29:33Z",
+     "impact": "none",
+     "link": "https://stspg.io/vwp06p0ncd1x",
+     "name": "Service Degradation Affecting Zoom Phone and Zoom Contact Center PCI Integration in North America",
+     "start": "2026-10-09T14:17:53Z",
+     "status": "resolved"
+    },
+    "tqm0xyzlhqr5": {
+     "end": "2026-10-04T08:20:34Z",
+     "impact": "none",
+     "link": "https://stspg.io/0hbst70j3ckv",
+     "name": "Service Degradation Affected Inbound and Outbound Calls of Zoom Phone and Contact Center in North America Region",
+     "start": "2026-10-04T08:05:44Z",
+     "status": "resolved"
+    },
+    "vltmv6hrt53l": {
+     "end": "2026-09-04T17:55:04Z",
+     "impact": "none",
+     "link": "https://stspg.io/56nv5j3rgzfn",
+     "name": "Service Degradation Affecting Email in Zoom Contact Center Services in North America",
+     "start": "2026-09-04T17:46:02Z",
+     "status": "resolved"
+    },
+    "w6yw2bsy2sv5": {
+     "end": "2026-09-26T07:03:23Z",
+     "impact": "none",
+     "link": "https://stspg.io/hg6t0sj5dqpg",
+     "name": "An unintended pop-up message appear for users in US and Europe regions during initial invocation of Zoom AI\u2019s Catch Me Up feature",
+     "start": "2026-09-25T09:20:34Z",
+     "status": "resolved"
+    },
+    "w91tx12w9scz": {
+     "end": "2026-10-12T00:42:19Z",
+     "impact": "minor",
+     "link": "https://stspg.io/696czlyjfngy",
+     "name": "Service Degradation Affecting Zoom Scheduler.",
+     "start": "2026-10-11T22:29:02Z",
+     "status": "resolved"
+    },
+    "xfcfwmvq698k": {
+     "end": "2026-09-23T02:16:38Z",
+     "impact": "none",
+     "link": "https://stspg.io/99jd3fpqyn4j",
+     "name": "Service Degradation Affecting Zoom Tasks in US Region.",
+     "start": "2026-09-23T01:55:36Z",
+     "status": "resolved"
+    },
+    "xp0ql5vdl4s3": {
+     "end": "2026-09-24T21:57:33Z",
+     "impact": "minor",
+     "link": "https://stspg.io/m8bvpzdcvcjd",
+     "name": "Service Degradation Affecting Live Transcription Services.",
+     "start": "2026-09-24T15:47:39Z",
+     "status": "resolved"
+    },
+    "xxp0hsz2qxtn": {
+     "end": "2026-09-22T10:32:10Z",
+     "impact": "none",
+     "link": "https://stspg.io/m6mppqwpz6qt",
+     "name": "Service degradation affecting comment and attachment features in Zoom Canvas in US region.",
+     "start": "2026-09-22T10:19:04Z",
+     "status": "resolved"
+    },
+    "y4b9mvr00vgw": {
+     "end": "2026-09-03T11:35:50Z",
+     "impact": "none",
+     "link": "https://stspg.io/jzqz8w2b45lc",
+     "name": "Service Degradation Affecting Zoom Phone and Contact Center Audio in Europe Region",
+     "start": "2026-09-03T11:15:59Z",
+     "status": "resolved"
+    },
+    "ytbj8471t5mg": {
+     "end": "2026-09-16T04:35:49Z",
+     "impact": "minor",
+     "link": "https://stspg.io/wcdfkn8d887l",
+     "name": "Service Degradation Affecting Zoom Phone Outbound Calls in China Region",
+     "start": "2026-09-16T04:00:15Z",
+     "status": "resolved"
+    }
+   },
+   "indicator": "none",
+   "name": "Zoom",
+   "since": "2026-11-03T16:16:57Z"
+  },
+  "www.cloudflarestatus.com": {
+   "coverage_from": "2026-08-27T18:46:19Z",
+   "description": "Partial System Outage",
+   "incident": "Increased Durable Object Errors in the Dallas, TX US region",
+   "incidents": {
+    "03gc4o049emd": {
+     "end": "2026-10-27T17:09:41Z",
+     "impact": "none",
+     "link": "https://www.cloudflarestatus.com/incidents/03gc4o049emd",
+     "name": "Issues with AI Security for Apps",
+     "start": "2026-10-27T16:31:00Z",
+     "status": "resolved"
+    },
+    "10m2bxjztzwh": {
+     "end": "2026-10-29T16:50:03Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/10m2bxjztzwh",
+     "name": "Increased Errors for Durable Objects and Downstream Services in Eastern North America (ENAM)",
+     "start": "2026-10-29T16:36:48Z",
+     "status": "resolved"
+    },
+    "2eno8w1fk27j": {
+     "end": "2026-10-27T12:55:24Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/2eno8w1fk27j",
+     "name": "We are seeing some customers having issues with Workers Builds",
+     "start": "2026-10-27T11:38:53Z",
+     "status": "resolved"
+    },
+    "2xiv8fdhk0bh": {
+     "end": "2026-10-30T03:48:59Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/2xiv8fdhk0bh",
+     "name": "Increased Errors for Browser Run",
+     "start": "2026-10-30T02:41:48Z",
+     "status": "resolved"
+    },
+    "33k6g8j7mhah": {
+     "end": "2026-10-22T00:35:20Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/33k6g8j7mhah",
+     "name": "Elevated Error Rate for Durable Objects in Lisbon",
+     "start": "2026-10-21T23:50:36Z",
+     "status": "resolved"
+    },
+    "39fz3wkl42tr": {
+     "end": "2026-10-24T03:09:11Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/39fz3wkl42tr",
+     "name": "Network Performance Issues in Ashburn",
+     "start": "2026-10-24T01:01:09Z",
+     "status": "resolved"
+    },
+    "3bv9locsg7ln": {
+     "end": "2026-11-03T00:34:13Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/3bv9locsg7ln",
+     "name": " Cloudflare Gateway DNS-over-TLS Connectivity Issues over IPv4",
+     "start": "2026-11-02T22:12:39Z",
+     "status": "resolved"
+    },
+    "3ts1mfzs0khz": {
+     "end": "2026-10-23T20:37:06Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/3ts1mfzs0khz",
+     "name": "Delayed, missed, and duplicated Workers Cron Triggers",
+     "start": "2026-10-23T15:27:34Z",
+     "status": "resolved"
+    },
+    "3z8y23zn7tr2": {
+     "end": "2026-10-20T22:46:39Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/3z8y23zn7tr2",
+     "name": "Cloudflare Secure Web Gateway and DLP enforcement issues for Google Gemini",
+     "start": "2026-10-19T20:30:00Z",
+     "status": "resolved"
+    },
+    "4u4hsqqnr0hk": {
+     "end": "2026-10-27T21:58:13Z",
+     "impact": "none",
+     "link": "https://www.cloudflarestatus.com/incidents/4u4hsqqnr0hk",
+     "name": "Elevated Cloudflare Access API Errors",
+     "start": "2026-10-27T21:13:57Z",
+     "status": "resolved"
+    },
+    "5tlm9r9j9rpo": {
+     "end": "2026-10-31T06:57:35Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/5tlm9r9j9rpo",
+     "name": "Cache purge delays in Qingdao Shandong, China",
+     "start": "2026-10-31T06:41:15Z",
+     "status": "resolved"
+    },
+    "6c4ak19xodyt": {
+     "end": "2026-11-03T06:32:00Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/6c4ak19xodyt",
+     "name": "Elevated number of 5xx errors in HKG",
+     "start": "2026-11-03T07:24:51Z",
+     "status": "resolved"
+    },
+    "6yfpsos7ksp3": {
+     "end": "2026-10-29T11:49:16Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/6yfpsos7ksp3",
+     "name": "Increased Worker services errors",
+     "start": "2026-10-29T09:22:53Z",
+     "status": "resolved"
+    },
+    "7gixemnw9oei": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/7gixemnw9oei",
+     "name": "Increased Durable Object Errors in the Dallas, TX US region",
+     "start": "2026-11-03T15:38:17Z",
+     "status": "monitoring"
+    },
+    "7he1pmetw77p": {
+     "end": "2026-11-02T17:30:10Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/7he1pmetw77p",
+     "name": "Worker Deployments Delayed",
+     "start": "2026-11-02T16:41:11Z",
+     "status": "resolved"
+    },
+    "8m9a1fjjwxp5": {
+     "end": "2026-10-23T09:42:16Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/8m9a1fjjwxp5",
+     "name": "Support Helpdesk Availability Issues",
+     "start": "2026-10-23T03:03:09Z",
+     "status": "resolved"
+    },
+    "8s6pn9rvof3l": {
+     "end": "2026-10-27T16:14:34Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/8s6pn9rvof3l",
+     "name": "Cache Purging Delays Affecting Requests Routed Through EEUR",
+     "start": "2026-10-27T15:10:35Z",
+     "status": "resolved"
+    },
+    "97y1vy5nsjrn": {
+     "end": "2026-10-27T01:15:15Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/97y1vy5nsjrn",
+     "name": "Delayed, missed, and duplicated Workers Cron Triggers",
+     "start": "2026-10-26T21:48:46Z",
+     "status": "resolved"
+    },
+    "9g65dxfbcjln": {
+     "end": "2026-10-22T15:41:44Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
+     "name": "Incorrect geo location for some Cloudflare WARP users",
+     "start": "2026-08-27T18:46:19Z",
+     "status": "resolved"
+    },
+    "bc7e93q3eigp": {
+     "end": "2026-10-29T11:47:23Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/bc7e93q3eigp",
+     "name": "Issues with Durable Objects availability in Eastern Europe",
+     "start": "2026-10-29T10:06:17Z",
+     "status": "resolved"
+    },
+    "dk2obcyw2aew": {
+     "end": "2026-10-27T15:12:03Z",
+     "impact": "major",
+     "link": "https://www.cloudflarestatus.com/incidents/dk2obcyw2aew",
+     "name": "ERR_TIMED_OUT and ERR_EMPTY_RESPONSE being observed by Cloudflare Customers",
+     "start": "2026-10-27T12:28:07Z",
+     "status": "resolved"
+    },
+    "dv2vbq9kbgxn": {
+     "end": "2026-10-26T16:03:32Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/dv2vbq9kbgxn",
+     "name": "Cloudflare Workers build delays",
+     "start": "2026-10-26T15:12:34Z",
+     "status": "resolved"
+    },
+    "h6fgl47h6iht": {
+     "end": "2026-10-28T21:12:24Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/h6fgl47h6iht",
+     "name": "Increased latency and error rate for R2 in ENAM",
+     "start": "2026-10-28T21:01:39Z",
+     "status": "resolved"
+    },
+    "j25w3rpv45gs": {
+     "end": "2026-11-03T05:56:29Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/j25w3rpv45gs",
+     "name": "Network Performance Issues in APJC",
+     "start": "2026-11-03T04:44:12Z",
+     "status": "resolved"
+    },
+    "j3llzsq3m17a": {
+     "end": "2026-10-27T08:17:26Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/j3llzsq3m17a",
+     "name": "Some customers may notice their Pages and/or Workers builds are intermittently failing.",
+     "start": "2026-10-27T08:04:03Z",
+     "status": "resolved"
+    },
+    "jajp50huvxtz": {
+     "end": "2026-10-29T00:35:00Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/jajp50huvxtz",
+     "name": "Network Performance Issues in Queretaro, MX",
+     "start": "2026-10-29T01:50:23Z",
+     "status": "resolved"
+    },
+    "k2cd9e1fyskp": {
+     "end": "2026-10-29T12:10:59Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/k2cd9e1fyskp",
+     "name": "Increased HTTP 429 Rate Limit Errors on Cloudflare Dashboard",
+     "start": "2026-10-29T10:31:52Z",
+     "status": "resolved"
+    },
+    "klub12zy71b4": {
+     "end": "2026-10-28T03:28:57Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/klub12zy71b4",
+     "name": "Increased Errors for Durable Objects in the Eastern North America region",
+     "start": "2026-10-28T00:17:25Z",
+     "status": "resolved"
+    },
+    "kp28d3kzgft1": {
+     "end": "2026-10-29T21:50:51Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/kp28d3kzgft1",
+     "name": "R2 Elevated Latency in Eastern Europe",
+     "start": "2026-10-29T19:57:28Z",
+     "status": "resolved"
+    },
+    "ktq18tcoqoo2": {
+     "end": "2026-10-27T22:58:57Z",
+     "impact": "none",
+     "link": "https://www.cloudflarestatus.com/incidents/ktq18tcoqoo2",
+     "name": "Network Error Log Processing Unavailable",
+     "start": "2026-10-27T22:21:29Z",
+     "status": "resolved"
+    },
+    "l0gsc0sccx2v": {
+     "end": "2026-10-22T17:31:27Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/l0gsc0sccx2v",
+     "name": "Elevated errors for some requests in Ashburn, Virginia",
+     "start": "2026-10-22T17:01:31Z",
+     "status": "resolved"
+    },
+    "l3d16334tgjp": {
+     "end": "2026-10-22T22:00:59Z",
+     "impact": "major",
+     "link": "https://www.cloudflarestatus.com/incidents/l3d16334tgjp",
+     "name": "Network Error Log Processing Unavailable",
+     "start": "2026-10-22T16:30:31Z",
+     "status": "resolved"
+    },
+    "lhdg2tq46faq": {
+     "end": "2026-10-22T16:15:52Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/lhdg2tq46faq",
+     "name": "Cloudflare Workers API Latency",
+     "start": "2026-10-22T15:33:17Z",
+     "status": "resolved"
+    },
+    "lmmf23klsrxq": {
+     "end": "2026-10-28T11:10:59Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/lmmf23klsrxq",
+     "name": "Increased Errors for Durable Objects in the Eastern North America region",
+     "start": "2026-10-28T09:45:10Z",
+     "status": "resolved"
+    },
+    "mbq512v9oe4s": {
+     "end": "2026-10-27T17:02:14Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/mbq512v9oe4s",
+     "name": "Cloudflare Stream performance issues impacting certain Live Broadcasts and On-Demand Uploads",
+     "start": "2026-10-27T16:10:53Z",
+     "status": "resolved"
+    },
+    "n5mvqjs26jg9": {
+     "end": "2026-11-03T05:23:01Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/n5mvqjs26jg9",
+     "name": "Cloudflare Container Issues",
+     "start": "2026-11-03T04:12:18Z",
+     "status": "resolved"
+    },
+    "nbyxn84kvb6o": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/nbyxn84kvb6o",
+     "name": "Cloudflare Workers and Pages build errors ",
+     "start": "2026-11-03T14:46:56Z",
+     "status": "identified"
+    },
+    "nwgwgbrn9a71": {
+     "end": "2026-10-22T02:09:33Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/nwgwgbrn9a71",
+     "name": "Network congestion in Portland and Seattle, US",
+     "start": "2026-10-22T00:23:17Z",
+     "status": "resolved"
+    },
+    "oco7f885d2v4": {
+     "end": "2026-10-29T08:28:13Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/oco7f885d2v4",
+     "name": "Increased errors and latency for CNI 2.0 traffic in LAX",
+     "start": "2026-10-29T06:55:41Z",
+     "status": "resolved"
+    },
+    "p1vurmibvmag": {
+     "end": "2026-10-21T21:21:40Z",
+     "impact": "major",
+     "link": "https://www.cloudflarestatus.com/incidents/p1vurmibvmag",
+     "name": "Elevated Errors for R2 and Durable Objects in ENAM",
+     "start": "2026-10-21T20:43:03Z",
+     "status": "resolved"
+    },
+    "pij2josz3rvz": {
+     "end": "2026-10-24T13:57:49Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/pij2josz3rvz",
+     "name": "Increased error rate in Workflow Operations",
+     "start": "2026-10-24T13:13:49Z",
+     "status": "resolved"
+    },
+    "qlgdup1n0ge7": {
+     "end": "2026-10-20T20:16:54Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/qlgdup1n0ge7",
+     "name": "Issue with Bot management traffic categorization for verified bots",
+     "start": "2026-10-20T19:35:33Z",
+     "status": "resolved"
+    },
+    "qwrtvb4jfvk7": {
+     "end": "2026-10-23T00:10:52Z",
+     "impact": "major",
+     "link": "https://www.cloudflarestatus.com/incidents/qwrtvb4jfvk7",
+     "name": "Delayed audit log delivery for WARP and Zero Trust services",
+     "start": "2026-10-22T17:32:32Z",
+     "status": "resolved"
+    },
+    "r4mz367vddi7": {
+     "end": "2026-10-29T16:33:43Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/r4mz367vddi7",
+     "name": "Increased Durable Objects, D1 and Workflows Error Rates",
+     "start": "2026-10-29T14:16:46Z",
+     "status": "resolved"
+    },
+    "s5io0kegzlsz": {
+     "end": "2026-10-26T09:03:00Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/s5io0kegzlsz",
+     "name": "Network Performance Issues in Chicago (ORD)",
+     "start": "2026-10-26T09:21:56Z",
+     "status": "resolved"
+    },
+    "snth5ero95rz": {
+     "end": "2026-10-28T22:18:26Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/snth5ero95rz",
+     "name": "Network Performance Issues in Ashburn, IAD",
+     "start": "2026-10-28T04:39:13Z",
+     "status": "resolved"
+    },
+    "sufgcbe8rrwt": {
+     "end": "2026-10-23T18:43:19Z",
+     "impact": "major",
+     "link": "https://www.cloudflarestatus.com/incidents/sufgcbe8rrwt",
+     "name": "Network connectivity issues affecting services in North America",
+     "start": "2026-10-23T15:47:08Z",
+     "status": "resolved"
+    },
+    "t0p23w62n13j": {
+     "end": "2026-10-23T09:22:34Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/t0p23w62n13j",
+     "name": "Cloudflare Access Availability Issues",
+     "start": "2026-10-23T09:01:51Z",
+     "status": "resolved"
+    },
+    "t77gwnpr6oe5": {
+     "end": "2026-10-21T19:57:04Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/t77gwnpr6oe5",
+     "name": "Increased Latency in India",
+     "start": "2026-10-21T16:42:14Z",
+     "status": "resolved"
+    },
+    "v967mz6rrcxw": {
+     "end": "2026-10-23T00:09:09Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/v967mz6rrcxw",
+     "name": "Elevated error rates for Durable Objects in Western Europe",
+     "start": "2026-10-22T17:51:09Z",
+     "status": "resolved"
+    }
+   },
+   "indicator": "major",
+   "name": "Cloudflare",
+   "since": "2026-11-03T16:16:57Z"
+  },
+  "www.githubstatus.com": {
+   "coverage_from": "2026-08-21T14:00:00Z",
+   "description": "All Systems Operational",
+   "incident": "",
+   "incidents": {
+    "0rn90wk115q9": {
+     "end": "2026-09-13T10:44:55Z",
+     "impact": "critical",
+     "link": "https://stspg.io/8f3xch4y0v2k",
+     "name": "Incident with several GitHub Services",
+     "start": "2026-09-13T09:16:11Z",
+     "status": "resolved"
+    },
+    "169pg72gg9jr": {
+     "end": "2026-09-28T22:08:20Z",
+     "impact": "critical",
+     "link": "https://stspg.io/phqvtmdm3y2m",
+     "name": "Copilot Code Review is unable to complete reviews",
+     "start": "2026-09-28T21:16:39Z",
+     "status": "resolved"
+    },
+    "1dk955gg3bvz": {
+     "end": "2026-09-24T20:41:12Z",
+     "impact": "minor",
+     "link": "https://stspg.io/g2q4g5kv9frp",
+     "name": "Disruption with billing information updates",
+     "start": "2026-09-24T16:51:32Z",
+     "status": "resolved"
+    },
+    "2dpbcq5j165n": {
+     "end": "2026-10-01T17:56:54Z",
+     "impact": "minor",
+     "link": "https://stspg.io/kdqxfjn5qg6q",
+     "name": "Actions Job Delays",
+     "start": "2026-10-01T14:47:48Z",
+     "status": "resolved"
+    },
+    "2kxnqcxcrr7f": {
+     "end": "2026-10-06T01:32:43Z",
+     "impact": "major",
+     "link": "https://stspg.io/pjcfc4c3pm7g",
+     "name": "Disruption with some GitHub services",
+     "start": "2026-10-05T23:47:45Z",
+     "status": "resolved"
+    },
+    "3q1yb5m7ltvb": {
+     "end": "2026-10-05T22:49:42Z",
+     "impact": "critical",
+     "link": "https://stspg.io/c11dc9nb1zdq",
+     "name": "Incident with Actions",
+     "start": "2026-10-05T19:11:58Z",
+     "status": "resolved"
+    },
+    "5bn0vk444m1w": {
+     "end": "2026-08-27T19:44:08Z",
+     "impact": "minor",
+     "link": "https://stspg.io/cpgst4hly3mh",
+     "name": "Disruption with GitHub Billing",
+     "start": "2026-08-26T23:37:20Z",
+     "status": "resolved"
+    },
+    "6yk962mhlr3h": {
+     "end": "2026-10-13T20:30:00Z",
+     "impact": "minor",
+     "link": "https://stspg.io/6ky9bv9gkkd1",
+     "name": "[Retroactive] Actions workflow run logs delayed",
+     "start": "2026-10-13T20:30:00Z",
+     "status": "resolved"
+    },
+    "71y513kjvbzh": {
+     "end": "2026-10-23T18:51:24Z",
+     "impact": "minor",
+     "link": "https://stspg.io/zdk3zqt69fnz",
+     "name": "Disruption with Dependabot Alerts",
+     "start": "2026-10-23T14:58:48Z",
+     "status": "resolved"
+    },
+    "7fxts6gmq5gr": {
+     "end": "2026-08-31T09:58:14Z",
+     "impact": "minor",
+     "link": "https://stspg.io/8trzn5bjrtnn",
+     "name": "Elevated rate of errors for OpenAI models provided by Copilot",
+     "start": "2026-08-31T09:15:48Z",
+     "status": "resolved"
+    },
+    "8tzbpcnl75jp": {
+     "end": "2026-10-19T16:56:58Z",
+     "impact": "critical",
+     "link": "https://stspg.io/nrv2k8s68bwn",
+     "name": "Degraded availability for GitHub Actions, GitHub Pages and Webhooks",
+     "start": "2026-10-19T15:49:25Z",
+     "status": "resolved"
+    },
+    "8zc63m64hy36": {
+     "end": "2026-09-24T04:55:33Z",
+     "impact": "minor",
+     "link": "https://stspg.io/m1ps7yrhp4n8",
+     "name": "Incident across several services",
+     "start": "2026-09-23T10:11:12Z",
+     "status": "resolved"
+    },
+    "93njd414rpbx": {
+     "end": "2026-10-12T20:16:07Z",
+     "impact": "minor",
+     "link": "https://stspg.io/flldq0dn2wdz",
+     "name": "Incident with Actions, Pull Requests and Issues",
+     "start": "2026-10-12T12:21:47Z",
+     "status": "resolved"
+    },
+    "bk7zgdcq7s9t": {
+     "end": "2026-09-15T20:00:50Z",
+     "impact": "minor",
+     "link": "https://stspg.io/tbh60vgxfxj6",
+     "name": "Disruption with some GitHub services",
+     "start": "2026-09-15T19:11:31Z",
+     "status": "resolved"
+    },
+    "c8466lzvnmsv": {
+     "end": "2026-10-01T13:57:59Z",
+     "impact": "minor",
+     "link": "https://stspg.io/cz0ngh11q0tf",
+     "name": "Elevated request latency",
+     "start": "2026-10-01T13:37:33Z",
+     "status": "resolved"
+    },
+    "cjwszcf57bff": {
+     "end": "2026-10-06T23:40:44Z",
+     "impact": "critical",
+     "link": "https://stspg.io/w3rcssslq22w",
+     "name": "Several services are degraded",
+     "start": "2026-10-06T19:57:35Z",
+     "status": "resolved"
+    },
+    "db4x8hh362t8": {
+     "end": "2026-11-02T18:24:23Z",
+     "impact": "minor",
+     "link": "https://stspg.io/ns6pj9qy9glb",
+     "name": "Elevated errors on GPT-5.4 Nano",
+     "start": "2026-11-02T17:46:23Z",
+     "status": "resolved"
+    },
+    "djlmxz2zd0j7": {
+     "end": "2026-10-07T16:25:14Z",
+     "impact": "critical",
+     "link": "https://stspg.io/96smrcth8bpg",
+     "name": "Incident with Git Operations, Pull Requests and Actions",
+     "start": "2026-10-07T15:14:45Z",
+     "status": "resolved"
+    },
+    "dnslv7xdl4fj": {
+     "end": "2026-10-27T08:00:00Z",
+     "impact": "none",
+     "link": "https://stspg.io/4z5lmy7gqjk1",
+     "name": "Elevated 404s for GitHub App s2s tokens in git/API",
+     "start": "2026-10-27T08:00:00Z",
+     "status": "resolved"
+    },
+    "dqn46wtvbdzv": {
+     "end": "2026-10-01T02:00:00Z",
+     "impact": "minor",
+     "link": "https://stspg.io/f0yg8jk2gm80",
+     "name": "[Retroactive] Actions workflow run failures after deployment gate approvals",
+     "start": "2026-10-01T02:00:00Z",
+     "status": "resolved"
+    },
+    "f1vvv30224wd": {
+     "end": "2026-10-26T18:57:22Z",
+     "impact": "minor",
+     "link": "https://stspg.io/0622ty903b4d",
+     "name": "Incident with Actions, Issues, API Requests and Pull Requests",
+     "start": "2026-10-26T18:48:26Z",
+     "status": "resolved"
+    },
+    "f6yrxnz5f7bs": {
+     "end": "2026-09-20T23:22:16Z",
+     "impact": "minor",
+     "link": "https://stspg.io/cx8xcm6k8f9s",
+     "name": "Incident with Pull Requests",
+     "start": "2026-09-20T22:13:37Z",
+     "status": "resolved"
+    },
+    "hcbtzksccj2f": {
+     "end": "2026-08-26T16:07:52Z",
+     "impact": "minor",
+     "link": "https://stspg.io/4s4bvnc0frrj",
+     "name": "Disruption with some GitHub services",
+     "start": "2026-08-26T15:09:03Z",
+     "status": "resolved"
+    },
+    "jk2dy5h9yp3m": {
+     "end": "2026-09-01T16:01:21Z",
+     "impact": "minor",
+     "link": "https://stspg.io/0xbhhq84v4mt",
+     "name": "Delays in commit processing",
+     "start": "2026-09-01T15:00:22Z",
+     "status": "resolved"
+    },
+    "kfspvrz14xr0": {
+     "end": "2026-08-27T00:26:44Z",
+     "impact": "minor",
+     "link": "https://stspg.io/nrbwjftcz72d",
+     "name": "Incident with Actions and Pull Requests",
+     "start": "2026-08-26T22:56:31Z",
+     "status": "resolved"
+    },
+    "khv5nj9qy2kk": {
+     "end": "2026-10-24T00:23:32Z",
+     "impact": "minor",
+     "link": "https://stspg.io/9hysn9g59lpg",
+     "name": "Grok 4.6 and Grok 4.7 Service Issues",
+     "start": "2026-10-23T23:41:54Z",
+     "status": "resolved"
+    },
+    "ktdr5t0xwnhp": {
+     "end": "2026-09-03T17:11:47Z",
+     "impact": "minor",
+     "link": "https://stspg.io/p217h6l54208",
+     "name": "Incident with Grok Copilot AI Model Provider",
+     "start": "2026-09-03T14:17:27Z",
+     "status": "resolved"
+    },
+    "kzh5j0mt7qwc": {
+     "end": "2026-09-14T19:35:48Z",
+     "impact": "minor",
+     "link": "https://stspg.io/f2b6fd4l83wy",
+     "name": "Actions Larger Runner Jobs for some customers may be slow to start",
+     "start": "2026-09-14T18:40:25Z",
+     "status": "resolved"
+    },
+    "l7ycmglmykgg": {
+     "end": "2026-10-28T15:28:19Z",
+     "impact": "critical",
+     "link": "https://stspg.io/bwcyq078jzms",
+     "name": "Disruption with some Copilot services",
+     "start": "2026-10-28T14:12:53Z",
+     "status": "resolved"
+    },
+    "lyppgxbq1nyk": {
+     "end": "2026-08-24T14:34:42Z",
+     "impact": "minor",
+     "link": "https://stspg.io/v6ysclb9vcbd",
+     "name": "Actions delays in starting runs",
+     "start": "2026-08-24T13:56:54Z",
+     "status": "resolved"
+    },
+    "lyyfm7j4pkgl": {
+     "end": "2026-10-30T23:29:06Z",
+     "impact": "minor",
+     "link": "https://stspg.io/5bh6qnzn76tk",
+     "name": "Incident with Dependabot",
+     "start": "2026-10-30T20:59:14Z",
+     "status": "resolved"
+    },
+    "nlxnbqnkdzdl": {
+     "end": "2026-09-16T17:48:49Z",
+     "impact": "major",
+     "link": "https://stspg.io/hsjy12f57b24",
+     "name": "Degradation with Gemini 3.8 Flash",
+     "start": "2026-09-16T07:20:59Z",
+     "status": "resolved"
+    },
+    "nms1dpzmh9d9": {
+     "end": "2026-10-21T19:22:52Z",
+     "impact": "critical",
+     "link": "https://stspg.io/gnnt0tx9nxmk",
+     "name": "Delays for Pull Requests and Webhook deliveries",
+     "start": "2026-10-21T14:52:49Z",
+     "status": "resolved"
+    },
+    "ntrfd2jqldn6": {
+     "end": "2026-10-23T08:05:27Z",
+     "impact": "minor",
+     "link": "https://stspg.io/kmk42jg3v1sm",
+     "name": "Delayed Actions status check results",
+     "start": "2026-10-23T07:29:03Z",
+     "status": "resolved"
+    },
+    "nvy2q96mcmyg": {
+     "end": "2026-09-17T21:49:01Z",
+     "impact": "minor",
+     "link": "https://stspg.io/t938cy7649sn",
+     "name": "Elevated rate of errors for OpenAI models provided by Copilot",
+     "start": "2026-09-17T20:59:02Z",
+     "status": "resolved"
+    },
+    "nxy2l0ssxm10": {
+     "end": "2026-10-30T15:02:51Z",
+     "impact": "critical",
+     "link": "https://stspg.io/6p81rf34z4nc",
+     "name": "Disruption with GitHub services",
+     "start": "2026-10-30T14:31:16Z",
+     "status": "resolved"
+    },
+    "pwxsjgnvrk6b": {
+     "end": "2026-10-30T19:23:40Z",
+     "impact": "major",
+     "link": "https://stspg.io/5cd2m4n59spv",
+     "name": "Incident with Actions, Pages, and Webhooks",
+     "start": "2026-10-30T17:50:54Z",
+     "status": "resolved"
+    },
+    "q29p76qtnkyk": {
+     "end": "2026-10-22T15:18:46Z",
+     "impact": "minor",
+     "link": "https://stspg.io/44w94j036yc8",
+     "name": "Incident with Actions",
+     "start": "2026-10-22T14:18:15Z",
+     "status": "resolved"
+    },
+    "qpfv5p86dmrl": {
+     "end": "2026-10-07T18:04:49Z",
+     "impact": "critical",
+     "link": "https://stspg.io/4p8x0jnnsx7m",
+     "name": "Incident with Git Operations, Issues, Actions and Pull Requests",
+     "start": "2026-10-07T17:17:05Z",
+     "status": "resolved"
+    },
+    "qwdwmtqghpk5": {
+     "end": "2026-09-15T11:17:22Z",
+     "impact": "minor",
+     "link": "https://stspg.io/6pn81yd1x4hz",
+     "name": "Disruption with some GitHub services",
+     "start": "2026-09-15T09:47:15Z",
+     "status": "resolved"
+    },
+    "r05vk75c594j": {
+     "end": "2026-09-04T22:23:34Z",
+     "impact": "minor",
+     "link": "https://stspg.io/vhmsw2rhdcgv",
+     "name": "Degradation in repos contents API",
+     "start": "2026-09-04T22:02:15Z",
+     "status": "resolved"
+    },
+    "rn76zdy367m2": {
+     "end": "2026-10-29T12:49:52Z",
+     "impact": "minor",
+     "link": "https://stspg.io/22p3vp78z20q",
+     "name": "Disruption with Copilot Cloud services",
+     "start": "2026-10-29T10:19:55Z",
+     "status": "resolved"
+    },
+    "rxlj89wpk7px": {
+     "end": "2026-11-03T13:56:18Z",
+     "impact": "minor",
+     "link": "https://stspg.io/h1xqhrcn5gqn",
+     "name": "Incident with API, Git, and Copilot requests",
+     "start": "2026-11-03T13:25:19Z",
+     "status": "resolved"
+    },
+    "tx9qn4khd664": {
+     "end": "2026-08-27T12:12:58Z",
+     "impact": "critical",
+     "link": "https://stspg.io/573gc8p4328b",
+     "name": "Incident with Copilot AI Model Providers",
+     "start": "2026-08-27T10:04:52Z",
+     "status": "resolved"
+    },
+    "vlxrztp88101": {
+     "end": "2026-10-15T18:56:04Z",
+     "impact": "minor",
+     "link": "https://stspg.io/vk8t78vtswmg",
+     "name": "CCA Automations are delayed when starting an Automation",
+     "start": "2026-10-15T18:31:49Z",
+     "status": "resolved"
+    },
+    "wms44hv62t3p": {
+     "end": "2026-08-21T14:00:00Z",
+     "impact": "none",
+     "link": "https://stspg.io/9nls6g9ln8p4",
+     "name": "Degraded Git Operations over SSH",
+     "start": "2026-08-21T14:00:00Z",
+     "status": "resolved"
+    },
+    "wq8305lppdc2": {
+     "end": "2026-10-23T02:30:25Z",
+     "impact": "minor",
+     "link": "https://stspg.io/sx51v1tlpqjc",
+     "name": "Project updates delayed",
+     "start": "2026-10-22T15:28:03Z",
+     "status": "resolved"
+    },
+    "wt3hjqcrczfg": {
+     "end": "2026-08-24T07:58:41Z",
+     "impact": "major",
+     "link": "https://stspg.io/4dz9rv14dz14",
+     "name": "Elevated errors on Fable 5 due to upstream provider",
+     "start": "2026-08-24T07:12:05Z",
+     "status": "resolved"
+    },
+    "y1t7p9fzrlj2": {
+     "end": "2026-08-26T18:01:30Z",
+     "impact": "critical",
+     "link": "https://stspg.io/pg14nv9m3095",
+     "name": "Incident with Actions",
+     "start": "2026-08-26T15:11:58Z",
+     "status": "resolved"
+    },
+    "zw1hbx2yyhvr": {
+     "end": "2026-09-04T22:26:46Z",
+     "impact": "major",
+     "link": "https://stspg.io/dddfhld6fj0z",
+     "name": "Disruption with Copilot Code Review",
+     "start": "2026-09-04T20:39:03Z",
+     "status": "resolved"
+    }
+   },
+   "indicator": "none",
+   "name": "GitHub",
+   "since": "2026-11-03T16:16:57Z"
+  },
+  "www.redditstatus.com": {
+   "coverage_from": "2024-06-28T02:17:49Z",
+   "description": "All Systems Operational",
+   "incident": "",
+   "incidents": {
+    "3t7xtffbb544": {
+     "end": "2026-07-25T16:26:54Z",
+     "impact": "major",
+     "link": "https://stspg.io/8llkkwrwfhgw",
+     "name": "Degraded performance across the site",
+     "start": "2026-07-25T15:05:02Z",
+     "status": "resolved"
+    },
+    "s4ffy6g43v5h": {
+     "end": "2026-09-01T21:24:05Z",
+     "impact": "major",
+     "link": "https://stspg.io/96ds8tjds38r",
+     "name": "Elevated site errors",
+     "start": "2026-09-01T19:51:37Z",
+     "status": "resolved"
+    },
+    "tdmx94fpl0y6": {
+     "end": "2026-09-23T01:27:11Z",
+     "impact": "minor",
+     "link": "https://stspg.io/c7jngr1l3ry3",
+     "name": "Mods Unable to Approve Content",
+     "start": "2026-09-23T00:23:28Z",
+     "status": "resolved"
+    },
+    "z05w3v6n09xy": {
+     "end": "2026-10-07T20:55:28Z",
+     "impact": "none",
+     "link": "https://stspg.io/hwq20l05fd5y",
+     "name": "Investigating elevated errors across reddit.com and native apps",
+     "start": "2026-10-07T19:58:52Z",
+     "status": "resolved"
+    }
+   },
+   "indicator": "none",
+   "name": "Reddit",
+   "since": "2026-11-03T16:16:57Z"
+  },
+  "www.vercel-status.com": {
+   "coverage_from": "2026-05-25T14:58:41Z",
+   "description": "All Systems Operational",
+   "incident": "",
+   "incidents": {
+    "1dp8c0nfchtg": {
+     "end": "2026-10-06T16:26:49Z",
+     "impact": "major",
+     "link": "https://stspg.io/l76txmwrzdcp",
+     "name": "Vercel Auth login failures for pages with Deployment Protection enabled",
+     "start": "2026-10-06T16:10:59Z",
+     "status": "resolved"
+    },
+    "1s8rqbswvwqc": {
+     "end": "2026-07-23T19:00:00Z",
+     "impact": "major",
+     "link": "https://stspg.io/b2wb9x4qkqwq",
+     "name": "Telemetry data loss for Drains",
+     "start": "2026-07-23T19:00:00Z",
+     "status": "resolved"
+    },
+    "1z2qkcjgfx3y": {
+     "end": "2026-09-01T20:58:43Z",
+     "impact": "major",
+     "link": "https://stspg.io/01mntryqfgdj",
+     "name": "Increased deployment failures",
+     "start": "2026-09-01T19:59:37Z",
+     "status": "resolved"
+    },
+    "458cy54l4d6d": {
+     "end": "2026-07-10T22:36:10Z",
+     "impact": "minor",
+     "link": "https://stspg.io/274dc78rzc6q",
+     "name": "Erroneous budget notifications",
+     "start": "2026-07-10T19:15:53Z",
+     "status": "resolved"
+    },
+    "4lgcbsr7l8xn": {
+     "end": "2026-10-23T17:32:46Z",
+     "impact": "minor",
+     "link": "https://stspg.io/ywxtzgsnw6dn",
+     "name": "Delays in Logs and Observability data",
+     "start": "2026-10-23T16:31:02Z",
+     "status": "resolved"
+    },
+    "5c1lswm68bkg": {
+     "end": "2026-09-18T22:31:22Z",
+     "impact": "minor",
+     "link": "https://stspg.io/fx0fjwcpvdqr",
+     "name": "Deployment stuck in initializing state",
+     "start": "2026-09-18T21:36:09Z",
+     "status": "resolved"
+    },
+    "75b4vyf7cm69": {
+     "end": "2026-08-26T04:28:31Z",
+     "impact": "major",
+     "link": "https://stspg.io/119clbk6991s",
+     "name": "Failures logging in with Vercel CLI",
+     "start": "2026-08-26T03:06:11Z",
+     "status": "resolved"
+    },
+    "b6s5qz7tj35w": {
+     "end": "2026-09-04T20:27:26Z",
+     "impact": "minor",
+     "link": "https://stspg.io/qjy1j78m6ssc",
+     "name": "Elevated latency in VCR, Blob, and Sandbox API",
+     "start": "2026-09-04T19:11:44Z",
+     "status": "resolved"
+    },
+    "bpzq72pgngc7": {
+     "end": "2026-10-10T01:37:00Z",
+     "impact": "major",
+     "link": "https://stspg.io/mz4bqspyxvy7",
+     "name": "Delays in Drains, Observability, and Workflow in Washington (iad1)",
+     "start": "2026-10-10T00:15:49Z",
+     "status": "resolved"
+    },
+    "bwkmw4hmrgmk": {
+     "end": "2026-09-18T21:22:27Z",
+     "impact": "major",
+     "link": "https://stspg.io/6c79t86c2xrr",
+     "name": "Elevated Errors Triggering Deployments",
+     "start": "2026-09-18T20:32:36Z",
+     "status": "resolved"
+    },
+    "bwyq88fxt57g": {
+     "end": "2026-07-23T08:18:49Z",
+     "impact": "major",
+     "link": "https://stspg.io/pcy9pldzdfqw",
+     "name": "Timeouts loading charts and observability data in Dashboard",
+     "start": "2026-07-23T07:33:48Z",
+     "status": "resolved"
+    },
+    "g5svdyg45c5b": {
+     "end": "2026-08-20T11:25:37Z",
+     "impact": "major",
+     "link": "https://stspg.io/fhw5075cj82r",
+     "name": "Logs unavailable to query in Dashboard",
+     "start": "2026-08-20T11:14:32Z",
+     "status": "resolved"
+    },
+    "gk45lsnmx35m": {
+     "end": "2026-07-09T13:16:00Z",
+     "impact": "none",
+     "link": "https://stspg.io/lwv762xftprn",
+     "name": "Delays loading Build Logs",
+     "start": "2026-07-09T13:16:00Z",
+     "status": "resolved"
+    },
+    "j0ll7yc1jscj": {
+     "end": "2026-07-10T23:28:43Z",
+     "impact": "minor",
+     "link": "https://stspg.io/7r7v7fr4bhbp",
+     "name": "Increased Build failure rates",
+     "start": "2026-07-10T21:22:09Z",
+     "status": "resolved"
+    },
+    "j6cdljvmf2wf": {
+     "end": "2026-09-18T12:00:00Z",
+     "impact": "none",
+     "link": "https://stspg.io/fzs89dpp3ghz",
+     "name": "Elevated Vercel KMS and Connect Errors",
+     "start": "2026-09-18T12:00:00Z",
+     "status": "resolved"
+    },
+    "k6ykmr68s0b1": {
+     "end": "2026-09-16T03:21:00Z",
+     "impact": "none",
+     "link": "https://stspg.io/rx2hvkmrstg7",
+     "name": "Invoice Generation Paused",
+     "start": "2026-09-16T03:21:00Z",
+     "status": "resolved"
+    },
+    "lf0pm7scd74x": {
+     "end": "2026-07-08T19:13:52Z",
+     "impact": "minor",
+     "link": "https://stspg.io/6p93bsts8r9y",
+     "name": "Delays Processing Builds",
+     "start": "2026-07-08T18:05:09Z",
+     "status": "resolved"
+    },
+    "mf04gp4lrfz0": {
+     "end": "2026-09-10T19:16:06Z",
+     "impact": "major",
+     "link": "https://stspg.io/zbs4ktd26fb0",
+     "name": "Elevated error rate on Connect and Passport",
+     "start": "2026-09-10T17:42:15Z",
+     "status": "resolved"
+    },
+    "mskkl0ryk3zn": {
+     "end": "2026-07-17T15:19:53Z",
+     "impact": "minor",
+     "link": "https://stspg.io/qcpsy7kj6dlc",
+     "name": "Increased invocation failures for Hobby Team functions",
+     "start": "2026-07-17T14:12:58Z",
+     "status": "resolved"
+    },
+    "nw8xv7ypn7y0": {
+     "end": "2026-07-16T10:45:23Z",
+     "impact": "major",
+     "link": "https://stspg.io/yzqkkrl8lw0m",
+     "name": "SAML Single Sign-On (SSO) errors",
+     "start": "2026-07-16T08:39:35Z",
+     "status": "resolved"
+    },
+    "nxvrk1jk0zyb": {
+     "end": "2026-08-17T21:25:26Z",
+     "impact": "minor",
+     "link": "https://stspg.io/sqztsdm8bq4d",
+     "name": "Partial disruption of Observability, Analytics, Firewall, Usage, and Login in Dashboard",
+     "start": "2026-08-17T14:30:28Z",
+     "status": "resolved"
+    },
+    "s6hljjh3n822": {
+     "end": "2026-08-25T20:05:18Z",
+     "impact": "minor",
+     "link": "https://stspg.io/xd3cnhctqkw3",
+     "name": "Elevated build initialization times",
+     "start": "2026-08-25T19:27:23Z",
+     "status": "resolved"
+    },
+    "sps6n39gm4sg": {
+     "end": "2026-10-12T20:11:12Z",
+     "impact": "major",
+     "link": "https://stspg.io/cfrfjg8fqxfr",
+     "name": "Increased build and deployment failures",
+     "start": "2026-10-12T13:35:07Z",
+     "status": "resolved"
+    },
+    "ttqhd2v8dq3p": {
+     "end": "2026-09-17T07:11:00Z",
+     "impact": "none",
+     "link": "https://stspg.io/167k97c1j9d8",
+     "name": "Failures delivering Logs to Drains",
+     "start": "2026-09-17T05:11:00Z",
+     "status": "resolved"
+    },
+    "vbxl834x9l7q": {
+     "end": "2026-08-06T18:29:45Z",
+     "impact": "minor",
+     "link": "https://stspg.io/jygyd62lmmdx",
+     "name": "Delays delivering log drains",
+     "start": "2026-08-06T16:37:10Z",
+     "status": "resolved"
+    },
+    "vqndbxzgzhx9": {
+     "end": "2026-07-17T00:42:10Z",
+     "impact": "minor",
+     "link": "https://stspg.io/yht3lc3nr2g8",
+     "name": "GitHub-linked deployments and authentication affected",
+     "start": "2026-07-16T23:09:29Z",
+     "status": "resolved"
+    },
+    "w1jqw8bwk6xc": {
+     "end": "2026-09-16T14:00:00Z",
+     "impact": "minor",
+     "link": "https://stspg.io/rm6qtt65w0x2",
+     "name": "Missing Web Analytics and Speed Insights data",
+     "start": "2026-09-16T14:00:00Z",
+     "status": "resolved"
+    },
+    "w8r0qkm97p1c": {
+     "end": "2026-08-20T18:34:00Z",
+     "impact": "major",
+     "link": "https://stspg.io/shj8f589lgh9",
+     "name": "New container functions are failing",
+     "start": "2026-08-20T17:46:33Z",
+     "status": "resolved"
+    },
+    "xfkn71bbvc99": {
+     "end": "2026-07-16T09:27:19Z",
+     "impact": "minor",
+     "link": "https://stspg.io/v9m67w60bdjk",
+     "name": "Missing Build CPU Minutes Usage Data",
+     "start": "2026-07-16T06:07:15Z",
+     "status": "resolved"
+    },
+    "xr8lx0kncx0g": {
+     "end": "2026-10-06T09:36:55Z",
+     "impact": "minor",
+     "link": "https://stspg.io/sgzd0v141vpk",
+     "name": "Elevated Sandbox error rates in Paris (cdg1)",
+     "start": "2026-10-06T09:12:06Z",
+     "status": "resolved"
+    },
+    "ybx6km0j1gwk": {
+     "end": "2026-08-18T23:00:00Z",
+     "impact": "none",
+     "link": "https://stspg.io/2szns4x5lfs2",
+     "name": "Elevated errors for Workflow streams",
+     "start": "2026-08-18T23:00:00Z",
+     "status": "resolved"
+    },
+    "ydqg5447j7j0": {
+     "end": "2026-07-15T23:34:54Z",
+     "impact": "minor",
+     "link": "https://stspg.io/dz3d8c79b47j",
+     "name": "Errors accessing teams that require 2FA",
+     "start": "2026-07-15T23:04:43Z",
+     "status": "resolved"
+    },
+    "yh45fsy7h0l8": {
+     "end": "2026-07-26T17:46:26Z",
+     "impact": "maintenance",
+     "link": "https://stspg.io/nc6n7dnn8nz7",
+     "name": "Vercel Community temporarily unavailable",
+     "start": "2026-07-25T18:57:40Z",
+     "status": "resolved"
+    },
+    "ysczd6rxyl7z": {
+     "end": "2026-08-14T13:08:12Z",
+     "impact": "none",
+     "link": "https://stspg.io/s34qc7lrx9db",
+     "name": "Dynamic API routes returned 404 errors for some deployments",
+     "start": "2026-08-14T13:08:12Z",
+     "status": "resolved"
+    },
+    "yy1sm6x5l83q": {
+     "end": "2026-09-28T14:11:29Z",
+     "impact": "minor",
+     "link": "https://stspg.io/p633qkgvpdsy",
+     "name": "Build failures and 500 errors for functions using Edge runtime",
+     "start": "2026-09-28T13:44:29Z",
+     "status": "resolved"
+    },
+    "zxb1gkbxnktp": {
+     "end": "2026-07-23T07:41:57Z",
+     "impact": "critical",
+     "link": "https://stspg.io/k5mrp1pc2l00",
+     "name": "Dashboard authentication errors",
+     "start": "2026-07-23T06:47:01Z",
+     "status": "resolved"
+    }
+   },
+   "indicator": "none",
+   "name": "Vercel",
+   "since": "2026-11-03T16:16:57Z"
+  }
+ }
+}

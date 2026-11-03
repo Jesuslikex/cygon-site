@@ -204,6 +204,19 @@ def status_part(D):
     D["status"] = out
 
 
+def fill_csp(html):
+    """Put the hashes of the page's executable inline scripts and the status hosts into the meta CSP."""
+    import base64, hashlib, re
+    hashes = []
+    for attrs, body in re.findall(r"<script([^>]*)>(.*?)</script>", html, re.S):
+        if "src=" in attrs or "application/ld+json" in attrs:
+            continue
+        digest = base64.b64encode(hashlib.sha256(body.encode()).digest()).decode()
+        hashes.append(f"'sha256-{digest}'")
+    html = html.replace("/*CSP_SCRIPT*/", " ".join(hashes))
+    return html.replace("/*CSP_CONNECT*/", " ".join(f"https://{h}" for h in STATUS_HOSTS))
+
+
 def main():
     D = load_prev()
     centroids = json.load(open(os.path.join(ROOT, "scripts", "countries.json")))
@@ -226,6 +239,7 @@ def main():
     tpl = open(os.path.join(ROOT, "template.html")).read()
     blob = json.dumps(D, separators=(",", ":")).replace("</", "<\\/")
     html = tpl.replace("/*DATA*/null/*END*/", blob)
+    html = fill_csp(html)
     open(os.path.join(OUT, "index.html"), "w").write(html)
     json.dump(D, open(os.path.join(OUT, "data.json"), "w"), separators=(",", ":"))
     open(os.path.join(OUT, ".nojekyll"), "w").close()

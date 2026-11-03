@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Pages can't send security headers, so the policy lives here. build.py fills in the hashes of the inline scripts and the status hosts. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' /*CSP_SCRIPT*/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; media-src 'self'; connect-src 'self' /*CSP_CONNECT*/; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>$CYGON Threat Monitor · Live cyber attack tracker</title>
 <meta name="description" content="$CYGON Threat Monitor: live cyber threat tracker built on public feeds. Flagged malicious IPs, exploited vulnerabilities (CISA KEV), new CVEs and service outages, refreshed every 3 hours.">
 <link rel="canonical" href="https://cygon.xyz/">

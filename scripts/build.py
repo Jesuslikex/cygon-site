@@ -166,11 +166,37 @@ def cve_part(D):
         D["cves"] = out
 
 
+STATUS_HOSTS = [
+    "www.githubstatus.com", "www.cloudflarestatus.com", "discordstatus.com", "www.vercel-status.com",
+    "status.solana.com", "status.coinbase.com", "status.kraken.com", "status.openai.com",
+    "www.redditstatus.com", "status.digitalocean.com", "status.zoom.us", "status.dropbox.com",
+    "status.atlassian.com",
+]
+
+
+def status_part(D):
+    out = []
+    for h in STATUS_HOSTS:
+        try:
+            req = urllib.request.Request(f"https://{h}/api/v2/summary.json", headers={**UA, "Origin": "https://jesuslikex.github.io"})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                cors = r.headers.get("Access-Control-Allow-Origin")
+                j = json.loads(r.read())
+            inc = next((i for i in j.get("incidents", []) if i.get("status") != "resolved"), None)
+            out.append({"host": h, "indicator": j["status"]["indicator"], "description": j["status"]["description"], "incident": inc["name"] if inc else ""})
+            print("status", h, j["status"]["indicator"], "cors=", cors)
+        except Exception as ex:
+            print("status skip", h, ex, file=sys.stderr)
+    if not out:
+        raise RuntimeError("no status pages reachable")
+    D["status"] = out
+
+
 def main():
     D = load_prev()
     centroids = json.load(open(os.path.join(ROOT, "scripts", "countries.json")))
     ok = 0
-    for name, fn in (("ipsum", lambda: ipsum_part(D, centroids)), ("kev", lambda: kev_part(D)), ("cve", lambda: cve_part(D))):
+    for name, fn in (("ipsum", lambda: ipsum_part(D, centroids)), ("kev", lambda: kev_part(D)), ("cve", lambda: cve_part(D)), ("status", lambda: status_part(D))):
         try:
             fn()
             ok += 1
@@ -185,7 +211,7 @@ def main():
     open(os.path.join(OUT, "index.html"), "w").write(html)
     json.dump(D, open(os.path.join(OUT, "data.json"), "w"), separators=(",", ":"))
     open(os.path.join(OUT, ".nojekyll"), "w").close()
-    print(f"built: {ok}/3 feeds, {D.get('totalIps')} ips, {len(D.get('feed', []))} feed rows")
+    print(f"built: {ok}/4 feeds, {D.get('totalIps')} ips, {len(D.get('feed', []))} feed rows")
     if ok == 0:
         sys.exit(1)
 

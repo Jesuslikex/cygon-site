@@ -156,6 +156,21 @@ footer p{margin:0;max-width:90ch}
   .tl::before{left:5px}.tl li{grid-template-columns:1fr;gap:2px;padding-left:24px}.tl li::before{left:1px}.tl .when{text-align:left}
   .map-legend,.map-tag{display:none}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+.st-panel{margin-bottom:18px}
+.stgrid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.stgrid li{background:var(--panel-2);padding:10px 12px;display:grid;grid-template-columns:10px minmax(0,1fr);gap:4px 10px;align-items:center;min-width:0}
+.stgrid li i{width:9px;height:9px;border-radius:50%;background:var(--dim)}
+.stgrid li.none i{background:var(--ok)}
+.stgrid li.minor i,.stgrid li.maintenance i{background:var(--amber)}
+.stgrid li.major i,.stgrid li.critical i{background:var(--crit);animation:blink 1.2s infinite}
+.stgrid li b{font:600 13px/1.2 var(--f-body);color:var(--fg)}
+.stgrid li a{color:inherit;text-decoration:none}
+.stgrid li a:hover{text-decoration:underline}
+.stgrid li span{grid-column:2;font:11px/1.3 var(--f-mono);color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.stgrid li.minor span,.stgrid li.maintenance span{color:var(--amber)}
+.stgrid li.major span,.stgrid li.critical span{color:var(--crit)}
+.st-note{margin:0;font-size:12px;color:var(--dim)}
+.og-h{margin:0 0 10px}
 </style>
 </head>
 <body>
@@ -256,6 +271,12 @@ footer p{margin:0;max-width:90ch}
 
   <section class="wrap" id="outages">
     <div class="sec-head"><h2>Outage tracker</h2><p>The days the centralized internet went dark.</p></div>
+    <div class="panel st-panel">
+      <div class="panel-h"><span class="label">Live service status</span><span class="rate" id="stAt"></span></div>
+      <ul class="stgrid" id="st"></ul>
+      <p class="st-note">Polled from each provider's public status page every 60 seconds while this tab is open.</p>
+    </div>
+    <div class="label og-h">Major historical outages</div>
     <div class="outages" id="og"></div>
   </section>
 
@@ -533,6 +554,47 @@ const OG = [
 $('og').innerHTML = OG.slice().reverse().map(([d,s,t,p])=>`<div class="og"><div class="top"><span class="pill ${s}">${s==='crit'?'Critical':'Major'}</span><span class="dt">${d}</span></div><b>${t}</b><p>${p}</p></div>`).join('');
 
 $('srcLine').textContent = 'Data: IPsum threat feed (updated ' + D.ipsumUpdated + '), CISA Known Exploited Vulnerabilities, CVE Program, DB-IP country data. Last refresh ' + snapStr + '.';
+/* live service status: Statuspage public APIs, polled in the browser, build-time snapshot as fallback */
+const SVC = [
+  ['GitHub','www.githubstatus.com'],['Cloudflare','www.cloudflarestatus.com'],['Discord','discordstatus.com'],
+  ['Vercel','www.vercel-status.com'],['Solana','status.solana.com'],['Coinbase','status.coinbase.com'],
+  ['Kraken','status.kraken.com'],['OpenAI','status.openai.com'],['Reddit','www.redditstatus.com'],
+  ['DigitalOcean','status.digitalocean.com'],['Zoom','status.zoom.us'],['Dropbox','status.dropbox.com'],
+  ['Atlassian','status.atlassian.com']
+];
+const stState = {}; let stLive = false;
+(D.status||[]).forEach(x=>{ stState[x.host] = x; });
+function stRender(){
+  const rows = SVC.filter(([n,h])=>stState[h] || !D.status).map(([n,h])=>{
+    const x = stState[h] || {indicator:'unknown', description:'Checking…'};
+    const txt = x.incident ? x.incident : x.description;
+    return `<li class="${esc(x.indicator)}"><i></i><b><a href="https://${h}" target="_blank" rel="noopener">${esc(n)}</a></b><span title="${esc(txt)}">${esc(txt)}</span></li>`;
+  });
+  const order = {critical:0,major:1,minor:2,maintenance:3,none:4,unknown:5};
+  rows.sort((a,b)=>order[a.match(/class="(\w+)"/)[1]] - order[b.match(/class="(\w+)"/)[1]]);
+  $('st').innerHTML = rows.join('');
+  const vals = Object.values(stState);
+  const down = vals.filter(x=>x.indicator!=='none' && x.indicator!=='unknown').length;
+  const head = !vals.length ? 'Connecting… · ' : down ? down + ' with issues · ' : 'All clear · ';
+  $('stAt').textContent = head + (stLive ? 'live' : vals.length ? 'snapshot ' + snapStr : 'no data yet');
+}
+async function stPoll(){
+  let live = false;
+  await Promise.all(SVC.map(async ([n,h])=>{
+    try{
+      const r = await fetch(`https://${h}/api/v2/summary.json`, {cache:'no-store'});
+      if(!r.ok) return;
+      const j = await r.json();
+      const inc = (j.incidents||[]).find(i=>i.status!=='resolved');
+      stState[h] = {host:h, indicator:j.status.indicator, description:j.status.description, incident: inc ? inc.name : ''};
+      live = true;
+    }catch(e){}
+  }));
+  if(live) stLive = true;
+  SVC.forEach(([n,h])=>{ if(!stState[h] && !D.status) stState[h] = {host:h, indicator:'unknown', description:'Status page unreachable'}; });
+  stRender();
+}
+stRender(); stPoll(); setInterval(stPoll, 60000);
 </script>
 
 </body>

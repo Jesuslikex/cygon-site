@@ -2,12 +2,18 @@ name: Status history
 
 # Polls the 13 status pages every 15 minutes and records incidents and state
 # changes as JSON on the status-history branch (no database). When a service
-# changes state, it redeploys the site so the live panel and history update.
+# changes state, it redeploys the site so the live panel and history update,
+# and posts the change to Telegram / X once their secrets are set (README).
 
 on:
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
+    inputs:
+      test_alert:
+        description: "Send a test message to Telegram (checks the bot token and chat id)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -54,3 +60,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main -R "$GITHUB_REPOSITORY"
+      - name: Post alerts
+        if: steps.poll.outputs.changed == 'true' || inputs.test_alert
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+        run: python scripts/alert.py "$RUNNER_TEMP/changes.json" ${{ inputs.test_alert && '--test' || '' }}

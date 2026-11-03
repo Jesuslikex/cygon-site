@@ -218,6 +218,7 @@ def history_part(D):
         spans = []
         for i in h["incidents"].values():
             a, b = pt(i["start"]), pt(i["end"]) if i["end"] else NOW
+            a = min(a, b)  # incidents posted after the fact can have resolved_at before created_at
             spans.append((a, b, LEVEL.get(i["impact"], 0)))
             timeline.append({"svc": name, "name": i["name"], "impact": i["impact"], "start": i["start"], "end": i["end"], "link": i["link"]})
         days = []

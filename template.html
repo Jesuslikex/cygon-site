@@ -889,7 +889,7 @@ safe('history', ()=>{
   const tl = (H.timeline||[]).slice(0,12);
   $('itl').innerHTML = tl.length ? tl.map(i=>{
     const a = parseT(i.start), b = i.end ? parseT(i.end) : null;
-    const dur = b ? 'lasted ' + ago(b - a) : 'ongoing';
+    const dur = !b ? 'ongoing' : b > a ? 'lasted ' + ago(b - a) : 'resolved';
     return `<li><span class="when">${when(i.start)}</span><span class="svc">${esc(i.svc)} <span class="pill ${IMP[i.impact]||'none'}">${esc(i.impact)}</span></span><span class="nm"><a href="${esc(/^https:\/\//.test(i.link) ? i.link : '#')}" target="_blank" rel="noopener">${esc(i.name)}</a></span><span class="dur ${b?'':'open'}">${dur}</span></li>`;
   }).join('') : emptyLi('No incidents in the last 120 days.');
 });

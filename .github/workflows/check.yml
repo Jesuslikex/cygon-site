@@ -1,0 +1,37 @@
+name: Live site check
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Build and deploy"]
+    types: [completed]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: DNS
+        run: |
+          echo "A cygon.xyz:"; dig +short cygon.xyz A
+          echo "CNAME www.cygon.xyz:"; dig +short www.cygon.xyz CNAME
+      - name: Fetch live pages
+        run: |
+          set -u
+          fail=0
+          for u in https://jesuslikex.github.io/cygon-site/ https://cygon.xyz/ http://cygon.xyz/ https://www.cygon.xyz/; do
+            code=$(curl -sS -L -m 30 -o page.html -w '%{http_code} %{url_effective}' "$u" || echo "ERR")
+            echo "== $u -> $code size=$(wc -c < page.html 2>/dev/null || echo 0)"
+            [ -s page.html ] || continue
+            grep -o '"snapshot":"[^"]*"' page.html | head -1
+            for id in feed vulns timeline outages st og tl; do grep -q "id=\"$id\"" page.html && echo "  has #$id" || { echo "  MISSING #$id"; fail=1; }; done
+            grep -q 'not affiliated with BI.ZONE' page.html && echo "  footer ok" || { echo "  footer MISSING"; fail=1; }
+            grep -q 'three.min.js' page.html && echo "  globe lib ok" || echo "  globe lib MISSING"
+            python3 - <<'PY'
+          import json,re
+          s=open('page.html').read()
+          m=re.search(r'const D = (\{.*?\});\n',s)
+          d=json.loads(m.group(1))
+          print('  ips',d['totalIps'],'feed',len(d['feed']),'kev',d['kevTotal'],'cves24h',d['cvesNew24h'],'status',len(d.get('status',[])))
+          PY
+          done
+          exit $fail

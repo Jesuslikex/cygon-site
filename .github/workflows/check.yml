@@ -14,6 +14,12 @@ jobs:
         run: |
           echo "A cygon.xyz:"; dig +short cygon.xyz A
           echo "CNAME www.cygon.xyz:"; dig +short www.cygon.xyz CNAME
+      - name: Response headers
+        run: |
+          for u in https://cygon.xyz/ https://jesuslikex.github.io/cygon-site/; do
+            echo "== $u"; curl -sS -I -m 30 "$u" | tr -d '\r' | grep -iE '^(HTTP|strict-transport|content-security|x-frame|x-content-type|referrer-policy|permissions-policy|server|location)' || true
+          done
+          curl -sS -m 30 https://cygon.xyz/ | grep -q 'http-equiv="Content-Security-Policy"' && echo "meta CSP present" || { echo "meta CSP MISSING"; exit 1; }
       - name: Fetch live pages
         run: |
           set -u

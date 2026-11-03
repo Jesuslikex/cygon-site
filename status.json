@@ -1,5 +1,26 @@
 {
- "changes": [],
+ "changes": [
+  {
+   "desc": "Partially Degraded Service",
+   "from": "none",
+   "host": "www.githubstatus.com",
+   "incident": "Incident with Git Operations",
+   "link": "https://www.githubstatus.com",
+   "name": "GitHub",
+   "t": "2026-11-03T21:52:20Z",
+   "to": "minor"
+  },
+  {
+   "desc": "Partially Degraded Service",
+   "from": "none",
+   "host": "status.zoom.us",
+   "incident": "Service Degradation Affecting Outbound MMS Services in the US region",
+   "link": "https://status.zoom.us",
+   "name": "Zoom",
+   "t": "2026-11-03T21:52:20Z",
+   "to": "minor"
+  }
+ ],
  "hosts": {
   "discordstatus.com": {
    "coverage_from": "2026-02-27T21:52:42Z",
@@ -893,7 +914,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Memecore (M) Deposits Disabled",
+   "incident": "Brazilian Real (BRL) PIX Funding Delays",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -949,6 +970,14 @@
      "link": "https://stspg.io/q6h1mqn04xb6",
      "name": "FIX API connectivity issues",
      "start": "2026-10-28T22:54:52Z",
+     "status": "resolved"
+    },
+    "27b7ccx9s67k": {
+     "end": "2026-11-03T21:16:13Z",
+     "impact": "minor",
+     "link": "https://stspg.io/t4pgrslrf39r",
+     "name": "Incorrect liquidation prices displayed on Kraken Pro",
+     "start": "2026-11-03T18:40:31Z",
      "status": "resolved"
     },
     "2h160gkfz5g9": {
@@ -1014,6 +1043,14 @@
      "name": "Hedera (HBAR) Funding Delays",
      "start": "2026-09-29T22:25:45Z",
      "status": "resolved"
+    },
+    "5sf6xkjqtrw0": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/7ztgln6zqfmj",
+     "name": "Brazilian Real (BRL) PIX Funding Delays",
+     "start": "2026-11-03T20:39:20Z",
+     "status": "investigating"
     },
     "7zcy2j4hhxqz": {
      "end": "2026-10-27T10:11:18Z",
@@ -1521,8 +1558,8 @@
   },
   "status.zoom.us": {
    "coverage_from": "2026-09-03T05:39:07Z",
-   "description": "All Systems Operational",
-   "incident": "",
+   "description": "Partially Degraded Service",
+   "incident": "Service Degradation Affecting Outbound MMS Services in the US region",
    "incidents": {
     "0hgqwjz0lzwf": {
      "end": "2026-09-10T17:06:28Z",
@@ -1852,6 +1889,14 @@
      "start": "2026-10-09T14:17:53Z",
      "status": "resolved"
     },
+    "rbz47jx96k44": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/d46nxybl90r5",
+     "name": "Service Degradation Affecting Outbound MMS Services in the US region",
+     "start": "2026-11-03T17:18:52Z",
+     "status": "identified"
+    },
     "tqm0xyzlhqr5": {
      "end": "2026-10-04T08:20:34Z",
      "impact": "none",
@@ -1925,14 +1970,14 @@
      "status": "resolved"
     }
    },
-   "indicator": "none",
+   "indicator": "minor",
    "name": "Zoom",
-   "since": "2026-11-03T16:16:57Z"
+   "since": "2026-11-03T21:52:20Z"
   },
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partial System Outage",
-   "incident": "Increased Durable Object Errors in the Dallas, TX US region",
+   "incident": "",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -2039,12 +2084,12 @@
      "status": "resolved"
     },
     "7gixemnw9oei": {
-     "end": null,
+     "end": "2026-11-03T16:42:01Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/7gixemnw9oei",
      "name": "Increased Durable Object Errors in the Dallas, TX US region",
      "start": "2026-11-03T15:38:17Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "7he1pmetw77p": {
      "end": "2026-11-02T17:30:10Z",
@@ -2223,12 +2268,12 @@
      "status": "resolved"
     },
     "nbyxn84kvb6o": {
-     "end": null,
+     "end": "2026-11-03T19:38:09Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/nbyxn84kvb6o",
      "name": "Cloudflare Workers and Pages build errors ",
      "start": "2026-11-03T14:46:56Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "nwgwgbrn9a71": {
      "end": "2026-10-22T02:09:33Z",
@@ -2252,6 +2297,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/p1vurmibvmag",
      "name": "Elevated Errors for R2 and Durable Objects in ENAM",
      "start": "2026-10-21T20:43:03Z",
+     "status": "resolved"
+    },
+    "pfvfug94jq4q": {
+     "end": "2026-10-23T21:00:00Z",
+     "impact": "none",
+     "link": "https://www.cloudflarestatus.com/incidents/pfvfug94jq4q",
+     "name": "Missing Logs and Traces in Cloudflare Observability Platform",
+     "start": "2026-11-03T18:40:45Z",
      "status": "resolved"
     },
     "pij2josz3rvz": {
@@ -2341,8 +2394,8 @@
   },
   "www.githubstatus.com": {
    "coverage_from": "2026-08-21T14:00:00Z",
-   "description": "All Systems Operational",
-   "incident": "",
+   "description": "Partially Degraded Service",
+   "incident": "Incident with Git Operations",
    "incidents": {
     "0rn90wk115q9": {
      "end": "2026-09-13T10:44:55Z",
@@ -2351,6 +2404,14 @@
      "name": "Incident with several GitHub Services",
      "start": "2026-09-13T09:16:11Z",
      "status": "resolved"
+    },
+    "13b6lyl8d7bz": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/n478rfsspcmr",
+     "name": "Incident with Git Operations",
+     "start": "2026-11-03T20:57:14Z",
+     "status": "investigating"
     },
     "169pg72gg9jr": {
      "end": "2026-09-28T22:08:20Z",
@@ -2745,9 +2806,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "none",
+   "indicator": "minor",
    "name": "GitHub",
-   "since": "2026-11-03T16:16:57Z"
+   "since": "2026-11-03T21:52:20Z"
   },
   "www.redditstatus.com": {
    "coverage_from": "2024-06-28T02:17:49Z",

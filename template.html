@@ -226,6 +226,35 @@ footer p{margin:0;max-width:90ch}
 .stgrid li.major span,.stgrid li.critical span{color:var(--crit)}
 .st-note{margin:0;font-size:12px;color:var(--dim)}
 .og-h{margin:0 0 10px}
+/* status history: one row per service, 90 daily cells, then an incident timeline */
+.hi-panel{margin-bottom:18px}
+.hgrid{display:grid;gap:10px}
+.hrow{display:grid;grid-template-columns:110px minmax(0,1fr) 74px;gap:12px;align-items:center;min-width:0}
+.hrow b{font:600 13px/1.2 var(--f-body);color:var(--fg);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hrow .up{font:600 12px/1 var(--f-mono);color:var(--ok);text-align:right;font-variant-numeric:tabular-nums}
+.hrow .up.warn{color:var(--amber)}.hrow .up.bad{color:var(--crit)}.hrow .up.na{color:var(--dim)}
+.days{display:flex;gap:1px;height:22px;min-width:0}
+.days i{flex:1;min-width:1px;border-radius:1px;background:var(--ok);opacity:.85}
+.days i.l1{background:var(--amber);opacity:1}.days i.l2{background:var(--crit);opacity:.8}.days i.l3{background:var(--crit);opacity:1}
+.days i.nd{background:var(--line-2);opacity:.6}
+.hscale{display:grid;grid-template-columns:110px minmax(0,1fr) 74px;gap:12px;font:10px/1 var(--f-mono);color:var(--dim)}
+.hscale span:nth-child(2){display:flex;justify-content:space-between}
+.hkey{display:flex;flex-wrap:wrap;gap:6px 14px;font:11px/1 var(--f-mono);color:var(--muted)}
+.hkey span{display:inline-flex;align-items:center;gap:6px}.hkey i{width:9px;height:9px;border-radius:2px;display:inline-block}
+.itl{list-style:none;margin:0 0 18px;padding:0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.itl li{background:var(--panel);padding:10px 14px;display:grid;grid-template-columns:150px 120px minmax(0,1fr) auto;gap:12px;align-items:center;min-width:0}
+.itl .when{font:11px/1.3 var(--f-mono);color:var(--muted)}
+.itl .svc{font:600 13px/1.2 var(--f-body);color:var(--fg)}
+.itl .nm{font-size:13px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.itl .nm a{color:inherit;text-decoration:none}.itl .nm a:hover{color:var(--fg);text-decoration:underline}
+.itl .dur{font:11px/1 var(--f-mono);color:var(--dim);text-align:right;white-space:nowrap}
+.itl .dur.open{color:var(--crit)}
+.pill.none{color:var(--muted);background:color-mix(in srgb,var(--muted) 12%,transparent)}
+@media (max-width:720px){
+  .hrow{grid-template-columns:minmax(0,1fr) auto;gap:6px 10px}.hrow .days{grid-column:1/-1;grid-row:2;height:18px}
+  .hscale{grid-template-columns:1fr}.hscale span:first-child,.hscale span:last-child{display:none}
+  .itl li{grid-template-columns:minmax(0,1fr) auto;gap:4px 10px}.itl .nm{grid-column:1/-1;white-space:normal}.itl .when{grid-row:1;grid-column:1}.itl .dur{grid-row:1;grid-column:2}.itl .svc{grid-column:1}
+}
 .brand-mark{border-radius:50%;display:block}
 .skip{position:absolute;left:12px;top:-60px;z-index:20;background:var(--brand);color:#140202;font:600 13px/1 var(--f-mono);padding:10px 12px;border-radius:4px;text-decoration:none}
 .skip:focus{top:12px}
@@ -355,6 +384,14 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
       <ul class="stgrid" id="st"></ul>
       <p class="st-note">Polled from each provider's public status page every 60 seconds while this tab is open.</p>
     </div>
+    <div class="panel hi-panel" id="history">
+      <div class="panel-h"><span class="label">90-day history</span><span class="rate" id="hiAt"></span></div>
+      <div class="hgrid" id="hist"></div>
+      <div class="hkey"><span><i style="background:var(--ok)"></i>No incident</span><span><i style="background:var(--amber)"></i>Minor</span><span><i style="background:var(--crit)"></i>Major or critical</span><span><i style="background:var(--line-2)"></i>No data</span></div>
+      <p class="st-note">Built from each provider's own status page incidents, recorded every 15 minutes. Uptime is the share of the last 30 days without a major or critical incident.</p>
+    </div>
+    <div class="label og-h">Incident timeline</div>
+    <ol class="itl" id="itl"></ol>
     <div class="label og-h">Major historical outages</div>
     <div class="outages" id="og"></div>
   </section>
@@ -417,7 +454,7 @@ const emptyLi = msg => `<li class="empty">${esc(msg)}</li>`;
 const ago = ms => { const h = ms/36e5; return h < 1 ? Math.max(1, Math.round(ms/6e4)) + ' min' : h < 48 ? Math.round(h) + ' h' : Math.round(h/24) + ' days'; };
 
 /* freshness: whole-site and per-feed stale notice */
-const FEEDS = {ipsum:'IPsum threat feed', kev:'CISA exploited list', cve:'CVE list', status:'service status snapshot'};
+const FEEDS = {ipsum:'IPsum threat feed', kev:'CISA exploited list', cve:'CVE list', status:'service status snapshot', history:'status history'};
 function checkStale(){
   const now = Date.now(), msgs = [];
   const siteAge = snap ? now - snap : Infinity;
@@ -815,6 +852,28 @@ safe('status', ()=>{
 });
 
 /* country inspector: real counts from today's IPsum list (geolocated with DB-IP) and the replay sample */
+/* status history (from the status-history branch, rebuilt with each deploy) */
+safe('history', ()=>{
+  const H = D.history;
+  if (!H || !(H.services||[]).length){ $('hist').innerHTML = '<p class="empty">History starts recording with the next refresh.</p>'; $('itl').innerHTML = emptyLi('No incidents recorded yet.'); return; }
+  const d0 = new Date(H.day0 + 'T00:00:00Z');
+  const dayStr = k => new Date(d0.getTime() + k*864e5).toISOString().slice(0,10);
+  const LV = ['No incident','Minor incident','Major incident','Critical incident'];
+  const upCls = u => u == null ? 'na' : u >= 99.9 ? '' : u >= 99 ? 'warn' : 'bad';
+  $('hist').innerHTML = H.services.map(s=>`<div class="hrow"><b><a href="https://${esc(s.host)}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">${esc(s.name)}</a></b><div class="days" role="img" aria-label="${esc(s.name)}: ${s.days.filter(x=>x>0).length} days with incidents in the last 90">${s.days.map((x,k)=>`<i class="${x<0?'nd':x?'l'+x:''}" title="${dayStr(k)}: ${x<0?'no data':LV[x]}"></i>`).join('')}</div><span class="up ${upCls(s.up30)}" title="90 days: ${s.up90==null?'n/a':s.up90+'%'} · ${s.n30} incidents in 30 days">${s.up30==null?'n/a':s.up30.toFixed(2)+'%'}</span></div>`).join('')
+    + `<div class="hscale" aria-hidden="true"><span></span><span><span>90 days ago</span><span>today</span></span><span style="text-align:right">30d uptime</span></div>`;
+  const ups = H.services.map(s=>s.up30).filter(u=>u!=null);
+  $('hiAt').textContent = ups.length ? 'avg ' + (ups.reduce((a,b)=>a+b,0)/ups.length).toFixed(2) + '% over 30 days' : '';
+  const IMP = {critical:'crit', major:'crit', minor:'high', none:'none', maintenance:'none'};
+  const when = t => { const d = parseT(t); return d ? d.toISOString().slice(0,16).replace('T',' ') + ' UTC' : ''; };
+  const tl = (H.timeline||[]).slice(0,12);
+  $('itl').innerHTML = tl.length ? tl.map(i=>{
+    const a = parseT(i.start), b = i.end ? parseT(i.end) : null;
+    const dur = b ? 'lasted ' + ago(b - a) : 'ongoing';
+    return `<li><span class="when">${when(i.start)}</span><span class="svc">${esc(i.svc)} <span class="pill ${IMP[i.impact]||'none'}">${esc(i.impact)}</span></span><span class="nm"><a href="${esc(/^https:\/\//.test(i.link) ? i.link : '#')}" target="_blank" rel="noopener">${esc(i.name)}</a></span><span class="dur ${b?'':'open'}">${dur}</span></li>`;
+  }).join('') : emptyLi('No incidents in the last 120 days.');
+});
+
 const CC_RANK = Object.entries(D.allCounts || {}).filter(([cc])=>D_countries[cc]).sort((a,b)=>b[1]-a[1]);
 const flag = cc => /^[A-Z]{2}$/.test(cc) ? String.fromCodePoint(...[...cc].map(ch=>127397 + ch.charCodeAt(0))) : '';
 let selCC = '';

@@ -84,6 +84,29 @@ h1 em{font-style:normal;color:var(--brand);text-shadow:0 0 24px color-mix(in srg
 .mapbox{position:relative;border:1px solid var(--line);background:radial-gradient(ellipse at 50% 45%,#1c0809 0%,#030303 70%);border-radius:6px;overflow:hidden}
 #map{display:block;width:100%;height:auto;aspect-ratio:16/9;max-width:100%;cursor:grab;touch-action:pan-y}
 #map:active{cursor:grabbing}
+#map.hover{cursor:pointer}
+.map-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:10px;font-size:13px;color:var(--muted)}
+.map-tools label{font:600 11px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--fg)}
+.map-tools select{font:13px/1.2 var(--f-body);color:var(--fg);background:var(--panel-2);border:1px solid var(--line-2);border-radius:4px;padding:8px 10px;max-width:100%}
+.map-tools .hint{color:var(--dim)}
+.cpanel{position:absolute;left:12px;top:12px;width:min(320px,calc(100% - 24px));max-height:calc(100% - 24px);overflow:auto;background:color-mix(in srgb,var(--panel) 92%,transparent);backdrop-filter:blur(6px);border:1px solid color-mix(in srgb,var(--brand) 40%,var(--line));border-radius:6px;padding:14px;display:grid;gap:10px;box-shadow:0 0 30px color-mix(in srgb,var(--brand) 18%,transparent);animation:slidein .25s ease-out}
+.cpanel[hidden]{display:none}
+.cp-h{display:flex;align-items:start;justify-content:space-between;gap:8px}
+.cp-h b{font:700 20px/1.1 var(--f-display);text-transform:uppercase;letter-spacing:.03em}
+.cp-h small{display:block;font:500 11px/1.3 var(--f-mono);color:var(--muted);letter-spacing:.1em;margin-top:4px}
+.cp-x{background:none;border:1px solid var(--line-2);color:var(--fg);border-radius:4px;width:30px;height:30px;font:16px/1 var(--f-mono);cursor:pointer;flex:none}
+.cp-x:hover{border-color:var(--brand)}
+.cp-big{font:600 28px/1 var(--f-mono);color:var(--brand)}
+.cp-big span{font:12px/1 var(--f-body);color:var(--muted);margin-left:6px}
+.cp-kv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.cp-kv div{background:var(--panel-2);padding:8px;display:grid;gap:4px}
+.cp-kv b{font:600 14px/1 var(--f-mono)}
+.cp-kv span{font:10px/1.2 var(--f-mono);color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.cp-ips{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.cp-ips li{display:flex;justify-content:space-between;gap:8px;font:12px/1.3 var(--f-mono);padding:4px 0;border-bottom:1px dashed var(--line)}
+.brow[data-cc]{cursor:pointer;border-radius:3px}
+.brow[data-cc]:hover .n{color:var(--brand)}
+@media (max-width:720px){.cpanel{position:static;width:auto;max-height:none;margin:10px;backdrop-filter:none}.mapbox{display:flex;flex-direction:column}}
 @media (max-width:640px){#map{aspect-ratio:1/1}}
 .map-legend{position:absolute;left:12px;bottom:10px;display:flex;gap:14px;flex-wrap:wrap}
 .map-legend span{display:inline-flex;align-items:center;gap:6px;font:500 10px/1 var(--f-mono);letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
@@ -257,7 +280,7 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
 
     <div class="stale-bar" id="staleBar" role="status" hidden></div>
     <div class="mapbox">
-      <canvas id="map" role="img" aria-label="Rotating globe showing where today's flagged malicious IPs are located. Drag to spin."></canvas>
+      <canvas id="map" role="img" aria-label="Rotating globe showing where today's flagged malicious IPs are located. Drag to spin, tap a country to inspect it, or use the country picker below."></canvas>
       <div class="map-tag mono" id="mapTag"></div>
       <div class="map-legend" aria-hidden="true">
         <span><i style="background:var(--crit)"></i>On 6+ lists</span>
@@ -265,6 +288,12 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
         <span><i style="background:var(--ice)"></i>1–2 lists</span>
         <span><i style="background:none;border:1px solid var(--fg)"></i>Cloud region</span>
       </div>
+      <aside class="cpanel" id="cpanel" aria-live="polite" hidden></aside>
+    </div>
+    <div class="map-tools">
+      <label for="ccSel">Inspect a country</label>
+      <select id="ccSel"><option value="">Choose…</option></select>
+      <span class="hint">or tap a hotspot on the globe</span>
     </div>
 
     <div class="stats">
@@ -438,6 +467,7 @@ safe('mapTag', ()=>{
 /* globe: loaded after the data panels, paused when off screen, scaled down on weak devices */
 const cv = $('map');
 let launch = () => {};
+let globeFocus = () => {};
 function globeOff(msg){
   const box = cv.parentNode; if (box.querySelector('.globe-off')) return;
   const p = document.createElement('p'); p.className = 'globe-off'; p.textContent = msg; box.appendChild(p);
@@ -456,10 +486,10 @@ function startGlobe(){
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(45, 16/9, 0.1, 400);
   camera.position.set(0, 0.25, 3.05); camera.lookAt(0,0,0);
-  let lastW = 0, lastH = 0;
+  let lastW = 0, lastH = 0, baseZ = 3.5, focusedZ = false;
   function resize(){ const r = cv.getBoundingClientRect(); if (!r.width || (r.width === lastW && r.height === lastH)) return; lastW = r.width; lastH = r.height;
     renderer.setSize(r.width, r.height, false); camera.aspect = r.width/r.height;
-    camera.position.z = camera.aspect < 1.1 ? 3.7 : 3.5; camera.updateProjectionMatrix(); }
+    baseZ = camera.aspect < 1.1 ? 3.7 : 3.5; camera.position.z = focusedZ ? baseZ*0.74 : baseZ; camera.updateProjectionMatrix(); }
   resize(); addEventListener('resize', resize, {passive: true});
 
   const vec = (lon, lat, r=1) => { const p=(lon+180)*RAD, l=lat*RAD; return new THREE.Vector3(-Math.cos(p)*Math.cos(l)*r, Math.sin(l)*r, Math.sin(p)*Math.cos(l)*r); };
@@ -544,6 +574,49 @@ function startGlobe(){
   ['pointerup','pointercancel','lostpointercapture'].forEach(ev=>cv.addEventListener(ev, endDrag));
   addEventListener('pointerup', endDrag);
 
+  // tap / click a country: raycast onto the earth, map to lon/lat, take the nearest flagged country
+  const ray = new THREE.Raycaster(), ndc = new THREE.Vector2();
+  const pickable = Object.keys(counts).filter(cc=>D_countries[cc]);
+  function pickAt(clientX, clientY){
+    const r = cv.getBoundingClientRect();
+    ndc.set(((clientX - r.left)/r.width)*2 - 1, -((clientY - r.top)/r.height)*2 + 1);
+    ray.setFromCamera(ndc, camera);
+    const hit = ray.intersectObject(earth)[0]; if (!hit) return null;
+    const p = world.worldToLocal(hit.point.clone()).normalize();
+    const lat = Math.asin(p.y)/RAD, lon = ((Math.atan2(p.z, -p.x)/RAD - 180 + 540) % 360) - 180;
+    let best = null, bd = 1e9;
+    pickable.forEach(cc=>{ const c = D_countries[cc];
+      const d = Math.acos(Math.min(1, Math.sin(lat*RAD)*Math.sin(c[1]*RAD) + Math.cos(lat*RAD)*Math.cos(c[1]*RAD)*Math.cos((lon-c[0])*RAD)))/RAD;
+      const score = d - Math.log10(counts[cc]+1)*0.6; // favour bigger sources when two are close
+      if (d < 14 && score < bd){ bd = score; best = cc; } });
+    return best;
+  }
+  let downX = 0, downY = 0, downT = 0;
+  cv.addEventListener('pointerdown', e=>{ downX = e.clientX; downY = e.clientY; downT = performance.now(); });
+  cv.addEventListener('pointerup', e=>{
+    if (Math.hypot(e.clientX-downX, e.clientY-downY) > 8 || performance.now()-downT > 600) return;
+    const cc = pickAt(e.clientX, e.clientY);
+    if (cc) selectCountry(cc, 'globe'); else closeCountry();
+  });
+  cv.addEventListener('mousemove', e=>{ if (!drag) cv.classList.toggle('hover', !!pickAt(e.clientX, e.clientY)); });
+
+  // highlight + fly to the selected country
+  const selRing = new THREE.Mesh(new THREE.RingGeometry(0.03, 0.04, 48), new THREE.MeshBasicMaterial({color: 0xff2b2b, transparent: true, side: THREE.DoubleSide, depthWrite: false, depthTest: false}));
+  const selGlow = new THREE.Sprite(new THREE.SpriteMaterial({map: glowTex, color: 0xff2b2b, transparent: true, opacity: 0.9, blending: THREE.AdditiveBlending, depthWrite: false}));
+  selRing.visible = selGlow.visible = false; world.add(selRing); world.add(selGlow);
+  let target = null, focused = false;
+  globeFocus = cc => {
+    if (!cc){ focused = focusedZ = false; target = null; setVisible(onScreen); selRing.visible = selGlow.visible = false; return; }
+    const c = D_countries[cc]; if (!c) return;
+    const p = vec(c[0], c[1], 1.006);
+    selRing.position.copy(p); selRing.lookAt(p.clone().multiplyScalar(2)); selGlow.position.copy(p); selGlow.scale.setScalar(0.22);
+    selRing.visible = selGlow.visible = true;
+    let ty = Math.atan2(-p.x, p.z); const cur = world.rotation.y;
+    ty += Math.round((cur - ty)/(Math.PI*2))*Math.PI*2;
+    target = {y: ty, x: Math.max(-0.9, Math.min(0.9, c[1]*RAD))}; focused = focusedZ = true; spinV = 0;
+    setVisible(onScreen);
+  };
+
   world.rotation.y = Math.PI/2 - (15+180)*RAD;
 
   // render only while on screen and the tab is visible
@@ -552,7 +625,13 @@ function startGlobe(){
     raf = 0;
     const dt = last ? Math.min(64, now - last) : 16; last = now;
     if (!tuned){ frames++; if (dt > 34) slow++; if (frames === 90){ tuned = true; if (slow > 30){ maxArcs = Math.min(maxArcs, 14); renderer.setPixelRatio(1); lastW = 0; resize(); } } }
-    if (!drag){ spinV *= 0.94; world.rotation.y += (reduce ? 0 : 0.0011*dt/16) + spinV; }
+    if (drag) target = null;
+    else if (target){ const k = reduce ? 1 : Math.min(1, dt/220); world.rotation.y += (target.y - world.rotation.y)*k; world.rotation.x += (target.x - world.rotation.x)*k;
+      if (Math.abs(target.y - world.rotation.y) < 0.001 && Math.abs(target.x - world.rotation.x) < 0.001) target = null; }
+    else if (!focused){ spinV *= 0.94; world.rotation.y += (reduce ? 0 : 0.0011*dt/16) + spinV; }
+    else { spinV *= 0.9; world.rotation.y += spinV; }
+    { const tz = focusedZ ? baseZ*0.74 : baseZ; if (Math.abs(camera.position.z - tz) > 0.001) camera.position.z += (tz - camera.position.z)*(reduce ? 1 : Math.min(1, dt/260)); }
+    if (selRing.visible){ const pk = 1 + 0.35*Math.sin(now/260); selRing.scale.setScalar(pk); selRing.material.opacity = 0.65 + 0.35*Math.sin(now/260); }
     for (let i = arcs.length-1; i >= 0; i--){
       const A = arcs[i], k = (now - A.t0)/A.dur;
       const headI = Math.max(0, Math.min(N, Math.floor(k*N)));
@@ -612,9 +691,13 @@ function bars(el, rows, cls){
   rows = rows.filter(r=>r[1] > 0);
   if (!rows.length){ el.innerHTML = '<p class="empty">No data in the latest refresh.</p>'; return; }
   const max = Math.max(...rows.map(r=>r[1]));
-  el.innerHTML = rows.map(([n,c,k])=>`<div class="brow ${k||cls||''}"><span class="n">${esc(n)}</span><span class="c">${fmt(c)}</span><span class="track" aria-hidden="true"><i style="width:${(c/max*100).toFixed(1)}%"></i></span></div>`).join('');
+  el.innerHTML = rows.map(([n,c,k,cc])=>`<div class="brow ${k||cls||''}"${cc ? ` data-cc="${esc(cc)}" role="button" tabindex="0" aria-label="Inspect ${esc(n)}"` : ''}><span class="n">${esc(n)}</span><span class="c">${fmt(c)}</span><span class="track" aria-hidden="true"><i style="width:${(c/max*100).toFixed(1)}%"></i></span></div>`).join('');
 }
-safe('topC', ()=>bars($('topC'), (D.topCountries||[]).slice(0,8).map(([cc,n],i)=>[(D_countries[cc]?D_countries[cc][2]:cc), n, i<3?'hot':''])));
+safe('topC', ()=>{
+  bars($('topC'), (D.topCountries||[]).slice(0,8).map(([cc,n],i)=>[(D_countries[cc]?D_countries[cc][2]:cc), n, i<3?'hot':'', D_countries[cc] ? cc : '']));
+  const go = e=>{ const r = e.target.closest('[data-cc]'); if (!r) return; if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') return; e.preventDefault(); selectCountry(r.dataset.cc, 'list'); };
+  $('topC').addEventListener('click', go); $('topC').addEventListener('keydown', go);
+});
 safe('levels', ()=>{
   const L = D.levels || {};
   bars($('levels'), [
@@ -726,6 +809,46 @@ safe('status', ()=>{
     stRender();
   }
   stRender(); stPoll(); setInterval(stPoll, 60000);
+});
+
+/* country inspector: real counts from today's IPsum list (geolocated with DB-IP) and the replay sample */
+const CC_RANK = Object.entries(D.allCounts || {}).filter(([cc])=>D_countries[cc]).sort((a,b)=>b[1]-a[1]);
+const flag = cc => /^[A-Z]{2}$/.test(cc) ? String.fromCodePoint(...[...cc].map(ch=>127397 + ch.charCodeAt(0))) : '';
+let selCC = '';
+function selectCountry(cc, from){
+  const c = D_countries[cc], n = (D.allCounts||{})[cc]; if (!c || !n) return;
+  selCC = cc;
+  const rank = CC_RANK.findIndex(r=>r[0]===cc) + 1;
+  const total = D.totalIps || CC_RANK.reduce((a,r)=>a+r[1],0);
+  const share = total ? n/total*100 : 0;
+  const sample = (D.feed||[]).filter(f=>f[2]===cc);
+  const b = {crit:0, high:0, low:0}; sample.forEach(f=>b[sevOf(f[1])]++);
+  const top = sample.slice().sort((x,y)=>y[1]-x[1]).slice(0,6);
+  const p = $('cpanel');
+  p.innerHTML = `<div class="cp-h"><div><b>${flag(cc)} ${esc(c[2])}</b><small>RANK #${rank} OF ${CC_RANK.length} SOURCE COUNTRIES</small></div><button class="cp-x" type="button" aria-label="Close country details">×</button></div>
+    <div class="cp-big">${fmt(n)}<span>flagged IPs · ${share < 0.1 ? '<0.1' : share.toFixed(1)}% of today's total</span></div>
+    <div class="track" style="height:5px;background:var(--panel-2);border-radius:2px;overflow:hidden"><i style="display:block;height:100%;width:${Math.max(1, Math.min(100, n/CC_RANK[0][1]*100)).toFixed(1)}%;background:var(--brand)"></i></div>
+    ${sample.length ? `<span class="label">Threat mix · ${fmt(sample.length)} host${sample.length===1?'':'s'} in today's replay</span>
+    <div class="cp-kv"><div><b style="color:var(--crit)">${b.crit}</b><span>6+ lists</span></div><div><b style="color:var(--amber)">${b.high}</b><span>3–5 lists</span></div><div><b style="color:var(--ice)">${b.low}</b><span>1–2 lists</span></div></div>
+    <span class="label">Most-flagged hosts</span>
+    <ul class="cp-ips">${top.map(f=>`<li><span>${esc(f[0])}</span><span class="pill ${sevOf(f[1])}">${f[1]} list${f[1]>1?'s':''}</span></li>`).join('')}</ul>`
+    : '<p class="note">No hosts from this country in today\'s replay sample.</p>'}
+    <p class="note">From today's IPsum list, geolocated with DB-IP. Last two octets masked. Exploit and CVE data is global, not per country.</p>`;
+  p.hidden = false;
+  p.querySelector('.cp-x').addEventListener('click', ()=>closeCountry(true));
+  $('ccSel').value = cc;
+  globeFocus(cc);
+  if (from === 'list') $('globe').querySelector('.mapbox').scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'center'});
+}
+function closeCountry(focusBack){
+  if (!selCC) return; selCC = ''; $('cpanel').hidden = true; $('ccSel').value = ''; globeFocus(null);
+  if (focusBack) $('ccSel').focus();
+}
+safe('ccSel', ()=>{
+  const sel = $('ccSel');
+  CC_RANK.forEach(([cc,n])=>{ const o = document.createElement('option'); o.value = cc; o.textContent = `${D_countries[cc][2]} · ${fmt(n)}`; sel.appendChild(o); });
+  sel.addEventListener('change', ()=> sel.value ? selectCountry(sel.value, 'select') : closeCountry());
+  addEventListener('keydown', e=>{ if (e.key === 'Escape') closeCountry(); });
 });
 
 /* animated logo: plays once and holds on its last frame; poster only for reduced motion or data saver */

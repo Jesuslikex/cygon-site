@@ -59,10 +59,11 @@ def main(d):
                 "end": iso(i.get("resolved_at")),
                 "link": i.get("shortlink") or f"https://{host}/incidents/{i['id']}",
             }
-        if "coverage_from" not in h:
-            # fewer than the API page size means we got the provider's full recent history
+        if h.get("coverage_from", "2000") < "2001":
+            # only claim history back to the oldest incident the provider returned (or now, if none),
+            # so days we know nothing about show as "no data" rather than a fake green
             starts = sorted(x["start"] for x in h["incidents"].values())
-            h["coverage_from"] = starts[0] if len(incs) >= 50 and starts else "2000-01-01T00:00:00Z"
+            h["coverage_from"] = starts[0] if starts else NOW_S
         h["incidents"] = {k: v for k, v in h["incidents"].items() if (v["end"] or NOW_S) >= cutoff}
         ind, desc = summ["status"]["indicator"], summ["status"]["description"]
         open_inc = next((i["name"] for i in summ.get("incidents", []) if i.get("status") != "resolved"), "")

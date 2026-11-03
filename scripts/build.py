@@ -257,6 +257,19 @@ def history_part(D):
                     "changes": db.get("changes", [])[-20:][::-1]}
 
 
+TOD = os.environ.get("TOD_DIR") or "https://raw.githubusercontent.com/Jesuslikex/cygon-site/threat-of-day"
+
+
+def tod_part(D):
+    """Today's threat-of-the-day post and card from the threat-of-day branch (scripts/threat_of_day.py)."""
+    local = not TOD.startswith("http")
+    rd = (lambda n: open(os.path.join(TOD, n), "rb").read()) if local else (lambda n: get(f"{TOD}/{n}", 30))
+    meta = json.loads(rd("latest.json"))
+    img = f"tod-{meta['date']}.png"
+    open(os.path.join(OUT, img), "wb").write(rd("latest.png"))
+    D["tod"] = {"date": meta["date"], "text": meta["text"], "xLength": meta.get("xLength"), "img": img}
+
+
 def fill_csp(html):
     """Put the hashes of the page's executable inline scripts and the status hosts into the meta CSP."""
     import base64, hashlib, re
@@ -289,6 +302,11 @@ def main():
             print(f"::warning title=Feed failed::{name}: {ex}")
     D["snapshot"] = NOW.strftime("%Y-%m-%dT%H:%MZ")
     os.makedirs(OUT, exist_ok=True)
+    try:  # optional: the section stays hidden until the first daily post exists
+        tod_part(D)
+    except Exception as ex:
+        D.pop("tod", None)
+        print("threat of the day unavailable:", ex, file=sys.stderr)
     tpl = open(os.path.join(ROOT, "template.html")).read()
     blob = json.dumps(D, separators=(",", ":")).replace("</", "<\\/")
     html = tpl.replace("/*DATA*/null/*END*/", blob)

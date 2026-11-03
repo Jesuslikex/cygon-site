@@ -30,6 +30,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Read status history
+        run: |
+          # straight from git, so a redeploy right after a state change never reads a cached copy
+          if git fetch -q --depth 1 origin status-history; then
+            git show FETCH_HEAD:status.json > "$RUNNER_TEMP/status.json" && echo "HISTORY_URL=file://$RUNNER_TEMP/status.json" >> "$GITHUB_ENV"
+          fi
       - name: Pull feeds and render
         run: python scripts/build.py
       - uses: actions/configure-pages@v5

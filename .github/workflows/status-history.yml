@@ -1,0 +1,56 @@
+name: Status history
+
+# Polls the 13 status pages every 15 minutes and records incidents and state
+# changes as JSON on the status-history branch (no database). When a service
+# changes state, it redeploys the site so the live panel and history update.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: status-history
+  cancel-in-progress: false
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check out history branch
+        run: |
+          if git ls-remote --exit-code --heads origin status-history >/dev/null; then
+            git fetch --depth 1 origin status-history
+            git worktree add hist origin/status-history
+          else
+            git worktree add --detach hist
+            git -C hist checkout --orphan status-history
+            git -C hist rm -rf --quiet .
+            printf '# Status history\n\nWritten by .github/workflows/status-history.yml on main. status.json holds each service'"'"'s incidents (120 days) and the state changes the monitor saw.\n' > hist/README.md
+          fi
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Poll status pages
+        id: poll
+        env:
+          CHANGES_OUT: ${{ runner.temp }}/changes.json
+        run: python scripts/history.py hist
+      - name: Commit if anything changed
+        run: |
+          cd hist
+          git add -A
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git -c user.name="cygon-bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -q -m "status $(date -u +%FT%TZ)"
+          git push -q origin HEAD:status-history
+      - name: Redeploy on state change
+        if: steps.poll.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main -R "$GITHUB_REPOSITORY"

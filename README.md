@@ -9,6 +9,10 @@ Static site on GitHub Pages. A scheduled GitHub Action (every 3 hours, plus on e
 
 If a feed fails, the build keeps its last good data (read back from the live `data.json`) and the page shows a "Delayed" notice once data is more than 6 hours old (or one source is more than 12 hours old). `scripts/health.py` fails the run when any feed has had no good refresh for 12 hours, and the workflow then opens a "Site data refresh is failing" issue, which closes itself on the next good run.
 
+Status history: `.github/workflows/status-history.yml` polls the 13 status pages every 15 minutes and stores incidents and state changes as JSON on the `status-history` branch (`scripts/history.py`, no database). A state change triggers a redeploy. `build.py` turns that file into the 90-day bars, 30-day uptime and incident timeline in the Outages section.
+
+The page sets a Content-Security-Policy and referrer policy in meta tags (GitHub Pages can't send headers); `build.py` fills in the inline script hashes.
+
 three.js (r128, MIT) and the globe texture are self-hosted from `static/`. The globe loads after the data panels, pauses when off screen, and lowers its quality on weak devices.
 
 Run locally: `python3 scripts/build.py` then open `site/index.html`.

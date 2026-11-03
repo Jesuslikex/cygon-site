@@ -28,7 +28,7 @@ jobs:
             code=$(curl -sS -L -m 30 -o page.html -w '%{http_code} %{url_effective}' "$u" || echo "ERR")
             echo "== $u -> $code size=$(wc -c < page.html 2>/dev/null || echo 0)"
             [ -s page.html ] || continue
-            for id in feed vulns timeline outages st og tl staleBar; do grep -q "id=\"$id\"" page.html && echo "  has #$id" || { echo "  MISSING #$id"; fail=1; }; done
+            for id in feed vulns timeline outages st og tl staleBar history itl; do grep -q "id=\"$id\"" page.html && echo "  has #$id" || { echo "  MISSING #$id"; fail=1; }; done
             grep -q 'not affiliated with BI.ZONE' page.html && echo "  footer ok" || { echo "  footer MISSING"; fail=1; }
             grep -q 'rel="canonical"' page.html && echo "  canonical ok" || { echo "  canonical MISSING"; fail=1; }
           done

@@ -178,12 +178,7 @@ def cve_part(D):
         D["cves"] = out
 
 
-STATUS_HOSTS = [
-    "www.githubstatus.com", "www.cloudflarestatus.com", "discordstatus.com", "www.vercel-status.com",
-    "status.solana.com", "status.coinbase.com", "status.kraken.com", "status.openai.com",
-    "www.redditstatus.com", "status.digitalocean.com", "status.zoom.us", "status.dropbox.com",
-    "status.atlassian.com",
-]
+STATUS_HOSTS = [h for _, h in json.load(open(os.path.join(ROOT, "scripts", "services.json")))]
 
 
 def status_part(D):
@@ -202,6 +197,63 @@ def status_part(D):
     if not out:
         raise RuntimeError("no status pages reachable")
     D["status"] = out
+
+
+HISTORY = os.environ.get("HISTORY_URL", "https://raw.githubusercontent.com/Jesuslikex/cygon-site/status-history/status.json")
+LEVEL = {"none": 0, "maintenance": 0, "minor": 1, "major": 2, "critical": 3}
+
+
+def history_part(D):
+    """Daily incident bars, uptime and an incident timeline from the status-history branch."""
+    db = json.loads(get(HISTORY, 30))
+    pt = lambda s: dt.datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=dt.timezone.utc)
+    today = NOW.replace(hour=0, minute=0, second=0, microsecond=0)
+    day0 = today - dt.timedelta(days=89)
+    services, timeline = [], []
+    for name, host in json.load(open(os.path.join(ROOT, "scripts", "services.json"))):
+        h = db["hosts"].get(host)
+        if not h or "coverage_from" not in h:  # never reached yet
+            continue
+        cov = max(pt(h["coverage_from"]), NOW - dt.timedelta(days=90))
+        spans = []
+        for i in h["incidents"].values():
+            a, b = pt(i["start"]), pt(i["end"]) if i["end"] else NOW
+            spans.append((a, b, LEVEL.get(i["impact"], 0)))
+            timeline.append({"svc": name, "name": i["name"], "impact": i["impact"], "start": i["start"], "end": i["end"], "link": i["link"]})
+        days = []
+        for k in range(90):
+            ds = day0 + dt.timedelta(days=k)
+            de = ds + dt.timedelta(days=1)
+            if de <= cov:
+                days.append(-1)
+                continue
+            days.append(max([lv for a, b, lv in spans if a < de and b > ds] or [0]))
+
+        def uptime(n):
+            start = max(NOW - dt.timedelta(days=n), cov)
+            total = (NOW - start).total_seconds()
+            if total < 3600:
+                return None
+            bad = sorted((max(a, start), min(b, NOW)) for a, b, lv in spans if lv >= 2 and b > start)
+            down, cur = 0, None
+            for a, b in bad:  # union of overlapping major/critical spans
+                if cur and a <= cur[1]:
+                    cur = (cur[0], max(cur[1], b))
+                else:
+                    if cur:
+                        down += (cur[1] - cur[0]).total_seconds()
+                    cur = (a, b)
+            if cur:
+                down += (cur[1] - cur[0]).total_seconds()
+            return round(100 * (1 - down / total), 3)
+
+        services.append({"name": name, "host": host, "days": days, "up30": uptime(30), "up90": uptime(90),
+                         "n30": sum(1 for a, b, lv in spans if b > NOW - dt.timedelta(days=30))})
+    timeline.sort(key=lambda x: x["start"], reverse=True)
+    if not services:
+        raise RuntimeError("history file has no services yet")
+    D["history"] = {"day0": day0.strftime("%Y-%m-%d"), "services": services, "timeline": timeline[:30],
+                    "changes": db.get("changes", [])[-20:][::-1]}
 
 
 def fill_csp(html):
@@ -223,7 +275,7 @@ def main():
     fresh = D.setdefault("fresh", {})
     prev_snap = D.get("snapshot")
     ok, failed = 0, []
-    for name, fn in (("ipsum", lambda: ipsum_part(D, centroids)), ("kev", lambda: kev_part(D)), ("cve", lambda: cve_part(D)), ("status", lambda: status_part(D))):
+    for name, fn in (("ipsum", lambda: ipsum_part(D, centroids)), ("kev", lambda: kev_part(D)), ("cve", lambda: cve_part(D)), ("status", lambda: status_part(D)), ("history", lambda: history_part(D))):
         try:
             fn()
             ok += 1
@@ -255,7 +307,7 @@ def main():
             f.write(f"### Feed refresh {D['snapshot']}\n\n| feed | last good |\n|---|---|\n")
             for k, v in fresh.items():
                 f.write(f"| {k} | {v}{' (failed this run)' if k in failed else ''} |\n")
-    print(f"built: {ok}/4 feeds, {D.get('totalIps')} ips, {len(D.get('feed', []))} feed rows")
+    print(f"built: {ok}/5 feeds, {D.get('totalIps')} ips, {len(D.get('feed', []))} feed rows")
     if ok == 0:
         sys.exit(1)
 

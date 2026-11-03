@@ -211,6 +211,10 @@ def main():
     open(os.path.join(OUT, "index.html"), "w").write(html)
     json.dump(D, open(os.path.join(OUT, "data.json"), "w"), separators=(",", ":"))
     open(os.path.join(OUT, ".nojekyll"), "w").close()
+    import shutil
+    st = os.path.join(ROOT, "static")
+    if os.path.isdir(st):
+        shutil.copytree(st, OUT, dirs_exist_ok=True)
     print(f"built: {ok}/4 feeds, {D.get('totalIps')} ips, {len(D.get('feed', []))} feed rows")
     if ok == 0:
         sys.exit(1)

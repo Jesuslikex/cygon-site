@@ -11,6 +11,11 @@ If a feed fails, the build keeps its last good data (read back from the live `da
 
 Status history: `.github/workflows/status-history.yml` polls the 13 status pages every 15 minutes and stores incidents and state changes as JSON on the `status-history` branch (`scripts/history.py`, no database). A state change triggers a redeploy. `build.py` turns that file into the 90-day bars, 30-day uptime and incident timeline in the Outages section.
 
+Alerts: on a state change the same workflow runs `scripts/alert.py`, which posts one message per run to Telegram and/or X. Each channel stays off until its repo secrets exist (Settings → Secrets and variables → Actions):
+
+- Telegram: `TELEGRAM_BOT_TOKEN` (from @BotFather) and `TELEGRAM_CHAT_ID` (your channel, e.g. `@cygon_alerts`, with the bot added as admin). Test with Actions → Status history → Run workflow → tick "Send a test message".
+- X: `X_API_KEY`, `X_API_SECRET`, `X_ACCESS_TOKEN`, `X_ACCESS_SECRET` from a developer.x.com app with Read and Write permission.
+
 The page sets a Content-Security-Policy and referrer policy in meta tags (GitHub Pages can't send headers); `build.py` fills in the inline script hashes.
 
 three.js (r128, MIT) and the globe texture are self-hosted from `static/`. The globe loads after the data panels, pauses when off screen, and lowers its quality on weak devices.

@@ -419,7 +419,7 @@ safe('severity', ()=>{
 
 safe('mapTag', ()=>{
   const up = String(D.ipsumUpdated || '').replace(/^\w+, /,'').replace(/ \+\d+$/,'');
-  $('mapTag').innerHTML = (up ? 'IPSUM FEED · ' + esc(up) + '<br>' : '') + 'REPLAYING ' + fmt((D.feed||[]).length) + ' SAMPLED HOSTS<br>SOURCES REAL · ARC TARGETS ILLUSTRATIVE';
+  $('mapTag').innerHTML = (up ? 'IPSUM FEED · ' + esc(up) + '<br>' : '') + fmt((D.feed||[]).length) + ' LIVE THREAT SOURCES<br>REPLAYED ON THE GLOBE · ARC ENDPOINTS FOR DISPLAY';
 });
 
 /* globe: loaded after the data panels, paused when off screen, scaled down on weak devices */
@@ -591,7 +591,7 @@ safe('feed', ()=>{
   for (let i=0;i<10;i++) pushFeed();
   (function loop(){ if (!document.hidden) pushFeed(); setTimeout(loop, reduce ? 2500 : 220 + Math.random()*520); })();
   setInterval(()=>{ if (!document.hidden) $('rate').textContent = perSec + '/s'; perSec = 0; }, 1000);
-  $('feedSub').textContent = 'Real flagged IPs from today\'s IPsum list, replayed in real time. Last two octets masked.';
+  $('feedSub').textContent = 'Today\'s flagged IPs from the IPsum blocklists, streamed on a loop. Sources are real; timing and arc targets are for display. Last two octets masked.';
 });
 
 /* bars */

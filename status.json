@@ -39,6 +39,16 @@
    "name": "Zoom",
    "t": "2026-11-04T01:45:39Z",
    "to": "maintenance"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "maintenance",
+   "host": "status.coinbase.com",
+   "incident": "Delayed Sends and Receives - Sonic Network",
+   "link": "https://status.coinbase.com",
+   "name": "Coinbase",
+   "t": "2026-11-04T08:19:05Z",
+   "to": "none"
   }
  ],
  "hosts": {
@@ -247,7 +257,7 @@
   },
   "status.coinbase.com": {
    "coverage_from": "2026-09-17T06:50:14Z",
-   "description": "Service Under Maintenance",
+   "description": "All Systems Operational",
    "incident": "Delayed Sends and Receives - Sonic Network",
    "incidents": {
     "0sldycvpmwz6": {
@@ -651,9 +661,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "maintenance",
+   "indicator": "none",
    "name": "Coinbase",
-   "since": "2026-11-03T16:16:57Z"
+   "since": "2026-11-04T08:19:05Z"
   },
   "status.digitalocean.com": {
    "coverage_from": "2026-04-28T13:45:20Z",
@@ -2277,6 +2287,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/mbq512v9oe4s",
      "name": "Cloudflare Stream performance issues impacting certain Live Broadcasts and On-Demand Uploads",
      "start": "2026-10-27T16:10:53Z",
+     "status": "resolved"
+    },
+    "me060q7dbayp": {
+     "end": "2026-11-04T06:35:00Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/me060q7dbayp",
+     "name": "Cloudflare Pages Upload Issue",
+     "start": "2026-11-04T07:11:09Z",
      "status": "resolved"
     },
     "n5mvqjs26jg9": {

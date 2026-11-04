@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-04",
+ "headline": "kev",
+ "headlineId": "CVE-2026-119977",
+ "text": "CYGON Threat of the Day · Nov 4\n\n🔴 CISA confirms WordPress WordPress Core CVE-2026-119977 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (37,719)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 247,
+ "facts": {
+  "kev": {
+   "id": "CVE-2026-119977",
+   "what": "WordPress WordPress Core",
+   "flaw": "Time-of-check Time-of-use (TOCTOU) Race Condition",
+   "added": "2026-11-03",
+   "age": 1,
+   "ransom": false
+  },
+  "cve": {
+   "id": "CVE-2026-121639",
+   "what": "WatchGuard AuthPoint Authentication Gateway",
+   "score": 9.2,
+   "sev": "CRITICAL",
+   "desc": "A Missing Authentication for Critical Function vulnerability in WatchGuard AuthPoint Gateway allows a remote unauthenticated attacker with network access to the AuthPoint Gateway h"
+  },
+  "country": {
+   "cc": "US",
+   "name": "United States",
+   "n": 37719,
+   "total": 139530,
+   "pct": 27
+  },
+  "outage": {
+   "svc": "Kraken",
+   "name": "Brazilian Real (BRL) PIX Funding Delays",
+   "impact": "minor",
+   "ongoing": true
+  }
+ },
+ "snapshot": "2026-11-04T15:21Z",
+ "prev": null
+}

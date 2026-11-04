@@ -1,0 +1,8 @@
+CYGON Threat of the Day · Nov 4
+
+🔴 CISA confirms WordPress WordPress Core CVE-2026-119977 is being exploited in the wild. Patch now.
+
+🌍 Most flagged IPs today: United States (37,719)
+
+Live tracker 👉 https://cygon.xyz
+$CYGON #cybersecurity

@@ -1,39 +1,43 @@
 {
- "date": "2026-11-03",
- "headline": "cve",
- "headlineId": "CVE-2026-28336",
- "text": "CYGON Threat of the Day · Nov 3\n\n🧨 Fresh CVE: SolarWinds Dameware CVE-2026-28336, CVSS 9.9\n\n🌍 Most flagged IPs today: United States (36,188)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
- "xLength": 205,
+ "date": "2026-11-04",
+ "headline": "kev",
+ "headlineId": "CVE-2026-119977",
+ "text": "CYGON Threat of the Day · Nov 4\n\n🔴 CISA confirms WordPress WordPress Core CVE-2026-119977 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (37,719)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 247,
  "facts": {
   "kev": {
-   "id": "CVE-2026-118527",
-   "what": "Ivanti Connect Secure",
-   "flaw": "Generation of Predictable Numbers or Identifiers",
-   "added": "2026-10-30",
-   "age": 4,
+   "id": "CVE-2026-119977",
+   "what": "WordPress WordPress Core",
+   "flaw": "Time-of-check Time-of-use (TOCTOU) Race Condition",
+   "added": "2026-11-03",
+   "age": 1,
    "ransom": false
   },
   "cve": {
-   "id": "CVE-2026-28336",
-   "what": "SolarWinds Dameware",
-   "score": 9.9,
+   "id": "CVE-2026-121639",
+   "what": "WatchGuard AuthPoint Authentication Gateway",
+   "score": 9.2,
    "sev": "CRITICAL",
-   "desc": "SolarWinds Dameware was found to be affected by a command injection vulnerability that could lead to the compromise of the remotely controlled host. Authentication is required."
+   "desc": "A Missing Authentication for Critical Function vulnerability in WatchGuard AuthPoint Gateway allows a remote unauthenticated attacker with network access to the AuthPoint Gateway h"
   },
   "country": {
    "cc": "US",
    "name": "United States",
-   "n": 36188,
-   "total": 139571,
-   "pct": 26
+   "n": 37719,
+   "total": 139530,
+   "pct": 27
   },
   "outage": {
-   "svc": "Cloudflare",
-   "name": "Increased Durable Object Errors in the Dallas, TX US region",
+   "svc": "Kraken",
+   "name": "Brazilian Real (BRL) PIX Funding Delays",
    "impact": "minor",
    "ongoing": true
   }
  },
- "snapshot": "2026-11-03T16:45Z",
- "prev": null
+ "snapshot": "2026-11-04T15:21Z",
+ "prev": {
+  "date": "2026-11-03",
+  "headline": "cve",
+  "headlineId": "CVE-2026-28336"
+ }
 }

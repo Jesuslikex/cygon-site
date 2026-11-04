@@ -69,6 +69,16 @@
    "name": "Coinbase",
    "t": "2026-11-04T16:26:55Z",
    "to": "minor"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "minor",
+   "host": "www.githubstatus.com",
+   "incident": "",
+   "link": "https://www.githubstatus.com",
+   "name": "GitHub",
+   "t": "2026-11-04T22:02:24Z",
+   "to": "none"
   }
  ],
  "hosts": {
@@ -1212,6 +1222,14 @@
      "link": "https://stspg.io/75bgmdtdqs34",
      "name": "Solana (SOL) Network Funding Delays",
      "start": "2026-10-23T15:00:44Z",
+     "status": "resolved"
+    },
+    "jkm5tq0rzsc3": {
+     "end": "2026-11-04T18:04:29Z",
+     "impact": "minor",
+     "link": "https://stspg.io/ghmfg4qnvdpk",
+     "name": "Plaid US Withdrawal Delays",
+     "start": "2026-11-04T17:33:26Z",
      "status": "resolved"
     },
     "jqnpfb546hy0": {
@@ -2476,8 +2494,8 @@
   },
   "www.githubstatus.com": {
    "coverage_from": "2026-08-21T14:00:00Z",
-   "description": "Minor Service Outage",
-   "incident": "Incident with Actions and Pages",
+   "description": "All Systems Operational",
+   "incident": "",
    "incidents": {
     "0rn90wk115q9": {
      "end": "2026-09-13T10:44:55Z",
@@ -2661,6 +2679,14 @@
      "link": "https://stspg.io/cx8xcm6k8f9s",
      "name": "Incident with Pull Requests",
      "start": "2026-09-20T22:13:37Z",
+     "status": "resolved"
+    },
+    "h02n9572mx9y": {
+     "end": "2026-11-04T18:16:08Z",
+     "impact": "major",
+     "link": "https://stspg.io/7pwv28hvkmz8",
+     "name": "Incident with Actions",
+     "start": "2026-11-04T17:40:33Z",
      "status": "resolved"
     },
     "hcbtzksccj2f": {
@@ -2888,12 +2914,12 @@
      "status": "resolved"
     },
     "xr3myzj7ms51": {
-     "end": null,
+     "end": "2026-11-04T17:01:11Z",
      "impact": "major",
      "link": "https://stspg.io/pjgptg3cfc6n",
      "name": "Incident with Actions and Pages",
      "start": "2026-11-04T16:05:31Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "y1t7p9fzrlj2": {
      "end": "2026-08-26T18:01:30Z",
@@ -2912,9 +2938,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "minor",
+   "indicator": "none",
    "name": "GitHub",
-   "since": "2026-11-04T16:26:55Z"
+   "since": "2026-11-04T22:02:24Z"
   },
   "www.redditstatus.com": {
    "coverage_from": "2024-06-28T02:17:49Z",

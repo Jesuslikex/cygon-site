@@ -49,6 +49,26 @@
    "name": "Coinbase",
    "t": "2026-11-04T08:19:05Z",
    "to": "none"
+  },
+  {
+   "desc": "Minor Service Outage",
+   "from": "none",
+   "host": "www.githubstatus.com",
+   "incident": "Incident with Actions and Pages",
+   "link": "https://www.githubstatus.com",
+   "name": "GitHub",
+   "t": "2026-11-04T16:26:55Z",
+   "to": "minor"
+  },
+  {
+   "desc": "Partially Degraded Service",
+   "from": "none",
+   "host": "status.coinbase.com",
+   "incident": "Scheduled Maintenance \u2014 Aerodrome Finance (AERO) and Velodrome Finance (VELO) Migration",
+   "link": "https://status.coinbase.com",
+   "name": "Coinbase",
+   "t": "2026-11-04T16:26:55Z",
+   "to": "minor"
   }
  ],
  "hosts": {
@@ -257,8 +277,8 @@
   },
   "status.coinbase.com": {
    "coverage_from": "2026-09-17T06:50:14Z",
-   "description": "All Systems Operational",
-   "incident": "Delayed Sends and Receives - Sonic Network",
+   "description": "Partially Degraded Service",
+   "incident": "Scheduled Maintenance \u2014 Aerodrome Finance (AERO) and Velodrome Finance (VELO) Migration",
    "incidents": {
     "0sldycvpmwz6": {
      "end": "2026-10-12T16:04:49Z",
@@ -379,6 +399,14 @@
      "name": "WMTX-USD to Limit Only",
      "start": "2026-09-21T18:19:57Z",
      "status": "resolved"
+    },
+    "dcx1v2c47h3g": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/q6kdl9ww045m",
+     "name": "Scheduled Maintenance \u2014 Aerodrome Finance (AERO) and Velodrome Finance (VELO) Migration",
+     "start": "2026-11-04T14:57:53Z",
+     "status": "investigating"
     },
     "dfkgxkwg6v77": {
      "end": "2026-09-25T17:34:33Z",
@@ -661,9 +689,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "none",
+   "indicator": "minor",
    "name": "Coinbase",
-   "since": "2026-11-04T08:19:05Z"
+   "since": "2026-11-04T16:26:55Z"
   },
   "status.digitalocean.com": {
    "coverage_from": "2026-04-28T13:45:20Z",
@@ -1080,7 +1108,7 @@
      "link": "https://stspg.io/7ztgln6zqfmj",
      "name": "Brazilian Real (BRL) PIX Funding Delays",
      "start": "2026-11-03T20:39:20Z",
-     "status": "investigating"
+     "status": "identified"
     },
     "7zcy2j4hhxqz": {
      "end": "2026-10-27T10:11:18Z",
@@ -2177,6 +2205,14 @@
      "start": "2026-10-27T12:28:07Z",
      "status": "resolved"
     },
+    "dr9s0uvzwk6n": {
+     "end": "2026-11-03T22:15:00Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/dr9s0uvzwk6n",
+     "name": "Increased Latency and Errors for R2 and Downstream Services in Western North America (WNAM)",
+     "start": "2026-11-04T14:43:39Z",
+     "status": "resolved"
+    },
     "dv2vbq9kbgxn": {
      "end": "2026-10-26T16:03:32Z",
      "impact": "minor",
@@ -2303,6 +2339,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/n5mvqjs26jg9",
      "name": "Cloudflare Container Issues",
      "start": "2026-11-03T04:12:18Z",
+     "status": "resolved"
+    },
+    "nbnize4e990z": {
+     "end": "2026-11-04T15:33:09Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/nbnize4e990z",
+     "name": "Network latency issues in NRT",
+     "start": "2026-11-04T13:39:26Z",
      "status": "resolved"
     },
     "nbyxn84kvb6o": {
@@ -2432,8 +2476,8 @@
   },
   "www.githubstatus.com": {
    "coverage_from": "2026-08-21T14:00:00Z",
-   "description": "All Systems Operational",
-   "incident": "",
+   "description": "Minor Service Outage",
+   "incident": "Incident with Actions and Pages",
    "incidents": {
     "0rn90wk115q9": {
      "end": "2026-09-13T10:44:55Z",
@@ -2787,6 +2831,22 @@
      "start": "2026-11-03T13:25:19Z",
      "status": "resolved"
     },
+    "smtdswd1h2w4": {
+     "end": "2026-11-04T11:50:06Z",
+     "impact": "major",
+     "link": "https://stspg.io/18blsgwnbyy6",
+     "name": "Incident with Pull Requests, Git Operations and Issues",
+     "start": "2026-11-04T09:49:55Z",
+     "status": "resolved"
+    },
+    "tc28c0wzrnpz": {
+     "end": "2026-11-04T10:01:44Z",
+     "impact": "minor",
+     "link": "https://stspg.io/hj74883wgn0t",
+     "name": "Increased task-related errors for Copilot Mission Control",
+     "start": "2026-11-04T08:45:00Z",
+     "status": "resolved"
+    },
     "tx9qn4khd664": {
      "end": "2026-08-27T12:12:58Z",
      "impact": "critical",
@@ -2827,6 +2887,14 @@
      "start": "2026-08-24T07:12:05Z",
      "status": "resolved"
     },
+    "xr3myzj7ms51": {
+     "end": null,
+     "impact": "major",
+     "link": "https://stspg.io/pjgptg3cfc6n",
+     "name": "Incident with Actions and Pages",
+     "start": "2026-11-04T16:05:31Z",
+     "status": "investigating"
+    },
     "y1t7p9fzrlj2": {
      "end": "2026-08-26T18:01:30Z",
      "impact": "critical",
@@ -2844,9 +2912,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "none",
+   "indicator": "minor",
    "name": "GitHub",
-   "since": "2026-11-04T01:45:39Z"
+   "since": "2026-11-04T16:26:55Z"
   },
   "www.redditstatus.com": {
    "coverage_from": "2024-06-28T02:17:49Z",

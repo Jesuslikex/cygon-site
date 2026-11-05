@@ -2584,6 +2584,14 @@
      "name": "Elevated error rates for Durable Objects in Western Europe",
      "start": "2026-10-22T17:51:09Z",
      "status": "resolved"
+    },
+    "yaa0witbl2me": {
+     "end": "2026-11-05T20:20:10Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/yaa0witbl2me",
+     "name": "Workers Builds Issues",
+     "start": "2026-11-05T19:51:39Z",
+     "status": "resolved"
     }
    },
    "indicator": "major",
@@ -2593,7 +2601,7 @@
   "www.githubstatus.com": {
    "coverage_from": "2026-08-21T14:00:00Z",
    "description": "All Systems Operational",
-   "incident": "Incident with Actions",
+   "incident": "",
    "incidents": {
     "0rn90wk115q9": {
      "end": "2026-09-13T10:44:55Z",
@@ -2964,12 +2972,12 @@
      "status": "resolved"
     },
     "t89g2q1800fr": {
-     "end": null,
+     "end": "2026-11-05T17:42:35Z",
      "impact": "minor",
      "link": "https://stspg.io/lv4q3xm9r0rk",
      "name": "Incident with Actions",
      "start": "2026-11-05T16:50:11Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "tc28c0wzrnpz": {
      "end": "2026-11-04T10:01:44Z",
@@ -3223,14 +3231,6 @@
      "start": "2026-09-16T03:21:00Z",
      "status": "resolved"
     },
-    "lf0pm7scd74x": {
-     "end": "2026-07-08T19:13:52Z",
-     "impact": "minor",
-     "link": "https://stspg.io/6p93bsts8r9y",
-     "name": "Delays Processing Builds",
-     "start": "2026-07-08T18:05:09Z",
-     "status": "resolved"
-    },
     "mf04gp4lrfz0": {
      "end": "2026-09-10T19:16:06Z",
      "impact": "major",
@@ -3309,6 +3309,14 @@
      "link": "https://stspg.io/rm6qtt65w0x2",
      "name": "Missing Web Analytics and Speed Insights data",
      "start": "2026-09-16T14:00:00Z",
+     "status": "resolved"
+    },
+    "w661l7k3kf4p": {
+     "end": "2026-11-05T18:50:23Z",
+     "impact": "minor",
+     "link": "https://stspg.io/y6fmg7s9m5t2",
+     "name": "Build delays and degraded Vercel Dashboard performance",
+     "start": "2026-11-05T18:25:10Z",
      "status": "resolved"
     },
     "w8r0qkm97p1c": {

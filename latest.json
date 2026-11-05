@@ -1,43 +1,43 @@
 {
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "headline": "kev",
- "headlineId": "CVE-2026-119977",
- "text": "CYGON Threat of the Day · Nov 4\n\n🔴 CISA confirms WordPress WordPress Core CVE-2026-119977 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (37,719)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
- "xLength": 247,
+ "headlineId": "CVE-2024-27834",
+ "text": "CYGON Threat of the Day · Nov 5\n\n🔴 CISA confirms Apple Multiple Products CVE-2024-27834 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (37,707)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 245,
  "facts": {
   "kev": {
-   "id": "CVE-2026-119977",
-   "what": "WordPress WordPress Core",
-   "flaw": "Time-of-check Time-of-use (TOCTOU) Race Condition",
-   "added": "2026-11-03",
+   "id": "CVE-2024-27834",
+   "what": "Apple Multiple Products",
+   "flaw": "Improper Authentication",
+   "added": "2026-11-04",
    "age": 1,
    "ransom": false
   },
   "cve": {
-   "id": "CVE-2026-121639",
-   "what": "WatchGuard AuthPoint Authentication Gateway",
-   "score": 9.2,
-   "sev": "CRITICAL",
-   "desc": "A Missing Authentication for Critical Function vulnerability in WatchGuard AuthPoint Gateway allows a remote unauthenticated attacker with network access to the AuthPoint Gateway h"
+   "id": "CVE-2026-122329",
+   "what": "libsdl-org SDL_mixer",
+   "score": 8.5,
+   "sev": "HIGH",
+   "desc": "SDL_mixer 3.1.2 through 3.2.4 contains a stack-based buffer overflow in FetchXLaw() in src/decoder_aiff.c due to miscalculated output offsets when expanding A-law or mu-law samples"
   },
   "country": {
    "cc": "US",
    "name": "United States",
-   "n": 37719,
-   "total": 139530,
-   "pct": 27
+   "n": 37707,
+   "total": 136536,
+   "pct": 28
   },
   "outage": {
-   "svc": "Kraken",
-   "name": "Brazilian Real (BRL) PIX Funding Delays",
-   "impact": "minor",
-   "ongoing": true
+   "svc": "GitHub",
+   "name": "Incident with Actions",
+   "impact": "major",
+   "ongoing": false
   }
  },
- "snapshot": "2026-11-04T15:21Z",
+ "snapshot": "2026-11-05T15:23Z",
  "prev": {
-  "date": "2026-11-03",
-  "headline": "cve",
-  "headlineId": "CVE-2026-28336"
+  "date": "2026-11-04",
+  "headline": "kev",
+  "headlineId": "CVE-2026-119977"
  }
 }

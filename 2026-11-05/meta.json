@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-05",
+ "headline": "kev",
+ "headlineId": "CVE-2024-27834",
+ "text": "CYGON Threat of the Day · Nov 5\n\n🔴 CISA confirms Apple Multiple Products CVE-2024-27834 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (37,707)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 245,
+ "facts": {
+  "kev": {
+   "id": "CVE-2024-27834",
+   "what": "Apple Multiple Products",
+   "flaw": "Improper Authentication",
+   "added": "2026-11-04",
+   "age": 1,
+   "ransom": false
+  },
+  "cve": {
+   "id": "CVE-2026-122329",
+   "what": "libsdl-org SDL_mixer",
+   "score": 8.5,
+   "sev": "HIGH",
+   "desc": "SDL_mixer 3.1.2 through 3.2.4 contains a stack-based buffer overflow in FetchXLaw() in src/decoder_aiff.c due to miscalculated output offsets when expanding A-law or mu-law samples"
+  },
+  "country": {
+   "cc": "US",
+   "name": "United States",
+   "n": 37707,
+   "total": 136536,
+   "pct": 28
+  },
+  "outage": {
+   "svc": "GitHub",
+   "name": "Incident with Actions",
+   "impact": "major",
+   "ongoing": false
+  }
+ },
+ "snapshot": "2026-11-05T15:23Z",
+ "prev": null
+}

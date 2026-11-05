@@ -1016,7 +1016,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Brazilian Real (BRL) PIX Funding Delays",
+   "incident": "BRL PIX Withdrawal Issues",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1041,6 +1041,14 @@
      "name": "AUD NPP Deposits and Withdrawals failing.",
      "start": "2026-10-06T13:27:32Z",
      "status": "resolved"
+    },
+    "1mk59wfdjggk": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/rrcvk3ml0hld",
+     "name": "BRL PIX Withdrawal Issues",
+     "start": "2026-11-05T16:03:48Z",
+     "status": "investigating"
     },
     "1mwk0t5k5ktr": {
      "end": "2026-10-28T04:14:00Z",
@@ -1147,12 +1155,12 @@
      "status": "resolved"
     },
     "5sf6xkjqtrw0": {
-     "end": null,
+     "end": "2026-11-05T12:16:04Z",
      "impact": "minor",
      "link": "https://stspg.io/7ztgln6zqfmj",
      "name": "Brazilian Real (BRL) PIX Funding Delays",
      "start": "2026-11-03T20:39:20Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "7zcy2j4hhxqz": {
      "end": "2026-10-27T10:11:18Z",
@@ -1290,6 +1298,14 @@
      "start": "2026-10-13T19:47:38Z",
      "status": "resolved"
     },
+    "lq19kjjg863l": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/gtqvkp4mdyvy",
+     "name": "Deposit and Withdrawal Delays on Multiple Networks",
+     "start": "2026-11-05T10:19:42Z",
+     "status": "identified"
+    },
     "lz7487sxw2lx": {
      "end": "2026-10-13T13:41:13Z",
      "impact": "minor",
@@ -1418,6 +1434,14 @@
      "start": "2026-09-22T15:30:21Z",
      "status": "resolved"
     },
+    "y6t0n8f1qgxt": {
+     "end": "2026-11-05T13:28:36Z",
+     "impact": "minor",
+     "link": "https://stspg.io/nqsf7q4dmkd1",
+     "name": "Delays in Chart Updates - Kraken Pro Prop",
+     "start": "2026-11-05T12:53:34Z",
+     "status": "resolved"
+    },
     "yn2b73h2v6p8": {
      "end": "2026-10-07T12:18:57Z",
      "impact": "minor",
@@ -1450,7 +1474,7 @@
   "status.openai.com": {
    "coverage_from": "2026-10-09T17:23:18Z",
    "description": "All Systems Operational",
-   "incident": "",
+   "incident": "ChatGPT Work and Dots Errors",
    "incidents": {
     "01M4GV1M2A3K38T73JCVCD9G0R": {
      "end": "2026-10-12T16:02:47Z",
@@ -1659,6 +1683,14 @@
      "name": "Elevated error rates across paid ChatGPT plans",
      "start": "2026-11-04T22:38:12Z",
      "status": "resolved"
+    },
+    "01M6P50GPP1V98EF8MJ9SH393R": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M6P50GPP1V98EF8MJ9SH393R",
+     "name": "ChatGPT Work and Dots Errors",
+     "start": "2026-11-05T15:25:03Z",
+     "status": "monitoring"
     }
    },
    "indicator": "none",
@@ -2095,7 +2127,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partial System Outage",
-   "incident": "",
+   "incident": "Increased Errors for Durable Objects in Western Europe",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -2111,6 +2143,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/10m2bxjztzwh",
      "name": "Increased Errors for Durable Objects and Downstream Services in Eastern North America (ENAM)",
      "start": "2026-10-29T16:36:48Z",
+     "status": "resolved"
+    },
+    "1i6fnludjh1m": {
+     "end": "2026-11-05T16:16:48Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/1i6fnludjh1m",
+     "name": "Network disruption across multiple colocations in India",
+     "start": "2026-11-05T15:05:13Z",
      "status": "resolved"
     },
     "2eno8w1fk27j": {
@@ -2441,6 +2481,14 @@
      "start": "2026-10-29T06:55:41Z",
      "status": "resolved"
     },
+    "oy8gxjb38yse": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/oy8gxjb38yse",
+     "name": "Increased Errors for Durable Objects in Western Europe",
+     "start": "2026-11-05T13:23:55Z",
+     "status": "monitoring"
+    },
     "p1vurmibvmag": {
      "end": "2026-10-21T21:21:40Z",
      "impact": "major",
@@ -2545,7 +2593,7 @@
   "www.githubstatus.com": {
    "coverage_from": "2026-08-21T14:00:00Z",
    "description": "All Systems Operational",
-   "incident": "",
+   "incident": "Incident with Actions",
    "incidents": {
     "0rn90wk115q9": {
      "end": "2026-09-13T10:44:55Z",
@@ -2914,6 +2962,14 @@
      "name": "Incident with Pull Requests, Git Operations and Issues",
      "start": "2026-11-04T09:49:55Z",
      "status": "resolved"
+    },
+    "t89g2q1800fr": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/lv4q3xm9r0rk",
+     "name": "Incident with Actions",
+     "start": "2026-11-05T16:50:11Z",
+     "status": "monitoring"
     },
     "tc28c0wzrnpz": {
      "end": "2026-11-04T10:01:44Z",

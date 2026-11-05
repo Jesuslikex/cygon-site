@@ -298,7 +298,7 @@
   "status.coinbase.com": {
    "coverage_from": "2026-09-17T06:50:14Z",
    "description": "All Systems Operational",
-   "incident": "Delayed Sends and Receives - Sonic Network",
+   "incident": "Disabled Sends / Receives - EVMSEI",
    "incidents": {
     "0sldycvpmwz6": {
      "end": "2026-10-12T16:04:49Z",
@@ -371,6 +371,14 @@
      "name": "TAO - Delayed Sends & Receives",
      "start": "2026-09-21T17:14:07Z",
      "status": "resolved"
+    },
+    "5pgqt8s63hkf": {
+     "end": null,
+     "impact": "none",
+     "link": "https://stspg.io/tc3hfwztt02h",
+     "name": "Disabled Sends / Receives - EVMSEI",
+     "start": "2026-11-05T03:05:30Z",
+     "status": "investigating"
     },
     "5sbh465r6vg7": {
      "end": "2026-09-19T00:41:12Z",

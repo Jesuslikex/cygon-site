@@ -79,6 +79,16 @@
    "name": "GitHub",
    "t": "2026-11-04T22:02:24Z",
    "to": "none"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "minor",
+   "host": "status.coinbase.com",
+   "incident": "Delayed Sends and Receives - Sonic Network",
+   "link": "https://status.coinbase.com",
+   "name": "Coinbase",
+   "t": "2026-11-05T02:22:36Z",
+   "to": "none"
   }
  ],
  "hosts": {
@@ -287,8 +297,8 @@
   },
   "status.coinbase.com": {
    "coverage_from": "2026-09-17T06:50:14Z",
-   "description": "Partially Degraded Service",
-   "incident": "Scheduled Maintenance \u2014 Aerodrome Finance (AERO) and Velodrome Finance (VELO) Migration",
+   "description": "All Systems Operational",
+   "incident": "Delayed Sends and Receives - Sonic Network",
    "incidents": {
     "0sldycvpmwz6": {
      "end": "2026-10-12T16:04:49Z",
@@ -328,6 +338,14 @@
      "link": "https://stspg.io/d8pph8pvx98c",
      "name": "Delayed Sends - APT",
      "start": "2026-10-10T23:24:52Z",
+     "status": "resolved"
+    },
+    "3fy9f7rzjwf6": {
+     "end": "2026-11-05T01:39:07Z",
+     "impact": "none",
+     "link": "https://stspg.io/43dh8ps8fy36",
+     "name": "Hedera - Delayed Sends",
+     "start": "2026-11-05T00:11:33Z",
      "status": "resolved"
     },
     "41ywx5zyyzpt": {
@@ -411,12 +429,12 @@
      "status": "resolved"
     },
     "dcx1v2c47h3g": {
-     "end": null,
+     "end": "2026-11-05T00:01:10Z",
      "impact": "minor",
      "link": "https://stspg.io/q6kdl9ww045m",
      "name": "Scheduled Maintenance \u2014 Aerodrome Finance (AERO) and Velodrome Finance (VELO) Migration",
      "start": "2026-11-04T14:57:53Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "dfkgxkwg6v77": {
      "end": "2026-09-25T17:34:33Z",
@@ -642,6 +660,14 @@
      "start": "2026-10-07T15:53:19Z",
      "status": "resolved"
     },
+    "t4x0q0rjmq25": {
+     "end": "2026-11-05T01:38:53Z",
+     "impact": "none",
+     "link": "https://stspg.io/f27l3tpc5f6s",
+     "name": "Dfinity (ICP) - Delayed Sends",
+     "start": "2026-11-05T00:15:14Z",
+     "status": "resolved"
+    },
     "ty983bvb4xh4": {
      "end": "2026-10-15T03:02:16Z",
      "impact": "none",
@@ -699,9 +725,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "minor",
+   "indicator": "none",
    "name": "Coinbase",
-   "since": "2026-11-04T16:26:55Z"
+   "since": "2026-11-05T02:22:36Z"
   },
   "status.digitalocean.com": {
    "coverage_from": "2026-04-28T13:45:20Z",
@@ -1617,6 +1643,14 @@
      "name": "File upload errors in ChatGPT",
      "start": "2026-11-03T00:46:58Z",
      "status": "resolved"
+    },
+    "01M6MBCX427A7113A3T4FJ1N6Y": {
+     "end": "2026-11-05T00:32:37Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M6MBCX427A7113A3T4FJ1N6Y",
+     "name": "Elevated error rates across paid ChatGPT plans",
+     "start": "2026-11-04T22:38:12Z",
+     "status": "resolved"
     }
    },
    "indicator": "none",
@@ -2213,6 +2247,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/bc7e93q3eigp",
      "name": "Issues with Durable Objects availability in Eastern Europe",
      "start": "2026-10-29T10:06:17Z",
+     "status": "resolved"
+    },
+    "c3pjgxk8xnzn": {
+     "end": "2026-11-04T21:22:00Z",
+     "impact": "none",
+     "link": "https://www.cloudflarestatus.com/incidents/c3pjgxk8xnzn",
+     "name": "Increased Errors for Durable Objects and Downstream Services in Eastern North America (ENAM)",
+     "start": "2026-11-04T22:21:26Z",
      "status": "resolved"
     },
     "dk2obcyw2aew": {

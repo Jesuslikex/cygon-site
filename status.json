@@ -2907,6 +2907,14 @@
      "start": "2026-10-30T14:31:16Z",
      "status": "resolved"
     },
+    "pfbmpxxfq1cy": {
+     "end": "2026-11-06T00:20:49Z",
+     "impact": "minor",
+     "link": "https://stspg.io/s5bs6jn41fwh",
+     "name": "Degraded performance for multiple GitHub services",
+     "start": "2026-11-05T23:36:06Z",
+     "status": "resolved"
+    },
     "pwxsjgnvrk6b": {
      "end": "2026-10-30T19:23:40Z",
      "impact": "major",

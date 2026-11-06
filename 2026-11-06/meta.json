@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-06",
+ "headline": "cve",
+ "headlineId": "CVE-2026-59105",
+ "text": "CYGON Threat of the Day · Nov 6\n\n🧨 Fresh CVE: Jumis Pro SIA Jumis CVE-2026-59105, CVSS 9.8\n\n🌍 Most flagged IPs today: United States (40,003)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 205,
+ "facts": {
+  "kev": {
+   "id": "CVE-2024-27834",
+   "what": "Apple Multiple Products",
+   "flaw": "Improper Authentication",
+   "added": "2026-11-04",
+   "age": 2,
+   "ransom": false
+  },
+  "cve": {
+   "id": "CVE-2026-59105",
+   "what": "Jumis Pro SIA Jumis",
+   "score": 9.8,
+   "sev": "CRITICAL",
+   "desc": "Jumis (formerly Tildes Jumis) creates and uses a Microsoft SQL Server login named ##Tilde_JumisAdmin## whose password is derived deterministically from a single non-secret input - "
+  },
+  "country": {
+   "cc": "US",
+   "name": "United States",
+   "n": 40003,
+   "total": 142959,
+   "pct": 28
+  },
+  "outage": {
+   "svc": "Cloudflare",
+   "name": "Network Performance Issues in Singapore",
+   "impact": "minor",
+   "ongoing": true
+  }
+ },
+ "snapshot": "2026-11-06T14:57Z",
+ "prev": null
+}

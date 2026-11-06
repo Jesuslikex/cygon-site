@@ -89,6 +89,16 @@
    "name": "Coinbase",
    "t": "2026-11-05T02:22:36Z",
    "to": "none"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "maintenance",
+   "host": "status.zoom.us",
+   "incident": "",
+   "link": "https://status.zoom.us",
+   "name": "Zoom",
+   "t": "2026-11-06T10:26:47Z",
+   "to": "none"
   }
  ],
  "hosts": {
@@ -1474,7 +1484,7 @@
   "status.openai.com": {
    "coverage_from": "2026-10-09T17:23:18Z",
    "description": "All Systems Operational",
-   "incident": "ChatGPT Work and Dots Errors",
+   "incident": "",
    "incidents": {
     "01M4GV1M2A3K38T73JCVCD9G0R": {
      "end": "2026-10-12T16:02:47Z",
@@ -1685,12 +1695,12 @@
      "status": "resolved"
     },
     "01M6P50GPP1V98EF8MJ9SH393R": {
-     "end": null,
+     "end": "2026-11-06T04:31:37Z",
      "impact": "minor",
      "link": "https://status.openai.com/incidents/01M6P50GPP1V98EF8MJ9SH393R",
      "name": "ChatGPT Work and Dots Errors",
      "start": "2026-11-05T15:25:03Z",
-     "status": "monitoring"
+     "status": "resolved"
     }
    },
    "indicator": "none",
@@ -1708,7 +1718,7 @@
   },
   "status.zoom.us": {
    "coverage_from": "2026-09-03T05:39:07Z",
-   "description": "Service Under Maintenance",
+   "description": "All Systems Operational",
    "incident": "",
    "incidents": {
     "0hgqwjz0lzwf": {
@@ -2015,6 +2025,14 @@
      "start": "2026-09-10T15:53:26Z",
      "status": "resolved"
     },
+    "pmmkv8mbtxln": {
+     "end": "2026-11-06T05:09:23Z",
+     "impact": "minor",
+     "link": "https://stspg.io/n6ft1fxrgkw3",
+     "name": "Service Degradation Affecting Zoom Mail, Calendar and Scheduler.",
+     "start": "2026-11-06T03:32:15Z",
+     "status": "resolved"
+    },
     "pxxs3nsvn2rx": {
      "end": "2026-10-10T04:41:24Z",
      "impact": "minor",
@@ -2120,14 +2138,14 @@
      "status": "resolved"
     }
    },
-   "indicator": "maintenance",
+   "indicator": "none",
    "name": "Zoom",
-   "since": "2026-11-04T01:45:39Z"
+   "since": "2026-11-06T10:26:47Z"
   },
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partial System Outage",
-   "incident": "Increased Errors for Durable Objects in Western Europe",
+   "incident": "Network Performance Issues in Singapore",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -2192,6 +2210,14 @@
      "name": " Cloudflare Gateway DNS-over-TLS Connectivity Issues over IPv4",
      "start": "2026-11-02T22:12:39Z",
      "status": "resolved"
+    },
+    "3ehw20ozwlkr": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/3ehw20ozwlkr",
+     "name": "Network Performance Issues in Singapore",
+     "start": "2026-11-06T08:54:00Z",
+     "status": "monitoring"
     },
     "3ts1mfzs0khz": {
      "end": "2026-10-23T20:37:06Z",
@@ -2482,12 +2508,12 @@
      "status": "resolved"
     },
     "oy8gxjb38yse": {
-     "end": null,
+     "end": "2026-11-06T09:05:19Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/oy8gxjb38yse",
      "name": "Increased Errors for Durable Objects in Western Europe",
      "start": "2026-11-05T13:23:55Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "p1vurmibvmag": {
      "end": "2026-10-21T21:21:40Z",
@@ -2583,6 +2609,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/v967mz6rrcxw",
      "name": "Elevated error rates for Durable Objects in Western Europe",
      "start": "2026-10-22T17:51:09Z",
+     "status": "resolved"
+    },
+    "wtsd415cavkc": {
+     "end": "2026-11-06T10:08:30Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/wtsd415cavkc",
+     "name": "Wrangler Deployments, Pages, and Workers Builds failures",
+     "start": "2026-11-06T09:47:17Z",
      "status": "resolved"
     },
     "yaa0witbl2me": {

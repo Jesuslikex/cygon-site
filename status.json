@@ -1484,7 +1484,7 @@
   "status.openai.com": {
    "coverage_from": "2026-10-09T17:23:18Z",
    "description": "All Systems Operational",
-   "incident": "",
+   "incident": "Elevated error rates with Brex Cards and U.S. business Mastercards",
    "incidents": {
     "01M4GV1M2A3K38T73JCVCD9G0R": {
      "end": "2026-10-12T16:02:47Z",
@@ -1701,6 +1701,14 @@
      "name": "ChatGPT Work and Dots Errors",
      "start": "2026-11-05T15:25:03Z",
      "status": "resolved"
+    },
+    "01M6S2FV5TZWQ753NHRB7BF5K7": {
+     "end": null,
+     "impact": "none",
+     "link": "https://status.openai.com/incidents/01M6S2FV5TZWQ753NHRB7BF5K7",
+     "name": "Elevated error rates with Brex Cards and U.S. business Mastercards",
+     "start": "2026-11-06T18:38:43Z",
+     "status": "identified"
     }
    },
    "indicator": "none",
@@ -2145,7 +2153,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partial System Outage",
-   "incident": "",
+   "incident": "Fedramp Customers have Delayed Purges",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -2610,6 +2618,14 @@
      "name": "Elevated error rates for Durable Objects in Western Europe",
      "start": "2026-10-22T17:51:09Z",
      "status": "resolved"
+    },
+    "wp49bp8bqo6c": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/wp49bp8bqo6c",
+     "name": "Fedramp Customers have Delayed Purges",
+     "start": "2026-11-06T17:47:15Z",
+     "status": "identified"
     },
     "wtsd415cavkc": {
      "end": "2026-11-06T10:08:30Z",

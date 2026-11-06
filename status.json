@@ -1026,7 +1026,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "BRL PIX Withdrawal Issues",
+   "incident": "Deposit and Withdrawal Delays on Multiple Networks",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -2145,7 +2145,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partial System Outage",
-   "incident": "Network Performance Issues in Singapore",
+   "incident": "",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -2212,12 +2212,12 @@
      "status": "resolved"
     },
     "3ehw20ozwlkr": {
-     "end": null,
+     "end": "2026-11-06T10:43:38Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/3ehw20ozwlkr",
      "name": "Network Performance Issues in Singapore",
      "start": "2026-11-06T08:54:00Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "3ts1mfzs0khz": {
      "end": "2026-10-23T20:37:06Z",
@@ -3239,14 +3239,6 @@
      "link": "https://stspg.io/fhw5075cj82r",
      "name": "Logs unavailable to query in Dashboard",
      "start": "2026-08-20T11:14:32Z",
-     "status": "resolved"
-    },
-    "gk45lsnmx35m": {
-     "end": "2026-07-09T13:16:00Z",
-     "impact": "none",
-     "link": "https://stspg.io/lwv762xftprn",
-     "name": "Delays loading Build Logs",
-     "start": "2026-07-09T13:16:00Z",
      "status": "resolved"
     },
     "j0ll7yc1jscj": {

@@ -2345,7 +2345,7 @@
      "link": "https://www.cloudflarestatus.com/incidents/c60k3g4vsoc1",
      "name": "Spectrum Availability Issue in Phoenix",
      "start": "2026-11-07T00:59:31Z",
-     "status": "investigating"
+     "status": "monitoring"
     },
     "dk2obcyw2aew": {
      "end": "2026-10-27T15:12:03Z",
@@ -2641,6 +2641,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/wtsd415cavkc",
      "name": "Wrangler Deployments, Pages, and Workers Builds failures",
      "start": "2026-11-06T09:47:17Z",
+     "status": "resolved"
+    },
+    "x9orajjmvvwa": {
+     "end": "2026-11-07T05:12:00Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/x9orajjmvvwa",
+     "name": "Network Performance Issues in Chicago",
+     "start": "2026-11-07T05:34:24Z",
      "status": "resolved"
     },
     "yaa0witbl2me": {

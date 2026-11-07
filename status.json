@@ -282,14 +282,6 @@
      "name": "Elevated API error rate",
      "start": "2026-10-01T19:48:10Z",
      "status": "resolved"
-    },
-    "yj1xklr7ynwg": {
-     "end": "2026-07-10T19:33:31Z",
-     "impact": "major",
-     "link": "https://stspg.io/0j2xlzm53hb2",
-     "name": "Issues with billing operations",
-     "start": "2026-07-10T16:49:33Z",
-     "status": "resolved"
     }
    },
    "indicator": "none",
@@ -3199,14 +3191,6 @@
      "link": "https://stspg.io/01mntryqfgdj",
      "name": "Increased deployment failures",
      "start": "2026-09-01T19:59:37Z",
-     "status": "resolved"
-    },
-    "458cy54l4d6d": {
-     "end": "2026-07-10T22:36:10Z",
-     "impact": "minor",
-     "link": "https://stspg.io/274dc78rzc6q",
-     "name": "Erroneous budget notifications",
-     "start": "2026-07-10T19:15:53Z",
      "status": "resolved"
     },
     "4lgcbsr7l8xn": {

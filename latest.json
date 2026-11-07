@@ -1,43 +1,43 @@
 {
- "date": "2026-11-06",
- "headline": "cve",
- "headlineId": "CVE-2026-59105",
- "text": "CYGON Threat of the Day · Nov 6\n\n🧨 Fresh CVE: Jumis Pro SIA Jumis CVE-2026-59105, CVSS 9.8\n\n🌍 Most flagged IPs today: United States (40,003)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
- "xLength": 205,
+ "date": "2026-11-07",
+ "headline": "kev",
+ "headlineId": "CVE-2026-19868",
+ "text": "CYGON Threat of the Day · Nov 7\n\n🔴 Exploited in the wild: SonicWall SonicOS SSLVPN CVE-2026-19868 (CISA KEV)\n\n🌍 Most flagged IPs today: United States (40,099)\n🧨 Fresh CVE: Tenda AC19 CVE-2026-123966, CVSS 10\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 273,
  "facts": {
   "kev": {
-   "id": "CVE-2024-27834",
-   "what": "Apple Multiple Products",
-   "flaw": "Improper Authentication",
-   "added": "2026-11-04",
-   "age": 2,
+   "id": "CVE-2026-19868",
+   "what": "SonicWall SonicOS SSLVPN",
+   "flaw": "Use of Single-factor Authentication",
+   "added": "2026-11-06",
+   "age": 1,
    "ransom": false
   },
   "cve": {
-   "id": "CVE-2026-59105",
-   "what": "Jumis Pro SIA Jumis",
-   "score": 9.8,
+   "id": "CVE-2026-123966",
+   "what": "Tenda AC19",
+   "score": 10,
    "sev": "CRITICAL",
-   "desc": "Jumis (formerly Tildes Jumis) creates and uses a Microsoft SQL Server login named ##Tilde_JumisAdmin## whose password is derived deterministically from a single non-secret input - "
+   "desc": "A vulnerability was determined in Tenda AC19 16.03.10.07. Affected by this issue is the function saveParentControlInfo of the file /goform/saveParentControlInfo. This manipulation "
   },
   "country": {
    "cc": "US",
    "name": "United States",
-   "n": 40003,
-   "total": 142959,
+   "n": 40099,
+   "total": 144310,
    "pct": 28
   },
   "outage": {
    "svc": "Cloudflare",
-   "name": "Network Performance Issues in Singapore",
+   "name": "Spectrum Availability Issue in Phoenix",
    "impact": "minor",
    "ongoing": true
   }
  },
- "snapshot": "2026-11-06T14:57Z",
+ "snapshot": "2026-11-07T13:55Z",
  "prev": {
-  "date": "2026-11-05",
-  "headline": "kev",
-  "headlineId": "CVE-2024-27834"
+  "date": "2026-11-06",
+  "headline": "cve",
+  "headlineId": "CVE-2026-59105"
  }
 }

@@ -1,9 +1,8 @@
-CYGON Threat of the Day · Nov 7
+CYGON Threat of the Day · Nov 8
 
-🔴 Exploited in the wild: SonicWall SonicOS SSLVPN CVE-2026-19868 (CISA KEV)
+🧨 Fresh CVE: openemr openemr CVE-2026-124490, CVSS 9.4
 
-🌍 Most flagged IPs today: United States (40,099)
-🧨 Fresh CVE: Tenda AC19 CVE-2026-123966, CVSS 10
+🌍 Most flagged IPs today: United States (37,958)
 
 Live tracker 👉 https://cygon.xyz
 $CYGON #cybersecurity

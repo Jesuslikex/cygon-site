@@ -1,0 +1,8 @@
+CYGON Threat of the Day · Nov 8
+
+🧨 Fresh CVE: openemr openemr CVE-2026-124490, CVSS 9.4
+
+🌍 Most flagged IPs today: United States (37,958)
+
+Live tracker 👉 https://cygon.xyz
+$CYGON #cybersecurity

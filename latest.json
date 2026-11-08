@@ -1,31 +1,31 @@
 {
- "date": "2026-11-07",
- "headline": "kev",
- "headlineId": "CVE-2026-19868",
- "text": "CYGON Threat of the Day · Nov 7\n\n🔴 Exploited in the wild: SonicWall SonicOS SSLVPN CVE-2026-19868 (CISA KEV)\n\n🌍 Most flagged IPs today: United States (40,099)\n🧨 Fresh CVE: Tenda AC19 CVE-2026-123966, CVSS 10\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
- "xLength": 273,
+ "date": "2026-11-08",
+ "headline": "cve",
+ "headlineId": "CVE-2026-124490",
+ "text": "CYGON Threat of the Day · Nov 8\n\n🧨 Fresh CVE: openemr openemr CVE-2026-124490, CVSS 9.4\n\n🌍 Most flagged IPs today: United States (37,958)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 202,
  "facts": {
   "kev": {
    "id": "CVE-2026-19868",
    "what": "SonicWall SonicOS SSLVPN",
    "flaw": "Use of Single-factor Authentication",
    "added": "2026-11-06",
-   "age": 1,
+   "age": 2,
    "ransom": false
   },
   "cve": {
-   "id": "CVE-2026-123966",
-   "what": "Tenda AC19",
-   "score": 10,
+   "id": "CVE-2026-124490",
+   "what": "openemr openemr",
+   "score": 9.4,
    "sev": "CRITICAL",
-   "desc": "A vulnerability was determined in Tenda AC19 16.03.10.07. Affected by this issue is the function saveParentControlInfo of the file /goform/saveParentControlInfo. This manipulation "
+   "desc": "OpenEMR before 8.3.0 contains a path traversal vulnerability in the RingCentral RCFaxClient disposeDocument() method of oe-module-faxsms that allows authenticated attackers to read"
   },
   "country": {
    "cc": "US",
    "name": "United States",
-   "n": 40099,
-   "total": 144310,
-   "pct": 28
+   "n": 37958,
+   "total": 139878,
+   "pct": 27
   },
   "outage": {
    "svc": "Cloudflare",
@@ -34,10 +34,10 @@
    "ongoing": true
   }
  },
- "snapshot": "2026-11-07T13:55Z",
+ "snapshot": "2026-11-08T14:15Z",
  "prev": {
-  "date": "2026-11-06",
-  "headline": "cve",
-  "headlineId": "CVE-2026-59105"
+  "date": "2026-11-07",
+  "headline": "kev",
+  "headlineId": "CVE-2026-19868"
  }
 }

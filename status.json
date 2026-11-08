@@ -752,14 +752,6 @@
      "start": "2026-09-09T10:47:40Z",
      "status": "resolved"
     },
-    "2kxtxyvzzzk0": {
-     "end": "2026-07-11T01:27:56Z",
-     "impact": "minor",
-     "link": "https://stspg.io/p8xctv4k5yjv",
-     "name": "Kubernetes Deployments in NYC1",
-     "start": "2026-07-09T20:31:52Z",
-     "status": "resolved"
-    },
     "2wql4f4sb13r": {
      "end": "2026-08-09T01:01:02Z",
      "impact": "minor",
@@ -3255,14 +3247,6 @@
      "link": "https://stspg.io/fhw5075cj82r",
      "name": "Logs unavailable to query in Dashboard",
      "start": "2026-08-20T11:14:32Z",
-     "status": "resolved"
-    },
-    "j0ll7yc1jscj": {
-     "end": "2026-07-10T23:28:43Z",
-     "impact": "minor",
-     "link": "https://stspg.io/7r7v7fr4bhbp",
-     "name": "Increased Build failure rates",
-     "start": "2026-07-10T21:22:09Z",
      "status": "resolved"
     },
     "j6cdljvmf2wf": {

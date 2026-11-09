@@ -129,6 +129,26 @@
    "name": "GitHub",
    "t": "2026-11-09T10:37:59Z",
    "to": "minor"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "minor",
+   "host": "www.githubstatus.com",
+   "incident": "",
+   "link": "https://www.githubstatus.com",
+   "name": "GitHub",
+   "t": "2026-11-09T21:04:09Z",
+   "to": "none"
+  },
+  {
+   "desc": "Service Under Maintenance",
+   "from": "none",
+   "host": "status.zoom.us",
+   "incident": "",
+   "link": "https://status.zoom.us",
+   "name": "Zoom",
+   "t": "2026-11-09T21:04:09Z",
+   "to": "maintenance"
   }
  ],
  "hosts": {
@@ -249,6 +269,14 @@
      "start": "2026-09-03T14:35:27Z",
      "status": "resolved"
     },
+    "nrwykczfny3n": {
+     "end": "2026-11-09T17:05:03Z",
+     "impact": "major",
+     "link": "https://stspg.io/0yjb58zpq48y",
+     "name": "Connectivity Issue w/ Discord's Homepage and Marketing Sites",
+     "start": "2026-11-09T17:05:03Z",
+     "status": "resolved"
+    },
     "nt3d1xvkb9q8": {
      "end": "2026-09-03T22:27:33Z",
      "impact": "none",
@@ -330,7 +358,7 @@
   "status.coinbase.com": {
    "coverage_from": "2026-09-17T06:50:14Z",
    "description": "All Systems Operational",
-   "incident": "Disabled Sends / Receives - EVMSEI",
+   "incident": "Bank Payments Unavailable - INR (India)",
    "incidents": {
     "0sldycvpmwz6": {
      "end": "2026-10-12T16:04:49Z",
@@ -339,6 +367,14 @@
      "name": "Delayed Transactions - ALEO",
      "start": "2026-10-12T06:03:03Z",
      "status": "resolved"
+    },
+    "0tlgts8cn5y8": {
+     "end": null,
+     "impact": "none",
+     "link": "https://stspg.io/4bfdft1bd8kn",
+     "name": "Bank Payments Unavailable - INR (India)",
+     "start": "2026-11-09T11:07:44Z",
+     "status": "investigating"
     },
     "0zfln0bkpc8f": {
      "end": "2026-10-31T15:19:46Z",
@@ -1040,7 +1076,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Vaulta - A [EOS Network] Funding Delays",
+   "incident": "Injective (INJ) Funding Delays",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1259,12 +1295,12 @@
      "status": "resolved"
     },
     "cyfkt3ylmm4t": {
-     "end": null,
+     "end": "2026-11-09T17:52:36Z",
      "impact": "minor",
      "link": "https://stspg.io/2y9rxgtt25t3",
      "name": "Vaulta - A [EOS Network] Funding Delays",
      "start": "2026-11-08T23:52:38Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "d176rjbxrs4w": {
      "end": "2026-10-26T07:53:00Z",
@@ -1336,6 +1372,14 @@
      "link": "https://stspg.io/gtqvkp4mdyvy",
      "name": "Deposit and Withdrawal Delays on Multiple Networks",
      "start": "2026-11-05T10:19:42Z",
+     "status": "identified"
+    },
+    "ltqk3bv2r649": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/tygl42q9v3bg",
+     "name": "Injective (INJ) Funding Delays",
+     "start": "2026-11-09T13:12:25Z",
      "status": "identified"
     },
     "lz7487sxw2lx": {
@@ -1739,6 +1783,14 @@
      "name": "Elevated errors with image generation",
      "start": "2026-11-08T15:11:15Z",
      "status": "resolved"
+    },
+    "01M70RDA2GWD2WXE58ANY0WV5R": {
+     "end": "2026-11-09T19:08:31Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M70RDA2GWD2WXE58ANY0WV5R",
+     "name": "Elevated ChatGPT Conversation Errors",
+     "start": "2026-11-09T18:16:30Z",
+     "status": "resolved"
     }
    },
    "indicator": "none",
@@ -1756,7 +1808,7 @@
   },
   "status.zoom.us": {
    "coverage_from": "2026-09-03T05:39:07Z",
-   "description": "All Systems Operational",
+   "description": "Service Under Maintenance",
    "incident": "",
    "incidents": {
     "0hgqwjz0lzwf": {
@@ -2184,14 +2236,14 @@
      "status": "resolved"
     }
    },
-   "indicator": "none",
+   "indicator": "maintenance",
    "name": "Zoom",
-   "since": "2026-11-06T10:26:47Z"
+   "since": "2026-11-09T21:04:09Z"
   },
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partial System Outage",
-   "incident": "Spectrum Availability Issue in Phoenix",
+   "incident": "Changes made to Workers may be delayed or disrupted",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -2216,6 +2268,14 @@
      "name": "Network disruption across multiple colocations in India",
      "start": "2026-11-05T15:05:13Z",
      "status": "resolved"
+    },
+    "1x0tbxpmmttu": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/1x0tbxpmmttu",
+     "name": "Changes made to Workers may be delayed or disrupted",
+     "start": "2026-11-09T16:15:26Z",
+     "status": "monitoring"
     },
     "2eno8w1fk27j": {
      "end": "2026-10-27T12:55:24Z",
@@ -2329,6 +2389,14 @@
      "start": "2026-11-02T16:41:11Z",
      "status": "resolved"
     },
+    "88hc76jnq2gn": {
+     "end": "2026-11-09T20:12:27Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/88hc76jnq2gn",
+     "name": "Network Performance Issues in Eastern North America",
+     "start": "2026-11-09T16:34:35Z",
+     "status": "resolved"
+    },
     "8m9a1fjjwxp5": {
      "end": "2026-10-23T09:42:16Z",
      "impact": "minor",
@@ -2378,12 +2446,12 @@
      "status": "resolved"
     },
     "c60k3g4vsoc1": {
-     "end": null,
+     "end": "2026-11-09T14:36:55Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/c60k3g4vsoc1",
      "name": "Spectrum Availability Issue in Phoenix",
      "start": "2026-11-07T00:59:31Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "dk2obcyw2aew": {
      "end": "2026-10-27T15:12:03Z",
@@ -2704,8 +2772,8 @@
   },
   "www.githubstatus.com": {
    "coverage_from": "2026-08-21T14:00:00Z",
-   "description": "Partially Degraded Service",
-   "incident": "Incident with Webhooks and Actions",
+   "description": "All Systems Operational",
+   "incident": "",
    "incidents": {
     "0rn90wk115q9": {
      "end": "2026-09-13T10:44:55Z",
@@ -3115,6 +3183,14 @@
      "start": "2026-11-04T08:45:00Z",
      "status": "resolved"
     },
+    "tp8cghg7tlc4": {
+     "end": "2026-11-09T18:59:32Z",
+     "impact": "critical",
+     "link": "https://stspg.io/7yw63xl9ztrv",
+     "name": "Incident with Actions and Checks API",
+     "start": "2026-11-09T18:12:37Z",
+     "status": "resolved"
+    },
     "tx9qn4khd664": {
      "end": "2026-08-27T12:12:58Z",
      "impact": "critical",
@@ -3164,12 +3240,12 @@
      "status": "resolved"
     },
     "xxb3l2bm76dr": {
-     "end": null,
-     "impact": "minor",
+     "end": "2026-11-09T11:50:35Z",
+     "impact": "major",
      "link": "https://stspg.io/4vdghm7tycm4",
      "name": "Incident with Webhooks and Actions",
      "start": "2026-11-09T10:00:35Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "y1t7p9fzrlj2": {
      "end": "2026-08-26T18:01:30Z",
@@ -3188,9 +3264,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "minor",
+   "indicator": "none",
    "name": "GitHub",
-   "since": "2026-11-09T10:37:59Z"
+   "since": "2026-11-09T21:04:09Z"
   },
   "www.redditstatus.com": {
    "coverage_from": "2024-06-28T02:17:49Z",

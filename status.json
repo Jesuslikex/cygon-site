@@ -119,6 +119,16 @@
    "name": "OpenAI",
    "t": "2026-11-08T19:52:35Z",
    "to": "none"
+  },
+  {
+   "desc": "Partially Degraded Service",
+   "from": "none",
+   "host": "www.githubstatus.com",
+   "incident": "Incident with Webhooks and Actions",
+   "link": "https://www.githubstatus.com",
+   "name": "GitHub",
+   "t": "2026-11-09T10:37:59Z",
+   "to": "minor"
   }
  ],
  "hosts": {
@@ -2694,8 +2704,8 @@
   },
   "www.githubstatus.com": {
    "coverage_from": "2026-08-21T14:00:00Z",
-   "description": "All Systems Operational",
-   "incident": "",
+   "description": "Partially Degraded Service",
+   "incident": "Incident with Webhooks and Actions",
    "incidents": {
     "0rn90wk115q9": {
      "end": "2026-09-13T10:44:55Z",
@@ -2823,6 +2833,14 @@
      "link": "https://stspg.io/cz0ngh11q0tf",
      "name": "Elevated request latency",
      "start": "2026-10-01T13:37:33Z",
+     "status": "resolved"
+    },
+    "c9px7cw2ghrs": {
+     "end": "2026-11-09T09:09:56Z",
+     "impact": "minor",
+     "link": "https://stspg.io/jztczfplj6yb",
+     "name": "Increased timeouts due to surge in anonymous users",
+     "start": "2026-11-09T05:59:07Z",
      "status": "resolved"
     },
     "cjwszcf57bff": {
@@ -3145,6 +3163,14 @@
      "start": "2026-11-04T16:05:31Z",
      "status": "resolved"
     },
+    "xxb3l2bm76dr": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/4vdghm7tycm4",
+     "name": "Incident with Webhooks and Actions",
+     "start": "2026-11-09T10:00:35Z",
+     "status": "investigating"
+    },
     "y1t7p9fzrlj2": {
      "end": "2026-08-26T18:01:30Z",
      "impact": "critical",
@@ -3162,9 +3188,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "none",
+   "indicator": "minor",
    "name": "GitHub",
-   "since": "2026-11-04T22:02:24Z"
+   "since": "2026-11-09T10:37:59Z"
   },
   "www.redditstatus.com": {
    "coverage_from": "2024-06-28T02:17:49Z",

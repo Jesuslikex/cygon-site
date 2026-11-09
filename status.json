@@ -1030,7 +1030,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Deposit and Withdrawal Delays on Multiple Networks",
+   "incident": "Vaulta - A [EOS Network] Funding Delays",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1247,6 +1247,14 @@
      "name": "Futures Market Data Delays",
      "start": "2026-10-01T13:19:15Z",
      "status": "resolved"
+    },
+    "cyfkt3ylmm4t": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/2y9rxgtt25t3",
+     "name": "Vaulta - A [EOS Network] Funding Delays",
+     "start": "2026-11-08T23:52:38Z",
+     "status": "investigating"
     },
     "d176rjbxrs4w": {
      "end": "2026-10-26T07:53:00Z",
@@ -1771,6 +1779,14 @@
      "link": "https://stspg.io/7j0d2jvn7hx6",
      "name": "Service Degradation Affected Sandbox Creation in ZoomMate",
      "start": "2026-10-14T09:39:17Z",
+     "status": "resolved"
+    },
+    "24hyksy87wl0": {
+     "end": "2026-11-09T01:08:13Z",
+     "impact": "minor",
+     "link": "https://stspg.io/kvsn81c4blyx",
+     "name": "Service Degradation Affecting Zoom Inbound SMS Service in the AU region",
+     "start": "2026-11-09T00:07:48Z",
      "status": "resolved"
     },
     "27cv8n1w352d": {

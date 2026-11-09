@@ -1,43 +1,43 @@
 {
- "date": "2026-11-08",
- "headline": "cve",
- "headlineId": "CVE-2026-124490",
- "text": "CYGON Threat of the Day · Nov 8\n\n🧨 Fresh CVE: openemr openemr CVE-2026-124490, CVSS 9.4\n\n🌍 Most flagged IPs today: United States (37,958)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
- "xLength": 202,
+ "date": "2026-11-09",
+ "headline": "kev",
+ "headlineId": "CVE-2026-19868",
+ "text": "CYGON Threat of the Day · Nov 9\n\n🔴 CISA confirms SonicWall SonicOS SSLVPN CVE-2026-19868 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (35,199)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 246,
  "facts": {
   "kev": {
    "id": "CVE-2026-19868",
    "what": "SonicWall SonicOS SSLVPN",
    "flaw": "Use of Single-factor Authentication",
    "added": "2026-11-06",
-   "age": 2,
+   "age": 3,
    "ransom": false
   },
   "cve": {
-   "id": "CVE-2026-124490",
-   "what": "openemr openemr",
-   "score": 9.4,
+   "id": "CVE-2026-104989",
+   "what": "Chaos Software V-Ray Swarm",
+   "score": 9.3,
    "sev": "CRITICAL",
-   "desc": "OpenEMR before 8.3.0 contains a path traversal vulnerability in the RingCentral RCFaxClient disposeDocument() method of oe-module-faxsms that allows authenticated attackers to read"
+   "desc": "Uncontrolled search path element in package upload feature in Chaos Software V-Ray versions through 2.0.19 allows remote unauthenticated attackers to execute arbitrary code via red"
   },
   "country": {
    "cc": "US",
    "name": "United States",
-   "n": 37958,
-   "total": 139878,
-   "pct": 27
+   "n": 35199,
+   "total": 132875,
+   "pct": 26
   },
   "outage": {
-   "svc": "Cloudflare",
-   "name": "Spectrum Availability Issue in Phoenix",
+   "svc": "GitHub",
+   "name": "Incident with Webhooks and Actions",
    "impact": "minor",
    "ongoing": true
   }
  },
- "snapshot": "2026-11-08T14:15Z",
+ "snapshot": "2026-11-09T17:23Z",
  "prev": {
-  "date": "2026-11-07",
-  "headline": "kev",
-  "headlineId": "CVE-2026-19868"
+  "date": "2026-11-08",
+  "headline": "cve",
+  "headlineId": "CVE-2026-124490"
  }
 }

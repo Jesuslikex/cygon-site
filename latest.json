@@ -1,43 +1,43 @@
 {
- "date": "2026-11-09",
+ "date": "2026-11-10",
  "headline": "kev",
- "headlineId": "CVE-2026-19868",
- "text": "CYGON Threat of the Day · Nov 9\n\n🔴 CISA confirms SonicWall SonicOS SSLVPN CVE-2026-19868 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (35,199)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
- "xLength": 246,
+ "headlineId": "CVE-2026-123218",
+ "text": "CYGON Threat of the Day · Nov 10\n\n🔴 CISA confirms IBM Aspera Faspex CVE-2026-123218 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (33,578)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 241,
  "facts": {
   "kev": {
-   "id": "CVE-2026-19868",
-   "what": "SonicWall SonicOS SSLVPN",
-   "flaw": "Use of Single-factor Authentication",
-   "added": "2026-11-06",
-   "age": 3,
+   "id": "CVE-2026-123218",
+   "what": "IBM Aspera Faspex",
+   "flaw": "Incorrect Authorization",
+   "added": "2026-11-09",
+   "age": 1,
    "ransom": false
   },
   "cve": {
-   "id": "CVE-2026-104989",
-   "what": "Chaos Software V-Ray Swarm",
-   "score": 9.3,
+   "id": "CVE-2026-125757",
+   "what": "mailcow mailcow: dockerized",
+   "score": 9.4,
    "sev": "CRITICAL",
-   "desc": "Uncontrolled search path element in package upload feature in Chaos Software V-Ray versions through 2.0.19 allows remote unauthenticated attackers to execute arbitrary code via red"
+   "desc": "mailcow: dockerized before 2026-11 contains a server-side template injection vulnerability that allows domain administrators to execute commands in the shared rspamd container by s"
   },
   "country": {
    "cc": "US",
    "name": "United States",
-   "n": 35199,
-   "total": 132875,
+   "n": 33578,
+   "total": 130398,
    "pct": 26
   },
   "outage": {
    "svc": "GitHub",
-   "name": "Incident with Webhooks and Actions",
-   "impact": "minor",
-   "ongoing": true
+   "name": "Incident with Actions and Checks API",
+   "impact": "critical",
+   "ongoing": false
   }
  },
- "snapshot": "2026-11-09T17:23Z",
+ "snapshot": "2026-11-10T15:32Z",
  "prev": {
-  "date": "2026-11-08",
-  "headline": "cve",
-  "headlineId": "CVE-2026-124490"
+  "date": "2026-11-09",
+  "headline": "kev",
+  "headlineId": "CVE-2026-19868"
  }
 }

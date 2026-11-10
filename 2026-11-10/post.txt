@@ -1,0 +1,8 @@
+CYGON Threat of the Day · Nov 10
+
+🔴 CISA confirms IBM Aspera Faspex CVE-2026-123218 is being exploited in the wild. Patch now.
+
+🌍 Most flagged IPs today: United States (33,578)
+
+Live tracker 👉 https://cygon.xyz
+$CYGON #cybersecurity

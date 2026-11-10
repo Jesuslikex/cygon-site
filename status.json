@@ -149,6 +149,16 @@
    "name": "Zoom",
    "t": "2026-11-09T21:04:09Z",
    "to": "maintenance"
+  },
+  {
+   "desc": "Partially Degraded Service",
+   "from": "none",
+   "host": "status.coinbase.com",
+   "incident": "Delayed Sends - DASH",
+   "link": "https://status.coinbase.com",
+   "name": "Coinbase",
+   "t": "2026-11-10T03:30:29Z",
+   "to": "minor"
   }
  ],
  "hosts": {
@@ -357,8 +367,8 @@
   },
   "status.coinbase.com": {
    "coverage_from": "2026-09-17T06:50:14Z",
-   "description": "All Systems Operational",
-   "incident": "Bank Payments Unavailable - INR (India)",
+   "description": "Partially Degraded Service",
+   "incident": "Delayed Sends - DASH",
    "incidents": {
     "0sldycvpmwz6": {
      "end": "2026-10-12T16:04:49Z",
@@ -768,6 +778,14 @@
      "start": "2026-10-08T03:18:08Z",
      "status": "resolved"
     },
+    "wt72fdzhq79h": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/t802ysnnnb6c",
+     "name": "Delayed Sends - DASH",
+     "start": "2026-11-10T00:18:34Z",
+     "status": "investigating"
+    },
     "xkxjrqfw5vcn": {
      "end": "2026-10-03T00:09:55Z",
      "impact": "none",
@@ -801,9 +819,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "none",
+   "indicator": "minor",
    "name": "Coinbase",
-   "since": "2026-11-05T02:22:36Z"
+   "since": "2026-11-10T03:30:29Z"
   },
   "status.digitalocean.com": {
    "coverage_from": "2026-04-28T13:45:20Z",
@@ -1076,7 +1094,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Injective (INJ) Funding Delays",
+   "incident": "Deposit and Withdrawal Delays on Multiple Networks",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1375,12 +1393,12 @@
      "status": "identified"
     },
     "ltqk3bv2r649": {
-     "end": null,
+     "end": "2026-11-09T22:48:01Z",
      "impact": "minor",
      "link": "https://stspg.io/tygl42q9v3bg",
      "name": "Injective (INJ) Funding Delays",
      "start": "2026-11-09T13:12:25Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "lz7487sxw2lx": {
      "end": "2026-10-13T13:41:13Z",
@@ -1500,6 +1518,14 @@
      "link": "https://stspg.io/rjf1d1kkks9q",
      "name": "Futures Trading Engine degraded performance",
      "start": "2026-10-13T13:08:12Z",
+     "status": "resolved"
+    },
+    "wfwxn353pk62": {
+     "end": "2026-11-09T22:49:01Z",
+     "impact": "minor",
+     "link": "https://stspg.io/llf4khzv3prs",
+     "name": "Spot REST API market data errors",
+     "start": "2026-11-09T21:38:48Z",
      "status": "resolved"
     },
     "xwrjp842w6nx": {
@@ -1790,6 +1816,14 @@
      "link": "https://status.openai.com/incidents/01M70RDA2GWD2WXE58ANY0WV5R",
      "name": "Elevated ChatGPT Conversation Errors",
      "start": "2026-11-09T18:16:30Z",
+     "status": "resolved"
+    },
+    "01M7193DWYRFWQM5W6E3VZ7TM7": {
+     "end": "2026-11-09T23:50:46Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M7193DWYRFWQM5W6E3VZ7TM7",
+     "name": "Elevated Errors On API",
+     "start": "2026-11-09T23:08:12Z",
      "status": "resolved"
     }
    },
@@ -2099,6 +2133,14 @@
      "start": "2026-09-09T01:09:45Z",
      "status": "resolved"
     },
+    "k0nc9gcc8rvv": {
+     "end": "2026-11-10T01:08:07Z",
+     "impact": "none",
+     "link": "https://stspg.io/psnrrqd2wgz2",
+     "name": "Service Degradation Affecting a subset of users with ZVA and ZoomMate",
+     "start": "2026-11-10T01:08:06Z",
+     "status": "resolved"
+    },
     "k4l03tnw5wwr": {
      "end": "2026-09-04T05:35:57Z",
      "impact": "none",
@@ -2243,7 +2285,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partial System Outage",
-   "incident": "Changes made to Workers may be delayed or disrupted",
+   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -2252,6 +2294,14 @@
      "name": "Issues with AI Security for Apps",
      "start": "2026-10-27T16:31:00Z",
      "status": "resolved"
+    },
+    "0ocqieaifg7h": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/0ocqieaifg7h",
+     "name": "Changes to Cloudflare Workers are not producing Event Subscription events",
+     "start": "2026-11-10T01:53:58Z",
+     "status": "investigating"
     },
     "10m2bxjztzwh": {
      "end": "2026-10-29T16:50:03Z",
@@ -2270,12 +2320,12 @@
      "status": "resolved"
     },
     "1x0tbxpmmttu": {
-     "end": null,
+     "end": "2026-11-10T01:46:28Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/1x0tbxpmmttu",
      "name": "Changes made to Workers may be delayed or disrupted",
      "start": "2026-11-09T16:15:26Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "2eno8w1fk27j": {
      "end": "2026-10-27T12:55:24Z",
@@ -2837,6 +2887,14 @@
      "link": "https://stspg.io/cpgst4hly3mh",
      "name": "Disruption with GitHub Billing",
      "start": "2026-08-26T23:37:20Z",
+     "status": "resolved"
+    },
+    "6jm5k16vyhfg": {
+     "end": "2026-11-10T00:05:52Z",
+     "impact": "major",
+     "link": "https://stspg.io/t5gqmprtrdf2",
+     "name": "Degraded availability for GPT-5.3 Codex and GPT-5.6 models in Copilot",
+     "start": "2026-11-09T23:16:32Z",
      "status": "resolved"
     },
     "6yk962mhlr3h": {

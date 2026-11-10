@@ -159,6 +159,26 @@
    "name": "Coinbase",
    "t": "2026-11-10T03:30:29Z",
    "to": "minor"
+  },
+  {
+   "desc": "Partially Degraded Service",
+   "from": "major",
+   "host": "www.cloudflarestatus.com",
+   "incident": "Prediction issue on OpenAI models via Replicate",
+   "link": "https://www.cloudflarestatus.com",
+   "name": "Cloudflare",
+   "t": "2026-11-10T19:03:38Z",
+   "to": "minor"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "minor",
+   "host": "status.coinbase.com",
+   "incident": "Bank Payments Unavailable - INR (India)",
+   "link": "https://status.coinbase.com",
+   "name": "Coinbase",
+   "t": "2026-11-10T19:03:38Z",
+   "to": "none"
   }
  ],
  "hosts": {
@@ -367,7 +387,7 @@
   },
   "status.coinbase.com": {
    "coverage_from": "2026-09-17T06:50:14Z",
-   "description": "Partially Degraded Service",
+   "description": "All Systems Operational",
    "incident": "Bank Payments Unavailable - INR (India)",
    "incidents": {
     "0sldycvpmwz6": {
@@ -787,12 +807,12 @@
      "status": "resolved"
     },
     "wt72fdzhq79h": {
-     "end": null,
+     "end": "2026-11-10T15:36:42Z",
      "impact": "minor",
      "link": "https://stspg.io/t802ysnnnb6c",
      "name": "Delayed Sends - DASH",
      "start": "2026-11-10T00:18:34Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "xkxjrqfw5vcn": {
      "end": "2026-10-03T00:09:55Z",
@@ -827,9 +847,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "minor",
+   "indicator": "none",
    "name": "Coinbase",
-   "since": "2026-11-10T03:30:29Z"
+   "since": "2026-11-10T19:03:38Z"
   },
   "status.digitalocean.com": {
    "coverage_from": "2026-04-28T13:45:20Z",
@@ -1102,7 +1122,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Initia (INIT) Funding Delays",
+   "incident": "Deposit and Withdrawal Delays on Multiple Blockchain Networks",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1368,6 +1388,14 @@
      "start": "2026-10-23T15:00:44Z",
      "status": "resolved"
     },
+    "fqgy2v7071c7": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/lq4r21np0jpv",
+     "name": "Deposit and Withdrawal Delays on Multiple Blockchain Networks",
+     "start": "2026-11-10T18:14:55Z",
+     "status": "investigating"
+    },
     "jkm5tq0rzsc3": {
      "end": "2026-11-04T18:04:29Z",
      "impact": "minor",
@@ -1544,6 +1572,14 @@
      "start": "2026-11-09T21:38:48Z",
      "status": "resolved"
     },
+    "wmfdhp7qc1xw": {
+     "end": "2026-11-10T18:57:21Z",
+     "impact": "minor",
+     "link": "https://stspg.io/hl7bphl8pfgq",
+     "name": "Deposit and Withdrawal Delays on Multiple Blockchain Networks",
+     "start": "2026-11-10T18:15:42Z",
+     "status": "resolved"
+    },
     "xwrjp842w6nx": {
      "end": "2026-09-28T11:58:34Z",
      "impact": "minor",
@@ -1592,7 +1628,7 @@
   "status.openai.com": {
    "coverage_from": "2026-10-09T17:23:18Z",
    "description": "All Systems Operational",
-   "incident": "Elevated error rates with some U.S. business Mastercards",
+   "incident": "",
    "incidents": {
     "01M4GV1M2A3K38T73JCVCD9G0R": {
      "end": "2026-10-12T16:02:47Z",
@@ -1811,12 +1847,12 @@
      "status": "resolved"
     },
     "01M6S2FV5TZWQ753NHRB7BF5K7": {
-     "end": null,
+     "end": "2026-11-10T16:06:18Z",
      "impact": "none",
      "link": "https://status.openai.com/incidents/01M6S2FV5TZWQ753NHRB7BF5K7",
      "name": "Elevated error rates with some U.S. business Mastercards",
      "start": "2026-11-06T18:38:43Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "01M6XVDCKRT3PSB0YP8J30GTD5": {
      "end": "2026-11-08T17:00:42Z",
@@ -2308,8 +2344,8 @@
   },
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
-   "description": "Partial System Outage",
-   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
+   "description": "Partially Degraded Service",
+   "incident": "Prediction issue on OpenAI models via Replicate",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -2398,6 +2434,14 @@
      "name": "Network Performance Issues in Singapore",
      "start": "2026-11-06T08:54:00Z",
      "status": "resolved"
+    },
+    "3en9cdyjn2sq": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/3en9cdyjn2sq",
+     "name": "Prediction issue on OpenAI models via Replicate",
+     "start": "2026-11-10T18:35:39Z",
+     "status": "identified"
     },
     "3ts1mfzs0khz": {
      "end": "2026-10-23T20:37:06Z",
@@ -2848,9 +2892,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "major",
+   "indicator": "minor",
    "name": "Cloudflare",
-   "since": "2026-11-03T16:16:57Z"
+   "since": "2026-11-10T19:03:38Z"
   },
   "www.githubstatus.com": {
    "coverage_from": "2026-08-21T14:00:00Z",
@@ -3071,6 +3115,14 @@
      "link": "https://stspg.io/4s4bvnc0frrj",
      "name": "Disruption with some GitHub services",
      "start": "2026-08-26T15:09:03Z",
+     "status": "resolved"
+    },
+    "hnf21m9jkl3c": {
+     "end": "2026-11-10T17:55:03Z",
+     "impact": "critical",
+     "link": "https://stspg.io/16nsnk2th3rv",
+     "name": "Incident with Git Operations and Pull Requests",
+     "start": "2026-11-10T16:10:52Z",
      "status": "resolved"
     },
     "jk2dy5h9yp3m": {

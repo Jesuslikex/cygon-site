@@ -368,7 +368,7 @@
   "status.coinbase.com": {
    "coverage_from": "2026-09-17T06:50:14Z",
    "description": "Partially Degraded Service",
-   "incident": "Delayed Sends - DASH",
+   "incident": "Bank Payments Unavailable - INR (India)",
    "incidents": {
     "0sldycvpmwz6": {
      "end": "2026-10-12T16:04:49Z",
@@ -384,7 +384,7 @@
      "link": "https://stspg.io/4bfdft1bd8kn",
      "name": "Bank Payments Unavailable - INR (India)",
      "start": "2026-11-09T11:07:44Z",
-     "status": "investigating"
+     "status": "identified"
     },
     "0zfln0bkpc8f": {
      "end": "2026-10-31T15:19:46Z",
@@ -544,6 +544,14 @@
      "link": "https://stspg.io/pygsysshsqxw",
      "name": "Degraded Performance - DEX Solana Transactions",
      "start": "2026-10-08T07:00:33Z",
+     "status": "resolved"
+    },
+    "fz4d10rvry23": {
+     "end": "2026-11-10T06:01:21Z",
+     "impact": "minor",
+     "link": "https://stspg.io/0zsqzsvgf2vq",
+     "name": "Delayed Transactions - DOT Network",
+     "start": "2026-11-10T05:46:27Z",
      "status": "resolved"
     },
     "gfx8zxsl1050": {
@@ -1094,7 +1102,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Deposit and Withdrawal Delays on Multiple Networks",
+   "incident": "Initia (INIT) Funding Delays",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1239,6 +1247,14 @@
      "name": "Brazilian Real (BRL) PIX Funding Delays",
      "start": "2026-11-03T20:39:20Z",
      "status": "resolved"
+    },
+    "6yrrplqc5yv0": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/6m8947xr22xm",
+     "name": "Initia (INIT) Funding Delays",
+     "start": "2026-11-10T08:23:47Z",
+     "status": "identified"
     },
     "7zcy2j4hhxqz": {
      "end": "2026-10-27T10:11:18Z",
@@ -1824,6 +1840,14 @@
      "link": "https://status.openai.com/incidents/01M7193DWYRFWQM5W6E3VZ7TM7",
      "name": "Elevated Errors On API",
      "start": "2026-11-09T23:08:12Z",
+     "status": "resolved"
+    },
+    "01M71W79MAGEXEX93QTVTBYJ4K": {
+     "end": "2026-11-10T07:02:33Z",
+     "impact": "none",
+     "link": "https://status.openai.com/incidents/01M71W79MAGEXEX93QTVTBYJ4K",
+     "name": "Incorrect cost data in Costs API exports",
+     "start": "2026-11-10T04:42:21Z",
      "status": "resolved"
     }
    },
@@ -2621,6 +2645,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/lmmf23klsrxq",
      "name": "Increased Errors for Durable Objects in the Eastern North America region",
      "start": "2026-10-28T09:45:10Z",
+     "status": "resolved"
+    },
+    "m644az5hr9xo": {
+     "end": "2026-11-10T08:45:13Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/m644az5hr9xo",
+     "name": "Account Analytics Filter Issue",
+     "start": "2026-11-10T08:02:37Z",
      "status": "resolved"
     },
     "mbq512v9oe4s": {

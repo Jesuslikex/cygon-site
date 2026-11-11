@@ -1,43 +1,43 @@
 {
- "date": "2026-11-10",
+ "date": "2026-11-11",
  "headline": "kev",
- "headlineId": "CVE-2026-123218",
- "text": "CYGON Threat of the Day · Nov 10\n\n🔴 CISA confirms IBM Aspera Faspex CVE-2026-123218 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (33,578)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
- "xLength": 241,
+ "headlineId": "CVE-2026-20320",
+ "text": "CYGON Threat of the Day · Nov 11\n\n🔴 CISA confirms Cisco BroadWorks CVE-2026-20320 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (34,575)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 239,
  "facts": {
   "kev": {
-   "id": "CVE-2026-123218",
-   "what": "IBM Aspera Faspex",
-   "flaw": "Incorrect Authorization",
-   "added": "2026-11-09",
+   "id": "CVE-2026-20320",
+   "what": "Cisco BroadWorks",
+   "flaw": "Improper Restriction of XML External Entity Reference",
+   "added": "2026-11-10",
    "age": 1,
    "ransom": false
   },
   "cve": {
-   "id": "CVE-2026-125757",
-   "what": "mailcow mailcow: dockerized",
-   "score": 9.4,
+   "id": "CVE-2026-85632",
+   "what": "Sipay Electronic Money and Payment Services Inc. WooCommerce Virtual POS Module",
+   "score": 9.1,
    "sev": "CRITICAL",
-   "desc": "mailcow: dockerized before 2026-11 contains a server-side template injection vulnerability that allows domain administrators to execute commands in the shared rspamd container by s"
+   "desc": "Missing authentication for critical function and Improper validation of integrity check value vulnerability in Sipay Electronic Money and Payment Services Inc. WooCommerce Virtual "
   },
   "country": {
    "cc": "US",
    "name": "United States",
-   "n": 33578,
-   "total": 130398,
+   "n": 34575,
+   "total": 133200,
    "pct": 26
   },
   "outage": {
    "svc": "GitHub",
-   "name": "Incident with Actions and Checks API",
+   "name": "Incident with Git Operations and Pull Requests",
    "impact": "critical",
    "ongoing": false
   }
  },
- "snapshot": "2026-11-10T15:32Z",
+ "snapshot": "2026-11-11T15:05Z",
  "prev": {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "headline": "kev",
-  "headlineId": "CVE-2026-19868"
+  "headlineId": "CVE-2026-123218"
  }
 }

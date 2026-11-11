@@ -1,0 +1,8 @@
+CYGON Threat of the Day · Nov 11
+
+🔴 CISA confirms Cisco BroadWorks CVE-2026-20320 is being exploited in the wild. Patch now.
+
+🌍 Most flagged IPs today: United States (34,575)
+
+Live tracker 👉 https://cygon.xyz
+$CYGON #cybersecurity

@@ -189,6 +189,16 @@
    "name": "Coinbase",
    "t": "2026-11-10T23:59:51Z",
    "to": "minor"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "minor",
+   "host": "status.coinbase.com",
+   "incident": "Bank Payments Unavailable - INR (India)",
+   "link": "https://status.coinbase.com",
+   "name": "Coinbase",
+   "t": "2026-11-11T19:55:49Z",
+   "to": "none"
   }
  ],
  "hosts": {
@@ -397,8 +407,8 @@
   },
   "status.coinbase.com": {
    "coverage_from": "2026-09-17T06:50:14Z",
-   "description": "Partially Degraded Service",
-   "incident": "Degraded Performance - Coinbase Payments",
+   "description": "All Systems Operational",
+   "incident": "Bank Payments Unavailable - INR (India)",
    "incidents": {
     "0sldycvpmwz6": {
      "end": "2026-10-12T16:04:49Z",
@@ -569,12 +579,12 @@
      "status": "resolved"
     },
     "fh746rkklsz7": {
-     "end": null,
+     "end": "2026-11-11T17:11:33Z",
      "impact": "minor",
      "link": "https://stspg.io/vc236k5ywf92",
      "name": "Degraded Performance - Coinbase Payments",
      "start": "2026-11-10T23:11:42Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "fhqztv3wv438": {
      "end": "2026-10-08T07:09:50Z",
@@ -865,9 +875,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "minor",
+   "indicator": "none",
    "name": "Coinbase",
-   "since": "2026-11-10T23:59:51Z"
+   "since": "2026-11-11T19:55:49Z"
   },
   "status.digitalocean.com": {
    "coverage_from": "2026-04-28T13:45:20Z",
@@ -1140,7 +1150,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Initia (INIT) Funding Delays",
+   "incident": "Flare Funding Delays",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1318,6 +1328,14 @@
      "start": "2026-10-15T13:32:37Z",
      "status": "resolved"
     },
+    "9mys861w4snj": {
+     "end": "2026-11-11T17:05:50Z",
+     "impact": "minor",
+     "link": "https://stspg.io/x7jp5qgc5rzh",
+     "name": "X Layer Funding Delays",
+     "start": "2026-11-11T13:40:22Z",
+     "status": "resolved"
+    },
     "9vxsl8ct8w80": {
      "end": "2026-10-23T17:14:59Z",
      "impact": "minor",
@@ -1381,6 +1399,14 @@
      "name": "Tezos (XTZ) Funding Delays",
      "start": "2026-10-22T17:04:43Z",
      "status": "resolved"
+    },
+    "dk2sjsgq5tx3": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/lws4xdj6r6np",
+     "name": "Flare Funding Delays",
+     "start": "2026-11-11T15:37:11Z",
+     "status": "investigating"
     },
     "dmkh3hsd5wz1": {
      "end": "2026-10-15T12:03:43Z",
@@ -1447,12 +1473,12 @@
      "status": "resolved"
     },
     "lq19kjjg863l": {
-     "end": null,
+     "end": "2026-11-11T17:59:16Z",
      "impact": "minor",
      "link": "https://stspg.io/gtqvkp4mdyvy",
      "name": "Deposit and Withdrawal Delays on Multiple Networks",
      "start": "2026-11-05T10:19:42Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "ltqk3bv2r649": {
      "end": "2026-11-09T22:48:01Z",
@@ -2485,6 +2511,14 @@
      "start": "2026-11-10T18:35:39Z",
      "status": "resolved"
     },
+    "3ptyvdaljq9b": {
+     "end": "2026-11-11T13:03:00Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/3ptyvdaljq9b",
+     "name": "Workers deployments errors with D1 bindings",
+     "start": "2026-11-11T13:09:04Z",
+     "status": "resolved"
+    },
     "3ts1mfzs0khz": {
      "end": "2026-10-23T20:37:06Z",
      "impact": "minor",
@@ -2555,6 +2589,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/7he1pmetw77p",
      "name": "Worker Deployments Delayed",
      "start": "2026-11-02T16:41:11Z",
+     "status": "resolved"
+    },
+    "804glbb3pq6t": {
+     "end": "2026-11-11T16:18:51Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/804glbb3pq6t",
+     "name": "Network Performance Degraded",
+     "start": "2026-11-11T15:53:19Z",
      "status": "resolved"
     },
     "88hc76jnq2gn": {

@@ -2421,6 +2421,14 @@
      "start": "2026-11-09T16:15:26Z",
      "status": "resolved"
     },
+    "21vwp89eiyjx": {
+     "end": "2026-11-11T10:07:58Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/21vwp89eiyjx",
+     "name": "SSL Certificate Provisioning Issue",
+     "start": "2026-11-11T07:45:42Z",
+     "status": "resolved"
+    },
     "2eno8w1fk27j": {
      "end": "2026-10-27T12:55:24Z",
      "impact": "minor",
@@ -2491,6 +2499,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/3z8y23zn7tr2",
      "name": "Cloudflare Secure Web Gateway and DLP enforcement issues for Google Gemini",
      "start": "2026-10-19T20:30:00Z",
+     "status": "resolved"
+    },
+    "4qxszy04pdjw": {
+     "end": "2026-11-11T07:45:00Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/4qxszy04pdjw",
+     "name": "Elevated number of 5xx errors in Hong Kong",
+     "start": "2026-11-11T07:52:21Z",
      "status": "resolved"
     },
     "4u4hsqqnr0hk": {
@@ -2587,6 +2603,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/bc7e93q3eigp",
      "name": "Issues with Durable Objects availability in Eastern Europe",
      "start": "2026-10-29T10:06:17Z",
+     "status": "resolved"
+    },
+    "byzl30zyfc47": {
+     "end": "2026-11-11T06:41:33Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/byzl30zyfc47",
+     "name": "Cloudflare Worker Builds Issue",
+     "start": "2026-11-11T06:29:09Z",
      "status": "resolved"
     },
     "c3pjgxk8xnzn": {

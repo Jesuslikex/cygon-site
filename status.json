@@ -1140,7 +1140,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Deposit and Withdrawal Delays on Multiple Blockchain Networks",
+   "incident": "Initia (INIT) Funding Delays",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1167,12 +1167,12 @@
      "status": "resolved"
     },
     "1mk59wfdjggk": {
-     "end": null,
+     "end": "2026-11-11T02:33:52Z",
      "impact": "minor",
      "link": "https://stspg.io/rrcvk3ml0hld",
      "name": "BRL PIX Withdrawal Issues",
      "start": "2026-11-05T16:03:48Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "1mwk0t5k5ktr": {
      "end": "2026-10-28T04:14:00Z",
@@ -1407,12 +1407,12 @@
      "status": "resolved"
     },
     "fqgy2v7071c7": {
-     "end": null,
+     "end": "2026-11-11T05:01:21Z",
      "impact": "minor",
      "link": "https://stspg.io/lq4r21np0jpv",
      "name": "Deposit and Withdrawal Delays on Multiple Blockchain Networks",
      "start": "2026-11-10T18:14:55Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "jkm5tq0rzsc3": {
      "end": "2026-11-04T18:04:29Z",
@@ -2371,7 +2371,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Network Performance Issues in St. Louis, USA",
+   "incident": "Replicate Input Upload Issue",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -2387,7 +2387,7 @@
      "link": "https://www.cloudflarestatus.com/incidents/0ocqieaifg7h",
      "name": "Changes to Cloudflare Workers are not producing Event Subscription events",
      "start": "2026-11-10T01:53:58Z",
-     "status": "investigating"
+     "status": "identified"
     },
     "10m2bxjztzwh": {
      "end": "2026-10-29T16:50:03Z",
@@ -2398,12 +2398,12 @@
      "status": "resolved"
     },
     "1h9c85fz6bm3": {
-     "end": null,
+     "end": "2026-11-11T01:10:26Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/1h9c85fz6bm3",
      "name": "Network Performance Issues in St. Louis, USA",
      "start": "2026-11-10T22:50:23Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "1i6fnludjh1m": {
      "end": "2026-11-05T16:16:48Z",
@@ -2924,6 +2924,14 @@
      "name": "Workers Builds Issues",
      "start": "2026-11-05T19:51:39Z",
      "status": "resolved"
+    },
+    "yu63fhh2peb7": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/yu63fhh2peb7",
+     "name": "Replicate Input Upload Issue",
+     "start": "2026-11-11T04:33:19Z",
+     "status": "identified"
     }
    },
    "indicator": "minor",

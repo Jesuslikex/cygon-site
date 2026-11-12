@@ -1,43 +1,43 @@
 {
- "date": "2026-11-11",
- "headline": "kev",
- "headlineId": "CVE-2026-20320",
- "text": "CYGON Threat of the Day · Nov 11\n\n🔴 CISA confirms Cisco BroadWorks CVE-2026-20320 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (34,575)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
- "xLength": 239,
+ "date": "2026-11-12",
+ "headline": "country",
+ "headlineId": "US",
+ "text": "CYGON Threat of the Day · Nov 12\n\n🌍 Most flagged IPs today: United States (34,597)\n\n🔴 Exploited in the wild: Cisco BroadWorks CVE-2026-20320 (CISA KEV)\n🧨 Fresh CVE: CVE-2026-6460 CVE-2026-6460, CVSS 8.8\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 268,
  "facts": {
   "kev": {
    "id": "CVE-2026-20320",
    "what": "Cisco BroadWorks",
    "flaw": "Improper Restriction of XML External Entity Reference",
    "added": "2026-11-10",
-   "age": 1,
+   "age": 2,
    "ransom": false
   },
   "cve": {
-   "id": "CVE-2026-85632",
-   "what": "Sipay Electronic Money and Payment Services Inc. WooCommerce Virtual POS Module",
-   "score": 9.1,
-   "sev": "CRITICAL",
-   "desc": "Missing authentication for critical function and Improper validation of integrity check value vulnerability in Sipay Electronic Money and Payment Services Inc. WooCommerce Virtual "
+   "id": "CVE-2026-6460",
+   "what": "CVE-2026-6460",
+   "score": 8.8,
+   "sev": "HIGH",
+   "desc": "Type confusion in PostgreSQL allows an object creator to execute arbitrary code as the operating system user running the database, via ALTER ... SET DATA TYPE primarily.  Other DDL"
   },
   "country": {
    "cc": "US",
    "name": "United States",
-   "n": 34575,
-   "total": 133200,
+   "n": 34597,
+   "total": 133241,
    "pct": 26
   },
   "outage": {
-   "svc": "GitHub",
-   "name": "Incident with Git Operations and Pull Requests",
+   "svc": "OpenAI",
+   "name": "Unable to start new Workspace Agent runs",
    "impact": "critical",
    "ongoing": false
   }
  },
- "snapshot": "2026-11-11T15:05Z",
+ "snapshot": "2026-11-12T15:56Z",
  "prev": {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "headline": "kev",
-  "headlineId": "CVE-2026-123218"
+  "headlineId": "CVE-2026-20320"
  }
 }

@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-12",
+ "headline": "country",
+ "headlineId": "US",
+ "text": "CYGON Threat of the Day · Nov 12\n\n🌍 Most flagged IPs today: United States (34,597)\n\n🔴 Exploited in the wild: Cisco BroadWorks CVE-2026-20320 (CISA KEV)\n🧨 Fresh CVE: CVE-2026-6460 CVE-2026-6460, CVSS 8.8\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 268,
+ "facts": {
+  "kev": {
+   "id": "CVE-2026-20320",
+   "what": "Cisco BroadWorks",
+   "flaw": "Improper Restriction of XML External Entity Reference",
+   "added": "2026-11-10",
+   "age": 2,
+   "ransom": false
+  },
+  "cve": {
+   "id": "CVE-2026-6460",
+   "what": "CVE-2026-6460",
+   "score": 8.8,
+   "sev": "HIGH",
+   "desc": "Type confusion in PostgreSQL allows an object creator to execute arbitrary code as the operating system user running the database, via ALTER ... SET DATA TYPE primarily.  Other DDL"
+  },
+  "country": {
+   "cc": "US",
+   "name": "United States",
+   "n": 34597,
+   "total": 133241,
+   "pct": 26
+  },
+  "outage": {
+   "svc": "OpenAI",
+   "name": "Unable to start new Workspace Agent runs",
+   "impact": "critical",
+   "ongoing": false
+  }
+ },
+ "snapshot": "2026-11-12T15:56Z",
+ "prev": null
+}

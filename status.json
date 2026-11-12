@@ -239,6 +239,16 @@
    "name": "Zoom",
    "t": "2026-11-12T08:57:42Z",
    "to": "none"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "minor",
+   "host": "status.openai.com",
+   "incident": "",
+   "link": "https://status.openai.com",
+   "name": "OpenAI",
+   "t": "2026-11-12T17:21:05Z",
+   "to": "none"
   }
  ],
  "hosts": {
@@ -1504,6 +1514,14 @@
      "start": "2026-11-10T18:14:55Z",
      "status": "resolved"
     },
+    "g70pckb34tqc": {
+     "end": "2026-11-12T14:38:05Z",
+     "impact": "minor",
+     "link": "https://stspg.io/411jsld2wddm",
+     "name": "Funding Degraded Performance",
+     "start": "2026-11-12T11:08:02Z",
+     "status": "resolved"
+    },
     "jkm5tq0rzsc3": {
      "end": "2026-11-04T18:04:29Z",
      "impact": "minor",
@@ -1735,8 +1753,8 @@
   },
   "status.openai.com": {
    "coverage_from": "2026-10-09T17:23:18Z",
-   "description": "Partial System Degradation",
-   "incident": "GPT-image-2.5 High error rate",
+   "description": "All Systems Operational",
+   "incident": "",
    "incidents": {
     "01M4GV1M2A3K38T73JCVCD9G0R": {
      "end": "2026-10-12T16:02:47Z",
@@ -2011,17 +2029,17 @@
      "status": "resolved"
     },
     "01M77FAXVFV338GY7G9VRENRS5": {
-     "end": null,
+     "end": "2026-11-12T09:25:12Z",
      "impact": "minor",
      "link": "https://status.openai.com/incidents/01M77FAXVFV338GY7G9VRENRS5",
-     "name": "GPT-image-2.5 High error rate",
+     "name": "GPT-image-2.5 and 2.6 Sunburst & Flare High error rate",
      "start": "2026-11-12T08:52:35Z",
-     "status": "identified"
+     "status": "resolved"
     }
    },
-   "indicator": "minor",
+   "indicator": "none",
    "name": "OpenAI",
-   "since": "2026-11-12T08:57:42Z"
+   "since": "2026-11-12T17:21:05Z"
   },
   "status.solana.com": {
    "coverage_from": "2022-01-06T16:11:59Z",
@@ -2493,7 +2511,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Replicate Issue",
+   "incident": "Replicate Model Registry Unavailable",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -2536,12 +2554,12 @@
      "status": "resolved"
     },
     "1na2mbfshgdh": {
-     "end": null,
+     "end": "2026-11-12T11:34:02Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/1na2mbfshgdh",
      "name": "Replicate Issue",
      "start": "2026-11-12T08:30:17Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "1x0tbxpmmttu": {
      "end": "2026-11-10T01:46:28Z",
@@ -3072,12 +3090,12 @@
      "status": "resolved"
     },
     "wp49bp8bqo6c": {
-     "end": null,
+     "end": "2026-11-12T16:36:32Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/wp49bp8bqo6c",
      "name": "Fedramp Customers have Delayed Purges",
      "start": "2026-11-06T17:47:15Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "wtsd415cavkc": {
      "end": "2026-11-06T10:08:30Z",

@@ -249,6 +249,36 @@
    "name": "OpenAI",
    "t": "2026-11-12T17:21:05Z",
    "to": "none"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "minor",
+   "host": "status.coinbase.com",
+   "incident": "Bank Payments Unavailable - INR (India)",
+   "link": "https://status.coinbase.com",
+   "name": "Coinbase",
+   "t": "2026-11-12T22:48:48Z",
+   "to": "none"
+  },
+  {
+   "desc": "Partial System Degradation",
+   "from": "none",
+   "host": "status.openai.com",
+   "incident": "Elevated errors affecting the Microsoft 365 connector",
+   "link": "https://status.openai.com",
+   "name": "OpenAI",
+   "t": "2026-11-12T22:48:48Z",
+   "to": "minor"
+  },
+  {
+   "desc": "Partially Degraded Service",
+   "from": "none",
+   "host": "status.zoom.us",
+   "incident": "Service Degradation Affecting Microsoft Integrations due to an underlying vendor issue.",
+   "link": "https://status.zoom.us",
+   "name": "Zoom",
+   "t": "2026-11-12T22:48:48Z",
+   "to": "minor"
   }
  ],
  "hosts": {
@@ -457,8 +487,8 @@
   },
   "status.coinbase.com": {
    "coverage_from": "2026-09-17T06:50:14Z",
-   "description": "Partially Degraded Service",
-   "incident": "Delayed Transactions - Stacks Network",
+   "description": "All Systems Operational",
+   "incident": "Bank Payments Unavailable - INR (India)",
    "incidents": {
     "0sldycvpmwz6": {
      "end": "2026-10-12T16:04:49Z",
@@ -629,12 +659,12 @@
      "status": "resolved"
     },
     "f11qs65jgf7q": {
-     "end": null,
+     "end": "2026-11-12T18:12:39Z",
      "impact": "minor",
      "link": "https://stspg.io/yjm1z9f5ymdt",
      "name": "Delayed Transactions - Stacks Network",
      "start": "2026-11-12T06:11:54Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "fh746rkklsz7": {
      "end": "2026-11-11T17:11:33Z",
@@ -941,9 +971,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "minor",
+   "indicator": "none",
    "name": "Coinbase",
-   "since": "2026-11-12T08:57:42Z"
+   "since": "2026-11-12T22:48:48Z"
   },
   "status.digitalocean.com": {
    "coverage_from": "2026-04-28T13:45:20Z",
@@ -1004,14 +1034,6 @@
      "link": "https://stspg.io/wv68wmnz55ln",
      "name": "Block Storage Volume NYC1, NYC3, SGP1, SYD1 and BLR1",
      "start": "2026-07-19T09:51:19Z",
-     "status": "resolved"
-    },
-    "8sjb7kmqnvk9": {
-     "end": "2026-07-15T21:46:35Z",
-     "impact": "minor",
-     "link": "https://stspg.io/rzs04wclgpfq",
-     "name": "Serverless Inference - Gemma4 Latency Issues Causing Timeouts & Slow Responses",
-     "start": "2026-07-13T19:04:10Z",
      "status": "resolved"
     },
     "cg3q7h89dbnq": {
@@ -1174,6 +1196,14 @@
      "link": "https://stspg.io/rshdbf10lkv8",
      "name": "Customer support via telephone may be unavailable for some users",
      "start": "2026-09-03T22:13:35Z",
+     "status": "resolved"
+    },
+    "n7nms5rwjl3x": {
+     "end": "2026-11-12T22:33:51Z",
+     "impact": "minor",
+     "link": "https://stspg.io/hghgm9x3735x",
+     "name": "Elevated Latency on help.dropbox.com",
+     "start": "2026-11-12T22:20:40Z",
      "status": "resolved"
     },
     "pczflzc6zgnh": {
@@ -1753,8 +1783,8 @@
   },
   "status.openai.com": {
    "coverage_from": "2026-10-09T17:23:18Z",
-   "description": "All Systems Operational",
-   "incident": "",
+   "description": "Partial System Degradation",
+   "incident": "Elevated errors affecting the Microsoft 365 connector",
    "incidents": {
     "01M4GV1M2A3K38T73JCVCD9G0R": {
      "end": "2026-10-12T16:02:47Z",
@@ -2035,11 +2065,19 @@
      "name": "GPT-image-2.5 and 2.6 Sunburst & Flare High error rate",
      "start": "2026-11-12T08:52:35Z",
      "status": "resolved"
+    },
+    "01M78GAT3AK9P9W8Z230KHFVE8": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M78GAT3AK9P9W8Z230KHFVE8",
+     "name": "Elevated errors affecting the Microsoft 365 connector",
+     "start": "2026-11-12T18:29:14Z",
+     "status": "investigating"
     }
    },
-   "indicator": "none",
+   "indicator": "minor",
    "name": "OpenAI",
-   "since": "2026-11-12T17:21:05Z"
+   "since": "2026-11-12T22:48:48Z"
   },
   "status.solana.com": {
    "coverage_from": "2022-01-06T16:11:59Z",
@@ -2052,8 +2090,8 @@
   },
   "status.zoom.us": {
    "coverage_from": "2026-09-03T05:39:07Z",
-   "description": "All Systems Operational",
-   "incident": "",
+   "description": "Partially Degraded Service",
+   "incident": "Service Degradation Affecting Microsoft Integrations due to an underlying vendor issue.",
    "incidents": {
     "0hgqwjz0lzwf": {
      "end": "2026-09-10T17:06:28Z",
@@ -2198,6 +2236,14 @@
      "name": "Service Degradation Affecting Zoom Canvas, My Notes, Sheets, In App Purchases, Billing Hub, and Clips.",
      "start": "2026-09-28T22:15:44Z",
      "status": "resolved"
+    },
+    "8n4n9nsqcl33": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/jth16cll1kcf",
+     "name": "Service Degradation Affecting Microsoft Integrations due to an underlying vendor issue.",
+     "start": "2026-11-12T19:24:50Z",
+     "status": "identified"
     },
     "97hk3qsyf1hv": {
      "end": "2026-10-19T00:31:03Z",
@@ -2504,14 +2550,14 @@
      "status": "resolved"
     }
    },
-   "indicator": "none",
+   "indicator": "minor",
    "name": "Zoom",
-   "since": "2026-11-12T08:57:42Z"
+   "since": "2026-11-12T22:48:48Z"
   },
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Replicate Model Registry Unavailable",
+   "incident": "Durable Objects increased error rates in North America",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -2768,6 +2814,14 @@
      "name": "Incorrect geo location for some Cloudflare WARP users",
      "start": "2026-08-27T18:46:19Z",
      "status": "resolved"
+    },
+    "9zxr2bkqoct7": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/9zxr2bkqoct7",
+     "name": "Durable Objects increased error rates in North America",
+     "start": "2026-11-12T22:39:40Z",
+     "status": "monitoring"
     },
     "bc7e93q3eigp": {
      "end": "2026-10-29T11:47:23Z",
@@ -3355,6 +3409,14 @@
      "start": "2026-09-20T22:13:37Z",
      "status": "resolved"
     },
+    "gl7yhd7jx00v": {
+     "end": "2026-11-12T19:33:54Z",
+     "impact": "minor",
+     "link": "https://stspg.io/ns57pv7lmynl",
+     "name": "Incident with Webhooks API",
+     "start": "2026-11-12T18:43:13Z",
+     "status": "resolved"
+    },
     "h02n9572mx9y": {
      "end": "2026-11-04T18:16:08Z",
      "impact": "major",
@@ -3473,6 +3535,14 @@
      "link": "https://stspg.io/t938cy7649sn",
      "name": "Elevated rate of errors for OpenAI models provided by Copilot",
      "start": "2026-09-17T20:59:02Z",
+     "status": "resolved"
+    },
+    "nwbjzl7nfrc2": {
+     "end": "2026-11-12T21:43:56Z",
+     "impact": "minor",
+     "link": "https://stspg.io/lr8v4v8t7gs2",
+     "name": "Disruption with Email Delivery",
+     "start": "2026-11-12T19:36:45Z",
      "status": "resolved"
     },
     "nxy2l0ssxm10": {

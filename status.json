@@ -1254,7 +1254,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Flare Funding Delays",
+   "incident": "Kraken Pro US Futures Data Not Updating",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1295,6 +1295,14 @@
      "name": "USD Coin (ARC) [USDC - ARC] Funding Delays",
      "start": "2026-10-28T02:34:07Z",
      "status": "resolved"
+    },
+    "1r99c1gzffzf": {
+     "end": null,
+     "impact": "none",
+     "link": "https://stspg.io/cdllq14jdkj5",
+     "name": "Kraken Pro US Futures Data Not Updating",
+     "start": "2026-11-13T03:21:31Z",
+     "status": "monitoring"
     },
     "1sxv7rm9b6k7": {
      "end": "2026-10-06T10:52:13Z",
@@ -2081,6 +2089,14 @@
      "name": "Elevated errors affecting the Microsoft 365 connector",
      "start": "2026-11-12T18:29:14Z",
      "status": "investigating"
+    },
+    "01M79GYA0GA772Y6D089AH5478": {
+     "end": "2026-11-13T05:55:44Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M79GYA0GA772Y6D089AH5478",
+     "name": "Sites: Publishing failing",
+     "start": "2026-11-13T03:59:08Z",
+     "status": "resolved"
     }
    },
    "indicator": "minor",
@@ -2099,7 +2115,7 @@
   "status.zoom.us": {
    "coverage_from": "2026-09-03T05:39:07Z",
    "description": "Partially Degraded Service",
-   "incident": "Service Degradation Affecting Microsoft Integrations due to an underlying vendor issue.",
+   "incident": "Service Degradation Affecting Zoom Phone Calls in China Region",
    "incidents": {
     "0hgqwjz0lzwf": {
      "end": "2026-09-10T17:06:28Z",
@@ -2437,6 +2453,14 @@
      "start": "2026-09-10T15:53:26Z",
      "status": "resolved"
     },
+    "n1xq1w9wh418": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/7s0ygj0dbwms",
+     "name": "Service Degradation Affecting Zoom Phone Calls in China Region",
+     "start": "2026-11-13T09:45:37Z",
+     "status": "identified"
+    },
     "pmmkv8mbtxln": {
      "end": "2026-11-06T05:09:23Z",
      "impact": "minor",
@@ -2565,7 +2589,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Durable Objects increased error rates in North America",
+   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -2824,12 +2848,12 @@
      "status": "resolved"
     },
     "9zxr2bkqoct7": {
-     "end": null,
+     "end": "2026-11-13T03:44:49Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/9zxr2bkqoct7",
      "name": "Durable Objects increased error rates in North America",
      "start": "2026-11-12T22:39:40Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "bc7e93q3eigp": {
      "end": "2026-10-29T11:47:23Z",
@@ -3917,14 +3941,6 @@
      "start": "2026-07-17T14:12:58Z",
      "status": "resolved"
     },
-    "nw8xv7ypn7y0": {
-     "end": "2026-07-16T10:45:23Z",
-     "impact": "major",
-     "link": "https://stspg.io/yzqkkrl8lw0m",
-     "name": "SAML Single Sign-On (SSO) errors",
-     "start": "2026-07-16T08:39:35Z",
-     "status": "resolved"
-    },
     "nxvrk1jk0zyb": {
      "end": "2026-08-17T21:25:26Z",
      "impact": "minor",
@@ -3995,14 +4011,6 @@
      "link": "https://stspg.io/shj8f589lgh9",
      "name": "New container functions are failing",
      "start": "2026-08-20T17:46:33Z",
-     "status": "resolved"
-    },
-    "xfkn71bbvc99": {
-     "end": "2026-07-16T09:27:19Z",
-     "impact": "minor",
-     "link": "https://stspg.io/v9m67w60bdjk",
-     "name": "Missing Build CPU Minutes Usage Data",
-     "start": "2026-07-16T06:07:15Z",
      "status": "resolved"
     },
     "xr8lx0kncx0g": {

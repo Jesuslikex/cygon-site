@@ -279,6 +279,16 @@
    "name": "Zoom",
    "t": "2026-11-12T22:48:48Z",
    "to": "minor"
+  },
+  {
+   "desc": "Service Under Maintenance",
+   "from": "none",
+   "host": "status.digitalocean.com",
+   "incident": "",
+   "link": "https://status.digitalocean.com",
+   "name": "DigitalOcean",
+   "t": "2026-11-13T18:18:00Z",
+   "to": "maintenance"
   }
  ],
  "hosts": {
@@ -985,7 +995,7 @@
   },
   "status.digitalocean.com": {
    "coverage_from": "2026-04-28T13:45:20Z",
-   "description": "All Systems Operational",
+   "description": "Service Under Maintenance",
    "incident": "",
    "incidents": {
     "1t16vfgq3zpx": {
@@ -1092,14 +1102,6 @@
      "start": "2026-08-04T16:13:35Z",
      "status": "resolved"
     },
-    "nfhvp4yhyrfl": {
-     "end": "2026-07-16T17:24:35Z",
-     "impact": "minor",
-     "link": "https://stspg.io/x0s0pghvdcgv",
-     "name": "Reserved IP routing in TOR1",
-     "start": "2026-07-16T13:39:47Z",
-     "status": "resolved"
-    },
     "qd8v4wddyqjr": {
      "end": "2026-08-19T19:34:54Z",
      "impact": "critical",
@@ -1189,9 +1191,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "none",
+   "indicator": "maintenance",
    "name": "DigitalOcean",
-   "since": "2026-11-03T16:16:57Z"
+   "since": "2026-11-13T18:18:00Z"
   },
   "status.dropbox.com": {
    "coverage_from": "2024-04-29T03:30:08Z",
@@ -1254,7 +1256,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Kraken Pro US Futures Data Not Updating",
+   "incident": "Flare Funding Delays",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1297,12 +1299,12 @@
      "status": "resolved"
     },
     "1r99c1gzffzf": {
-     "end": null,
+     "end": "2026-11-13T16:09:59Z",
      "impact": "none",
      "link": "https://stspg.io/cdllq14jdkj5",
      "name": "Kraken Pro US Futures Data Not Updating",
      "start": "2026-11-13T03:21:31Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "1sxv7rm9b6k7": {
      "end": "2026-10-06T10:52:13Z",
@@ -1630,6 +1632,14 @@
      "link": "https://stspg.io/vt5ps20vv4ym",
      "name": "EUR and GBP deposits and withdrawals may be delayed",
      "start": "2026-10-08T19:36:53Z",
+     "status": "resolved"
+    },
+    "nbqcqss23yr1": {
+     "end": "2026-11-13T13:51:23Z",
+     "impact": "minor",
+     "link": "https://stspg.io/9p3vvn5j8m68",
+     "name": "Trade Histories Not Visible",
+     "start": "2026-11-13T13:02:56Z",
      "status": "resolved"
     },
     "nd0pnws6w75t": {
@@ -2088,7 +2098,7 @@
      "link": "https://status.openai.com/incidents/01M78GAT3AK9P9W8Z230KHFVE8",
      "name": "Elevated errors affecting the Microsoft 365 connector",
      "start": "2026-11-12T18:29:14Z",
-     "status": "investigating"
+     "status": "monitoring"
     },
     "01M79GYA0GA772Y6D089AH5478": {
      "end": "2026-11-13T05:55:44Z",
@@ -2097,6 +2107,14 @@
      "name": "Sites: Publishing failing",
      "start": "2026-11-13T03:59:08Z",
      "status": "resolved"
+    },
+    "01M7ATRS6BMZ61E4JDHJGM79Y0": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M7ATRS6BMZ61E4JDHJGM79Y0",
+     "name": "Delayed Costs Data in the Compliance API",
+     "start": "2026-11-13T16:10:07Z",
+     "status": "identified"
     }
    },
    "indicator": "minor",
@@ -2115,7 +2133,7 @@
   "status.zoom.us": {
    "coverage_from": "2026-09-03T05:39:07Z",
    "description": "Partially Degraded Service",
-   "incident": "Service Degradation Affecting Zoom Phone Calls in China Region",
+   "incident": "Service Degradation Affecting Microsoft Integrations due to an underlying vendor issue.",
    "incidents": {
     "0hgqwjz0lzwf": {
      "end": "2026-09-10T17:06:28Z",
@@ -2454,12 +2472,12 @@
      "status": "resolved"
     },
     "n1xq1w9wh418": {
-     "end": null,
+     "end": "2026-11-13T16:53:35Z",
      "impact": "minor",
      "link": "https://stspg.io/7s0ygj0dbwms",
      "name": "Service Degradation Affecting Zoom Phone Calls in China Region",
      "start": "2026-11-13T09:45:37Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "pmmkv8mbtxln": {
      "end": "2026-11-06T05:09:23Z",
@@ -2589,7 +2607,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
+   "incident": "Cloudflare is seeing an issue with Workers API availability",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -2911,6 +2929,14 @@
      "start": "2026-10-26T15:12:34Z",
      "status": "resolved"
     },
+    "e7ktq32gphhe": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/e7ktq32gphhe",
+     "name": "Cloudflare is seeing an issue with Workers API availability",
+     "start": "2026-11-13T15:31:13Z",
+     "status": "monitoring"
+    },
     "h6fgl47h6iht": {
      "end": "2026-10-28T21:12:24Z",
      "impact": "minor",
@@ -3022,6 +3048,14 @@
      "name": "Cloudflare Stream performance issues impacting certain Live Broadcasts and On-Demand Uploads",
      "start": "2026-10-27T16:10:53Z",
      "status": "resolved"
+    },
+    "mc91s22odfvf": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/mc91s22odfvf",
+     "name": "Cloudflare is currently having an issue with the r8.im registry used for Replicate model publishing and builds is currently restricted",
+     "start": "2026-11-13T14:55:26Z",
+     "status": "identified"
     },
     "me060q7dbayp": {
      "end": "2026-11-04T06:35:00Z",
@@ -3199,6 +3233,14 @@
      "start": "2026-11-07T05:34:24Z",
      "status": "resolved"
     },
+    "y03on2svrrxt": {
+     "end": "2026-11-13T15:16:06Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/y03on2svrrxt",
+     "name": "Elevated error rate for workers startup",
+     "start": "2026-11-13T13:54:01Z",
+     "status": "resolved"
+    },
     "yaa0witbl2me": {
      "end": "2026-11-05T20:20:10Z",
      "impact": "minor",
@@ -3223,7 +3265,7 @@
   "www.githubstatus.com": {
    "coverage_from": "2026-08-21T14:00:00Z",
    "description": "All Systems Operational",
-   "incident": "",
+   "incident": "Incident with Pull Requests",
    "incidents": {
     "0rn90wk115q9": {
      "end": "2026-09-13T10:44:55Z",
@@ -3264,6 +3306,14 @@
      "name": "Incident with Webhooks",
      "start": "2026-11-11T20:22:20Z",
      "status": "resolved"
+    },
+    "1xzmt89vv61l": {
+     "end": null,
+     "impact": "major",
+     "link": "https://stspg.io/qzj7qjdcr8jc",
+     "name": "Incident with Pull Requests",
+     "start": "2026-11-13T15:47:12Z",
+     "status": "monitoring"
     },
     "2dpbcq5j165n": {
      "end": "2026-10-01T17:56:54Z",

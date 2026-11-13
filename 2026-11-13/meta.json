@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-13",
+ "headline": "kev",
+ "headlineId": "CVE-2026-20320",
+ "text": "CYGON Threat of the Day · Nov 13\n\n🔴 CISA confirms Cisco BroadWorks CVE-2026-20320 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (39,191)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 239,
+ "facts": {
+  "kev": {
+   "id": "CVE-2026-20320",
+   "what": "Cisco BroadWorks",
+   "flaw": "Improper Restriction of XML External Entity Reference",
+   "added": "2026-11-10",
+   "age": 3,
+   "ransom": false
+  },
+  "cve": {
+   "id": "CVE-2026-124415",
+   "what": "Alejandro Alex Reservations",
+   "score": 9.3,
+   "sev": "CRITICAL",
+   "desc": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Alejandro Alex Reservations alex-reservations allows SQL Injection.This issue "
+  },
+  "country": {
+   "cc": "US",
+   "name": "United States",
+   "n": 39191,
+   "total": 137802,
+   "pct": 28
+  },
+  "outage": {
+   "svc": "Zoom",
+   "name": "Service Degradation Affecting Zoom Phone Calls in China Region",
+   "impact": "minor",
+   "ongoing": true
+  }
+ },
+ "snapshot": "2026-11-13T15:18Z",
+ "prev": null
+}

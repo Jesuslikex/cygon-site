@@ -1,43 +1,43 @@
 {
- "date": "2026-11-12",
- "headline": "country",
- "headlineId": "US",
- "text": "CYGON Threat of the Day · Nov 12\n\n🌍 Most flagged IPs today: United States (34,597)\n\n🔴 Exploited in the wild: Cisco BroadWorks CVE-2026-20320 (CISA KEV)\n🧨 Fresh CVE: CVE-2026-6460 CVE-2026-6460, CVSS 8.8\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
- "xLength": 268,
+ "date": "2026-11-13",
+ "headline": "kev",
+ "headlineId": "CVE-2026-20320",
+ "text": "CYGON Threat of the Day · Nov 13\n\n🔴 CISA confirms Cisco BroadWorks CVE-2026-20320 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (39,191)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 239,
  "facts": {
   "kev": {
    "id": "CVE-2026-20320",
    "what": "Cisco BroadWorks",
    "flaw": "Improper Restriction of XML External Entity Reference",
    "added": "2026-11-10",
-   "age": 2,
+   "age": 3,
    "ransom": false
   },
   "cve": {
-   "id": "CVE-2026-6460",
-   "what": "CVE-2026-6460",
-   "score": 8.8,
-   "sev": "HIGH",
-   "desc": "Type confusion in PostgreSQL allows an object creator to execute arbitrary code as the operating system user running the database, via ALTER ... SET DATA TYPE primarily.  Other DDL"
+   "id": "CVE-2026-124415",
+   "what": "Alejandro Alex Reservations",
+   "score": 9.3,
+   "sev": "CRITICAL",
+   "desc": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Alejandro Alex Reservations alex-reservations allows SQL Injection.This issue "
   },
   "country": {
    "cc": "US",
    "name": "United States",
-   "n": 34597,
-   "total": 133241,
-   "pct": 26
+   "n": 39191,
+   "total": 137802,
+   "pct": 28
   },
   "outage": {
-   "svc": "OpenAI",
-   "name": "Unable to start new Workspace Agent runs",
-   "impact": "critical",
-   "ongoing": false
+   "svc": "Zoom",
+   "name": "Service Degradation Affecting Zoom Phone Calls in China Region",
+   "impact": "minor",
+   "ongoing": true
   }
  },
- "snapshot": "2026-11-12T15:56Z",
+ "snapshot": "2026-11-13T15:18Z",
  "prev": {
-  "date": "2026-11-11",
-  "headline": "kev",
-  "headlineId": "CVE-2026-20320"
+  "date": "2026-11-12",
+  "headline": "country",
+  "headlineId": "US"
  }
 }

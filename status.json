@@ -1268,7 +1268,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Flare Funding Delays",
+   "incident": "Osmosis (OSMO) Funding Delays",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1430,6 +1430,14 @@
      "start": "2026-11-10T08:23:47Z",
      "status": "identified"
     },
+    "6yz857nnnkz5": {
+     "end": "2026-11-14T12:33:36Z",
+     "impact": "minor",
+     "link": "https://stspg.io/xrnjgl6rg6yv",
+     "name": "Concordium (CCD) Funding Delays",
+     "start": "2026-11-14T11:54:13Z",
+     "status": "resolved"
+    },
     "7zcy2j4hhxqz": {
      "end": "2026-10-27T10:11:18Z",
      "impact": "minor",
@@ -1444,6 +1452,14 @@
      "link": "https://stspg.io/sf04w81q3rnv",
      "name": "Aleo (ALEO) Funding Delays",
      "start": "2026-10-02T10:31:04Z",
+     "status": "resolved"
+    },
+    "9bc6xzp6mx8l": {
+     "end": "2026-11-14T13:38:07Z",
+     "impact": "minor",
+     "link": "https://stspg.io/krcktpgh4lq8",
+     "name": "Aptos (APT) Network Funding Delays",
+     "start": "2026-11-14T11:08:00Z",
      "status": "resolved"
     },
     "9fryrj2dy1nk": {
@@ -1797,6 +1813,14 @@
      "name": "Krak Card API outage (EEA/UK)",
      "start": "2026-10-07T04:22:58Z",
      "status": "resolved"
+    },
+    "yshfxnffsgl2": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/m0v330r5jhjb",
+     "name": "Osmosis (OSMO) Funding Delays",
+     "start": "2026-11-14T11:02:04Z",
+     "status": "investigating"
     },
     "zk4jndfr6sr3": {
      "end": "2026-09-30T14:37:48Z",
@@ -2627,7 +2651,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Cloudflare is seeing an issue with Workers API availability",
+   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -2958,12 +2982,12 @@
      "status": "resolved"
     },
     "e7ktq32gphhe": {
-     "end": null,
+     "end": "2026-11-14T13:37:40Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/e7ktq32gphhe",
      "name": "Cloudflare is seeing an issue with Workers API availability",
      "start": "2026-11-13T15:31:13Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "h6fgl47h6iht": {
      "end": "2026-10-28T21:12:24Z",
@@ -4025,14 +4049,6 @@
      "link": "https://stspg.io/zbs4ktd26fb0",
      "name": "Elevated error rate on Connect and Passport",
      "start": "2026-09-10T17:42:15Z",
-     "status": "resolved"
-    },
-    "mskkl0ryk3zn": {
-     "end": "2026-07-17T15:19:53Z",
-     "impact": "minor",
-     "link": "https://stspg.io/qcpsy7kj6dlc",
-     "name": "Increased invocation failures for Hobby Team functions",
-     "start": "2026-07-17T14:12:58Z",
      "status": "resolved"
     },
     "nxvrk1jk0zyb": {

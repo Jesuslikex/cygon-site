@@ -299,6 +299,16 @@
    "name": "DigitalOcean",
    "t": "2026-11-14T03:37:03Z",
    "to": "none"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "minor",
+   "host": "status.zoom.us",
+   "incident": "",
+   "link": "https://status.zoom.us",
+   "name": "Zoom",
+   "t": "2026-11-14T10:55:30Z",
+   "to": "none"
   }
  ],
  "hosts": {
@@ -457,14 +467,6 @@
      "link": "https://stspg.io/1msh0252j36w",
      "name": "Server Unavailability",
      "start": "2026-09-02T16:12:20Z",
-     "status": "resolved"
-    },
-    "vwmnnymc48b9": {
-     "end": "2026-07-17T03:48:44Z",
-     "impact": "major",
-     "link": "https://stspg.io/dn6zshm4sygl",
-     "name": "API Errors",
-     "start": "2026-07-17T00:49:10Z",
      "status": "resolved"
     },
     "xpz8zbrdkgs2": {
@@ -2125,6 +2127,14 @@
      "name": "Delayed Costs Data in the Compliance API",
      "start": "2026-11-13T16:10:07Z",
      "status": "monitoring"
+    },
+    "01M7C40W0N5MZHNW0YM09QV962": {
+     "end": "2026-11-14T05:27:53Z",
+     "impact": "none",
+     "link": "https://status.openai.com/incidents/01M7C40W0N5MZHNW0YM09QV962",
+     "name": "Elevated errors with ChatGPT billing and Ads billing",
+     "start": "2026-11-14T04:11:04Z",
+     "status": "resolved"
     }
    },
    "indicator": "minor",
@@ -2142,8 +2152,8 @@
   },
   "status.zoom.us": {
    "coverage_from": "2026-09-03T05:39:07Z",
-   "description": "Partially Degraded Service",
-   "incident": "Service Degradation Affecting Microsoft Integrations due to an underlying vendor issue.",
+   "description": "All Systems Operational",
+   "incident": "",
    "incidents": {
     "0hgqwjz0lzwf": {
      "end": "2026-09-10T17:06:28Z",
@@ -2290,12 +2300,12 @@
      "status": "resolved"
     },
     "8n4n9nsqcl33": {
-     "end": null,
+     "end": "2026-11-14T09:12:49Z",
      "impact": "minor",
      "link": "https://stspg.io/jth16cll1kcf",
      "name": "Service Degradation Affecting Microsoft Integrations due to an underlying vendor issue.",
      "start": "2026-11-12T19:24:50Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "97hk3qsyf1hv": {
      "end": "2026-10-19T00:31:03Z",
@@ -2610,9 +2620,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "minor",
+   "indicator": "none",
    "name": "Zoom",
-   "since": "2026-11-12T22:48:48Z"
+   "since": "2026-11-14T10:55:30Z"
   },
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
@@ -2881,6 +2891,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/9zxr2bkqoct7",
      "name": "Durable Objects increased error rates in North America",
      "start": "2026-11-12T22:39:40Z",
+     "status": "resolved"
+    },
+    "a643zcsfc71q": {
+     "end": "2026-11-14T06:45:47Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/a643zcsfc71q",
+     "name": "Increased errors for R2 and Tiered Cache",
+     "start": "2026-11-14T05:30:35Z",
      "status": "resolved"
     },
     "bc7e93q3eigp": {

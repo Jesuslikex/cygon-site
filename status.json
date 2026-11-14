@@ -2965,6 +2965,14 @@
      "start": "2026-10-27T12:28:07Z",
      "status": "resolved"
     },
+    "dpao7idy3zei": {
+     "end": "2026-11-14T20:20:37Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/dpao7idy3zei",
+     "name": "Elevated error rates on R2 buckets in West North America",
+     "start": "2026-11-14T20:18:18Z",
+     "status": "resolved"
+    },
     "dr9s0uvzwk6n": {
      "end": "2026-11-03T22:15:00Z",
      "impact": "minor",

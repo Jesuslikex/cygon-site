@@ -1,43 +1,43 @@
 {
- "date": "2026-11-13",
+ "date": "2026-11-14",
  "headline": "kev",
- "headlineId": "CVE-2026-20320",
- "text": "CYGON Threat of the Day · Nov 13\n\n🔴 CISA confirms Cisco BroadWorks CVE-2026-20320 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (39,191)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
- "xLength": 239,
+ "headlineId": "CVE-2026-123039",
+ "text": "CYGON Threat of the Day · Nov 14\n\n🔴 CISA confirms Check Point Multiple Products CVE-2026-123039 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (38,545)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 253,
  "facts": {
   "kev": {
-   "id": "CVE-2026-20320",
-   "what": "Cisco BroadWorks",
-   "flaw": "Improper Restriction of XML External Entity Reference",
-   "added": "2026-11-10",
-   "age": 3,
+   "id": "CVE-2026-123039",
+   "what": "Check Point Multiple Products",
+   "flaw": "Incorrect Permission Assignment for Critical Resource",
+   "added": "2026-11-13",
+   "age": 1,
    "ransom": false
   },
   "cve": {
-   "id": "CVE-2026-124415",
-   "what": "Alejandro Alex Reservations",
-   "score": 9.3,
+   "id": "CVE-2026-19907",
+   "what": "shipo Shipo",
+   "score": 9.8,
    "sev": "CRITICAL",
-   "desc": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Alejandro Alex Reservations alex-reservations allows SQL Injection.This issue "
+   "desc": "The Shipo plugin for WordPress is vulnerable to Authentication Bypass in versions 1.6 through 1.8.0. This is due to the `authenticate_rest_user()` function parsing the `LOGGED_IN_C"
   },
   "country": {
    "cc": "US",
    "name": "United States",
-   "n": 39191,
-   "total": 137802,
+   "n": 38545,
+   "total": 136343,
    "pct": 28
   },
   "outage": {
-   "svc": "Zoom",
-   "name": "Service Degradation Affecting Zoom Phone Calls in China Region",
-   "impact": "minor",
-   "ongoing": true
+   "svc": "GitHub",
+   "name": "Incident with Pull Requests",
+   "impact": "major",
+   "ongoing": false
   }
  },
- "snapshot": "2026-11-13T15:18Z",
+ "snapshot": "2026-11-14T14:04Z",
  "prev": {
-  "date": "2026-11-12",
-  "headline": "country",
-  "headlineId": "US"
+  "date": "2026-11-13",
+  "headline": "kev",
+  "headlineId": "CVE-2026-20320"
  }
 }

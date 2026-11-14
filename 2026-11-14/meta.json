@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-14",
+ "headline": "kev",
+ "headlineId": "CVE-2026-123039",
+ "text": "CYGON Threat of the Day · Nov 14\n\n🔴 CISA confirms Check Point Multiple Products CVE-2026-123039 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (38,545)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 253,
+ "facts": {
+  "kev": {
+   "id": "CVE-2026-123039",
+   "what": "Check Point Multiple Products",
+   "flaw": "Incorrect Permission Assignment for Critical Resource",
+   "added": "2026-11-13",
+   "age": 1,
+   "ransom": false
+  },
+  "cve": {
+   "id": "CVE-2026-19907",
+   "what": "shipo Shipo",
+   "score": 9.8,
+   "sev": "CRITICAL",
+   "desc": "The Shipo plugin for WordPress is vulnerable to Authentication Bypass in versions 1.6 through 1.8.0. This is due to the `authenticate_rest_user()` function parsing the `LOGGED_IN_C"
+  },
+  "country": {
+   "cc": "US",
+   "name": "United States",
+   "n": 38545,
+   "total": 136343,
+   "pct": 28
+  },
+  "outage": {
+   "svc": "GitHub",
+   "name": "Incident with Pull Requests",
+   "impact": "major",
+   "ongoing": false
+  }
+ },
+ "snapshot": "2026-11-14T14:04Z",
+ "prev": null
+}

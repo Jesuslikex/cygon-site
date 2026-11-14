@@ -289,6 +289,16 @@
    "name": "DigitalOcean",
    "t": "2026-11-13T18:18:00Z",
    "to": "maintenance"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "maintenance",
+   "host": "status.digitalocean.com",
+   "incident": "",
+   "link": "https://status.digitalocean.com",
+   "name": "DigitalOcean",
+   "t": "2026-11-14T03:37:03Z",
+   "to": "none"
   }
  ],
  "hosts": {
@@ -995,7 +1005,7 @@
   },
   "status.digitalocean.com": {
    "coverage_from": "2026-04-28T13:45:20Z",
-   "description": "Service Under Maintenance",
+   "description": "All Systems Operational",
    "incident": "",
    "incidents": {
     "1t16vfgq3zpx": {
@@ -1191,9 +1201,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "maintenance",
+   "indicator": "none",
    "name": "DigitalOcean",
-   "since": "2026-11-13T18:18:00Z"
+   "since": "2026-11-14T03:37:03Z"
   },
   "status.dropbox.com": {
    "coverage_from": "2024-04-29T03:30:08Z",
@@ -2093,12 +2103,12 @@
      "status": "resolved"
     },
     "01M78GAT3AK9P9W8Z230KHFVE8": {
-     "end": null,
+     "end": "2026-11-14T00:18:13Z",
      "impact": "minor",
      "link": "https://status.openai.com/incidents/01M78GAT3AK9P9W8Z230KHFVE8",
      "name": "Elevated errors affecting the Microsoft 365 connector",
      "start": "2026-11-12T18:29:14Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "01M79GYA0GA772Y6D089AH5478": {
      "end": "2026-11-13T05:55:44Z",
@@ -3050,12 +3060,12 @@
      "status": "resolved"
     },
     "mc91s22odfvf": {
-     "end": null,
+     "end": "2026-11-14T00:51:29Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/mc91s22odfvf",
      "name": "Cloudflare is currently having an issue with the r8.im registry used for Replicate model publishing and builds is currently restricted",
      "start": "2026-11-13T14:55:26Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "me060q7dbayp": {
      "end": "2026-11-04T06:35:00Z",
@@ -3159,6 +3169,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/r4mz367vddi7",
      "name": "Increased Durable Objects, D1 and Workflows Error Rates",
      "start": "2026-10-29T14:16:46Z",
+     "status": "resolved"
+    },
+    "rikplz89rpml": {
+     "end": "2026-11-14T01:01:17Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/rikplz89rpml",
+     "name": "Issues with 1.1.1.1 public resolver in Canada",
+     "start": "2026-11-13T23:53:18Z",
      "status": "resolved"
     },
     "s5io0kegzlsz": {
@@ -4037,14 +4055,6 @@
      "link": "https://stspg.io/jygyd62lmmdx",
      "name": "Delays delivering log drains",
      "start": "2026-08-06T16:37:10Z",
-     "status": "resolved"
-    },
-    "vqndbxzgzhx9": {
-     "end": "2026-07-17T00:42:10Z",
-     "impact": "minor",
-     "link": "https://stspg.io/yht3lc3nr2g8",
-     "name": "GitHub-linked deployments and authentication affected",
-     "start": "2026-07-16T23:09:29Z",
      "status": "resolved"
     },
     "w1jqw8bwk6xc": {

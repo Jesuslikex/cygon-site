@@ -1,8 +1,8 @@
-CYGON Threat of the Day · Nov 14
+CYGON Threat of the Day · Nov 15
 
-🔴 CISA confirms Check Point Multiple Products CVE-2026-123039 is being exploited in the wild. Patch now.
+🧨 Fresh CVE: Nasir Ahmed Advanced Form Integration CVE-2026-125769, CVSS 9.8
 
-🌍 Most flagged IPs today: United States (38,545)
+🌍 Most flagged IPs today: United States (38,266)
 
 Live tracker 👉 https://cygon.xyz
 $CYGON #cybersecurity

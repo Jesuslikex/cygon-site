@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-15",
+ "headline": "cve",
+ "headlineId": "CVE-2026-125769",
+ "text": "CYGON Threat of the Day · Nov 15\n\n🧨 Fresh CVE: Nasir Ahmed Advanced Form Integration CVE-2026-125769, CVSS 9.8\n\n🌍 Most flagged IPs today: United States (38,266)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 225,
+ "facts": {
+  "kev": {
+   "id": "CVE-2026-123039",
+   "what": "Check Point Multiple Products",
+   "flaw": "Incorrect Permission Assignment for Critical Resource",
+   "added": "2026-11-13",
+   "age": 2,
+   "ransom": false
+  },
+  "cve": {
+   "id": "CVE-2026-125769",
+   "what": "Nasir Ahmed Advanced Form Integration",
+   "score": 9.8,
+   "sev": "CRITICAL",
+   "desc": "Incorrect Privilege Assignment vulnerability in Nasir Ahmed Advanced Form Integration advanced-form-integration allows Privilege Escalation.This issue affects Advanced Form Integra"
+  },
+  "country": {
+   "cc": "US",
+   "name": "United States",
+   "n": 38266,
+   "total": 136069,
+   "pct": 28
+  },
+  "outage": {
+   "svc": "Kraken",
+   "name": "Osmosis (OSMO) Funding Delays",
+   "impact": "minor",
+   "ongoing": true
+  }
+ },
+ "snapshot": "2026-11-15T14:41Z",
+ "prev": null
+}

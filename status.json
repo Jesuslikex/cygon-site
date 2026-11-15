@@ -2650,6 +2650,14 @@
      "name": "Service Degradation Affecting Zoom Phone Outbound Calls in China Region",
      "start": "2026-09-16T04:00:15Z",
      "status": "resolved"
+    },
+    "zg1tnj4z21p6": {
+     "end": "2026-11-15T09:57:46Z",
+     "impact": "minor",
+     "link": "https://stspg.io/47krtvpb5txr",
+     "name": "Service Degradation Affecting Zoom Events custom domain",
+     "start": "2026-11-15T09:34:15Z",
+     "status": "resolved"
     }
    },
    "indicator": "none",

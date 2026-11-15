@@ -2571,6 +2571,14 @@
      "start": "2026-10-04T08:05:44Z",
      "status": "resolved"
     },
+    "v1v6675sd988": {
+     "end": "2026-11-15T06:26:18Z",
+     "impact": "minor",
+     "link": "https://stspg.io/ykwyrzn57ydz",
+     "name": "Service Degradation Affecting Zoom Workflow Service",
+     "start": "2026-11-15T03:36:28Z",
+     "status": "resolved"
+    },
     "vltmv6hrt53l": {
      "end": "2026-09-04T17:55:04Z",
      "impact": "none",
@@ -3243,6 +3251,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/snth5ero95rz",
      "name": "Network Performance Issues in Ashburn, IAD",
      "start": "2026-10-28T04:39:13Z",
+     "status": "resolved"
+    },
+    "sozoycnmog2m": {
+     "end": "2026-11-15T03:00:00Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/sozoycnmog2m",
+     "name": "Elevated number of errors in Bogot\u00e1",
+     "start": "2026-11-15T03:12:13Z",
      "status": "resolved"
     },
     "sufgcbe8rrwt": {

@@ -319,6 +319,26 @@
    "name": "OpenAI",
    "t": "2026-11-16T04:27:21Z",
    "to": "none"
+  },
+  {
+   "desc": "Partially Degraded Service",
+   "from": "none",
+   "host": "www.githubstatus.com",
+   "incident": "Incident with Pull Requests",
+   "link": "https://www.githubstatus.com",
+   "name": "GitHub",
+   "t": "2026-11-16T13:01:11Z",
+   "to": "minor"
+  },
+  {
+   "desc": "Partially Degraded Service",
+   "from": "none",
+   "host": "www.redditstatus.com",
+   "incident": "Apple iOS App - Apple Account login issues",
+   "link": "https://www.redditstatus.com",
+   "name": "Reddit",
+   "t": "2026-11-16T13:01:11Z",
+   "to": "minor"
   }
  ],
  "hosts": {
@@ -1140,14 +1160,6 @@
      "start": "2026-10-11T22:01:39Z",
      "status": "resolved"
     },
-    "qzbsmdsw9lq8": {
-     "end": "2026-07-19T09:52:00Z",
-     "impact": "minor",
-     "link": "https://stspg.io/8yc90q76srsl",
-     "name": "Networking in BLR1",
-     "start": "2026-07-19T06:57:41Z",
-     "status": "resolved"
-    },
     "r96y45y5sx59": {
      "end": "2026-08-23T14:33:31Z",
      "impact": "minor",
@@ -1278,7 +1290,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Osmosis (OSMO) Funding Delays",
+   "incident": "Kava (KAVA) Funding Delays",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1398,6 +1410,14 @@
      "link": "https://stspg.io/qyqjwcjdsyt0",
      "name": "Monero (XMR) Funding Delays",
      "start": "2026-10-06T19:40:54Z",
+     "status": "resolved"
+    },
+    "5lmkvc6ylghn": {
+     "end": "2026-11-16T12:14:35Z",
+     "impact": "minor",
+     "link": "https://stspg.io/9j0vjq5n7zh0",
+     "name": "EthereumPoW Funding Delays",
+     "start": "2026-11-16T10:57:25Z",
      "status": "resolved"
     },
     "5nc7975bbpcb": {
@@ -1807,6 +1827,14 @@
      "name": "Krak Card degraded performance.",
      "start": "2026-09-22T15:30:21Z",
      "status": "resolved"
+    },
+    "y5p24gbkbths": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/98xctkfmd71x",
+     "name": "Kava (KAVA) Funding Delays",
+     "start": "2026-11-16T06:57:29Z",
+     "status": "identified"
     },
     "y6t0n8f1qgxt": {
      "end": "2026-11-05T13:28:36Z",
@@ -3366,8 +3394,8 @@
   },
   "www.githubstatus.com": {
    "coverage_from": "2026-08-21T14:00:00Z",
-   "description": "All Systems Operational",
-   "incident": "",
+   "description": "Partially Degraded Service",
+   "incident": "Incident with Pull Requests",
    "incidents": {
     "0rn90wk115q9": {
      "end": "2026-09-13T10:44:55Z",
@@ -3432,6 +3460,14 @@
      "name": "Disruption with some GitHub services",
      "start": "2026-10-05T23:47:45Z",
      "status": "resolved"
+    },
+    "2zfqmghmg3s3": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/ljtn69jlt087",
+     "name": "Incident with Pull Requests",
+     "start": "2026-11-16T11:59:40Z",
+     "status": "investigating"
     },
     "3q1yb5m7ltvb": {
      "end": "2026-10-05T22:49:42Z",
@@ -3922,14 +3958,14 @@
      "status": "resolved"
     }
    },
-   "indicator": "none",
+   "indicator": "minor",
    "name": "GitHub",
-   "since": "2026-11-09T21:04:09Z"
+   "since": "2026-11-16T13:01:11Z"
   },
   "www.redditstatus.com": {
    "coverage_from": "2024-06-28T02:17:49Z",
-   "description": "All Systems Operational",
-   "incident": "",
+   "description": "Partially Degraded Service",
+   "incident": "Apple iOS App - Apple Account login issues",
    "incidents": {
     "3t7xtffbb544": {
      "end": "2026-07-25T16:26:54Z",
@@ -3938,6 +3974,14 @@
      "name": "Degraded performance across the site",
      "start": "2026-07-25T15:05:02Z",
      "status": "resolved"
+    },
+    "jzcjy0pjq70s": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/p1cwzf1yhftr",
+     "name": "Apple iOS App - Apple Account login issues",
+     "start": "2026-11-16T10:02:29Z",
+     "status": "investigating"
     },
     "s4ffy6g43v5h": {
      "end": "2026-09-01T21:24:05Z",
@@ -3964,9 +4008,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "none",
+   "indicator": "minor",
    "name": "Reddit",
-   "since": "2026-11-03T16:16:57Z"
+   "since": "2026-11-16T13:01:11Z"
   },
   "www.vercel-status.com": {
    "coverage_from": "2026-05-25T14:58:41Z",

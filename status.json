@@ -339,6 +339,36 @@
    "name": "Reddit",
    "t": "2026-11-16T13:01:11Z",
    "to": "minor"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "minor",
+   "host": "www.githubstatus.com",
+   "incident": "",
+   "link": "https://www.githubstatus.com",
+   "name": "GitHub",
+   "t": "2026-11-16T22:51:46Z",
+   "to": "none"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "minor",
+   "host": "www.redditstatus.com",
+   "incident": "",
+   "link": "https://www.redditstatus.com",
+   "name": "Reddit",
+   "t": "2026-11-16T22:51:46Z",
+   "to": "none"
+  },
+  {
+   "desc": "Service Under Maintenance",
+   "from": "none",
+   "host": "status.zoom.us",
+   "incident": "",
+   "link": "https://status.zoom.us",
+   "name": "Zoom",
+   "t": "2026-11-16T22:51:46Z",
+   "to": "maintenance"
   }
  ],
  "hosts": {
@@ -1088,14 +1118,6 @@
      "start": "2026-10-03T14:51:13Z",
      "status": "resolved"
     },
-    "84v7d9gkkzzf": {
-     "end": "2026-07-19T15:32:39Z",
-     "impact": "minor",
-     "link": "https://stspg.io/wv68wmnz55ln",
-     "name": "Block Storage Volume NYC1, NYC3, SGP1, SYD1 and BLR1",
-     "start": "2026-07-19T09:51:19Z",
-     "status": "resolved"
-    },
     "cg3q7h89dbnq": {
      "end": "2026-08-06T21:05:05Z",
      "impact": "minor",
@@ -1118,6 +1140,14 @@
      "link": "https://stspg.io/54mh0lzk9733",
      "name": "Agent Platform Requests Returning HTTP 500 Errors",
      "start": "2026-07-27T18:31:40Z",
+     "status": "resolved"
+    },
+    "fdvp47jv22nl": {
+     "end": "2026-11-16T21:40:00Z",
+     "impact": "none",
+     "link": "https://stspg.io/4ccggg9c514v",
+     "name": "App Platform Accessibility in Cloud Panel",
+     "start": "2026-11-16T19:10:46Z",
      "status": "resolved"
     },
     "grb2v0td1nq5": {
@@ -2214,7 +2244,7 @@
   },
   "status.zoom.us": {
    "coverage_from": "2026-09-03T05:39:07Z",
-   "description": "All Systems Operational",
+   "description": "Service Under Maintenance",
    "incident": "",
    "incidents": {
     "0hgqwjz0lzwf": {
@@ -2431,6 +2461,14 @@
      "link": "https://stspg.io/3wdnhf87gqwg",
      "name": "Service Degradation Affecting the Evaluations Acknowledge Button in Zoom Quality Management in the US Region",
      "start": "2026-10-28T14:31:21Z",
+     "status": "resolved"
+    },
+    "cpn6krxwf1tn": {
+     "end": "2026-11-16T17:39:24Z",
+     "impact": "minor",
+     "link": "https://stspg.io/p42dltc9b7ny",
+     "name": "Service degradation affecting Zoom Calendar service in US and Europe region",
+     "start": "2026-11-16T17:17:35Z",
      "status": "resolved"
     },
     "dl0gnrg0pz68": {
@@ -2698,9 +2736,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "none",
+   "indicator": "maintenance",
    "name": "Zoom",
-   "since": "2026-11-14T10:55:30Z"
+   "since": "2026-11-16T22:51:46Z"
   },
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
@@ -2873,6 +2911,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/5tlm9r9j9rpo",
      "name": "Cache purge delays in Qingdao Shandong, China",
      "start": "2026-10-31T06:41:15Z",
+     "status": "resolved"
+    },
+    "69855o2zz6kl": {
+     "end": "2026-11-16T16:19:08Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/69855o2zz6kl",
+     "name": "Errors creating predictions for some models",
+     "start": "2026-11-16T14:30:20Z",
      "status": "resolved"
     },
     "6c4ak19xodyt": {
@@ -3347,6 +3393,14 @@
      "start": "2026-11-06T17:47:15Z",
      "status": "resolved"
     },
+    "wscmdyvmpb5d": {
+     "end": "2026-11-16T20:40:00Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/wscmdyvmpb5d",
+     "name": "Network Performance Issues in Montreal, Canada",
+     "start": "2026-11-16T21:36:50Z",
+     "status": "resolved"
+    },
     "wtsd415cavkc": {
      "end": "2026-11-06T10:08:30Z",
      "impact": "minor",
@@ -3394,8 +3448,8 @@
   },
   "www.githubstatus.com": {
    "coverage_from": "2026-08-21T14:00:00Z",
-   "description": "Partially Degraded Service",
-   "incident": "Incident with Pull Requests",
+   "description": "All Systems Operational",
+   "incident": "",
    "incidents": {
     "0rn90wk115q9": {
      "end": "2026-09-13T10:44:55Z",
@@ -3462,12 +3516,12 @@
      "status": "resolved"
     },
     "2zfqmghmg3s3": {
-     "end": null,
+     "end": "2026-11-16T16:26:26Z",
      "impact": "minor",
      "link": "https://stspg.io/ljtn69jlt087",
      "name": "Incident with Pull Requests",
      "start": "2026-11-16T11:59:40Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "3q1yb5m7ltvb": {
      "end": "2026-10-05T22:49:42Z",
@@ -3958,14 +4012,14 @@
      "status": "resolved"
     }
    },
-   "indicator": "minor",
+   "indicator": "none",
    "name": "GitHub",
-   "since": "2026-11-16T13:01:11Z"
+   "since": "2026-11-16T22:51:46Z"
   },
   "www.redditstatus.com": {
    "coverage_from": "2024-06-28T02:17:49Z",
-   "description": "Partially Degraded Service",
-   "incident": "Apple iOS App - Apple Account login issues",
+   "description": "All Systems Operational",
+   "incident": "",
    "incidents": {
     "3t7xtffbb544": {
      "end": "2026-07-25T16:26:54Z",
@@ -3976,12 +4030,12 @@
      "status": "resolved"
     },
     "jzcjy0pjq70s": {
-     "end": null,
+     "end": "2026-11-16T21:00:50Z",
      "impact": "minor",
      "link": "https://stspg.io/p1cwzf1yhftr",
      "name": "Apple iOS App - Apple Account login issues",
      "start": "2026-11-16T10:02:29Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "s4ffy6g43v5h": {
      "end": "2026-09-01T21:24:05Z",
@@ -4008,9 +4062,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "minor",
+   "indicator": "none",
    "name": "Reddit",
-   "since": "2026-11-16T13:01:11Z"
+   "since": "2026-11-16T22:51:46Z"
   },
   "www.vercel-status.com": {
    "coverage_from": "2026-05-25T14:58:41Z",

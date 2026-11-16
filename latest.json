@@ -1,43 +1,43 @@
 {
- "date": "2026-11-15",
- "headline": "cve",
- "headlineId": "CVE-2026-125769",
- "text": "CYGON Threat of the Day · Nov 15\n\n🧨 Fresh CVE: Nasir Ahmed Advanced Form Integration CVE-2026-125769, CVSS 9.8\n\n🌍 Most flagged IPs today: United States (38,266)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
- "xLength": 225,
+ "date": "2026-11-16",
+ "headline": "kev",
+ "headlineId": "CVE-2026-123039",
+ "text": "CYGON Threat of the Day · Nov 16\n\n🔴 CISA confirms Check Point Multiple Products CVE-2026-123039 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (38,715)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 253,
  "facts": {
   "kev": {
    "id": "CVE-2026-123039",
    "what": "Check Point Multiple Products",
    "flaw": "Incorrect Permission Assignment for Critical Resource",
    "added": "2026-11-13",
-   "age": 2,
+   "age": 3,
    "ransom": false
   },
   "cve": {
-   "id": "CVE-2026-125769",
-   "what": "Nasir Ahmed Advanced Form Integration",
-   "score": 9.8,
-   "sev": "CRITICAL",
-   "desc": "Incorrect Privilege Assignment vulnerability in Nasir Ahmed Advanced Form Integration advanced-form-integration allows Privilege Escalation.This issue affects Advanced Form Integra"
+   "id": "CVE-2026-84443",
+   "what": "The Document Foundation LibreOffice",
+   "score": 8.5,
+   "sev": "HIGH",
+   "desc": "LibreOffice Base documents can bind macros to document events, such as opening or closing the document. The macro security setting decides whether macros that come with a document "
   },
   "country": {
    "cc": "US",
    "name": "United States",
-   "n": 38266,
-   "total": 136069,
-   "pct": 28
+   "n": 38715,
+   "total": 135040,
+   "pct": 29
   },
   "outage": {
-   "svc": "Kraken",
-   "name": "Osmosis (OSMO) Funding Delays",
+   "svc": "GitHub",
+   "name": "Incident with Pull Requests",
    "impact": "minor",
    "ongoing": true
   }
  },
- "snapshot": "2026-11-15T14:41Z",
+ "snapshot": "2026-11-16T16:57Z",
  "prev": {
-  "date": "2026-11-14",
-  "headline": "kev",
-  "headlineId": "CVE-2026-123039"
+  "date": "2026-11-15",
+  "headline": "cve",
+  "headlineId": "CVE-2026-125769"
  }
 }

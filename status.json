@@ -2663,6 +2663,14 @@
      "start": "2026-11-03T17:18:52Z",
      "status": "resolved"
     },
+    "t0wkzg9j0b08": {
+     "end": "2026-11-17T13:03:50Z",
+     "impact": "minor",
+     "link": "https://stspg.io/3hk2mmfjxlp7",
+     "name": "Service Degradation Affecting Zoom Phone Inbound Calls for Subset of Jio subscribers in India",
+     "start": "2026-11-17T07:33:40Z",
+     "status": "resolved"
+    },
     "tqm0xyzlhqr5": {
      "end": "2026-10-04T08:20:34Z",
      "impact": "none",
@@ -2685,6 +2693,14 @@
      "link": "https://stspg.io/56nv5j3rgzfn",
      "name": "Service Degradation Affecting Email in Zoom Contact Center Services in North America",
      "start": "2026-09-04T17:46:02Z",
+     "status": "resolved"
+    },
+    "w32cwc1kp2h9": {
+     "end": "2026-11-17T08:41:21Z",
+     "impact": "minor",
+     "link": "https://stspg.io/75bkr1786wml",
+     "name": "Service Degradation Affecting My Files Functionality in Zoom Hub in US Region",
+     "start": "2026-11-17T07:08:43Z",
      "status": "resolved"
     },
     "w6yw2bsy2sv5": {
@@ -2767,7 +2783,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
+   "incident": "Cloudflare One Gateway traffic unable to connect to Cloudflare domains that are regionalized",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -2815,6 +2831,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/1na2mbfshgdh",
      "name": "Replicate Issue",
      "start": "2026-11-12T08:30:17Z",
+     "status": "resolved"
+    },
+    "1nqok7v173qg": {
+     "end": "2026-11-17T05:50:00Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/1nqok7v173qg",
+     "name": "Elevated number of 52x origin connectivity errors in Seoul",
+     "start": "2026-11-17T08:51:03Z",
      "status": "resolved"
     },
     "1x0tbxpmmttu": {
@@ -2936,6 +2960,14 @@
      "name": "Elevated Cloudflare Access API Errors",
      "start": "2026-10-27T21:13:57Z",
      "status": "resolved"
+    },
+    "5831aw44ia7i": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/5831aw44ia7i",
+     "name": "Turnstile verification failures",
+     "start": "2026-11-17T10:24:59Z",
+     "status": "identified"
     },
     "5tlm9r9j9rpo": {
      "end": "2026-10-31T06:57:35Z",
@@ -3408,6 +3440,14 @@
      "name": "Increased Latency in India",
      "start": "2026-10-21T16:42:14Z",
      "status": "resolved"
+    },
+    "tawn3zx7wh0z": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/tawn3zx7wh0z",
+     "name": "Cloudflare One Gateway traffic unable to connect to Cloudflare domains that are regionalized",
+     "start": "2026-11-17T13:54:19Z",
+     "status": "identified"
     },
     "v967mz6rrcxw": {
      "end": "2026-10-23T00:09:09Z",

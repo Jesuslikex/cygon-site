@@ -417,6 +417,14 @@
      "start": "2026-08-04T18:49:50Z",
      "status": "resolved"
     },
+    "9x7ysmxtswkn": {
+     "end": "2026-11-17T01:00:31Z",
+     "impact": "none",
+     "link": "https://stspg.io/c6b1zz4k64tl",
+     "name": "Issues detected",
+     "start": "2026-11-17T00:57:58Z",
+     "status": "resolved"
+    },
     "bg4s23tyzw6l": {
      "end": "2026-10-31T21:43:44Z",
      "impact": "major",
@@ -570,7 +578,7 @@
   "status.coinbase.com": {
    "coverage_from": "2026-09-17T06:50:14Z",
    "description": "All Systems Operational",
-   "incident": "Osmosis (OSMO) - Delayed Sends and Receives",
+   "incident": "Bank Payments Unavailable - INR (India)",
    "incidents": {
     "0sldycvpmwz6": {
      "end": "2026-10-12T16:04:49Z",
@@ -626,6 +634,14 @@
      "link": "https://stspg.io/43dh8ps8fy36",
      "name": "Hedera - Delayed Sends",
      "start": "2026-11-05T00:11:33Z",
+     "status": "resolved"
+    },
+    "3nlxfkfbhjgx": {
+     "end": "2026-11-17T01:04:47Z",
+     "impact": "none",
+     "link": "https://stspg.io/mb4d1dpk4k0v",
+     "name": "Delayed Sends - Hedera",
+     "start": "2026-11-17T00:16:19Z",
      "status": "resolved"
     },
     "41ywx5zyyzpt": {
@@ -829,12 +845,12 @@
      "status": "resolved"
     },
     "jx3xg1gddhbm": {
-     "end": null,
+     "end": "2026-11-16T23:19:52Z",
      "impact": "none",
      "link": "https://stspg.io/tr3t989b0vvv",
      "name": "Osmosis (OSMO) - Delayed Sends and Receives",
      "start": "2026-11-13T00:20:22Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "k5x6wlf8ws8b": {
      "end": "2026-10-11T00:19:58Z",
@@ -2351,6 +2367,14 @@
      "start": "2026-10-13T09:32:46Z",
      "status": "resolved"
     },
+    "6890yrxpf05y": {
+     "end": "2026-11-17T02:36:13Z",
+     "impact": "minor",
+     "link": "https://stspg.io/l8xtt0jdrgf0",
+     "name": "Service Degradation Affecting Outbound SMS due to an underlying carrier issue in the Australia region.",
+     "start": "2026-11-17T01:14:19Z",
+     "status": "resolved"
+    },
     "6kggw3z5ht7k": {
      "end": "2026-10-17T06:56:58Z",
      "impact": "minor",
@@ -2863,6 +2887,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/3en9cdyjn2sq",
      "name": "Prediction issue on OpenAI models via Replicate",
      "start": "2026-11-10T18:35:39Z",
+     "status": "resolved"
+    },
+    "3l6q71x7a37k": {
+     "end": "2026-11-17T01:48:06Z",
+     "impact": "none",
+     "link": "https://www.cloudflarestatus.com/incidents/3l6q71x7a37k",
+     "name": "Network Performance Issues in Ashburn, US",
+     "start": "2026-11-17T00:41:03Z",
      "status": "resolved"
     },
     "3ptyvdaljq9b": {

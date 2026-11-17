@@ -369,6 +369,26 @@
    "name": "Zoom",
    "t": "2026-11-16T22:51:46Z",
    "to": "maintenance"
+  },
+  {
+   "desc": "Partial System Degradation",
+   "from": "none",
+   "host": "status.openai.com",
+   "incident": "Costs API data is delayed",
+   "link": "https://status.openai.com",
+   "name": "OpenAI",
+   "t": "2026-11-17T22:03:24Z",
+   "to": "minor"
+  },
+  {
+   "desc": "Minor Service Outage",
+   "from": "none",
+   "host": "status.dropbox.com",
+   "incident": "Sign in with Apple is not working as expected for some users",
+   "link": "https://status.dropbox.com",
+   "name": "Dropbox",
+   "t": "2026-11-17T22:03:24Z",
+   "to": "minor"
   }
  ],
  "hosts": {
@@ -1277,8 +1297,8 @@
   },
   "status.dropbox.com": {
    "coverage_from": "2024-04-29T03:30:08Z",
-   "description": "All Systems Operational",
-   "incident": "",
+   "description": "Minor Service Outage",
+   "incident": "Sign in with Apple is not working as expected for some users",
    "incidents": {
     "9pw2xsg6vsr6": {
      "end": "2026-09-04T05:02:56Z",
@@ -1295,6 +1315,14 @@
      "name": "Elevated Latency on help.dropbox.com",
      "start": "2026-11-12T22:20:40Z",
      "status": "resolved"
+    },
+    "nxj9fhc24j92": {
+     "end": null,
+     "impact": "major",
+     "link": "https://stspg.io/m6867jzjgb18",
+     "name": "Sign in with Apple is not working as expected for some users",
+     "start": "2026-11-17T19:36:39Z",
+     "status": "investigating"
     },
     "pczflzc6zgnh": {
      "end": "2026-07-23T15:36:52Z",
@@ -1329,14 +1357,14 @@
      "status": "resolved"
     }
    },
-   "indicator": "none",
+   "indicator": "minor",
    "name": "Dropbox",
-   "since": "2026-11-03T16:16:57Z"
+   "since": "2026-11-17T22:03:24Z"
   },
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Kava (KAVA) Funding Delays",
+   "incident": "Tether USD (USDT) - Tron Funding Delays",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1802,6 +1830,14 @@
      "start": "2026-10-16T08:12:19Z",
      "status": "resolved"
     },
+    "qwyyxqhgk3wj": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/yqht12jqry6b",
+     "name": "Tether USD (USDT) - Tron Funding Delays",
+     "start": "2026-11-17T21:13:36Z",
+     "status": "identified"
+    },
     "r2s4zf1wsdxf": {
      "end": "2026-10-15T10:28:55Z",
      "impact": "minor",
@@ -1875,12 +1911,12 @@
      "status": "resolved"
     },
     "y5p24gbkbths": {
-     "end": null,
+     "end": "2026-11-17T21:11:00Z",
      "impact": "minor",
      "link": "https://stspg.io/98xctkfmd71x",
      "name": "Kava (KAVA) Funding Delays",
      "start": "2026-11-16T06:57:29Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "y6t0n8f1qgxt": {
      "end": "2026-11-05T13:28:36Z",
@@ -1929,8 +1965,8 @@
   },
   "status.openai.com": {
    "coverage_from": "2026-10-09T17:23:18Z",
-   "description": "All Systems Operational",
-   "incident": "",
+   "description": "Partial System Degradation",
+   "incident": "Costs API data is delayed",
    "incidents": {
     "01M4GV1M2A3K38T73JCVCD9G0R": {
      "end": "2026-10-12T16:02:47Z",
@@ -2243,11 +2279,19 @@
      "name": "Elevated errors with ChatGPT billing and Ads billing",
      "start": "2026-11-14T04:11:04Z",
      "status": "resolved"
+    },
+    "01M7N9VNR6X5SEC90M1YCDB36D": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M7N9VNR6X5SEC90M1YCDB36D",
+     "name": "Costs API data is delayed",
+     "start": "2026-11-17T17:46:15Z",
+     "status": "monitoring"
     }
    },
-   "indicator": "none",
+   "indicator": "minor",
    "name": "OpenAI",
-   "since": "2026-11-16T04:27:21Z"
+   "since": "2026-11-17T22:03:24Z"
   },
   "status.solana.com": {
    "coverage_from": "2022-01-06T16:11:59Z",
@@ -2783,7 +2827,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Cloudflare One Gateway traffic unable to connect to Cloudflare domains that are regionalized",
+   "incident": "Issues with Durable Objects and Dependent Services",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -2823,6 +2867,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/1i6fnludjh1m",
      "name": "Network disruption across multiple colocations in India",
      "start": "2026-11-05T15:05:13Z",
+     "status": "resolved"
+    },
+    "1ip2m5rvk7vb": {
+     "end": "2026-11-17T14:35:00Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/1ip2m5rvk7vb",
+     "name": "Elevated number of 5xx and 499 errors",
+     "start": "2026-11-17T15:50:54Z",
      "status": "resolved"
     },
     "1na2mbfshgdh": {
@@ -2962,12 +3014,12 @@
      "status": "resolved"
     },
     "5831aw44ia7i": {
-     "end": null,
+     "end": "2026-11-17T16:37:10Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/5831aw44ia7i",
      "name": "Turnstile verification failures",
      "start": "2026-11-17T10:24:59Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "5tlm9r9j9rpo": {
      "end": "2026-10-31T06:57:35Z",
@@ -3145,6 +3197,14 @@
      "start": "2026-11-04T14:43:39Z",
      "status": "resolved"
     },
+    "du63c25qjgjs": {
+     "end": "2026-11-17T18:00:07Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/du63c25qjgjs",
+     "name": "Network performance issues in Los Angeles (LAX) and Frankfurt (FRA) datacenters",
+     "start": "2026-11-17T17:12:37Z",
+     "status": "resolved"
+    },
     "dv2vbq9kbgxn": {
      "end": "2026-10-26T16:03:32Z",
      "impact": "minor",
@@ -3160,6 +3220,14 @@
      "name": "Cloudflare is seeing an issue with Workers API availability",
      "start": "2026-11-13T15:31:13Z",
      "status": "resolved"
+    },
+    "gcn9xop0f7zm": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/gcn9xop0f7zm",
+     "name": "R2 elevated errors and timeouts for requests from South America",
+     "start": "2026-11-17T20:05:29Z",
+     "status": "monitoring"
     },
     "h6fgl47h6iht": {
      "end": "2026-10-28T21:12:24Z",
@@ -3425,6 +3493,14 @@
      "start": "2026-10-23T15:47:08Z",
      "status": "resolved"
     },
+    "sv9tnfpjiojf": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/sv9tnfpjiojf",
+     "name": "Errors and stalled predictions on some models",
+     "start": "2026-11-17T15:02:47Z",
+     "status": "identified"
+    },
     "t0p23w62n13j": {
      "end": "2026-10-23T09:22:34Z",
      "impact": "minor",
@@ -3442,12 +3518,12 @@
      "status": "resolved"
     },
     "tawn3zx7wh0z": {
-     "end": null,
+     "end": "2026-11-17T14:56:52Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/tawn3zx7wh0z",
      "name": "Cloudflare One Gateway traffic unable to connect to Cloudflare domains that are regionalized",
      "start": "2026-11-17T13:54:19Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "v967mz6rrcxw": {
      "end": "2026-10-23T00:09:09Z",
@@ -3504,6 +3580,14 @@
      "name": "Workers Builds Issues",
      "start": "2026-11-05T19:51:39Z",
      "status": "resolved"
+    },
+    "ylj5po752g6h": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/ylj5po752g6h",
+     "name": "Issues with Durable Objects and Dependent Services",
+     "start": "2026-11-17T21:56:07Z",
+     "status": "investigating"
     },
     "yu63fhh2peb7": {
      "end": "2026-11-13T01:44:17Z",

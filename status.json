@@ -399,6 +399,16 @@
    "name": "Dropbox",
    "t": "2026-11-18T03:41:04Z",
    "to": "none"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "minor",
+   "host": "status.openai.com",
+   "incident": "",
+   "link": "https://status.openai.com",
+   "name": "OpenAI",
+   "t": "2026-11-18T20:33:22Z",
+   "to": "none"
   }
  ],
  "hosts": {
@@ -696,6 +706,14 @@
      "link": "https://stspg.io/t3y3zpzj8z45",
      "name": "TAO - Delayed Sends & Receives",
      "start": "2026-09-21T17:14:07Z",
+     "status": "resolved"
+    },
+    "5m9wv3m28yjw": {
+     "end": "2026-11-18T13:33:47Z",
+     "impact": "none",
+     "link": "https://stspg.io/hsdmwx91w66v",
+     "name": "Delayed Sends and Receives - Injective Network",
+     "start": "2026-11-18T13:09:36Z",
      "status": "resolved"
     },
     "5pgqt8s63hkf": {
@@ -1382,7 +1400,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Osmosis (OSMO) Funding Delays",
+   "incident": "Ink Network Funding Delays",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1631,6 +1649,14 @@
      "name": "Kraken Derivatives Trading Unavailable",
      "start": "2026-11-11T22:42:51Z",
      "status": "resolved"
+    },
+    "bccy6g93gmbf": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/2ys0r0wydmtp",
+     "name": "Ink Network Funding Delays",
+     "start": "2026-11-18T17:10:11Z",
+     "status": "identified"
     },
     "by3j8r6q39ld": {
      "end": "2026-11-02T15:05:35Z",
@@ -1983,8 +2009,8 @@
   },
   "status.openai.com": {
    "coverage_from": "2026-10-09T17:23:18Z",
-   "description": "Partial System Degradation",
-   "incident": "Costs API data is delayed",
+   "description": "All Systems Operational",
+   "incident": "",
    "incidents": {
     "01M4GV1M2A3K38T73JCVCD9G0R": {
      "end": "2026-10-12T16:02:47Z",
@@ -2299,17 +2325,25 @@
      "status": "resolved"
     },
     "01M7N9VNR6X5SEC90M1YCDB36D": {
-     "end": null,
+     "end": "2026-11-18T17:15:46Z",
      "impact": "minor",
      "link": "https://status.openai.com/incidents/01M7N9VNR6X5SEC90M1YCDB36D",
      "name": "Costs API data is delayed",
      "start": "2026-11-17T17:46:15Z",
-     "status": "monitoring"
+     "status": "resolved"
+    },
+    "01M7Q99XRGP8T4DWJN8DSZXA1X": {
+     "end": "2026-11-18T14:13:46Z",
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M7Q99XRGP8T4DWJN8DSZXA1X",
+     "name": "Elevated conversation errors for Free and Go users",
+     "start": "2026-11-18T12:15:02Z",
+     "status": "resolved"
     }
    },
-   "indicator": "minor",
+   "indicator": "none",
    "name": "OpenAI",
-   "since": "2026-11-17T22:03:24Z"
+   "since": "2026-11-18T20:33:22Z"
   },
   "status.solana.com": {
    "coverage_from": "2022-01-06T16:11:59Z",
@@ -2443,6 +2477,14 @@
      "link": "https://stspg.io/l8xtt0jdrgf0",
      "name": "Service Degradation Affecting Outbound SMS due to an underlying carrier issue in the Australia region.",
      "start": "2026-11-17T01:14:19Z",
+     "status": "resolved"
+    },
+    "68bvy8ghzvcj": {
+     "end": "2026-11-18T20:29:41Z",
+     "impact": "none",
+     "link": "https://stspg.io/r0nbrmrld0vj",
+     "name": "Service Degradation Affecting Zoom MyNotes in the US region.",
+     "start": "2026-11-18T19:03:32Z",
      "status": "resolved"
     },
     "6kggw3z5ht7k": {
@@ -2957,6 +2999,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/2eno8w1fk27j",
      "name": "We are seeing some customers having issues with Workers Builds",
      "start": "2026-10-27T11:38:53Z",
+     "status": "resolved"
+    },
+    "2wjvsj2kqt07": {
+     "end": "2026-11-18T15:03:07Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/2wjvsj2kqt07",
+     "name": "R2 Downloads Stalling in Japan",
+     "start": "2026-11-18T13:45:19Z",
      "status": "resolved"
     },
     "2xiv8fdhk0bh": {

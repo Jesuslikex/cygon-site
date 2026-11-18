@@ -1,0 +1,8 @@
+CYGON Threat of the Day · Nov 18
+
+🔴 CISA confirms Perforce Puppet Enterprise CVE-2026-115731 is being exploited in the wild. Patch now.
+
+🌍 Most flagged IPs today: United States (41,739)
+
+Live tracker 👉 https://cygon.xyz
+$CYGON #cybersecurity

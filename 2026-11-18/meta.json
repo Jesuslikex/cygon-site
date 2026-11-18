@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-18",
+ "headline": "kev",
+ "headlineId": "CVE-2026-115731",
+ "text": "CYGON Threat of the Day · Nov 18\n\n🔴 CISA confirms Perforce Puppet Enterprise CVE-2026-115731 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (41,739)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 250,
+ "facts": {
+  "kev": {
+   "id": "CVE-2026-115731",
+   "what": "Perforce Puppet Enterprise",
+   "flaw": "Deserialization of Untrusted Data",
+   "added": "2026-11-17",
+   "age": 1,
+   "ransom": false
+  },
+  "cve": {
+   "id": "CVE-2026-132209",
+   "what": "winCRM winSAT.exe",
+   "score": 9.3,
+   "sev": "CRITICAL",
+   "desc": "Hardcoded credentials in the executable file. These can be extracted using the “Strings.exe” tool and could allow an attacker unauthorized access to the database and SMTP server. \n"
+  },
+  "country": {
+   "cc": "US",
+   "name": "United States",
+   "n": 41739,
+   "total": 138872,
+   "pct": 30
+  },
+  "outage": {
+   "svc": "Dropbox",
+   "name": "Sign in with Apple is not working as expected for some users",
+   "impact": "major",
+   "ongoing": false
+  }
+ },
+ "snapshot": "2026-11-18T16:23Z",
+ "prev": null
+}

@@ -608,7 +608,7 @@
   "status.coinbase.com": {
    "coverage_from": "2026-09-17T06:50:14Z",
    "description": "All Systems Operational",
-   "incident": "Delayed Transactions - ALEO",
+   "incident": "Bank Payments Unavailable - INR (India)",
    "incidents": {
     "0sldycvpmwz6": {
      "end": "2026-10-12T16:04:49Z",
@@ -1059,12 +1059,12 @@
      "status": "resolved"
     },
     "w8n506ptp4v4": {
-     "end": null,
+     "end": "2026-11-18T04:23:22Z",
      "impact": "none",
      "link": "https://stspg.io/f7l0lfd3rw75",
      "name": "Delayed Transactions - ALEO",
      "start": "2026-11-18T02:43:27Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "wrw9dc78yfcn": {
      "end": "2026-10-08T03:26:38Z",
@@ -2669,6 +2669,14 @@
      "start": "2026-09-04T05:23:13Z",
      "status": "resolved"
     },
+    "lp3mxbjmc84k": {
+     "end": "2026-11-18T07:18:27Z",
+     "impact": "none",
+     "link": "https://stspg.io/7qt58lxd9qll",
+     "name": "Service Degradation Affecting Subset of Users using Zoom Phone Calls in Europe Region.",
+     "start": "2026-11-18T07:05:38Z",
+     "status": "resolved"
+    },
     "m97ll3p8294p": {
      "end": "2026-10-01T16:21:53Z",
      "impact": "minor",
@@ -2853,7 +2861,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Network Performance Issues in Paris",
+   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -3087,6 +3095,14 @@
      "start": "2026-10-29T09:22:53Z",
      "status": "resolved"
     },
+    "76lqmua6x3tk": {
+     "end": "2026-11-18T10:00:00Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/76lqmua6x3tk",
+     "name": "Network Performance Issues in North America",
+     "start": "2026-11-18T10:56:57Z",
+     "status": "resolved"
+    },
     "7gixemnw9oei": {
      "end": "2026-11-03T16:42:01Z",
      "impact": "minor",
@@ -3304,12 +3320,12 @@
      "status": "resolved"
     },
     "k3r9i5tbre4i": {
-     "end": null,
+     "end": "2026-11-18T04:51:31Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/k3r9i5tbre4i",
      "name": "Network Performance Issues in Paris",
      "start": "2026-11-18T03:39:01Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "klub12zy71b4": {
      "end": "2026-10-28T03:28:57Z",
@@ -3423,6 +3439,14 @@
      "start": "2026-11-03T14:46:56Z",
      "status": "resolved"
     },
+    "njt9j3k2zdfw": {
+     "end": "2026-11-18T08:46:42Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/njt9j3k2zdfw",
+     "name": "Network disruption across multiple colocations in India",
+     "start": "2026-11-18T08:04:29Z",
+     "status": "resolved"
+    },
     "nwgwgbrn9a71": {
      "end": "2026-10-22T02:09:33Z",
      "impact": "minor",
@@ -3461,6 +3485,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/pfvfug94jq4q",
      "name": "Missing Logs and Traces in Cloudflare Observability Platform",
      "start": "2026-11-03T18:40:45Z",
+     "status": "resolved"
+    },
+    "pi6wgeh78wsn": {
+     "end": "2026-11-18T03:04:00Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/pi6wgeh78wsn",
+     "name": "Elevated 5xx error rates and latency in Mumbai",
+     "start": "2026-11-18T04:05:37Z",
      "status": "resolved"
     },
     "pij2josz3rvz": {
@@ -3775,6 +3807,14 @@
      "link": "https://stspg.io/8trzn5bjrtnn",
      "name": "Elevated rate of errors for OpenAI models provided by Copilot",
      "start": "2026-08-31T09:15:48Z",
+     "status": "resolved"
+    },
+    "891rm8181xdf": {
+     "end": "2026-11-18T09:34:15Z",
+     "impact": "minor",
+     "link": "https://stspg.io/3sbmvyy2ctyx",
+     "name": "Degraded Availability for MAI Code 2 Flash in Copilot",
+     "start": "2026-11-18T09:00:12Z",
      "status": "resolved"
     },
     "8tzbpcnl75jp": {

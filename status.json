@@ -409,6 +409,16 @@
    "name": "OpenAI",
    "t": "2026-11-18T20:33:22Z",
    "to": "none"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "maintenance",
+   "host": "status.zoom.us",
+   "incident": "",
+   "link": "https://status.zoom.us",
+   "name": "Zoom",
+   "t": "2026-11-19T09:58:29Z",
+   "to": "none"
   }
  ],
  "hosts": {
@@ -1140,7 +1150,7 @@
   "status.digitalocean.com": {
    "coverage_from": "2026-04-28T13:45:20Z",
    "description": "All Systems Operational",
-   "incident": "",
+   "incident": "Increased Error Rates in SFO3",
    "incidents": {
     "1t16vfgq3zpx": {
      "end": "2026-09-09T12:25:52Z",
@@ -1189,6 +1199,14 @@
      "name": "A Network Disruption in BLR1 Region Impacted Multiple Products (Resolved)",
      "start": "2026-10-03T14:51:13Z",
      "status": "resolved"
+    },
+    "bdr1xgf08wsr": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/bnb8ltd5ct7l",
+     "name": "Increased Error Rates in SFO3",
+     "start": "2026-11-19T04:37:54Z",
+     "status": "monitoring"
     },
     "cg3q7h89dbnq": {
      "end": "2026-08-06T21:05:05Z",
@@ -2356,7 +2374,7 @@
   },
   "status.zoom.us": {
    "coverage_from": "2026-09-03T05:39:07Z",
-   "description": "Service Under Maintenance",
+   "description": "All Systems Operational",
    "incident": "",
    "incidents": {
     "0hgqwjz0lzwf": {
@@ -2896,14 +2914,14 @@
      "status": "resolved"
     }
    },
-   "indicator": "maintenance",
+   "indicator": "none",
    "name": "Zoom",
-   "since": "2026-11-16T22:51:46Z"
+   "since": "2026-11-19T09:58:29Z"
   },
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Degraded connectivity between Europe and Asia Pacific",
+   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -3330,12 +3348,12 @@
      "status": "resolved"
     },
     "f33c51cw0ojd": {
-     "end": null,
+     "end": "2026-11-19T03:19:28Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/f33c51cw0ojd",
      "name": "Degraded connectivity between Europe and Asia Pacific",
      "start": "2026-11-18T22:26:41Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "gcn9xop0f7zm": {
      "end": "2026-11-17T22:08:34Z",
@@ -3607,6 +3625,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/s5io0kegzlsz",
      "name": "Network Performance Issues in Chicago (ORD)",
      "start": "2026-10-26T09:21:56Z",
+     "status": "resolved"
+    },
+    "sd2sya0mc6df": {
+     "end": "2026-11-19T08:56:14Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/sd2sya0mc6df",
+     "name": "Cloudflare Access Issue",
+     "start": "2026-11-19T06:48:06Z",
      "status": "resolved"
     },
     "snth5ero95rz": {

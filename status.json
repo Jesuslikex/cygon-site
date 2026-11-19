@@ -2903,7 +2903,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
+   "incident": "Degraded connectivity between Europe and Asia Pacific",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -3225,6 +3225,14 @@
      "start": "2026-08-27T18:46:19Z",
      "status": "resolved"
     },
+    "9zpa7own49hb": {
+     "end": "2026-11-18T23:22:32Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/9zpa7own49hb",
+     "name": "Increased latency on Analytics API (GraphQL) queries",
+     "start": "2026-11-18T20:35:12Z",
+     "status": "resolved"
+    },
     "9zxr2bkqoct7": {
      "end": "2026-11-13T03:44:49Z",
      "impact": "minor",
@@ -3320,6 +3328,14 @@
      "name": "Cloudflare is seeing an issue with Workers API availability",
      "start": "2026-11-13T15:31:13Z",
      "status": "resolved"
+    },
+    "f33c51cw0ojd": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/f33c51cw0ojd",
+     "name": "Degraded connectivity between Europe and Asia Pacific",
+     "start": "2026-11-18T22:26:41Z",
+     "status": "monitoring"
     },
     "gcn9xop0f7zm": {
      "end": "2026-11-17T22:08:34Z",
@@ -4445,6 +4461,14 @@
      "link": "https://stspg.io/pcy9pldzdfqw",
      "name": "Timeouts loading charts and observability data in Dashboard",
      "start": "2026-07-23T07:33:48Z",
+     "status": "resolved"
+    },
+    "c83fx5n8008f": {
+     "end": "2026-11-18T23:53:54Z",
+     "impact": "major",
+     "link": "https://stspg.io/mskmcg5p67tp",
+     "name": "Delays in observability data",
+     "start": "2026-11-18T20:44:33Z",
      "status": "resolved"
     },
     "g5svdyg45c5b": {

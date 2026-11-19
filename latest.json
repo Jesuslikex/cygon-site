@@ -1,43 +1,43 @@
 {
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "headline": "kev",
- "headlineId": "CVE-2026-115731",
- "text": "CYGON Threat of the Day · Nov 18\n\n🔴 CISA confirms Perforce Puppet Enterprise CVE-2026-115731 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (41,739)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
- "xLength": 250,
+ "headlineId": "CVE-2026-90817",
+ "text": "CYGON Threat of the Day · Nov 19\n\n🔴 Exploited in the wild: Vanderbilt University Research Electronic Data Capture (REDCap) CVE-2026-90817 (CISA KEV)\n\n🌍 Most flagged IPs today: United States (40,923)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 263,
  "facts": {
   "kev": {
-   "id": "CVE-2026-115731",
-   "what": "Perforce Puppet Enterprise",
-   "flaw": "Deserialization of Untrusted Data",
-   "added": "2026-11-17",
+   "id": "CVE-2026-90817",
+   "what": "Vanderbilt University Research Electronic Data Capture (REDCap)",
+   "flaw": "Code Injection",
+   "added": "2026-11-18",
    "age": 1,
    "ransom": false
   },
   "cve": {
-   "id": "CVE-2026-132209",
-   "what": "winCRM winSAT.exe",
-   "score": 9.3,
+   "id": "CVE-2026-133303",
+   "what": "Mitel MiCollab",
+   "score": 9,
    "sev": "CRITICAL",
-   "desc": "Hardcoded credentials in the executable file. These can be extracted using the “Strings.exe” tool and could allow an attacker unauthorized access to the database and SMTP server. \n"
+   "desc": "A vulnerability in the Audio, Web, and Video Conferencing (AWV) component of Mitel MiCollab through 10.3 (10.3.0.18) could allow an unauthenticated attacker to leverage pre-staged "
   },
   "country": {
    "cc": "US",
    "name": "United States",
-   "n": 41739,
-   "total": 138872,
-   "pct": 30
+   "n": 40923,
+   "total": 140106,
+   "pct": 29
   },
   "outage": {
-   "svc": "Dropbox",
-   "name": "Sign in with Apple is not working as expected for some users",
+   "svc": "Vercel",
+   "name": "Delays in observability data",
    "impact": "major",
    "ongoing": false
   }
  },
- "snapshot": "2026-11-18T16:23Z",
+ "snapshot": "2026-11-19T16:30Z",
  "prev": {
-  "date": "2026-11-17",
-  "headline": "cve",
-  "headlineId": "CVE-2026-126553"
+  "date": "2026-11-18",
+  "headline": "kev",
+  "headlineId": "CVE-2026-115731"
  }
 }

@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-19",
+ "headline": "kev",
+ "headlineId": "CVE-2026-90817",
+ "text": "CYGON Threat of the Day · Nov 19\n\n🔴 Exploited in the wild: Vanderbilt University Research Electronic Data Capture (REDCap) CVE-2026-90817 (CISA KEV)\n\n🌍 Most flagged IPs today: United States (40,923)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 263,
+ "facts": {
+  "kev": {
+   "id": "CVE-2026-90817",
+   "what": "Vanderbilt University Research Electronic Data Capture (REDCap)",
+   "flaw": "Code Injection",
+   "added": "2026-11-18",
+   "age": 1,
+   "ransom": false
+  },
+  "cve": {
+   "id": "CVE-2026-133303",
+   "what": "Mitel MiCollab",
+   "score": 9,
+   "sev": "CRITICAL",
+   "desc": "A vulnerability in the Audio, Web, and Video Conferencing (AWV) component of Mitel MiCollab through 10.3 (10.3.0.18) could allow an unauthenticated attacker to leverage pre-staged "
+  },
+  "country": {
+   "cc": "US",
+   "name": "United States",
+   "n": 40923,
+   "total": 140106,
+   "pct": 29
+  },
+  "outage": {
+   "svc": "Vercel",
+   "name": "Delays in observability data",
+   "impact": "major",
+   "ongoing": false
+  }
+ },
+ "snapshot": "2026-11-19T16:30Z",
+ "prev": null
+}

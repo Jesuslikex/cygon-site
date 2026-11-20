@@ -419,6 +419,16 @@
    "name": "Zoom",
    "t": "2026-11-19T09:58:29Z",
    "to": "none"
+  },
+  {
+   "desc": "Service Under Maintenance",
+   "from": "none",
+   "host": "status.zoom.us",
+   "incident": "",
+   "link": "https://status.zoom.us",
+   "name": "Zoom",
+   "t": "2026-11-20T16:55:48Z",
+   "to": "maintenance"
   }
  ],
  "hosts": {
@@ -620,7 +630,7 @@
   "status.coinbase.com": {
    "coverage_from": "2026-09-17T06:50:14Z",
    "description": "All Systems Operational",
-   "incident": "Bank Payments Unavailable - INR (India)",
+   "incident": "Degraded Performance - Derivative Trading",
    "incidents": {
     "0sldycvpmwz6": {
      "end": "2026-10-12T16:04:49Z",
@@ -845,6 +855,14 @@
      "name": "Delayed Sends & Receives - ALEO",
      "start": "2026-10-02T01:44:45Z",
      "status": "resolved"
+    },
+    "gt9nygt10ks5": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/qbzn0syvk818",
+     "name": "Degraded Performance - Derivative Trading",
+     "start": "2026-11-20T16:30:04Z",
+     "status": "monitoring"
     },
     "gtbbshmr3k4r": {
      "end": "2026-11-02T17:52:28Z",
@@ -1319,14 +1337,6 @@
      "name": "Volume Attach/Detach events in FRA1",
      "start": "2026-08-13T14:59:44Z",
      "status": "resolved"
-    },
-    "ym1lj8ww7cpz": {
-     "end": "2026-07-23T12:37:00Z",
-     "impact": "minor",
-     "link": "https://stspg.io/9pxmkrlffl58",
-     "name": "Llama-4-Maverick Model Availability",
-     "start": "2026-07-23T11:16:59Z",
-     "status": "resolved"
     }
    },
    "indicator": "none",
@@ -1362,14 +1372,6 @@
      "start": "2026-11-17T19:36:39Z",
      "status": "resolved"
     },
-    "pczflzc6zgnh": {
-     "end": "2026-07-23T15:36:52Z",
-     "impact": "minor",
-     "link": "https://stspg.io/6fzprqb0cvpf",
-     "name": "Dropbox is not working as expected for some users",
-     "start": "2026-07-23T15:12:08Z",
-     "status": "resolved"
-    },
     "q9v98cvgfbms": {
      "end": "2026-08-21T15:12:53Z",
      "impact": "minor",
@@ -1402,7 +1404,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Futures cancel-after-timeout requests rejected",
+   "incident": "Osmosis (OSMO) Funding Delays",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1410,6 +1412,14 @@
      "link": "https://stspg.io/qkr4w76jtq70",
      "name": "Funding delays for select blockchain networks",
      "start": "2026-09-04T21:43:59Z",
+     "status": "resolved"
+    },
+    "0cr915nj4ss1": {
+     "end": "2026-11-20T12:29:50Z",
+     "impact": "minor",
+     "link": "https://stspg.io/5khnmf3bhvf9",
+     "name": "Card purchases degraded performance",
+     "start": "2026-11-20T11:01:18Z",
      "status": "resolved"
     },
     "0stxzzxlfk7v": {
@@ -1805,12 +1815,12 @@
      "status": "resolved"
     },
     "m44tdl2fvbf2": {
-     "end": null,
+     "end": "2026-11-20T14:03:58Z",
      "impact": "minor",
      "link": "https://stspg.io/nc1s89bnyqmk",
      "name": "Futures cancel-after-timeout requests rejected",
      "start": "2026-11-19T20:06:33Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "mq8vvs5hdnbr": {
      "end": "2026-10-08T20:53:34Z",
@@ -2374,7 +2384,7 @@
   },
   "status.zoom.us": {
    "coverage_from": "2026-09-03T05:39:07Z",
-   "description": "All Systems Operational",
+   "description": "Service Under Maintenance",
    "incident": "",
    "incidents": {
     "0hgqwjz0lzwf": {
@@ -2922,14 +2932,14 @@
      "status": "resolved"
     }
    },
-   "indicator": "none",
+   "indicator": "maintenance",
    "name": "Zoom",
-   "since": "2026-11-19T09:58:29Z"
+   "since": "2026-11-20T16:55:48Z"
   },
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Network Performance Issues in Miami",
+   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -3116,12 +3126,12 @@
      "status": "resolved"
     },
     "4lv21sf5fzhm": {
-     "end": null,
+     "end": "2026-11-20T14:28:03Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/4lv21sf5fzhm",
      "name": "Network Performance Issues in Miami",
      "start": "2026-11-20T05:00:56Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "4qxszy04pdjw": {
      "end": "2026-11-11T07:45:00Z",
@@ -4535,14 +4545,6 @@
      "link": "https://stspg.io/6c79t86c2xrr",
      "name": "Elevated Errors Triggering Deployments",
      "start": "2026-09-18T20:32:36Z",
-     "status": "resolved"
-    },
-    "bwyq88fxt57g": {
-     "end": "2026-07-23T08:18:49Z",
-     "impact": "major",
-     "link": "https://stspg.io/pcy9pldzdfqw",
-     "name": "Timeouts loading charts and observability data in Dashboard",
-     "start": "2026-07-23T07:33:48Z",
      "status": "resolved"
     },
     "c83fx5n8008f": {

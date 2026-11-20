@@ -523,14 +523,6 @@
      "start": "2026-10-30T15:23:30Z",
      "status": "resolved"
     },
-    "g196lnx3h2cz": {
-     "end": "2026-07-22T23:57:46Z",
-     "impact": "major",
-     "link": "https://stspg.io/b029r8spc5j3",
-     "name": "unable to establish voice connection",
-     "start": "2026-07-22T23:32:44Z",
-     "status": "resolved"
-    },
     "h3xfmqrqhqw3": {
      "end": "2026-09-02T23:42:44Z",
      "impact": "major",
@@ -1248,14 +1240,6 @@
      "start": "2026-09-16T09:48:19Z",
      "status": "resolved"
     },
-    "j6cjljphvgq7": {
-     "end": "2026-07-22T19:42:17Z",
-     "impact": "minor",
-     "link": "https://stspg.io/2fdnm4tns3f1",
-     "name": "Gradient AI Serverless Inference Requests Timing Out for qwen3.5-397b-a17b",
-     "start": "2026-07-22T16:50:42Z",
-     "status": "resolved"
-    },
     "l20hw5cfhksw": {
      "end": "2026-08-04T21:42:43Z",
      "impact": "minor",
@@ -1418,7 +1402,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Osmosis (OSMO) Funding Delays",
+   "incident": "Futures cancel-after-timeout requests rejected",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1819,6 +1803,14 @@
      "name": "MultiversX (EGLD) Funding paused",
      "start": "2026-10-13T10:25:11Z",
      "status": "resolved"
+    },
+    "m44tdl2fvbf2": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/nc1s89bnyqmk",
+     "name": "Futures cancel-after-timeout requests rejected",
+     "start": "2026-11-19T20:06:33Z",
+     "status": "identified"
     },
     "mq8vvs5hdnbr": {
      "end": "2026-10-08T20:53:34Z",
@@ -2937,7 +2929,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Observability ingestion delay and query failures",
+   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -3484,12 +3476,12 @@
      "status": "resolved"
     },
     "ljrvdciu7syf": {
-     "end": null,
+     "end": "2026-11-19T21:55:44Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/ljrvdciu7syf",
      "name": "Observability ingestion delay and query failures",
      "start": "2026-11-19T16:30:04Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "lmmf23klsrxq": {
      "end": "2026-10-28T11:10:59Z",

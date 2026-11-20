@@ -1,8 +1,8 @@
-CYGON Threat of the Day · Nov 19
+CYGON Threat of the Day · Nov 20
 
-🔴 Exploited in the wild: Vanderbilt University Research Electronic Data Capture (REDCap) CVE-2026-90817 (CISA KEV)
+🧨 Fresh CVE: EnterpriseDB Postgres Enterprise Manager CVE-2026-132660, CVSS 9.4
 
-🌍 Most flagged IPs today: United States (40,923)
+🌍 Most flagged IPs today: United States (41,501)
 
 Live tracker 👉 https://cygon.xyz
 $CYGON #cybersecurity

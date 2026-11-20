@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-20",
+ "headline": "cve",
+ "headlineId": "CVE-2026-132660",
+ "text": "CYGON Threat of the Day · Nov 20\n\n🧨 Fresh CVE: EnterpriseDB Postgres Enterprise Manager CVE-2026-132660, CVSS 9.4\n\n🌍 Most flagged IPs today: United States (41,501)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 228,
+ "facts": {
+  "kev": {
+   "id": "CVE-2026-90817",
+   "what": "Vanderbilt University Research Electronic Data Capture (REDCap)",
+   "flaw": "Code Injection",
+   "added": "2026-11-18",
+   "age": 2,
+   "ransom": false
+  },
+  "cve": {
+   "id": "CVE-2026-132660",
+   "what": "EnterpriseDB Postgres Enterprise Manager",
+   "score": 9.4,
+   "sev": "CRITICAL",
+   "desc": "In Postgres Enterprise Manager (PEM), several SECURITY DEFINER functions in the pem schema of the PEM backend database are owned by a superuser but do not set a safe search_path. A"
+  },
+  "country": {
+   "cc": "US",
+   "name": "United States",
+   "n": 41501,
+   "total": 141785,
+   "pct": 29
+  },
+  "outage": {
+   "svc": "OpenAI",
+   "name": "Elevated error rates for gpt-6 Luna API requests",
+   "impact": "major",
+   "ongoing": false
+  }
+ },
+ "snapshot": "2026-11-20T16:03Z",
+ "prev": null
+}

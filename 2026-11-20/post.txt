@@ -1,0 +1,8 @@
+CYGON Threat of the Day · Nov 20
+
+🧨 Fresh CVE: EnterpriseDB Postgres Enterprise Manager CVE-2026-132660, CVSS 9.4
+
+🌍 Most flagged IPs today: United States (41,501)
+
+Live tracker 👉 https://cygon.xyz
+$CYGON #cybersecurity

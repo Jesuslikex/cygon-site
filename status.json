@@ -630,7 +630,7 @@
   "status.coinbase.com": {
    "coverage_from": "2026-09-17T06:50:14Z",
    "description": "All Systems Operational",
-   "incident": "Degraded Performance - Derivative Trading",
+   "incident": "Bank Payments Unavailable - INR (India)",
    "incidents": {
     "0sldycvpmwz6": {
      "end": "2026-10-12T16:04:49Z",
@@ -857,12 +857,12 @@
      "status": "resolved"
     },
     "gt9nygt10ks5": {
-     "end": null,
+     "end": "2026-11-20T22:32:54Z",
      "impact": "minor",
      "link": "https://stspg.io/qbzn0syvk818",
-     "name": "Degraded Performance - Derivative Trading",
+     "name": "Degraded Performance - Global Derivatives Trading",
      "start": "2026-11-20T16:30:04Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "gtbbshmr3k4r": {
      "end": "2026-11-02T17:52:28Z",
@@ -1017,12 +1017,12 @@
      "status": "resolved"
     },
     "sgsgw21dz2jb": {
-     "end": null,
+     "end": "2026-11-20T22:48:35Z",
      "impact": "none",
      "link": "https://stspg.io/zbj4gm72tmc3",
      "name": "Delayed Sends and Receives - Sonic Network",
      "start": "2026-11-03T14:21:54Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "sndsdk705dhd": {
      "end": "2026-09-17T07:04:03Z",
@@ -1356,6 +1356,14 @@
      "start": "2026-09-03T22:13:35Z",
      "status": "resolved"
     },
+    "h0w7s25x3j7z": {
+     "end": "2026-11-20T20:13:28Z",
+     "impact": "critical",
+     "link": "https://stspg.io/njzlzrzr1yyh",
+     "name": "Dropbox is not working as expected for some users",
+     "start": "2026-11-20T19:28:42Z",
+     "status": "resolved"
+    },
     "n7nms5rwjl3x": {
      "end": "2026-11-12T22:33:51Z",
      "impact": "minor",
@@ -1575,12 +1583,12 @@
      "status": "resolved"
     },
     "6yrrplqc5yv0": {
-     "end": null,
+     "end": "2026-11-20T20:57:27Z",
      "impact": "minor",
      "link": "https://stspg.io/6m8947xr22xm",
      "name": "Initia (INIT) Funding Delays",
      "start": "2026-11-10T08:23:47Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "6yz857nnnkz5": {
      "end": "2026-11-14T12:33:36Z",
@@ -2899,6 +2907,14 @@
      "start": "2026-09-24T15:47:39Z",
      "status": "resolved"
     },
+    "xvsknch85ynp": {
+     "end": "2026-11-20T20:42:51Z",
+     "impact": "none",
+     "link": "https://stspg.io/mjlsmmz5zyqx",
+     "name": "Service Degradation for a subset of users affecting outbound Zoom Phone calls in Australia.",
+     "start": "2026-11-20T20:30:33Z",
+     "status": "resolved"
+    },
     "xxp0hsz2qxtn": {
      "end": "2026-09-22T10:32:10Z",
      "impact": "none",
@@ -2939,7 +2955,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
+   "incident": "Network Performance Issues in Washington, DC datacenter (IAD)",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -3301,6 +3317,14 @@
      "start": "2026-11-14T05:30:35Z",
      "status": "resolved"
     },
+    "akjr7qn5o622": {
+     "end": "2026-11-20T22:25:16Z",
+     "impact": "none",
+     "link": "https://www.cloudflarestatus.com/incidents/akjr7qn5o622",
+     "name": "Cache Purging Delays in Milan",
+     "start": "2026-11-20T20:51:40Z",
+     "status": "resolved"
+    },
     "bc7e93q3eigp": {
      "end": "2026-10-29T11:47:23Z",
      "impact": "minor",
@@ -3403,6 +3427,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/h6fgl47h6iht",
      "name": "Increased latency and error rate for R2 in ENAM",
      "start": "2026-10-28T21:01:39Z",
+     "status": "resolved"
+    },
+    "iysf3fasf7wn": {
+     "end": "2026-11-20T18:53:14Z",
+     "impact": "major",
+     "link": "https://www.cloudflarestatus.com/incidents/iysf3fasf7wn",
+     "name": "Cloudflare Dashboard and Cloudflare API service issues in EU region",
+     "start": "2026-11-20T18:24:29Z",
      "status": "resolved"
     },
     "j25w3rpv45gs": {
@@ -3597,6 +3629,14 @@
      "start": "2026-11-05T13:23:55Z",
      "status": "resolved"
     },
+    "oz6to8yacrxe": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/oz6to8yacrxe",
+     "name": "Network Performance Issues in Washington, DC datacenter (IAD)",
+     "start": "2026-11-20T20:35:16Z",
+     "status": "monitoring"
+    },
     "p1vurmibvmag": {
      "end": "2026-10-21T21:21:40Z",
      "impact": "major",
@@ -3779,6 +3819,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/x9orajjmvvwa",
      "name": "Network Performance Issues in Chicago",
      "start": "2026-11-07T05:34:24Z",
+     "status": "resolved"
+    },
+    "xsgbfncq7of7": {
+     "end": "2026-11-20T19:41:49Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/xsgbfncq7of7",
+     "name": "Cache Purging Delays in Amsterdam",
+     "start": "2026-11-20T18:00:33Z",
      "status": "resolved"
     },
     "y03on2svrrxt": {
@@ -4473,14 +4521,6 @@
      "link": "https://stspg.io/l76txmwrzdcp",
      "name": "Vercel Auth login failures for pages with Deployment Protection enabled",
      "start": "2026-10-06T16:10:59Z",
-     "status": "resolved"
-    },
-    "1s8rqbswvwqc": {
-     "end": "2026-07-23T19:00:00Z",
-     "impact": "major",
-     "link": "https://stspg.io/b2wb9x4qkqwq",
-     "name": "Telemetry data loss for Drains",
-     "start": "2026-07-23T19:00:00Z",
      "status": "resolved"
     },
     "1z2qkcjgfx3y": {

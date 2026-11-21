@@ -1414,7 +1414,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Osmosis (OSMO) Funding Delays",
+   "incident": "Cyber (CYBER) Funding Delays",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -2031,6 +2031,14 @@
      "name": "Spot Exchange Connectivity Issues - Web, Mobile & API (Rest & Websockets)",
      "start": "2026-10-30T02:42:59Z",
      "status": "resolved"
+    },
+    "zwvwwl4ykp8f": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/c4y7vlf7zbk5",
+     "name": "Cyber (CYBER) Funding Delays",
+     "start": "2026-11-21T19:59:17Z",
+     "status": "identified"
     }
    },
    "indicator": "minor",

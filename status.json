@@ -2955,7 +2955,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Network Performance Issues in Washington, DC datacenter (IAD)",
+   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
    "incidents": {
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -3630,12 +3630,12 @@
      "status": "resolved"
     },
     "oz6to8yacrxe": {
-     "end": null,
+     "end": "2026-11-21T07:44:10Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/oz6to8yacrxe",
      "name": "Network Performance Issues in Washington, DC datacenter (IAD)",
      "start": "2026-11-20T20:35:16Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "p1vurmibvmag": {
      "end": "2026-10-21T21:21:40Z",

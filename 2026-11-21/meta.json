@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-21",
+ "headline": "kev",
+ "headlineId": "CVE-2026-76466",
+ "text": "CYGON Threat of the Day · Nov 21\n\n🔴 CISA confirms Cisco Expressway Series CVE-2026-76466 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (40,960)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 246,
+ "facts": {
+  "kev": {
+   "id": "CVE-2026-76466",
+   "what": "Cisco Expressway Series",
+   "flaw": "Use of Hard-coded Credentials",
+   "added": "2026-11-20",
+   "age": 1,
+   "ransom": false
+  },
+  "cve": {
+   "id": "CVE-2026-74127",
+   "what": "AMD AMD EPYC™ Embedded 3000 Series Processors",
+   "score": 9.4,
+   "sev": "CRITICAL",
+   "desc": "Improper verification of a cryptographic signature in the PSP Boot ROM of AMD Zeppelin (Zen1/Zen+) processors could allow an attacker with local access to the SPI flash to bypass s"
+  },
+  "country": {
+   "cc": "US",
+   "name": "United States",
+   "n": 40960,
+   "total": 139424,
+   "pct": 29
+  },
+  "outage": {
+   "svc": "Dropbox",
+   "name": "Dropbox is not working as expected for some users",
+   "impact": "critical",
+   "ongoing": false
+  }
+ },
+ "snapshot": "2026-11-21T15:16Z",
+ "prev": null
+}

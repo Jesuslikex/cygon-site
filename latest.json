@@ -1,43 +1,43 @@
 {
- "date": "2026-11-20",
- "headline": "cve",
- "headlineId": "CVE-2026-132660",
- "text": "CYGON Threat of the Day · Nov 20\n\n🧨 Fresh CVE: EnterpriseDB Postgres Enterprise Manager CVE-2026-132660, CVSS 9.4\n\n🌍 Most flagged IPs today: United States (41,501)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
- "xLength": 228,
+ "date": "2026-11-21",
+ "headline": "kev",
+ "headlineId": "CVE-2026-76466",
+ "text": "CYGON Threat of the Day · Nov 21\n\n🔴 CISA confirms Cisco Expressway Series CVE-2026-76466 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (40,960)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 246,
  "facts": {
   "kev": {
-   "id": "CVE-2026-90817",
-   "what": "Vanderbilt University Research Electronic Data Capture (REDCap)",
-   "flaw": "Code Injection",
-   "added": "2026-11-18",
-   "age": 2,
+   "id": "CVE-2026-76466",
+   "what": "Cisco Expressway Series",
+   "flaw": "Use of Hard-coded Credentials",
+   "added": "2026-11-20",
+   "age": 1,
    "ransom": false
   },
   "cve": {
-   "id": "CVE-2026-132660",
-   "what": "EnterpriseDB Postgres Enterprise Manager",
+   "id": "CVE-2026-74127",
+   "what": "AMD AMD EPYC™ Embedded 3000 Series Processors",
    "score": 9.4,
    "sev": "CRITICAL",
-   "desc": "In Postgres Enterprise Manager (PEM), several SECURITY DEFINER functions in the pem schema of the PEM backend database are owned by a superuser but do not set a safe search_path. A"
+   "desc": "Improper verification of a cryptographic signature in the PSP Boot ROM of AMD Zeppelin (Zen1/Zen+) processors could allow an attacker with local access to the SPI flash to bypass s"
   },
   "country": {
    "cc": "US",
    "name": "United States",
-   "n": 41501,
-   "total": 141785,
+   "n": 40960,
+   "total": 139424,
    "pct": 29
   },
   "outage": {
-   "svc": "OpenAI",
-   "name": "Elevated error rates for gpt-6 Luna API requests",
-   "impact": "major",
+   "svc": "Dropbox",
+   "name": "Dropbox is not working as expected for some users",
+   "impact": "critical",
    "ongoing": false
   }
  },
- "snapshot": "2026-11-20T16:03Z",
+ "snapshot": "2026-11-21T15:16Z",
  "prev": {
-  "date": "2026-11-19",
-  "headline": "kev",
-  "headlineId": "CVE-2026-90817"
+  "date": "2026-11-20",
+  "headline": "cve",
+  "headlineId": "CVE-2026-132660"
  }
 }

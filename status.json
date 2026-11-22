@@ -1414,7 +1414,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Cyber (CYBER) Funding Delays",
+   "incident": "Interac e-Transfer Funding Delays",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1855,6 +1855,14 @@
      "name": "Decred (DCR) deposits temporarily unavailable",
      "start": "2026-10-09T15:18:54Z",
      "status": "resolved"
+    },
+    "nmm6jvc0tllc": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/8219nh1slls5",
+     "name": "Interac e-Transfer Funding Delays",
+     "start": "2026-11-22T17:57:48Z",
+     "status": "identified"
     },
     "pq7m18tp02jx": {
      "end": "2026-10-30T03:41:45Z",
@@ -4483,14 +4491,6 @@
    "description": "All Systems Operational",
    "incident": "",
    "incidents": {
-    "3t7xtffbb544": {
-     "end": "2026-07-25T16:26:54Z",
-     "impact": "major",
-     "link": "https://stspg.io/8llkkwrwfhgw",
-     "name": "Degraded performance across the site",
-     "start": "2026-07-25T15:05:02Z",
-     "status": "resolved"
-    },
     "jzcjy0pjq70s": {
      "end": "2026-11-16T21:00:50Z",
      "impact": "minor",

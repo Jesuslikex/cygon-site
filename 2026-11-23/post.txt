@@ -1,0 +1,8 @@
+CYGON Threat of the Day · Nov 23
+
+🔴 CISA confirms Cisco Expressway Series CVE-2026-76466 is being exploited in the wild. Patch now.
+
+🌍 Most flagged IPs today: United States (41,533)
+
+Live tracker 👉 https://cygon.xyz
+$CYGON #cybersecurity

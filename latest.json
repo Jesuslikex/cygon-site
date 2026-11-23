@@ -1,43 +1,43 @@
 {
- "date": "2026-11-22",
- "headline": "country",
- "headlineId": "US",
- "text": "CYGON Threat of the Day · Nov 22\n\n🌍 United States hosts the most IPs on today's blocklists: 40,715 (29% of 139,496).\n\n🔴 Exploited in the wild: Cisco Expressway Series CVE-2026-76466 (CISA KEV)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
- "xLength": 257,
+ "date": "2026-11-23",
+ "headline": "kev",
+ "headlineId": "CVE-2026-76466",
+ "text": "CYGON Threat of the Day · Nov 23\n\n🔴 CISA confirms Cisco Expressway Series CVE-2026-76466 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (41,533)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 246,
  "facts": {
   "kev": {
    "id": "CVE-2026-76466",
    "what": "Cisco Expressway Series",
    "flaw": "Use of Hard-coded Credentials",
    "added": "2026-11-20",
-   "age": 2,
+   "age": 3,
    "ransom": false
   },
   "cve": {
-   "id": "CVE-2026-134753",
-   "what": "hackerschoice dsniff",
-   "score": 8.3,
+   "id": "CVE-2026-135452",
+   "what": "HP Inc HP Hotkey UWP Service",
+   "score": 8.4,
    "sev": "HIGH",
-   "desc": "dsniff through 2.5a2 contains an integer underflow in decode_sniffer() in decode_sniffer.c that allows unauthenticated remote attackers to write past the global obuf buffer. Attack"
+   "desc": "A potential security vulnerability has been identified in the HP Hotkey UWP Service, which might allow escalation of privilege. HP is releasing mitigation for the potential vulnera"
   },
   "country": {
    "cc": "US",
    "name": "United States",
-   "n": 40715,
-   "total": 139496,
+   "n": 41533,
+   "total": 140895,
    "pct": 29
   },
   "outage": {
-   "svc": "Kraken",
-   "name": "Cyber (CYBER) Funding Delays",
+   "svc": "OpenAI",
+   "name": "Elevated errors with GPT-6 conversations on paid ChatGPT plans",
    "impact": "minor",
    "ongoing": true
   }
  },
- "snapshot": "2026-11-22T15:13Z",
+ "snapshot": "2026-11-23T19:10Z",
  "prev": {
-  "date": "2026-11-21",
-  "headline": "kev",
-  "headlineId": "CVE-2026-76466"
+  "date": "2026-11-22",
+  "headline": "country",
+  "headlineId": "US"
  }
 }

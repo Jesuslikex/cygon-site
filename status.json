@@ -449,6 +449,26 @@
    "name": "Zoom",
    "t": "2026-11-23T05:08:56Z",
    "to": "minor"
+  },
+  {
+   "desc": "Partial System Degradation",
+   "from": "none",
+   "host": "status.openai.com",
+   "incident": "Elevated errors with GPT-6 conversations on paid ChatGPT plans",
+   "link": "https://status.openai.com",
+   "name": "OpenAI",
+   "t": "2026-11-23T15:54:28Z",
+   "to": "minor"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "minor",
+   "host": "status.zoom.us",
+   "incident": "",
+   "link": "https://status.zoom.us",
+   "name": "Zoom",
+   "t": "2026-11-23T15:54:28Z",
+   "to": "none"
   }
  ],
  "hosts": {
@@ -1424,7 +1444,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Cyber (CYBER) Funding Delays",
+   "incident": "Incorrect Prices Displayed for Some xStocks and Equities",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1778,6 +1798,14 @@
      "start": "2026-11-12T11:08:02Z",
      "status": "resolved"
     },
+    "j7sd1r3xvmx2": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/1ypvb07wv0gq",
+     "name": "CAD Deposit Delays via Apaylo",
+     "start": "2026-11-23T12:52:12Z",
+     "status": "identified"
+    },
     "jkm5tq0rzsc3": {
      "end": "2026-11-04T18:04:29Z",
      "impact": "minor",
@@ -1898,6 +1926,14 @@
      "start": "2026-09-22T14:11:47Z",
      "status": "resolved"
     },
+    "q7dyg438dmc6": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/413qfzzlf3s9",
+     "name": "NESA (NES) Funding Delays",
+     "start": "2026-11-23T06:37:55Z",
+     "status": "investigating"
+    },
     "qfvkdjdtq9c4": {
      "end": "2026-10-10T16:16:52Z",
      "impact": "minor",
@@ -1994,6 +2030,14 @@
      "start": "2026-11-10T18:15:42Z",
      "status": "resolved"
     },
+    "xtqfqd49s6gz": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/ncr7y1mtqx87",
+     "name": "Incorrect Prices Displayed for Some xStocks and Equities",
+     "start": "2026-11-23T14:45:36Z",
+     "status": "identified"
+    },
     "xwrjp842w6nx": {
      "end": "2026-09-28T11:58:34Z",
      "impact": "minor",
@@ -2065,8 +2109,8 @@
   },
   "status.openai.com": {
    "coverage_from": "2026-10-09T17:23:18Z",
-   "description": "All Systems Operational",
-   "incident": "",
+   "description": "Partial System Degradation",
+   "incident": "Elevated errors with GPT-6 conversations on paid ChatGPT plans",
    "incidents": {
     "01M4GV1M2A3K38T73JCVCD9G0R": {
      "end": "2026-10-12T16:02:47Z",
@@ -2403,11 +2447,19 @@
      "name": "Elevated error rates for gpt-6 Luna API requests",
      "start": "2026-11-19T16:01:12Z",
      "status": "resolved"
+    },
+    "01M84HKHX73RF7HTVZQ2A9GFXP": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M84HKHX73RF7HTVZQ2A9GFXP",
+     "name": "Elevated errors with GPT-6 conversations on paid ChatGPT plans",
+     "start": "2026-11-23T15:50:14Z",
+     "status": "investigating"
     }
    },
-   "indicator": "none",
+   "indicator": "minor",
    "name": "OpenAI",
-   "since": "2026-11-18T20:33:22Z"
+   "since": "2026-11-23T15:54:28Z"
   },
   "status.solana.com": {
    "coverage_from": "2022-01-06T16:11:59Z",
@@ -2420,7 +2472,7 @@
   },
   "status.zoom.us": {
    "coverage_from": "2026-09-03T05:39:07Z",
-   "description": "Partially Degraded Service",
+   "description": "All Systems Operational",
    "incident": "",
    "incidents": {
     "0hgqwjz0lzwf": {
@@ -2847,6 +2899,14 @@
      "start": "2026-10-09T14:17:53Z",
      "status": "resolved"
     },
+    "qgp8bvxhl8g0": {
+     "end": "2026-11-23T11:00:49Z",
+     "impact": "none",
+     "link": "https://stspg.io/cpwwrn251g9v",
+     "name": "Service Degradation Affecting Zoom AI Companion Web in US Region",
+     "start": "2026-11-23T10:47:20Z",
+     "status": "resolved"
+    },
     "rbz47jx96k44": {
      "end": "2026-11-04T01:10:18Z",
      "impact": "minor",
@@ -2984,15 +3044,23 @@
      "status": "resolved"
     }
    },
-   "indicator": "minor",
+   "indicator": "none",
    "name": "Zoom",
-   "since": "2026-11-23T05:08:56Z"
+   "since": "2026-11-23T15:54:28Z"
   },
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
+   "incident": "Cloudflare Workers API \u2013 Delayed or Inconsistent Responses",
    "incidents": {
+    "00dp7cliyqqt": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/00dp7cliyqqt",
+     "name": "Cloudflare Workers API \u2013 Delayed or Inconsistent Responses",
+     "start": "2026-11-23T13:52:11Z",
+     "status": "investigating"
+    },
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
      "impact": "none",

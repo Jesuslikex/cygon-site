@@ -439,6 +439,16 @@
    "name": "Zoom",
    "t": "2026-11-21T18:27:48Z",
    "to": "none"
+  },
+  {
+   "desc": "Partially Degraded Service",
+   "from": "none",
+   "host": "status.zoom.us",
+   "incident": "",
+   "link": "https://status.zoom.us",
+   "name": "Zoom",
+   "t": "2026-11-23T05:08:56Z",
+   "to": "minor"
   }
  ],
  "hosts": {
@@ -2410,7 +2420,7 @@
   },
   "status.zoom.us": {
    "coverage_from": "2026-09-03T05:39:07Z",
-   "description": "All Systems Operational",
+   "description": "Partially Degraded Service",
    "incident": "",
    "incidents": {
     "0hgqwjz0lzwf": {
@@ -2709,6 +2719,14 @@
      "start": "2026-10-23T16:01:56Z",
      "status": "resolved"
     },
+    "h4wq81g6whn4": {
+     "end": "2026-11-23T02:56:24Z",
+     "impact": "minor",
+     "link": "https://stspg.io/dqmw1j2fr2wy",
+     "name": "Service Degradation Affecting Zoom Phone tab on desktop clients",
+     "start": "2026-11-23T00:22:55Z",
+     "status": "resolved"
+    },
     "jbl3clyk91xs": {
      "end": "2026-10-19T23:31:10Z",
      "impact": "minor",
@@ -2966,9 +2984,9 @@
      "status": "resolved"
     }
    },
-   "indicator": "none",
+   "indicator": "minor",
    "name": "Zoom",
-   "since": "2026-11-21T18:27:48Z"
+   "since": "2026-11-23T05:08:56Z"
   },
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
@@ -3639,6 +3657,14 @@
      "start": "2026-11-18T08:04:29Z",
      "status": "resolved"
     },
+    "nosp2iizzvc7": {
+     "end": "2026-11-23T04:28:00Z",
+     "impact": "none",
+     "link": "https://www.cloudflarestatus.com/incidents/nosp2iizzvc7",
+     "name": "Elevated latency in Frankfurt",
+     "start": "2026-11-23T04:52:22Z",
+     "status": "resolved"
+    },
     "nwgwgbrn9a71": {
      "end": "2026-10-22T02:09:33Z",
      "impact": "minor",
@@ -3709,6 +3735,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/pij2josz3rvz",
      "name": "Increased error rate in Workflow Operations",
      "start": "2026-10-24T13:13:49Z",
+     "status": "resolved"
+    },
+    "pnfv9wfy2q4y": {
+     "end": "2026-11-23T02:46:14Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/pnfv9wfy2q4y",
+     "name": "Increased HTTP 5xx Errors in Brussels",
+     "start": "2026-11-23T02:34:56Z",
      "status": "resolved"
     },
     "qlgdup1n0ge7": {

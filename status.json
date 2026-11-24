@@ -487,14 +487,6 @@
    "description": "All Systems Operational",
    "incident": "",
    "incidents": {
-    "0gz6pdq1c141": {
-     "end": "2026-07-27T18:05:48Z",
-     "impact": "major",
-     "link": "https://stspg.io/m3f8f3hwc75m",
-     "name": "session starts, DM message delivery down",
-     "start": "2026-07-27T17:48:46Z",
-     "status": "resolved"
-    },
     "1z5kbv8r5pkv": {
      "end": "2026-09-16T16:43:18Z",
      "impact": "major",
@@ -978,6 +970,14 @@
      "start": "2026-09-19T08:49:33Z",
      "status": "resolved"
     },
+    "kb17f50vp0tb": {
+     "end": "2026-11-24T18:02:57Z",
+     "impact": "none",
+     "link": "https://stspg.io/6zg70w5tjqfn",
+     "name": "Delayed Sends/Receives - VARA",
+     "start": "2026-11-24T13:26:26Z",
+     "status": "resolved"
+    },
     "kjp5db2vnt2p": {
      "end": "2026-10-17T06:47:01Z",
      "impact": "none",
@@ -1454,7 +1454,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Incorrect Prices Displayed for Some xStocks and Equities",
+   "incident": "Deprecation notice: SPV asset naming update on Spot REST API",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -2031,6 +2031,14 @@
      "name": "Australian Dollar (AUD) - Domestic Funding Delays",
      "start": "2026-10-24T14:56:27Z",
      "status": "resolved"
+    },
+    "sxwz18y77ngb": {
+     "end": null,
+     "impact": "none",
+     "link": "https://stspg.io/bf5vw55lw76l",
+     "name": "Deprecation notice: SPV asset naming update on Spot REST API",
+     "start": "2026-11-24T18:40:31Z",
+     "status": "monitoring"
     },
     "t0051spcf05s": {
      "end": "2026-10-13T13:11:19Z",
@@ -3077,15 +3085,15 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Minor Service Outage",
-   "incident": "Magic Transit Degraded Performance",
+   "incident": "R2 elevated errors and timeouts for requests from South America",
    "incidents": {
     "00dp7cliyqqt": {
-     "end": null,
+     "end": "2026-11-24T21:35:41Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/00dp7cliyqqt",
      "name": "Cloudflare Workers API \u2013 Delayed or Inconsistent Responses",
      "start": "2026-11-23T13:52:11Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -3631,6 +3639,14 @@
      "start": "2026-11-18T03:39:01Z",
      "status": "resolved"
     },
+    "k8utv1c3ubf2": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/k8utv1c3ubf2",
+     "name": "R2 elevated errors and timeouts for requests from South America",
+     "start": "2026-11-24T21:54:25Z",
+     "status": "investigating"
+    },
     "klub12zy71b4": {
      "end": "2026-10-28T03:28:57Z",
      "impact": "minor",
@@ -3765,7 +3781,7 @@
      "link": "https://www.cloudflarestatus.com/incidents/no721jcnlrbh",
      "name": "Magic Transit Degraded Performance",
      "start": "2026-11-24T11:29:22Z",
-     "status": "investigating"
+     "status": "identified"
     },
     "nosp2iizzvc7": {
      "end": "2026-11-23T04:28:00Z",
@@ -3989,6 +4005,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/wtsd415cavkc",
      "name": "Wrangler Deployments, Pages, and Workers Builds failures",
      "start": "2026-11-06T09:47:17Z",
+     "status": "resolved"
+    },
+    "x5ma22sji8wi": {
+     "end": "2026-11-24T22:42:43Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/x5ma22sji8wi",
+     "name": "Issues with Email Routing in France",
+     "start": "2026-11-24T13:38:40Z",
      "status": "resolved"
     },
     "x9orajjmvvwa": {
@@ -4239,6 +4263,14 @@
      "link": "https://stspg.io/w3rcssslq22w",
      "name": "Several services are degraded",
      "start": "2026-10-06T19:57:35Z",
+     "status": "resolved"
+    },
+    "d56dzxzzlw0b": {
+     "end": "2026-11-24T14:14:05Z",
+     "impact": "minor",
+     "link": "https://stspg.io/d5wbprv122kh",
+     "name": "Degraded Availability for MAI Code 2 in Copilot",
+     "start": "2026-11-24T13:44:07Z",
      "status": "resolved"
     },
     "db4x8hh362t8": {
@@ -4787,6 +4819,14 @@
      "link": "https://stspg.io/rx2hvkmrstg7",
      "name": "Invoice Generation Paused",
      "start": "2026-09-16T03:21:00Z",
+     "status": "resolved"
+    },
+    "l0msz49j1f81": {
+     "end": "2026-11-24T13:00:00Z",
+     "impact": "major",
+     "link": "https://stspg.io/txm5qwd8t2p0",
+     "name": "Errors when starting Sandboxes from private Container Registry images",
+     "start": "2026-11-24T13:00:00Z",
      "status": "resolved"
     },
     "mf04gp4lrfz0": {

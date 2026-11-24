@@ -1,8 +1,9 @@
-CYGON Threat of the Day · Nov 23
+CYGON Threat of the Day · Nov 24
 
-🔴 CISA confirms Cisco Expressway Series CVE-2026-76466 is being exploited in the wild. Patch now.
+🔴 Exploited in the wild: N-able MailAssure CVE-2026-134624 (CISA KEV)
 
-🌍 Most flagged IPs today: United States (41,533)
+🌍 Most flagged IPs today: United States (36,067)
+🧨 Fresh CVE: Bytebase DBHub CVE-2026-136441, CVSS 9.8
 
 Live tracker 👉 https://cygon.xyz
 $CYGON #cybersecurity

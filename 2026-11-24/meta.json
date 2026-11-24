@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-24",
+ "headline": "kev",
+ "headlineId": "CVE-2026-134624",
+ "text": "CYGON Threat of the Day · Nov 24\n\n🔴 Exploited in the wild: N-able MailAssure CVE-2026-134624 (CISA KEV)\n\n🌍 Most flagged IPs today: United States (36,067)\n🧨 Fresh CVE: Bytebase DBHub CVE-2026-136441, CVSS 9.8\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 273,
+ "facts": {
+  "kev": {
+   "id": "CVE-2026-134624",
+   "what": "N-able MailAssure",
+   "flaw": "(SpamExperts) Server-Side Request Forgery (SSRF)",
+   "added": "2026-11-23",
+   "age": 1,
+   "ransom": false
+  },
+  "cve": {
+   "id": "CVE-2026-136441",
+   "what": "Bytebase DBHub",
+   "score": 9.8,
+   "sev": "CRITICAL",
+   "desc": "Bytebase DBHub MCP Incorrect Authorization Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of Byt"
+  },
+  "country": {
+   "cc": "US",
+   "name": "United States",
+   "n": 36067,
+   "total": 130701,
+   "pct": 28
+  },
+  "outage": {
+   "svc": "Cloudflare",
+   "name": "Magic Transit Degraded Performance",
+   "impact": "major",
+   "ongoing": true
+  }
+ },
+ "snapshot": "2026-11-24T18:50Z",
+ "prev": null
+}

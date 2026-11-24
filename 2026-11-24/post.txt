@@ -1,0 +1,9 @@
+CYGON Threat of the Day · Nov 24
+
+🔴 Exploited in the wild: N-able MailAssure CVE-2026-134624 (CISA KEV)
+
+🌍 Most flagged IPs today: United States (36,067)
+🧨 Fresh CVE: Bytebase DBHub CVE-2026-136441, CVSS 9.8
+
+Live tracker 👉 https://cygon.xyz
+$CYGON #cybersecurity

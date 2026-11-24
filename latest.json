@@ -1,43 +1,43 @@
 {
- "date": "2026-11-23",
+ "date": "2026-11-24",
  "headline": "kev",
- "headlineId": "CVE-2026-76466",
- "text": "CYGON Threat of the Day · Nov 23\n\n🔴 CISA confirms Cisco Expressway Series CVE-2026-76466 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (41,533)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
- "xLength": 246,
+ "headlineId": "CVE-2026-134624",
+ "text": "CYGON Threat of the Day · Nov 24\n\n🔴 Exploited in the wild: N-able MailAssure CVE-2026-134624 (CISA KEV)\n\n🌍 Most flagged IPs today: United States (36,067)\n🧨 Fresh CVE: Bytebase DBHub CVE-2026-136441, CVSS 9.8\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 273,
  "facts": {
   "kev": {
-   "id": "CVE-2026-76466",
-   "what": "Cisco Expressway Series",
-   "flaw": "Use of Hard-coded Credentials",
-   "added": "2026-11-20",
-   "age": 3,
+   "id": "CVE-2026-134624",
+   "what": "N-able MailAssure",
+   "flaw": "(SpamExperts) Server-Side Request Forgery (SSRF)",
+   "added": "2026-11-23",
+   "age": 1,
    "ransom": false
   },
   "cve": {
-   "id": "CVE-2026-135452",
-   "what": "HP Inc HP Hotkey UWP Service",
-   "score": 8.4,
-   "sev": "HIGH",
-   "desc": "A potential security vulnerability has been identified in the HP Hotkey UWP Service, which might allow escalation of privilege. HP is releasing mitigation for the potential vulnera"
+   "id": "CVE-2026-136441",
+   "what": "Bytebase DBHub",
+   "score": 9.8,
+   "sev": "CRITICAL",
+   "desc": "Bytebase DBHub MCP Incorrect Authorization Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of Byt"
   },
   "country": {
    "cc": "US",
    "name": "United States",
-   "n": 41533,
-   "total": 140895,
-   "pct": 29
+   "n": 36067,
+   "total": 130701,
+   "pct": 28
   },
   "outage": {
-   "svc": "OpenAI",
-   "name": "Elevated errors with GPT-6 conversations on paid ChatGPT plans",
-   "impact": "minor",
+   "svc": "Cloudflare",
+   "name": "Magic Transit Degraded Performance",
+   "impact": "major",
    "ongoing": true
   }
  },
- "snapshot": "2026-11-23T19:10Z",
+ "snapshot": "2026-11-24T18:50Z",
  "prev": {
-  "date": "2026-11-22",
-  "headline": "country",
-  "headlineId": "US"
+  "date": "2026-11-23",
+  "headline": "kev",
+  "headlineId": "CVE-2026-76466"
  }
 }

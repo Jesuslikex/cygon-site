@@ -1896,6 +1896,14 @@
      "start": "2026-10-08T19:36:53Z",
      "status": "resolved"
     },
+    "n6qwq0c2ht7d": {
+     "end": "2026-11-24T07:21:33Z",
+     "impact": "minor",
+     "link": "https://stspg.io/p0djhkg33zt3",
+     "name": "Transaction Processing Disruption",
+     "start": "2026-11-24T06:50:28Z",
+     "status": "resolved"
+    },
     "nbqcqss23yr1": {
      "end": "2026-11-13T13:51:23Z",
      "impact": "minor",
@@ -3068,8 +3076,8 @@
   },
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
-   "description": "Partially Degraded Service",
-   "incident": "Cloudflare Workers API \u2013 Delayed or Inconsistent Responses",
+   "description": "Minor Service Outage",
+   "incident": "Magic Transit Degraded Performance",
    "incidents": {
     "00dp7cliyqqt": {
      "end": null,
@@ -3567,6 +3575,14 @@
      "start": "2026-10-28T21:01:39Z",
      "status": "resolved"
     },
+    "idlaxmxz4unz": {
+     "end": "2026-11-24T08:26:20Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/idlaxmxz4unz",
+     "name": "Increased Errors for Durable Objects in Seattle",
+     "start": "2026-11-24T07:25:34Z",
+     "status": "resolved"
+    },
     "iysf3fasf7wn": {
      "end": "2026-11-20T18:53:14Z",
      "impact": "major",
@@ -3742,6 +3758,14 @@
      "name": "Network disruption across multiple colocations in India",
      "start": "2026-11-18T08:04:29Z",
      "status": "resolved"
+    },
+    "no721jcnlrbh": {
+     "end": null,
+     "impact": "major",
+     "link": "https://www.cloudflarestatus.com/incidents/no721jcnlrbh",
+     "name": "Magic Transit Degraded Performance",
+     "start": "2026-11-24T11:29:22Z",
+     "status": "investigating"
     },
     "nosp2iizzvc7": {
      "end": "2026-11-23T04:28:00Z",

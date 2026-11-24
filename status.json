@@ -469,6 +469,16 @@
    "name": "Zoom",
    "t": "2026-11-23T15:54:28Z",
    "to": "none"
+  },
+  {
+   "desc": "All Systems Operational",
+   "from": "minor",
+   "host": "status.openai.com",
+   "incident": "",
+   "link": "https://status.openai.com",
+   "name": "OpenAI",
+   "t": "2026-11-24T02:41:17Z",
+   "to": "none"
   }
  ],
  "hosts": {
@@ -1822,6 +1832,14 @@
      "start": "2026-09-16T13:58:11Z",
      "status": "resolved"
     },
+    "k4nsdzmry0q7": {
+     "end": "2026-11-24T02:40:21Z",
+     "impact": "minor",
+     "link": "https://stspg.io/546r5lldc9xn",
+     "name": "USDC - ETH withdrawing Delays",
+     "start": "2026-11-24T01:32:04Z",
+     "status": "resolved"
+    },
     "ld19hs76nxnz": {
      "end": "2026-10-28T15:55:33Z",
      "impact": "minor",
@@ -2036,7 +2054,7 @@
      "link": "https://stspg.io/ncr7y1mtqx87",
      "name": "Incorrect Prices Displayed for Some xStocks and Equities",
      "start": "2026-11-23T14:45:36Z",
-     "status": "identified"
+     "status": "monitoring"
     },
     "xwrjp842w6nx": {
      "end": "2026-09-28T11:58:34Z",
@@ -2109,8 +2127,8 @@
   },
   "status.openai.com": {
    "coverage_from": "2026-10-09T17:23:18Z",
-   "description": "Partial System Degradation",
-   "incident": "Elevated errors with GPT-6 conversations on paid ChatGPT plans",
+   "description": "All Systems Operational",
+   "incident": "",
    "incidents": {
     "01M4GV1M2A3K38T73JCVCD9G0R": {
      "end": "2026-10-12T16:02:47Z",
@@ -2449,17 +2467,17 @@
      "status": "resolved"
     },
     "01M84HKHX73RF7HTVZQ2A9GFXP": {
-     "end": null,
+     "end": "2026-11-23T16:38:46Z",
      "impact": "minor",
      "link": "https://status.openai.com/incidents/01M84HKHX73RF7HTVZQ2A9GFXP",
      "name": "Elevated errors with GPT-6 conversations on paid ChatGPT plans",
      "start": "2026-11-23T15:50:14Z",
-     "status": "investigating"
+     "status": "resolved"
     }
    },
-   "indicator": "minor",
+   "indicator": "none",
    "name": "OpenAI",
-   "since": "2026-11-23T15:54:28Z"
+   "since": "2026-11-24T02:41:17Z"
   },
   "status.solana.com": {
    "coverage_from": "2022-01-06T16:11:59Z",
@@ -3059,7 +3077,7 @@
      "link": "https://www.cloudflarestatus.com/incidents/00dp7cliyqqt",
      "name": "Cloudflare Workers API \u2013 Delayed or Inconsistent Responses",
      "start": "2026-11-23T13:52:11Z",
-     "status": "investigating"
+     "status": "identified"
     },
     "03gc4o049emd": {
      "end": "2026-10-27T17:09:41Z",
@@ -4833,14 +4851,6 @@
      "link": "https://stspg.io/2szns4x5lfs2",
      "name": "Elevated errors for Workflow streams",
      "start": "2026-08-18T23:00:00Z",
-     "status": "resolved"
-    },
-    "yh45fsy7h0l8": {
-     "end": "2026-07-26T17:46:26Z",
-     "impact": "maintenance",
-     "link": "https://stspg.io/nc6n7dnn8nz7",
-     "name": "Vercel Community temporarily unavailable",
-     "start": "2026-07-25T18:57:40Z",
      "status": "resolved"
     },
     "ysczd6rxyl7z": {

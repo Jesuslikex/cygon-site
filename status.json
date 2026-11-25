@@ -3085,7 +3085,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Minor Service Outage",
-   "incident": "R2 elevated errors and timeouts for requests from South America",
+   "incident": "Magic Transit Degraded Performance",
    "incidents": {
     "00dp7cliyqqt": {
      "end": "2026-11-24T21:35:41Z",
@@ -3640,12 +3640,12 @@
      "status": "resolved"
     },
     "k8utv1c3ubf2": {
-     "end": null,
+     "end": "2026-11-25T00:12:11Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/k8utv1c3ubf2",
      "name": "R2 elevated errors and timeouts for requests from South America",
      "start": "2026-11-24T21:54:25Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "klub12zy71b4": {
      "end": "2026-10-28T03:28:57Z",
@@ -3669,6 +3669,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/ktq18tcoqoo2",
      "name": "Network Error Log Processing Unavailable",
      "start": "2026-10-27T22:21:29Z",
+     "status": "resolved"
+    },
+    "kwqke6nmketa": {
+     "end": "2026-11-24T14:39:00Z",
+     "impact": "none",
+     "link": "https://www.cloudflarestatus.com/incidents/kwqke6nmketa",
+     "name": "Increased HTTP 530 Errors in Seattle",
+     "start": "2026-11-24T22:55:21Z",
      "status": "resolved"
     },
     "l0gsc0sccx2v": {
@@ -3709,6 +3717,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/lmmf23klsrxq",
      "name": "Increased Errors for Durable Objects in the Eastern North America region",
      "start": "2026-10-28T09:45:10Z",
+     "status": "resolved"
+    },
+    "lqojvojhdcjv": {
+     "end": "2026-11-25T02:45:00Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/lqojvojhdcjv",
+     "name": "Elevated number of 5xx errors in Frankfurt",
+     "start": "2026-11-25T03:03:35Z",
      "status": "resolved"
     },
     "m644az5hr9xo": {
@@ -4431,6 +4447,14 @@
      "link": "https://stspg.io/5bh6qnzn76tk",
      "name": "Incident with Dependabot",
      "start": "2026-10-30T20:59:14Z",
+     "status": "resolved"
+    },
+    "m0wx9qml7yjh": {
+     "end": "2026-11-25T01:15:18Z",
+     "impact": "critical",
+     "link": "https://stspg.io/bk5200jsb13k",
+     "name": "Disruption with Code Completions and Next Edit Suggestions",
+     "start": "2026-11-25T00:08:17Z",
      "status": "resolved"
     },
     "m310qbkfm3ww": {

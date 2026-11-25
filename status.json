@@ -2144,7 +2144,7 @@
      "link": "https://stspg.io/1lq6bxp4pv34",
      "name": "Hivemapper (HONEY) Funding Delays",
      "start": "2026-11-25T10:18:04Z",
-     "status": "investigating"
+     "status": "identified"
     },
     "zwvwwl4ykp8f": {
      "end": "2026-11-25T10:28:04Z",
@@ -2162,7 +2162,7 @@
   "status.openai.com": {
    "coverage_from": "2026-10-09T17:23:18Z",
    "description": "Partial System Degradation",
-   "incident": "ChatGPT, ChatGPT Work, and Codex Cloud are experiencing elevated conversation errors",
+   "incident": "Elevated errors with Codex GitHub reviews and pull request merges",
    "incidents": {
     "01M4GV1M2A3K38T73JCVCD9G0R": {
      "end": "2026-10-12T16:02:47Z",
@@ -2509,11 +2509,19 @@
      "status": "resolved"
     },
     "01M898HVZGXFV2XC4775CG9GF8": {
-     "end": null,
+     "end": "2026-11-25T16:12:21Z",
      "impact": "minor",
      "link": "https://status.openai.com/incidents/01M898HVZGXFV2XC4775CG9GF8",
      "name": "ChatGPT, ChatGPT Work, and Codex Cloud are experiencing elevated conversation errors",
      "start": "2026-11-25T11:48:13Z",
+     "status": "resolved"
+    },
+    "01M89RGC3STKK2MT53TXHFMY4H": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://status.openai.com/incidents/01M89RGC3STKK2MT53TXHFMY4H",
+     "name": "Elevated errors with Codex GitHub reviews and pull request merges",
+     "start": "2026-11-25T16:27:02Z",
      "status": "monitoring"
     }
    },
@@ -3119,7 +3127,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
+   "incident": "Elevated R2 Latency",
    "incidents": {
     "00dp7cliyqqt": {
      "end": "2026-11-24T21:35:41Z",
@@ -3223,6 +3231,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/2eno8w1fk27j",
      "name": "We are seeing some customers having issues with Workers Builds",
      "start": "2026-10-27T11:38:53Z",
+     "status": "resolved"
+    },
+    "2quqh864hxdi": {
+     "end": "2026-11-25T20:03:49Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/2quqh864hxdi",
+     "name": "Elevated R2 errors for buckets in APAC region",
+     "start": "2026-11-25T16:50:45Z",
      "status": "resolved"
     },
     "2wjvsj2kqt07": {
@@ -3592,6 +3608,14 @@
      "name": "Cloudflare is seeing an issue with Workers API availability",
      "start": "2026-11-13T15:31:13Z",
      "status": "resolved"
+    },
+    "ef6928vi0mic": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/ef6928vi0mic",
+     "name": "Elevated R2 Latency",
+     "start": "2026-11-25T20:08:42Z",
+     "status": "monitoring"
     },
     "f33c51cw0ojd": {
      "end": "2026-11-19T03:19:28Z",
@@ -4033,6 +4057,14 @@
      "start": "2026-10-22T17:51:09Z",
      "status": "resolved"
     },
+    "vk87u9j2g6if": {
+     "end": "2026-11-25T17:48:50Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/vk87u9j2g6if",
+     "name": "Some customers cannot create monitors",
+     "start": "2026-11-25T16:42:03Z",
+     "status": "resolved"
+    },
     "wp49bp8bqo6c": {
      "end": "2026-11-12T16:36:32Z",
      "impact": "minor",
@@ -4129,7 +4161,7 @@
   "www.githubstatus.com": {
    "coverage_from": "2026-08-21T14:00:00Z",
    "description": "All Systems Operational",
-   "incident": "",
+   "incident": "LFS degradation for some customers",
    "incidents": {
     "0rn90wk115q9": {
      "end": "2026-09-13T10:44:55Z",
@@ -4499,6 +4531,14 @@
      "start": "2026-10-30T20:59:14Z",
      "status": "resolved"
     },
+    "m0wvf9pt3l0l": {
+     "end": null,
+     "impact": "minor",
+     "link": "https://stspg.io/ywpzwl4yl621",
+     "name": "LFS degradation for some customers",
+     "start": "2026-11-25T23:06:54Z",
+     "status": "investigating"
+    },
     "m0wx9qml7yjh": {
      "end": "2026-11-25T01:15:18Z",
      "impact": "critical",
@@ -4593,6 +4633,14 @@
      "link": "https://stspg.io/44w94j036yc8",
      "name": "Incident with Actions",
      "start": "2026-10-22T14:18:15Z",
+     "status": "resolved"
+    },
+    "qn8mfv6q5hlx": {
+     "end": "2026-11-25T16:52:16Z",
+     "impact": "critical",
+     "link": "https://stspg.io/5qj9j0p5g4cr",
+     "name": "Investigating degraded experiences across GitHub products",
+     "start": "2026-11-25T15:55:19Z",
      "status": "resolved"
     },
     "qpfv5p86dmrl": {

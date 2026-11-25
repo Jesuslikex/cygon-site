@@ -1,9 +1,8 @@
-CYGON Threat of the Day · Nov 24
+CYGON Threat of the Day · Nov 25
 
-🔴 Exploited in the wild: N-able MailAssure CVE-2026-134624 (CISA KEV)
+🔴 CISA confirms Optimizely Web Experimentation CVE-2026-132224 is being exploited in the wild. Patch now.
 
-🌍 Most flagged IPs today: United States (36,067)
-🧨 Fresh CVE: Bytebase DBHub CVE-2026-136441, CVSS 9.8
+🌍 Most flagged IPs today: United States (41,982)
 
 Live tracker 👉 https://cygon.xyz
 $CYGON #cybersecurity

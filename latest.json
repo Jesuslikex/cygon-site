@@ -1,43 +1,43 @@
 {
- "date": "2026-11-24",
+ "date": "2026-11-25",
  "headline": "kev",
- "headlineId": "CVE-2026-134624",
- "text": "CYGON Threat of the Day · Nov 24\n\n🔴 Exploited in the wild: N-able MailAssure CVE-2026-134624 (CISA KEV)\n\n🌍 Most flagged IPs today: United States (36,067)\n🧨 Fresh CVE: Bytebase DBHub CVE-2026-136441, CVSS 9.8\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
- "xLength": 273,
+ "headlineId": "CVE-2026-132224",
+ "text": "CYGON Threat of the Day · Nov 25\n\n🔴 CISA confirms Optimizely Web Experimentation CVE-2026-132224 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (41,982)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 254,
  "facts": {
   "kev": {
-   "id": "CVE-2026-134624",
-   "what": "N-able MailAssure",
-   "flaw": "(SpamExperts) Server-Side Request Forgery (SSRF)",
-   "added": "2026-11-23",
+   "id": "CVE-2026-132224",
+   "what": "Optimizely Web Experimentation",
+   "flaw": "External Control of Critical State Data",
+   "added": "2026-11-24",
    "age": 1,
    "ransom": false
   },
   "cve": {
-   "id": "CVE-2026-136441",
-   "what": "Bytebase DBHub",
-   "score": 9.8,
-   "sev": "CRITICAL",
-   "desc": "Bytebase DBHub MCP Incorrect Authorization Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of Byt"
+   "id": "CVE-2026-135226",
+   "what": "MongoDB Ruby Driver",
+   "score": 8.7,
+   "sev": "HIGH",
+   "desc": "A type-confusion weakness in the Extended JSON parsing component of BSON for Ruby allows a party who can supply parser input to influence how a serialized document is framed. Conte"
   },
   "country": {
    "cc": "US",
    "name": "United States",
-   "n": 36067,
-   "total": 130701,
-   "pct": 28
+   "n": 41982,
+   "total": 142311,
+   "pct": 30
   },
   "outage": {
-   "svc": "Cloudflare",
-   "name": "Magic Transit Degraded Performance",
-   "impact": "major",
-   "ongoing": true
+   "svc": "GitHub",
+   "name": "Disruption with Code Completions and Next Edit Suggestions",
+   "impact": "critical",
+   "ongoing": false
   }
  },
- "snapshot": "2026-11-24T18:50Z",
+ "snapshot": "2026-11-25T17:55Z",
  "prev": {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "headline": "kev",
-  "headlineId": "CVE-2026-76466"
+  "headlineId": "CVE-2026-134624"
  }
 }

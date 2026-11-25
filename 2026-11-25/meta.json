@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-25",
+ "headline": "kev",
+ "headlineId": "CVE-2026-132224",
+ "text": "CYGON Threat of the Day · Nov 25\n\n🔴 CISA confirms Optimizely Web Experimentation CVE-2026-132224 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (41,982)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 254,
+ "facts": {
+  "kev": {
+   "id": "CVE-2026-132224",
+   "what": "Optimizely Web Experimentation",
+   "flaw": "External Control of Critical State Data",
+   "added": "2026-11-24",
+   "age": 1,
+   "ransom": false
+  },
+  "cve": {
+   "id": "CVE-2026-135226",
+   "what": "MongoDB Ruby Driver",
+   "score": 8.7,
+   "sev": "HIGH",
+   "desc": "A type-confusion weakness in the Extended JSON parsing component of BSON for Ruby allows a party who can supply parser input to influence how a serialized document is framed. Conte"
+  },
+  "country": {
+   "cc": "US",
+   "name": "United States",
+   "n": 41982,
+   "total": 142311,
+   "pct": 30
+  },
+  "outage": {
+   "svc": "GitHub",
+   "name": "Disruption with Code Completions and Next Edit Suggestions",
+   "impact": "critical",
+   "ongoing": false
+  }
+ },
+ "snapshot": "2026-11-25T17:55Z",
+ "prev": null
+}

@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-26",
+ "headline": "kev",
+ "headlineId": "CVE-2026-133469",
+ "text": "CYGON Threat of the Day · Nov 26\n\n🔴 CISA confirms Vates Xen Orchestra CVE-2026-133469 is being exploited in the wild. Patch now.\n\n🌍 Most flagged IPs today: United States (40,234)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 243,
+ "facts": {
+  "kev": {
+   "id": "CVE-2026-133469",
+   "what": "Vates Xen Orchestra",
+   "flaw": "Improper Validation of Specified Type of Input",
+   "added": "2026-11-25",
+   "age": 1,
+   "ransom": false
+  },
+  "cve": {
+   "id": "CVE-2026-135279",
+   "what": "@fastify/express @fastify/express",
+   "score": 9.1,
+   "sev": "CRITICAL",
+   "desc": "@fastify/express is the plugin that lets an application run Express middleware and Express applications inside the Fastify web framework. In versions before 4.0.14, a request with "
+  },
+  "country": {
+   "cc": "US",
+   "name": "United States",
+   "n": 40234,
+   "total": 141565,
+   "pct": 28
+  },
+  "outage": {
+   "svc": "Cloudflare",
+   "name": "Cloudflare Dashboard and Cloudflare API service issues",
+   "impact": "major",
+   "ongoing": true
+  }
+ },
+ "snapshot": "2026-11-26T17:40Z",
+ "prev": null
+}

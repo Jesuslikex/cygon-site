@@ -1012,6 +1012,14 @@
      "start": "2026-09-22T12:35:21Z",
      "status": "resolved"
     },
+    "llmzmlbtsrmn": {
+     "end": "2026-11-26T04:16:55Z",
+     "impact": "none",
+     "link": "https://stspg.io/f32n3n3j0wfz",
+     "name": "Delayed Sends & Receives - INJ",
+     "start": "2026-11-26T02:41:07Z",
+     "status": "resolved"
+    },
     "m1jgvww0zjr6": {
      "end": "2026-10-09T17:58:14Z",
      "impact": "minor",
@@ -1659,12 +1667,12 @@
      "status": "resolved"
     },
     "91v7w0wckz6g": {
-     "end": null,
+     "end": "2026-11-26T04:44:28Z",
      "impact": "minor",
      "link": "https://stspg.io/ql36rr6g5bw8",
      "name": "Interac e-Transfer (CAD) Withdrawal Delays",
      "start": "2026-11-25T06:30:07Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "9bc6xzp6mx8l": {
      "end": "2026-11-14T13:38:07Z",
@@ -3127,7 +3135,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Elevated R2 Latency",
+   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
    "incidents": {
     "00dp7cliyqqt": {
      "end": "2026-11-24T21:35:41Z",
@@ -3610,12 +3618,12 @@
      "status": "resolved"
     },
     "ef6928vi0mic": {
-     "end": null,
+     "end": "2026-11-26T00:11:05Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/ef6928vi0mic",
      "name": "Elevated R2 Latency",
      "start": "2026-11-25T20:08:42Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "f33c51cw0ojd": {
      "end": "2026-11-19T03:19:28Z",
@@ -4161,7 +4169,7 @@
   "www.githubstatus.com": {
    "coverage_from": "2026-08-21T14:00:00Z",
    "description": "All Systems Operational",
-   "incident": "LFS degradation for some customers",
+   "incident": "",
    "incidents": {
     "0rn90wk115q9": {
      "end": "2026-09-13T10:44:55Z",
@@ -4532,12 +4540,12 @@
      "status": "resolved"
     },
     "m0wvf9pt3l0l": {
-     "end": null,
+     "end": "2026-11-26T00:43:01Z",
      "impact": "minor",
      "link": "https://stspg.io/ywpzwl4yl621",
      "name": "LFS degradation for some customers",
      "start": "2026-11-25T23:06:54Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "m0wx9qml7yjh": {
      "end": "2026-11-25T01:15:18Z",

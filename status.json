@@ -1360,14 +1360,6 @@
      "start": "2026-08-23T05:11:37Z",
      "status": "resolved"
     },
-    "rdfp2h4syxz8": {
-     "end": "2026-07-30T06:15:55Z",
-     "impact": "minor",
-     "link": "https://stspg.io/ynhlvpy6ctcm",
-     "name": "Response Degradation Impacting Kimi-K3",
-     "start": "2026-07-29T17:56:51Z",
-     "status": "resolved"
-    },
     "rl0fl1jtxw7l": {
      "end": "2026-10-13T17:09:47Z",
      "impact": "none",
@@ -1474,7 +1466,7 @@
   "status.kraken.com": {
    "coverage_from": "2026-09-04T21:43:59Z",
    "description": "Partially Degraded Service",
-   "incident": "Interac e-Transfer (CAD) Withdrawal Delays",
+   "incident": "Hivemapper (HONEY) Funding Delays",
    "incidents": {
     "074rbtn08wzw": {
      "end": "2026-10-07T22:25:47Z",
@@ -1525,12 +1517,12 @@
      "status": "resolved"
     },
     "1n8qtknpxrd7": {
-     "end": null,
+     "end": "2026-11-27T03:41:50Z",
      "impact": "minor",
      "link": "https://stspg.io/d0lhks0rcppy",
      "name": "Interac e-Transfer (CAD) Withdrawal Delays",
      "start": "2026-11-26T14:39:17Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "1r99c1gzffzf": {
      "end": "2026-11-13T16:09:59Z",
@@ -1845,12 +1837,12 @@
      "status": "resolved"
     },
     "j7sd1r3xvmx2": {
-     "end": null,
+     "end": "2026-11-27T02:06:56Z",
      "impact": "minor",
      "link": "https://stspg.io/1ypvb07wv0gq",
      "name": "CAD Deposit Delays via Apaylo",
      "start": "2026-11-23T12:52:12Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "jkm5tq0rzsc3": {
      "end": "2026-11-04T18:04:29Z",

@@ -2069,12 +2069,12 @@
      "status": "resolved"
     },
     "sxwz18y77ngb": {
-     "end": null,
-     "impact": "none",
+     "end": "2026-11-26T16:26:37Z",
+     "impact": "minor",
      "link": "https://stspg.io/bf5vw55lw76l",
      "name": "Deprecation notice: SPV asset naming update on Spot REST API",
      "start": "2026-11-24T18:40:31Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "t0051spcf05s": {
      "end": "2026-10-13T13:11:19Z",
@@ -2101,12 +2101,12 @@
      "status": "resolved"
     },
     "xtqfqd49s6gz": {
-     "end": null,
+     "end": "2026-11-26T16:56:47Z",
      "impact": "minor",
      "link": "https://stspg.io/ncr7y1mtqx87",
      "name": "Incorrect Prices Displayed for Some xStocks and Equities",
      "start": "2026-11-23T14:45:36Z",
-     "status": "monitoring"
+     "status": "resolved"
     },
     "xwrjp842w6nx": {
      "end": "2026-09-28T11:58:34Z",
@@ -3153,7 +3153,7 @@
   "www.cloudflarestatus.com": {
    "coverage_from": "2026-08-27T18:46:19Z",
    "description": "Partially Degraded Service",
-   "incident": "Cloudflare Dashboard and Cloudflare API service issues",
+   "incident": "Changes to Cloudflare Workers are not producing Event Subscription events",
    "incidents": {
     "00dp7cliyqqt": {
      "end": "2026-11-24T21:35:41Z",
@@ -3660,12 +3660,12 @@
      "status": "resolved"
     },
     "filussqshtfq": {
-     "end": null,
+     "end": "2026-11-26T18:07:04Z",
      "impact": "minor",
      "link": "https://www.cloudflarestatus.com/incidents/filussqshtfq",
      "name": "AI Gateway \u2013 Elevated errors for Gemini 4 models using Unified Billing",
      "start": "2026-11-26T14:19:51Z",
-     "status": "identified"
+     "status": "resolved"
     },
     "gcn9xop0f7zm": {
      "end": "2026-11-17T22:08:34Z",
@@ -4164,12 +4164,12 @@
      "status": "resolved"
     },
     "xiqj67vl5pqm": {
-     "end": null,
+     "end": "2026-11-26T18:17:04Z",
      "impact": "major",
      "link": "https://www.cloudflarestatus.com/incidents/xiqj67vl5pqm",
      "name": "Cloudflare Dashboard and Cloudflare API service issues",
      "start": "2026-11-26T16:03:50Z",
-     "status": "investigating"
+     "status": "resolved"
     },
     "xsgbfncq7of7": {
      "end": "2026-11-20T19:41:49Z",

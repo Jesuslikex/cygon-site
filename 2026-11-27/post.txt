@@ -1,0 +1,8 @@
+CYGON Threat of the Day · Nov 27
+
+🌍 United States hosts the most IPs on today's blocklists: 40,694 (28% of 145,238).
+
+🔴 Exploited in the wild: Vates Xen Orchestra CVE-2026-133469 (CISA KEV)
+
+Live tracker 👉 https://cygon.xyz
+$CYGON #cybersecurity

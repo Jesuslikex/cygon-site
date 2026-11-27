@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-27",
+ "headline": "country",
+ "headlineId": "US",
+ "text": "CYGON Threat of the Day · Nov 27\n\n🌍 United States hosts the most IPs on today's blocklists: 40,694 (28% of 145,238).\n\n🔴 Exploited in the wild: Vates Xen Orchestra CVE-2026-133469 (CISA KEV)\n\nLive tracker 👉 https://cygon.xyz\n$CYGON #cybersecurity",
+ "xLength": 254,
+ "facts": {
+  "kev": {
+   "id": "CVE-2026-133469",
+   "what": "Vates Xen Orchestra",
+   "flaw": "Improper Validation of Specified Type of Input",
+   "added": "2026-11-25",
+   "age": 2,
+   "ransom": false
+  },
+  "cve": {
+   "id": "CVE-2026-137992",
+   "what": "libexpat libexpat",
+   "score": 8.7,
+   "sev": "HIGH",
+   "desc": "libexpat through 2.11.0 contains a denial of service vulnerability in defineAttribute() of lib/xmlparse.c that fails to detect duplicate non-ID #IMPLIED or #REQUIRED attribute decl"
+  },
+  "country": {
+   "cc": "US",
+   "name": "United States",
+   "n": 40694,
+   "total": 145238,
+   "pct": 28
+  },
+  "outage": {
+   "svc": "Cloudflare",
+   "name": "Cloudflare Dashboard and Cloudflare API service issues",
+   "impact": "major",
+   "ongoing": false
+  }
+ },
+ "snapshot": "2026-11-27T17:24Z",
+ "prev": null
+}

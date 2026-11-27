@@ -1820,6 +1820,14 @@
      "start": "2026-10-23T15:00:44Z",
      "status": "resolved"
     },
+    "fj8rtq8hh1cz": {
+     "end": "2026-11-27T16:07:39Z",
+     "impact": "minor",
+     "link": "https://stspg.io/zr2rv9sqrjx5",
+     "name": "Prop order execution issues",
+     "start": "2026-11-27T15:04:56Z",
+     "status": "resolved"
+    },
     "fqgy2v7071c7": {
      "end": "2026-11-11T05:01:21Z",
      "impact": "minor",
@@ -3497,6 +3505,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/8s6pn9rvof3l",
      "name": "Cache Purging Delays Affecting Requests Routed Through EEUR",
      "start": "2026-10-27T15:10:35Z",
+     "status": "resolved"
+    },
+    "955xa7dtx0ca": {
+     "end": "2026-11-27T15:05:32Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/955xa7dtx0ca",
+     "name": "Cloudflare University website unavailable",
+     "start": "2026-11-27T14:49:03Z",
      "status": "resolved"
     },
     "97y1vy5nsjrn": {

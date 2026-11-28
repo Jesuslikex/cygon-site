@@ -3251,6 +3251,14 @@
      "start": "2026-11-11T07:45:42Z",
      "status": "resolved"
     },
+    "27xnfvjy0n6j": {
+     "end": "2026-11-28T09:23:38Z",
+     "impact": "critical",
+     "link": "https://www.cloudflarestatus.com/incidents/27xnfvjy0n6j",
+     "name": "Email Delivery Delays",
+     "start": "2026-11-28T07:21:21Z",
+     "status": "resolved"
+    },
     "2eno8w1fk27j": {
      "end": "2026-10-27T12:55:24Z",
      "impact": "minor",
@@ -3721,6 +3729,14 @@
      "link": "https://www.cloudflarestatus.com/incidents/j3llzsq3m17a",
      "name": "Some customers may notice their Pages and/or Workers builds are intermittently failing.",
      "start": "2026-10-27T08:04:03Z",
+     "status": "resolved"
+    },
+    "j7ihgms4mvhb": {
+     "end": "2026-11-28T05:38:42Z",
+     "impact": "minor",
+     "link": "https://www.cloudflarestatus.com/incidents/j7ihgms4mvhb",
+     "name": "Elevated Errors for Cloudflare Workers Subrequests",
+     "start": "2026-11-28T04:45:43Z",
      "status": "resolved"
     },
     "jajp50huvxtz": {
